@@ -1,0 +1,4 @@
+{
+  "PXP_TEST_API_DOMAIN": "https://api-gateway-sessions.qa.kube.qa",
+  "PXP_LIVE_API_DOMAIN": "https://api-gateway-sessions.qa.kube.qa"
+}

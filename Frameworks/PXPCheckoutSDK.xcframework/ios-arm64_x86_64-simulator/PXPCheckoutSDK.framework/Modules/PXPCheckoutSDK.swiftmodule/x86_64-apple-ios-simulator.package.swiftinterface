@@ -1,0 +1,2951 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name PXPCheckoutSDK -package-name pxpcheckoutsdk
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+import Alamofire
+import Combine
+import Contacts
+import CoreGraphics
+import CorePayments
+import CryptoKit
+import Foundation
+import Foundation/*.Bundle*/
+import Foundation/*.ProcessInfo*/
+import Foundation/*.URL*/
+import FraudProtection
+import KountDataCollector
+import PassKit
+import PayPalWebPayments
+import PaymentButtons
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _PassKit_SwiftUI
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class ApplePayButtonComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  override public func updateSdkConfig(intent: PXPCheckoutSDK.TransactionIntentData? = nil, amount: Swift.Double? = nil)
+  @objc deinit
+}
+public class ApplePayButtonComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+  public var countryCode: Swift.String
+  public var currencyCode: Swift.String
+  public var supportedNetworks: [PXPCheckoutSDK.PaymentNetwork]
+  public var merchantCapabilities: [PXPCheckoutSDK.MerchantCapability]
+  public var requiredBillingContactFields: [PXPCheckoutSDK.ContactField]?
+  public var requiredShippingContactFields: [PXPCheckoutSDK.ContactField]?
+  public var shippingMethods: [PXPCheckoutSDK.ApplePayShippingMethod]?
+  public var shippingType: PXPCheckoutSDK.ShippingType?
+  public var applicationData: Swift.String?
+  public var avsRequest: Swift.Bool?
+  public var totalPaymentItem: PXPCheckoutSDK.ApplePayPaymentSummaryItem?
+  public var paymentItems: [PXPCheckoutSDK.ApplePayPaymentSummaryItem]?
+  public var billingContact: PXPCheckoutSDK.ApplePayContact?
+  public var shippingContact: PXPCheckoutSDK.ApplePayContact?
+  public var shippingContactEditingMode: PXPCheckoutSDK.ShippingContactEditingMode?
+  public var supportsCouponCode: Swift.Bool?
+  public var couponCode: Swift.String?
+  public var supportedCountries: [Swift.String]?
+  public var paymentDescription: Swift.String
+  weak public var applePayConsentComponent: PXPCheckoutSDK.ApplePayConsentComponent?
+  public var disbursementRequest: PXPCheckoutSDK.ApplePayDisbursementRequest?
+  public var recurringRequest: PXPCheckoutSDK.ApplePayRecurringPaymentRequest?
+  public var deferredPaymentRequest: PXPCheckoutSDK.ApplePayDeferredPaymentRequest?
+  public var automaticReloadPaymentRequest: PXPCheckoutSDK.ApplePayAutomaticReloadPaymentRequest?
+  public var multiTokenContext: [PXPCheckoutSDK.ApplePayMultiTokenContext]?
+  public var buttonType: PXPCheckoutSDK.ApplePaymentButtonType
+  public var buttonStyle: PXPCheckoutSDK.ApplePaymentButtonStyle
+  public var buttonRadius: CoreFoundation.CGFloat
+  public var customContent: (() -> SwiftUICore.AnyView)?
+  public var onPreAuthorisation: (() async -> PXPCheckoutSDK.ApplePayTransactionInitData?)?
+  public var onPostAuthorisation: ((PXPCheckoutSDK.BaseSubmitResult, PXPCheckoutSDK.ApplePayResult) -> Swift.Void)?
+  public var onCancel: ((PXPCheckoutSDK.BaseSdkException) -> Swift.Void)?
+  public var onError: ((PXPCheckoutSDK.BaseSdkException) -> Swift.Void)?
+  public var onShippingAddressChange: ((PXPCheckoutSDK.ApplePayContact?) -> PXPCheckoutSDK.ApplePayRequestUpdate?)?
+  public var onShippingOptionChange: ((PXPCheckoutSDK.ApplePayShippingMethod?) -> PXPCheckoutSDK.ApplePayRequestUpdate?)?
+  public var onPaymentMethodChange: ((PXPCheckoutSDK.ApplePayPaymentMethod?) -> PXPCheckoutSDK.ApplePayRequestUpdate?)?
+  public var onCouponSelected: ((Swift.String) -> PXPCheckoutSDK.ApplePayRequestUpdate?)?
+  public var onGetConsent: (() -> Swift.Bool)?
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ApplePayBlobDecryptionFailedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  final public let errorCode: Swift.String
+  final public let errorType: Swift.String
+  final public let errorReason: Swift.String
+  final public let httpStatusCode: Swift.Int
+  public init(errorCode: Swift.String, errorType: Swift.String, errorReason: Swift.String, httpStatusCode: Swift.Int)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func encode(with coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ApplePayCustomApiProcessingFailedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init(error: (any Swift.Error)? = nil)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ApplePayDisbursementRequestNotSupportedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ApplePayHttpRequestFailedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  final public let correctionId: Swift.String?
+  final public let details: [Swift.String]?
+  public init(statusCode: Swift.Int, message: Swift.String, correctionId: Swift.String? = nil, details: [Swift.String]? = nil)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func encode(with coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ApplePayMerchantIdentifierRequiredException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ApplePayMerchantValidationFailedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init(error: (any Swift.Error)? = nil)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ApplePayPaymentFailedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ApplePayPaymentRequestApiNotSupportedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ApplePayPaymentRequestNotInitializedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ApplePaySessionCancelledException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ApplePayValidationException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init(_ errorMessage: Swift.String)
+  @objc deinit
+}
+extension PassKit.PKMerchantCapability {
+  public static func fromString(_ merchantCapability: Swift.String) -> PassKit.PKMerchantCapability?
+  public var toStringArray: [Swift.String] {
+    get
+  }
+}
+extension PassKit.PKPaymentSummaryItemType {
+  public static func fromString(_ type: Swift.String) -> PassKit.PKPaymentSummaryItemType
+  public static func from(_ type: PXPCheckoutSDK.ApplePayPaymentSummaryItemType) -> PassKit.PKPaymentSummaryItemType
+}
+extension PassKit.PKPaymentMethodType {
+  public var name: Swift.String {
+    get
+  }
+}
+extension PassKit.PKContactField {
+  public static func fromString(_ field: Swift.String) -> PassKit.PKContactField?
+}
+@available(iOS 17.0, *)
+extension PassKit.PKPaymentRequest.ApplePayLaterAvailability {
+  public static func fromString(_ field: Swift.String) -> PassKit.PKPaymentRequest.ApplePayLaterAvailability?
+}
+extension PassKit.PKPayment {
+  public func toDictionary() -> [Swift.String : Any]
+}
+extension PXPCheckoutSDK.ApplePayPaymentSummaryItem {
+  public func toPKPaymentSummaryItem() -> PassKit.PKPaymentSummaryItem
+}
+public struct ApplePayAutomaticReloadPaymentRequest : Swift.Codable {
+  public let paymentDescription: Swift.String
+  public let automaticReloadBilling: PXPCheckoutSDK.ApplePayAutomaticReloadPaymentItem
+  public let billingAgreement: Swift.String?
+  public let managementURL: Foundation.URL
+  public let tokenNotificationURL: Foundation.URL?
+  public init(paymentDescription: Swift.String, automaticReloadBilling: PXPCheckoutSDK.ApplePayAutomaticReloadPaymentItem, billingAgreement: Swift.String? = nil, managementURL: Foundation.URL, tokenNotificationURL: Foundation.URL? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ApplePayAutomaticReloadPaymentItem : Swift.Codable {
+  public let label: Swift.String
+  public let amount: Foundation.Decimal
+  public let thresholdAmount: Foundation.Decimal
+  public init(label: Swift.String, amount: Foundation.Decimal, thresholdAmount: Foundation.Decimal)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct ApplePayContact : Swift.Codable {
+  public let addressLines: [Swift.String]
+  public let phoneNumber: Swift.String
+  public let emailAddress: Swift.String
+  public let givenName: Swift.String
+  public let familyName: Swift.String
+  public let phoneticGivenName: Swift.String
+  public let phoneticFamilyName: Swift.String
+  public let subLocality: Swift.String
+  public let locality: Swift.String
+  public let postalCode: Swift.String
+  public let subAdministrativeArea: Swift.String
+  public let administrativeArea: Swift.String
+  public let countryCode: Swift.String
+  public let country: Swift.String
+  public init(addressLines: [Swift.String] = [], phoneNumber: Swift.String = "", emailAddress: Swift.String = "", givenName: Swift.String = "", familyName: Swift.String = "", phoneticGivenName: Swift.String = "", phoneticFamilyName: Swift.String = "", subLocality: Swift.String = "", locality: Swift.String = "", postalCode: Swift.String = "", subAdministrativeArea: Swift.String = "", administrativeArea: Swift.String = "", countryCode: Swift.String = "", country: Swift.String = "")
+  public func toDictionary() -> [Swift.String : Any]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ApplePayPaymentRequest {
+  public let merchantIdentifier: Swift.String
+  public let countryCode: Swift.String
+  public let currencyCode: Swift.String
+  public let total: PXPCheckoutSDK.ApplePayPaymentSummaryItem?
+  public let paymentItems: [PXPCheckoutSDK.ApplePayPaymentSummaryItem]
+  public let supportedNetworks: [PXPCheckoutSDK.PaymentNetwork]
+  public let merchantCapabilities: [PXPCheckoutSDK.MerchantCapability]
+  public let browserAgent: Swift.String?
+  public let shippingMethods: [PXPCheckoutSDK.ApplePayShippingMethod]?
+  public let requiredBillingContactFields: [PXPCheckoutSDK.ContactField]?
+  public let requiredShippingContactFields: [PXPCheckoutSDK.ContactField]?
+  public let billingContact: PXPCheckoutSDK.ApplePayContact?
+  public let shippingContact: PXPCheckoutSDK.ApplePayContact?
+  public let shippingType: Swift.String?
+  public let shippingContactEditingMode: Swift.String?
+  public let supportedCountries: [Swift.String]?
+  public let supportsCouponCode: Swift.Bool?
+  public let couponCode: Swift.String?
+  public let applicationData: Swift.String?
+  public let recurringPaymentRequest: PXPCheckoutSDK.ApplePayRecurringPaymentRequest?
+  public let deferredPaymentRequest: PXPCheckoutSDK.ApplePayDeferredPaymentRequest?
+  public let automaticReloadPaymentRequest: PXPCheckoutSDK.ApplePayAutomaticReloadPaymentRequest?
+  public let multiTokenContexts: [PXPCheckoutSDK.ApplePayMultiTokenContext]?
+  public init(merchantIdentifier: Swift.String, countryCode: Swift.String, currencyCode: Swift.String, total: PXPCheckoutSDK.ApplePayPaymentSummaryItem?, paymentItems: [PXPCheckoutSDK.ApplePayPaymentSummaryItem], supportedNetworks: [PXPCheckoutSDK.PaymentNetwork], merchantCapabilities: [PXPCheckoutSDK.MerchantCapability], browserAgent: Swift.String? = nil, shippingMethods: [PXPCheckoutSDK.ApplePayShippingMethod]? = nil, requiredBillingContactFields: [PXPCheckoutSDK.ContactField]? = nil, requiredShippingContactFields: [PXPCheckoutSDK.ContactField]? = nil, billingContact: PXPCheckoutSDK.ApplePayContact? = nil, shippingContact: PXPCheckoutSDK.ApplePayContact? = nil, shippingType: Swift.String? = nil, shippingContactEditingMode: Swift.String? = nil, supportedCountries: [Swift.String]? = nil, supportsCouponCode: Swift.Bool? = nil, couponCode: Swift.String? = nil, applicationData: Swift.String? = nil, recurringPaymentRequest: PXPCheckoutSDK.ApplePayRecurringPaymentRequest? = nil, deferredPaymentRequest: PXPCheckoutSDK.ApplePayDeferredPaymentRequest? = nil, automaticReloadPaymentRequest: PXPCheckoutSDK.ApplePayAutomaticReloadPaymentRequest? = nil, multiTokenContexts: [PXPCheckoutSDK.ApplePayMultiTokenContext]? = nil)
+}
+public struct ApplePayPaymentResult {
+  public let data: PassKit.PKPayment
+  public init(data: PassKit.PKPayment)
+}
+public enum ApplePayPaymentState {
+  case idle
+  case started
+  case inProgress
+  case authorizationStarted
+  case authorized
+  case unauthorized
+  case succeeded
+  case failed
+  public static func == (a: PXPCheckoutSDK.ApplePayPaymentState, b: PXPCheckoutSDK.ApplePayPaymentState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ApplePayRequestUpdate {
+  public let totalPaymentItem: PXPCheckoutSDK.ApplePayPaymentSummaryItem?
+  public let paymentSummaryItems: [PXPCheckoutSDK.ApplePayPaymentSummaryItem]?
+  public let shippingMethods: [PXPCheckoutSDK.ApplePayShippingMethod]?
+  public let error: PXPCheckoutSDK.ApplePayRequestUpdateError?
+  public init(totalPaymentItem: PXPCheckoutSDK.ApplePayPaymentSummaryItem? = nil, paymentSummaryItems: [PXPCheckoutSDK.ApplePayPaymentSummaryItem]? = nil, shippingMethods: [PXPCheckoutSDK.ApplePayShippingMethod]? = nil, error: PXPCheckoutSDK.ApplePayRequestUpdateError? = nil)
+}
+public struct ApplePayPaymentMethod : Swift.Codable {
+  public let displayName: Swift.String?
+  public let network: Swift.String?
+  public let type: Swift.String
+  public let billingContact: PXPCheckoutSDK.ApplePayContact?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum ApplePayRequestUpdateErrorType {
+  case billingAddress
+  case shippingAddress
+  case shippingUnserviceable
+  case emailAddress
+  case phoneNumber
+  case postalAddress
+  case name
+  case phoneticName
+  case couponCodeInvalid
+  case unknown
+  public static func == (a: PXPCheckoutSDK.ApplePayRequestUpdateErrorType, b: PXPCheckoutSDK.ApplePayRequestUpdateErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class ApplePayRequestUpdateError : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  final public let type: PXPCheckoutSDK.ApplePayRequestUpdateErrorType
+  final public let message: Swift.String
+  public init(_ type: PXPCheckoutSDK.ApplePayRequestUpdateErrorType, message: Swift.String)
+  @objc deinit
+}
+public struct ApplePayDeferredPaymentRequest : Swift.Codable {
+  public let paymentDescription: Swift.String
+  public let deferredBilling: PXPCheckoutSDK.ApplePayDeferredPaymentItem
+  public let billingAgreement: Swift.String?
+  public let freeCancellationDate: Foundation.Date?
+  public let freeCancellationDateTimeZone: Foundation.TimeZone?
+  public let managementURL: Foundation.URL
+  public let tokenNotificationURL: Foundation.URL?
+  public init(paymentDescription: Swift.String, deferredBilling: PXPCheckoutSDK.ApplePayDeferredPaymentItem, managementURL: Foundation.URL, billingAgreement: Swift.String? = nil, freeCancellationDate: Foundation.Date? = nil, freeCancellationDateTimeZone: Foundation.TimeZone? = nil, tokenNotificationURL: Foundation.URL? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ApplePayDeferredPaymentItem : Swift.Codable {
+  public let label: Swift.String
+  public let amount: Foundation.Decimal
+  public let paymentTiming: PXPCheckoutSDK.ApplePayPaymentTiming
+  public let type: PXPCheckoutSDK.ApplePayPaymentSummaryItemType
+  public let deferredPaymentDate: Foundation.Date
+  public init(label: Swift.String, amount: Foundation.Decimal, paymentTiming: PXPCheckoutSDK.ApplePayPaymentTiming, type: PXPCheckoutSDK.ApplePayPaymentSummaryItemType, deferredPaymentDate: Foundation.Date)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct ApplePayMultiTokenContext : Swift.Codable {
+  public let merchantIdentifier: Swift.String?
+  public let externalIdentifier: Swift.String?
+  public let merchantName: Swift.String?
+  public let merchantDomain: Swift.String?
+  public let amount: Foundation.Decimal?
+  public init()
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct ApplePayDisbursementRequest : Swift.Codable {
+  public let merchantIdentifier: Swift.String
+  public let countryCode: Swift.String
+  public let currencyCode: Swift.String
+  public let supportedNetworks: [PXPCheckoutSDK.PaymentNetwork]
+  public let merchantCapabilities: [PXPCheckoutSDK.MerchantCapability]
+  public let supportedRegions: [Swift.String]?
+  public let requiredRecipientContactFields: [PXPCheckoutSDK.ContactField]
+  public let recipientContact: PXPCheckoutSDK.ApplePayContact?
+  public let summaryItems: [PXPCheckoutSDK.ApplePayDisbursementSummaryItem]
+  public let applicationData: Swift.String?
+  public init(merchantIdentifier: Swift.String, countryCode: Swift.String, currencyCode: Swift.String, supportedNetworks: [PXPCheckoutSDK.PaymentNetwork], merchantCapabilities: [PXPCheckoutSDK.MerchantCapability], supportedRegions: [Swift.String]? = nil, requiredRecipientContactFields: [PXPCheckoutSDK.ContactField], recipientContact: PXPCheckoutSDK.ApplePayContact? = nil, summaryItems: [PXPCheckoutSDK.ApplePayDisbursementSummaryItem], applicationData: Swift.String? = nil)
+  @available(iOS 16.0, *)
+  public var region: Foundation.Locale.Region {
+    get
+  }
+  @available(iOS 16.0, *)
+  public var currency: Foundation.Locale.Currency {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ApplePayDisbursementSummaryItem : Swift.Codable {
+  public let label: Swift.String
+  public let amount: Foundation.Decimal
+  public let type: PXPCheckoutSDK.ApplePayPaymentSummaryItemType
+  public let summaryItemType: PXPCheckoutSDK.SummaryItemType
+  public init(label: Swift.String, amount: Foundation.Decimal, type: PXPCheckoutSDK.ApplePayPaymentSummaryItemType, summaryItemType: PXPCheckoutSDK.SummaryItemType)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum ApplePayPaymentSummaryItemType : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case final
+  case pending
+  public static let `default`: PXPCheckoutSDK.ApplePayPaymentSummaryItemType
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.ApplePayPaymentSummaryItemType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.ApplePayPaymentSummaryItemType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ApplePayPaymentSummaryItem : Swift.Codable {
+  public let amount: Foundation.Decimal
+  public let type: PXPCheckoutSDK.ApplePayPaymentSummaryItemType
+  public let label: Swift.String
+  public init(amount: Foundation.Decimal = Decimal(0.00), type: PXPCheckoutSDK.ApplePayPaymentSummaryItemType = .default, label: Swift.String = "")
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func toDictionary() -> [Swift.String : Swift.String]
+}
+public struct ApplePayShippingMethod : Swift.Codable {
+  public let amount: Foundation.Decimal
+  public let detail: Swift.String
+  public let identifier: Swift.String
+  public let label: Swift.String
+  public let start: Foundation.Date?
+  public let end: Foundation.Date?
+  public init(amount: Foundation.Decimal, detail: Swift.String, identifier: Swift.String, label: Swift.String, start: Foundation.Date? = nil, end: Foundation.Date? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func toDictionary() -> [Swift.String : Any]
+}
+public enum ApplePayPaymentTiming : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case immediate
+  case deferred
+  case recurring
+  case automaticReload
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.ApplePayPaymentTiming]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.ApplePayPaymentTiming] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ApplePayRecurringPaymentRequest : Swift.Codable {
+  public let paymentDescription: Swift.String
+  public let regularBilling: PXPCheckoutSDK.ApplePayRegularBilling
+  public let trialBilling: PXPCheckoutSDK.ApplePayTrialBilling?
+  public let billingAgreement: Swift.String?
+  public let managementURL: Foundation.URL
+  public let tokenNotificationURL: Foundation.URL?
+  public init(paymentDescription: Swift.String, regularBilling: PXPCheckoutSDK.ApplePayRegularBilling, managementURL: Foundation.URL, trialBilling: PXPCheckoutSDK.ApplePayTrialBilling? = nil, billingAgreement: Swift.String? = nil, tokenNotificationURL: Foundation.URL? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ApplePayRegularBilling : Swift.Codable {
+  public let label: Swift.String
+  public let amount: Foundation.Decimal
+  public let paymentTiming: PXPCheckoutSDK.ApplePayPaymentTiming
+  public let intervalUnit: PXPCheckoutSDK.ApplePayRecurringPaymentDateUnit?
+  public let intervalCount: Swift.Int?
+  public let startDate: Foundation.Date?
+  public let endDate: Foundation.Date?
+  public init(label: Swift.String, amount: Foundation.Decimal, paymentTiming: PXPCheckoutSDK.ApplePayPaymentTiming, intervalUnit: PXPCheckoutSDK.ApplePayRecurringPaymentDateUnit? = .month, intervalCount: Swift.Int? = 1, startDate: Foundation.Date? = nil, endDate: Foundation.Date? = nil)
+  public var frequencyInDays: Swift.Int? {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func toDictionary() -> [Swift.String : Any]
+}
+public struct ApplePayTrialBilling : Swift.Codable {
+  public let label: Swift.String
+  public let amount: Foundation.Decimal
+  public let paymentTiming: PXPCheckoutSDK.ApplePayPaymentTiming
+  public let intervalUnit: PXPCheckoutSDK.ApplePayRecurringPaymentDateUnit?
+  public let intervalCount: Swift.Int?
+  public let startDate: Foundation.Date?
+  public let endDate: Foundation.Date?
+  public init(label: Swift.String, amount: Foundation.Decimal, paymentTiming: PXPCheckoutSDK.ApplePayPaymentTiming, intervalUnit: PXPCheckoutSDK.ApplePayRecurringPaymentDateUnit? = .month, intervalCount: Swift.Int? = 1, startDate: Foundation.Date? = nil, endDate: Foundation.Date? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func toDictionary() -> [Swift.String : Any]
+}
+public enum ApplePayRecurringPaymentDateUnit : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case day
+  case month
+  case year
+  public var calendarUnit: Foundation.NSCalendar.Unit {
+    get
+  }
+  public static func from(string: Swift.String) -> PXPCheckoutSDK.ApplePayRecurringPaymentDateUnit
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.ApplePayRecurringPaymentDateUnit]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.ApplePayRecurringPaymentDateUnit] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ApplePayDataKeys {
+  public static let billingContact: Swift.String
+  public static let shippingContact: Swift.String
+  public static let token: Swift.String
+  public static let paymentData: Swift.String
+  public static let paymentMethodType: Swift.String
+  public static let paymentNetwork: Swift.String
+  public static let amount: Swift.String
+  public static let label: Swift.String
+  public static let type: Swift.String
+}
+public struct ApplePayResult : Swift.Codable {
+  public let token: [Swift.String : Any]?
+  public let billingContact: PXPCheckoutSDK.ApplePayContact?
+  public let shippingContact: PXPCheckoutSDK.ApplePayContact?
+  public init(token: [Swift.String : Any]? = nil, billingContact: PXPCheckoutSDK.ApplePayContact? = nil, shippingContact: PXPCheckoutSDK.ApplePayContact? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct ApplePayPaymentData : Swift.Codable {
+  public let token: Swift.String?
+  public let paymentMethodType: Swift.String?
+  public let paymentNetwork: Swift.String?
+  public init(token: Swift.String? = nil, paymentMethodType: Swift.String? = nil, paymentNetwork: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension PXPCheckoutSDK.ApplePayResult {
+  public static func extractFrom(data: inout [Swift.String : Any]) -> PXPCheckoutSDK.ApplePayResult
+  public static func extractPaymentData(from data: [Swift.String : Any]) -> PXPCheckoutSDK.ApplePayPaymentData
+  public static func extractAmount(from total: [Swift.String : Any]?) -> Swift.String?
+}
+public struct ApplePayTransactionInitData : Swift.Codable {
+  public let riskScreeningData: PXPCheckoutSDK.RiskScreeningData?
+  public init(riskScreeningData: PXPCheckoutSDK.RiskScreeningData? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum ApplePaymentButtonStyle {
+  case white
+  case whiteOutline
+  case black
+  case automatic
+  public static func == (a: PXPCheckoutSDK.ApplePaymentButtonStyle, b: PXPCheckoutSDK.ApplePaymentButtonStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ApplePaymentButtonType {
+  case plain
+  case buy
+  case setUp
+  case inStore
+  case donate
+  case checkout
+  case book
+  case subscribe
+  case reload
+  case addMoney
+  case topUp
+  case order
+  case rent
+  case support
+  case contribute
+  case tip
+  @available(iOS 15.0, *)
+  case `continue`
+  public static func == (a: PXPCheckoutSDK.ApplePaymentButtonType, b: PXPCheckoutSDK.ApplePaymentButtonType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum PaymentNetwork : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case amex
+  case bancomat
+  case bancontact
+  case cartesBancaires
+  case chinaUnionPay
+  case dankort
+  case discover
+  case eftpos
+  case electron
+  case elo
+  case girocard
+  case interac
+  case jcb
+  case mada
+  case maestro
+  case masterCard
+  case mir
+  case privateLabel
+  case visa
+  case vPay
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.PaymentNetwork]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.PaymentNetwork] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum MerchantCapability : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case threeDSecure
+  case credit
+  case debit
+  case emv
+  case instantFundsOut
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.MerchantCapability]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.MerchantCapability] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ContactField : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case postalAddress
+  case emailAddress
+  case phoneNumber
+  case name
+  case phoneticName
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.ContactField]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.ContactField] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ShippingType : Swift.String, Swift.CaseIterable {
+  case shipping
+  case delivery
+  case storePickup
+  case servicePickup
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.ShippingType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.ShippingType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ShippingContactEditingMode : Swift.String, Swift.CaseIterable {
+  case available
+  case storePickup
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.ShippingContactEditingMode]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.ShippingContactEditingMode] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum SummaryItemType : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case instantFundsOutFee
+  case disbursement
+  case standard
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.SummaryItemType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.SummaryItemType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_Concurrency.MainActor @preconcurrency public struct PKPaymentButtonRepresentable : SwiftUI.UIViewRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init(buttonType: PassKit.PKPaymentButtonType, buttonStyle: PassKit.PKPaymentButtonStyle, radius: CoreFoundation.CGFloat, isEnabled: Swift.Bool, action: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: PXPCheckoutSDK.PKPaymentButtonRepresentable.Context) -> UIKit.UIView
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: UIKit.UIView, context _: PXPCheckoutSDK.PKPaymentButtonRepresentable.Context)
+  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> PXPCheckoutSDK.PKPaymentButtonRepresentable.Coordinator
+  @objc @_hasMissingDesignatedInitializers public class Coordinator : ObjectiveC.NSObject {
+    @objc deinit
+  }
+  public typealias Body = Swift.Never
+  public typealias UIViewType = UIKit.UIView
+}
+@_Concurrency.MainActor @preconcurrency public struct ApplePayButtonView<CustomContent> : SwiftUICore.View where CustomContent : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(buttonType: PassKit.PKPaymentButtonType = .plain, buttonStyle: PassKit.PKPaymentButtonStyle = .black, radius: CoreFoundation.CGFloat = 4.0, isEnabled: Swift.Bool = true, action: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public init(isEnabled: Swift.Bool = true, @SwiftUICore.ViewBuilder content: @escaping () -> CustomContent, action: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s14PXPCheckoutSDK18ApplePayButtonViewV4bodyQrvp", 0) __<CustomContent>
+}
+@_hasMissingDesignatedInitializers public class ApplePayConsentComponent : PXPCheckoutSDK.CheckboxComponent<PXPCheckoutSDK.ApplePayConsentComponentConfig, PXPCheckoutSDK.CheckboxComponentResource> {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class ApplePayConsentComponentConfig : PXPCheckoutSDK.CheckboxComponentConfig {
+  override public init(label: Swift.String? = nil, labelStyles: PXPCheckoutSDK.CheckboxLabelStyles? = nil, checkedColor: SwiftUICore.Color? = nil, uncheckedColor: SwiftUICore.Color? = nil, size: CoreFoundation.CGFloat? = nil, checked: Swift.Bool = false)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class BaseComponent<T, U> : Foundation.ObservableObject {
+  final public let componentType: Swift.String
+  final public let containerId: Swift.String
+  open func updateSdkConfig(intent: PXPCheckoutSDK.TransactionIntentData? = nil, amount: Swift.Double? = nil)
+  public func Content() -> some SwiftUICore.View
+  
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public protocol BaseComponentConfig {
+}
+extension SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public static var cardStyle: some SwiftUICore.ViewModifier {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var buttonStyle: some SwiftUICore.ViewModifier {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var errorStyle: some SwiftUICore.ViewModifier {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var loadingStyle: some SwiftUICore.ViewModifier {
+    get
+  }
+}
+@_Concurrency.MainActor @preconcurrency public struct CardStyleModifier : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public func body(content: PXPCheckoutSDK.CardStyleModifier.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s14PXPCheckoutSDK17CardStyleModifierV4body7contentQr7SwiftUI05_ViewE8_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct ButtonStyleModifier : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public func body(content: PXPCheckoutSDK.ButtonStyleModifier.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s14PXPCheckoutSDK19ButtonStyleModifierV4body7contentQr7SwiftUI05_ViewE8_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct ErrorStyleModifier : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public func body(content: PXPCheckoutSDK.ErrorStyleModifier.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s14PXPCheckoutSDK18ErrorStyleModifierV4body7contentQr7SwiftUI05_ViewE8_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct LoadingStyleModifier : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public func body(content: PXPCheckoutSDK.LoadingStyleModifier.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s14PXPCheckoutSDK20LoadingStyleModifierV4body7contentQr7SwiftUI05_ViewE8_ContentVyACG_tF", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct PxpBrandStyleModifier : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public func body(content: PXPCheckoutSDK.PxpBrandStyleModifier.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s14PXPCheckoutSDK21PxpBrandStyleModifierV4body7contentQr7SwiftUI05_ViewF8_ContentVyACG_tF", 0) __
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func cardStyle() -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func buttonStyle() -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func errorStyle() -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func loadingStyle() -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func pxpBrandStyle() -> some SwiftUICore.View
+  
+}
+public protocol BaseComponentResource {
+}
+public struct DefaultBaseComponentResource : PXPCheckoutSDK.BaseComponentResource {
+  public init()
+}
+@objc @_hasMissingDesignatedInitializers public class ContainerNotFoundException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init(_ id: Swift.String)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class MissingComponentNameException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CardConsentComponent : PXPCheckoutSDK.CheckboxComponent<PXPCheckoutSDK.CardConsentComponentConfig, PXPCheckoutSDK.CheckboxComponentResource> {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class CardConsentComponentConfig : PXPCheckoutSDK.CheckboxComponentConfig {
+  override public init(label: Swift.String? = nil, labelStyles: PXPCheckoutSDK.CheckboxLabelStyles? = nil, checkedColor: SwiftUICore.Color? = nil, uncheckedColor: SwiftUICore.Color? = nil, size: CoreFoundation.CGFloat? = nil, checked: Swift.Bool = false)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CheckboxComponent<T, U> : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> where T : PXPCheckoutSDK.CheckboxComponentConfig, U : PXPCheckoutSDK.CheckboxComponentResourceProtocol {
+  public func getValue() -> Swift.Bool
+  @objc deinit
+}
+open class CheckboxComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+  final public let label: Swift.String?
+  final public let labelStyles: PXPCheckoutSDK.CheckboxLabelStyles?
+  final public let checkedColor: SwiftUICore.Color?
+  final public let uncheckedColor: SwiftUICore.Color?
+  final public let size: CoreFoundation.CGFloat?
+  final public let checked: Swift.Bool
+  public init(label: Swift.String? = nil, labelStyles: PXPCheckoutSDK.CheckboxLabelStyles? = nil, checkedColor: SwiftUICore.Color? = nil, uncheckedColor: SwiftUICore.Color? = nil, size: CoreFoundation.CGFloat? = nil, checked: Swift.Bool = false)
+  @objc deinit
+}
+public struct CheckboxLabelStyles {
+  public let checked: PXPCheckoutSDK.CheckboxLabelStyle?
+  public let unchecked: PXPCheckoutSDK.CheckboxLabelStyle?
+  public init(checked: PXPCheckoutSDK.CheckboxLabelStyle? = nil, unchecked: PXPCheckoutSDK.CheckboxLabelStyle? = nil)
+}
+public struct CheckboxLabelStyle {
+  public let color: SwiftUICore.Color?
+  public let font: SwiftUICore.Font?
+  public let fontWeight: SwiftUICore.Font.Weight?
+  public init(color: SwiftUICore.Color? = nil, font: SwiftUICore.Font? = nil, fontWeight: SwiftUICore.Font.Weight? = nil)
+}
+public protocol CheckboxComponentResourceProtocol : PXPCheckoutSDK.BaseComponentResource {
+  var label: Swift.String { get }
+  var accessibilityLabel: Swift.String { get }
+  var accessibilityHintChecked: Swift.String { get }
+  var accessibilityHintUnchecked: Swift.String { get }
+  var accessibilityValueSelected: Swift.String { get }
+  var accessibilityValueNotSelected: Swift.String { get }
+}
+public struct CheckboxComponentResource : PXPCheckoutSDK.CheckboxComponentResourceProtocol {
+  public let label: Swift.String
+  public let accessibilityLabel: Swift.String
+  public let accessibilityHintChecked: Swift.String
+  public let accessibilityHintUnchecked: Swift.String
+  public let accessibilityValueSelected: Swift.String
+  public let accessibilityValueNotSelected: Swift.String
+  public init(label: Swift.String, accessibilityLabel: Swift.String = "Checkbox", accessibilityHintChecked: Swift.String = "Double tap to uncheck", accessibilityHintUnchecked: Swift.String = "Double tap to check", accessibilityValueSelected: Swift.String = "Selected", accessibilityValueNotSelected: Swift.String = "Not selected")
+}
+@_hasMissingDesignatedInitializers public class PayPalButtonComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  @objc deinit
+}
+public class PayPalButtonComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+  public var clientId: Swift.String?
+  public var environment: PXPCheckoutSDK.PayPalEnvironment
+  public var style: PXPCheckoutSDK.PayPalButtonStyleConfig
+  public var customContent: (() -> SwiftUICore.AnyView)?
+  public var payeeEmailAddress: Swift.String?
+  public var paymentDescription: Swift.String?
+  public var shippingPreference: PXPCheckoutSDK.PayPalShippingPreference?
+  public var userAction: PXPCheckoutSDK.PayPalUserAction?
+  public var locale: Swift.String?
+  public var shippingOptions: [PXPCheckoutSDK.PayPalShippingOption]?
+  public var fundingSource: PXPCheckoutSDK.PayPalFundingSource
+  weak public var paypalConsentComponent: PXPCheckoutSDK.PayPalConsentComponent?
+  public var onPreAuthorisation: (() async -> PXPCheckoutSDK.PayPalTransactionInitData?)?
+  public var onClick: (() -> Swift.Void)?
+  public var onApprove: ((PXPCheckoutSDK.PayPalApprovalData) -> Swift.Void)?
+  public var onCancel: ((PXPCheckoutSDK.BaseSdkException) -> Swift.Void)?
+  public var onError: ((PXPCheckoutSDK.BaseSdkException) -> Swift.Void)?
+  public var onOrderCreated: ((PXPCheckoutSDK.BaseSubmitResult) -> Swift.Void)?
+  public var onSubmitError: ((PXPCheckoutSDK.BaseSdkException) -> Swift.Void)?
+  public var onGetConsent: (() -> Swift.Bool)?
+  public init()
+  convenience public init(clientId: Swift.String, payeeEmailAddress: Swift.String? = nil, paymentDescription: Swift.String = "PayPal Payment", environment: PXPCheckoutSDK.PayPalEnvironment = .sandbox, style: PXPCheckoutSDK.PayPalButtonStyleConfig = .default)
+  @objc deinit
+}
+public struct PayPalApprovalData {
+  public let orderID: Swift.String
+  public let payerID: Swift.String
+  public init(orderID: Swift.String, payerID: Swift.String)
+}
+public enum PayPalButtonColor : Swift.String, Swift.CaseIterable {
+  case gold
+  case blue
+  case silver
+  case white
+  case black
+  case darkBlue
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.PayPalButtonColor]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.PayPalButtonColor] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PayPalButtonLabel : Swift.String, Swift.CaseIterable {
+  case checkout
+  case buyNow
+  case payWith
+  case payLater
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.PayPalButtonLabel]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.PayPalButtonLabel] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PayPalButtonType : Swift.String, Swift.CaseIterable {
+  case paypal
+  case payLater
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.PayPalButtonType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.PayPalButtonType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PayPalButtonSize : Swift.String, Swift.CaseIterable {
+  case mini
+  case collapsed
+  case expanded
+  case full
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.PayPalButtonSize]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.PayPalButtonSize] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PayPalButtonEdges : Swift.Equatable {
+  case hardEdges
+  case softEdges
+  case rounded
+  case custom(CoreFoundation.CGFloat)
+  public static func == (a: PXPCheckoutSDK.PayPalButtonEdges, b: PXPCheckoutSDK.PayPalButtonEdges) -> Swift.Bool
+}
+public struct PayPalButtonStyleConfig {
+  public let color: PXPCheckoutSDK.PayPalButtonColor
+  public let label: PXPCheckoutSDK.PayPalButtonLabel?
+  public let size: PXPCheckoutSDK.PayPalButtonSize
+  public let edges: PXPCheckoutSDK.PayPalButtonEdges
+  public let contentInsets: UIKit.NSDirectionalEdgeInsets?
+  public init(color: PXPCheckoutSDK.PayPalButtonColor = .gold, label: PXPCheckoutSDK.PayPalButtonLabel? = nil, size: PXPCheckoutSDK.PayPalButtonSize = .collapsed, edges: PXPCheckoutSDK.PayPalButtonEdges = .softEdges, contentInsets: UIKit.NSDirectionalEdgeInsets? = nil)
+  public static var `default`: PXPCheckoutSDK.PayPalButtonStyleConfig {
+    get
+  }
+  public static var payLater: PXPCheckoutSDK.PayPalButtonStyleConfig {
+    get
+  }
+  public static var credit: PXPCheckoutSDK.PayPalButtonStyleConfig {
+    get
+  }
+}
+extension UIKit.NSDirectionalEdgeInsets {
+  public static func uniform(_ value: CoreFoundation.CGFloat) -> UIKit.NSDirectionalEdgeInsets
+  public static func horizontal(_ value: CoreFoundation.CGFloat) -> UIKit.NSDirectionalEdgeInsets
+  public static func vertical(_ value: CoreFoundation.CGFloat) -> UIKit.NSDirectionalEdgeInsets
+  public static func custom(top: CoreFoundation.CGFloat = 0, leading: CoreFoundation.CGFloat = 0, bottom: CoreFoundation.CGFloat = 0, trailing: CoreFoundation.CGFloat = 0) -> UIKit.NSDirectionalEdgeInsets
+}
+public enum PayPalEnvironment : Swift.String, Swift.CaseIterable {
+  case sandbox
+  case production
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.PayPalEnvironment]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.PayPalEnvironment] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PayPalFundingSource : Swift.String, Swift.CaseIterable {
+  case paypal
+  case paylater
+  public var buttonType: PXPCheckoutSDK.PayPalButtonType {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.PayPalFundingSource]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.PayPalFundingSource] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PayPalShippingAmounts {
+  public let currencyCode: Swift.String
+  public let shipping: Swift.String
+  public init(currencyCode: Swift.String, shipping: Swift.String)
+}
+public struct PayPalShippingOption {
+  public let id: Swift.String
+  public let label: Swift.String
+  public let selected: Swift.Bool
+  public let amounts: PXPCheckoutSDK.PayPalShippingAmounts?
+  public let type: PXPCheckoutSDK.PayPalShippingOptionType?
+  public init(id: Swift.String, label: Swift.String, selected: Swift.Bool, amounts: PXPCheckoutSDK.PayPalShippingAmounts? = nil, type: PXPCheckoutSDK.PayPalShippingOptionType? = nil)
+}
+public enum PayPalShippingOptionType : Swift.String, Swift.CaseIterable {
+  case shipping
+  case pickup
+  case pickupInStore
+  case pickupInPerson
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.PayPalShippingOptionType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.PayPalShippingOptionType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PayPalShippingPreference : Swift.String, Swift.CaseIterable {
+  case noShipping
+  case setProvidedAddress
+  case getFromFile
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.PayPalShippingPreference]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.PayPalShippingPreference] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PayPalTransactionInitData : Swift.Codable {
+  public let addressVerification: PXPCheckoutSDK.AddressVerification?
+  public let riskScreeningData: PXPCheckoutSDK.RiskScreeningData?
+  public init(addressVerification: PXPCheckoutSDK.AddressVerification? = nil, riskScreeningData: PXPCheckoutSDK.RiskScreeningData? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum PayPalUserAction : Swift.String, Swift.CaseIterable {
+  case continueAction
+  case payNow
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.PayPalUserAction]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.PayPalUserAction] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class PayPalConsentComponent : PXPCheckoutSDK.CheckboxComponent<PXPCheckoutSDK.PayPalConsentComponentConfig, PXPCheckoutSDK.CheckboxComponentResource> {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class PayPalConsentComponentConfig : PXPCheckoutSDK.CheckboxComponentConfig {
+  override public init(label: Swift.String? = nil, labelStyles: PXPCheckoutSDK.CheckboxLabelStyles? = nil, checkedColor: SwiftUICore.Color? = nil, uncheckedColor: SwiftUICore.Color? = nil, size: CoreFoundation.CGFloat? = nil, checked: Swift.Bool = false)
+  @objc deinit
+}
+extension Swift.String {
+  public static let NSErrorCodeKey: Swift.String
+  public static let NSLocalizedDescriptionKey: Swift.String
+}
+@objc @_hasMissingDesignatedInitializers public class BaseSdkException : Foundation.NSError, @unchecked Swift.Sendable {
+  @objc deinit
+}
+extension Swift.String {
+  public func intervalUnit() -> Foundation.NSCalendar.Unit
+}
+public struct EmptyComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+  public init()
+}
+public protocol CardNumberComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol CardExpiryDateComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol CardCvcComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol CardHolderNameComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol CardSubmitComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol CardBrandSelectorComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol DynamicCardImageComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol NewCardComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol CardOnFileComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol ClickOncePreBuiltComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol ClickOnceStandaloneComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol CountrySelectionComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol PostcodeComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol AddressComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol BillingAddressComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+public protocol PrefillBillingAddressCheckboxComponentConfig : PXPCheckoutSDK.BaseComponentConfig {
+}
+@_hasMissingDesignatedInitializers public class CardNumberComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.CardNumberComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CardExpiryDateComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.CardExpiryDateComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CardCvcComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.CardCvcComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CardHolderNameComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.CardHolderNameComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CardSubmitComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.CardSubmitComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CardBrandSelectorComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.CardBrandSelectorComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DynamicCardImageComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.DynamicCardImageComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class NewCardComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.NewCardComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CardOnFileComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.CardOnFileComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ClickOnceComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.ClickOncePreBuiltComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ClickOnceStandaloneComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.ClickOnceStandaloneComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CountrySelectionComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.CountrySelectionComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PostcodeComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.PostcodeComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AddressComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.AddressComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BillingAddressComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.BillingAddressComponentConfig)?) throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PrefillBillingAddressCheckboxComponent : PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource> {
+  public init(checkoutConfig: PXPCheckoutSDK.CheckoutConfig, componentConfig: (any PXPCheckoutSDK.PrefillBillingAddressCheckboxComponentConfig)?) throws
+  public func setShippingAddress(_: PXPCheckoutSDK.ShippingAddress)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class IntentTypeNotSupportComponentSdkException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class MissingConfigEnvironmentException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class MissingConfigSessionException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class MissingConfigSessionHmackeyException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class MissingConfigSessionIdException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class MissingIntentTypeCardSdkException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init(componentType: Swift.String)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class MissingIntentTypePaypalSdkException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init(componentType: Swift.String)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class UnexpectedSdkException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class UnsupportedFundingTypeApplePaySdkException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init(type: Swift.String)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class UnsupportedFundingTypeCardSdkException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init(type: Swift.String)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class UnsupportedFundingTypePaypalSdkException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init(type: Swift.String)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class UnsupportedPaymentMethodSdkException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PxpCheckout {
+  public static func initialize(config: PXPCheckoutSDK.CheckoutConfig) throws -> PXPCheckoutSDK.PxpCheckout
+  public func create(_ pxpComponentType: PXPCheckoutSDK.ComponentType, componentConfig: (any PXPCheckoutSDK.BaseComponentConfig)? = nil) throws -> PXPCheckoutSDK.BaseComponent<any PXPCheckoutSDK.BaseComponentConfig, any PXPCheckoutSDK.BaseComponentResource>
+  public func getConfig() -> PXPCheckoutSDK.CheckoutConfig
+  public func unmount()
+  public func updateIntent(intent: PXPCheckoutSDK.TransactionIntentData)
+  public func updateAmount(amount: Swift.Double)
+  @objc deinit
+}
+public class ApplePayAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let pageUrl: Swift.String
+  final public let deviceType: Swift.String
+  final public let operatingSystem: Swift.String
+  final public let browserType: Swift.String
+  final public let browserVersion: Swift.String
+  final public let walletType: Swift.String
+  final public let componentId: Swift.String
+  final public let merchantTransactionId: Swift.String
+  final public let customerID: Swift.String?
+  final public let additionalData: Any?
+  public init(eventName: Swift.String, sessionId: Swift.String, componentId: Swift.String, merchantTransactionId: Swift.String, customerID: Swift.String?, additionalData: Any? = nil)
+  @objc deinit
+}
+public enum ApplePayAnalyticsEventErrorCode : Swift.String, Swift.CaseIterable {
+  case invalidConfig
+  case missingMerchantId
+  case missingMerchantIdentityCert
+  case missingPaymentProcessingCert
+  case merchantIdentityCertExpired
+  case paymentProcessingCertExpired
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.ApplePayAnalyticsEventErrorCode]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.ApplePayAnalyticsEventErrorCode] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+final public class ApplePayBlobDecryptionFailedAnalyticsEvent : PXPCheckoutSDK.ApplePayAnalyticsEvent {
+  final public let errorMessage: Swift.String
+  final public let errorCode: Swift.String
+  public init(sessionId: Swift.String, componentId: Swift.String, merchantTransactionId: Swift.String, errorCode: PXPCheckoutSDK.ApplePayAnalyticsEventErrorCode, errorMessage: Swift.String? = nil, customerID: Swift.String? = nil)
+  @objc deinit
+}
+final public class ApplePayButtonClickAnalyticsEvent : PXPCheckoutSDK.ApplePayAnalyticsEvent {
+  public init(sessionId: Swift.String, componentId: Swift.String, merchantTransactionId: Swift.String, customerID: Swift.String? = nil, additionalData: Any? = nil)
+  @objc deinit
+}
+final public class ApplePayFlowCancelledAnalyticsEvent : PXPCheckoutSDK.ApplePayAnalyticsEvent {
+  public init(sessionId: Swift.String, componentId: Swift.String, merchantTransactionId: Swift.String, customerID: Swift.String? = nil, additionalData: Any? = nil)
+  @objc deinit
+}
+final public class ApplePayPaymentRequestCreationFailedAnalyticsEvent : PXPCheckoutSDK.ApplePayAnalyticsEvent {
+  final public let errorMessage: Swift.String
+  final public let errorCode: Swift.String
+  public init(sessionId: Swift.String, componentId: Swift.String, merchantTransactionId: Swift.String, errorCode: PXPCheckoutSDK.ApplePayAnalyticsEventErrorCode, errorMessage: Swift.String? = nil, customerID: Swift.String? = nil)
+  @objc deinit
+}
+final public class ApplePayPostAuthorisationAnalyticsEvent : PXPCheckoutSDK.ApplePayAnalyticsEvent {
+  public init(sessionId: Swift.String, componentId: Swift.String, merchantTransactionId: Swift.String, customerID: Swift.String? = nil, additionalData: Any? = nil)
+  @objc deinit
+}
+final public class ApplePayPreAuthorisationAnalyticsEvent : PXPCheckoutSDK.ApplePayAnalyticsEvent {
+  public init(sessionId: Swift.String, componentId: Swift.String, merchantTransactionId: Swift.String, customerID: Swift.String? = nil, additionalData: Any? = nil)
+  @objc deinit
+}
+final public class ApplePayRetryAttemptAnalyticsEvent : PXPCheckoutSDK.ApplePayAnalyticsEvent {
+  public init(sessionId: Swift.String, componentId: Swift.String, merchantTransactionId: Swift.String, customerID: Swift.String? = nil, additionalData: Any? = nil)
+  @objc deinit
+}
+final public class ApplePaySheetCompletedAnalyticsEvent : PXPCheckoutSDK.ApplePayAnalyticsEvent {
+  public init(sessionId: Swift.String, componentId: Swift.String, merchantTransactionId: Swift.String, customerID: Swift.String? = nil, additionalData: Any? = nil)
+  @objc deinit
+}
+final public class ApplePaySheetOpenedAnalyticsEvent : PXPCheckoutSDK.ApplePayAnalyticsEvent {
+  public init(sessionId: Swift.String, componentId: Swift.String, merchantTransactionId: Swift.String, customerID: Swift.String? = nil, additionalData: Any? = nil)
+  @objc deinit
+}
+public class BaseAnalyticsEvent {
+  final public let eventName: Swift.String
+  final public let sessionId: Swift.String
+  final public let timestamp: Foundation.Date
+  public init(eventName: Swift.String, sessionId: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public class BrowserDataAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let browserType: Swift.String
+  final public let browserVersion: Swift.String
+  final public let operatingSystem: Swift.String
+  final public let pageUrl: Swift.String
+  public init(browserType: Swift.String, browserVersion: Swift.String, operatingSystem: Swift.String, sessionId: Swift.String, pageUrl: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public class CardBrandTypeAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let cardBrand: Swift.String
+  final public let pageUrl: Swift.String
+  public init(cardBrand: Swift.String, sessionId: Swift.String, pageUrl: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public class ClickOncePaymentCompletionTimeAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let startTimeStamp: Swift.Int
+  final public let endTimeStamp: Swift.Int
+  final public let duration: Swift.Int
+  final public let pageUrl: Swift.String
+  public init(startTimeStamp: Swift.Int, endTimeStamp: Swift.Int, duration: Swift.Int, sessionId: Swift.String, pageUrl: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public class ClickOncePaymentConfirmAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let pageUrl: Swift.String
+  public init(sessionId: Swift.String, pageUrl: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public class ComponentAbandonmentAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let pageUrl: Swift.String
+  final public let componentType: Swift.String
+  public init(sessionId: Swift.String, pageUrl: Swift.String, componentType: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public class ComponentErrorAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let errorCode: Swift.String?
+  final public let errorMessage: Swift.String
+  final public let componentId: Swift.String?
+  public init(errorCode: Swift.String?, errorMessage: Swift.String, sessionId: Swift.String, componentId: Swift.String?)
+  @objc deinit
+}
+public class ComponentInteractionAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let componentType: Swift.String
+  final public let interactionType: PXPCheckoutSDK.InteractionType
+  final public let componentId: Swift.String
+  final public let pageUrl: Swift.String
+  public init(componentType: Swift.String, interactionType: PXPCheckoutSDK.InteractionType, componentId: Swift.String, sessionId: Swift.String, pageUrl: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public class ComponentLifecycleAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let eventType: PXPCheckoutSDK.LifecycleEventType
+  final public let componentId: Swift.String
+  public init(eventType: PXPCheckoutSDK.LifecycleEventType, componentId: Swift.String, sessionId: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public class DetectClickAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let elementId: Swift.String
+  final public let pageUrl: Swift.String
+  public init(elementId: Swift.String, pageUrl: Swift.String, sessionId: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public enum DeviceType : Swift.String {
+  case mobile
+  case tablet
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class DeviceTypeAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let deviceType: PXPCheckoutSDK.DeviceType
+  final public let pageUrl: Swift.String
+  public init(deviceType: PXPCheckoutSDK.DeviceType, sessionId: Swift.String, pageUrl: Swift.String)
+  @objc deinit
+}
+public enum InteractionType : Swift.String {
+  case focus
+  case blur
+  case paste
+  case change
+  case onSubmit
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum LifecycleEventType : Swift.String {
+  case loaded
+  case unloaded
+  case callback
+  case onMounted
+  case mount
+  case unmount
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class MessageShownAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let componentType: Swift.String
+  final public let messageContent: Swift.String
+  final public let elementId: Swift.String
+  final public let pageUrl: Swift.String
+  public init(componentType: Swift.String, messageContent: Swift.String, elementId: Swift.String, sessionId: Swift.String, pageUrl: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+final public class PayPalRetryAttemptAnalyticsEvent : PXPCheckoutSDK.ApplePayAnalyticsEvent {
+  public init(sessionId: Swift.String, componentId: Swift.String, merchantTransactionId: Swift.String, customerID: Swift.String? = nil, additionalData: Any? = nil)
+  @objc deinit
+}
+public class PaymentAbandonmentAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let pageUrl: Swift.String
+  final public let componentType: Swift.String
+  public init(sessionId: Swift.String, pageUrl: Swift.String, componentType: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public class PaymentLifecycleAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let componentType: Swift.String
+  final public let transactionId: Swift.String
+  public init(eventName: Swift.String, sessionId: Swift.String, componentType: Swift.String, transactionId: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+final public class PostAuthenticationAnalyticsEvent : PXPCheckoutSDK.PaymentLifecycleAnalyticsEvent {
+  public init(componentType: Swift.String, sessionId: Swift.String, transactionId: Swift.String)
+  @objc deinit
+}
+final public class PostAuthorisationAnalyticsEvent : PXPCheckoutSDK.PaymentLifecycleAnalyticsEvent {
+  public init(componentType: Swift.String, sessionId: Swift.String, transactionId: Swift.String)
+  @objc deinit
+}
+final public class PostInitiateAuthenticationAnalyticsEvent : PXPCheckoutSDK.PaymentLifecycleAnalyticsEvent {
+  public init(componentType: Swift.String, sessionId: Swift.String, transactionId: Swift.String)
+  @objc deinit
+}
+final public class PostTokenizationAnalyticsEvent : PXPCheckoutSDK.PaymentLifecycleAnalyticsEvent {
+  public init(componentType: Swift.String, sessionId: Swift.String, transactionId: Swift.String)
+  @objc deinit
+}
+final public class PreAuthenticationAnalyticsEvent : PXPCheckoutSDK.PaymentLifecycleAnalyticsEvent {
+  public init(componentType: Swift.String, sessionId: Swift.String, transactionId: Swift.String)
+  @objc deinit
+}
+final public class PreAuthorisationAnalyticsEvent : PXPCheckoutSDK.PaymentLifecycleAnalyticsEvent {
+  public init(componentType: Swift.String, sessionId: Swift.String, transactionId: Swift.String)
+  @objc deinit
+}
+final public class PreInitiateAuthenticationAnalyticsEvent : PXPCheckoutSDK.PaymentLifecycleAnalyticsEvent {
+  public init(componentType: Swift.String, sessionId: Swift.String, transactionId: Swift.String)
+  @objc deinit
+}
+final public class PreTokenizationAnalyticsEvent : PXPCheckoutSDK.PaymentLifecycleAnalyticsEvent {
+  public init(componentType: Swift.String, sessionId: Swift.String, transactionId: Swift.String)
+  @objc deinit
+}
+public class SecurityCheckAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let checkType: Swift.String
+  final public let pageUrl: Swift.String
+  public init(checkType: Swift.String, sessionId: Swift.String, pageUrl: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public class TokenListDeleteTokenAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let elementId: Swift.String
+  final public let cardStatus: Swift.String
+  final public let cardBrand: Swift.String
+  final public let pageUrl: Swift.String
+  public init(elementId: Swift.String, cardStatus: Swift.String, cardBrand: Swift.String, sessionId: Swift.String, pageUrl: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public class TokenListEditAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let editedFields: Swift.String
+  final public let elementId: Swift.String
+  final public let pageUrl: Swift.String
+  public init(editedFields: Swift.String, elementId: Swift.String, sessionId: Swift.String, pageUrl: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public class TokenListFillCVVTimerAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let startTimeStamp: Swift.Int
+  final public let endTimeStamp: Swift.Int
+  final public let duration: Swift.Int
+  final public let pageUrl: Swift.String
+  public init(startTimeStamp: Swift.Int, endTimeStamp: Swift.Int, duration: Swift.Int, sessionId: Swift.String, pageUrl: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public class TokenListPayButtonClickAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let cardBrand: Swift.String
+  final public let cardType: Swift.String
+  final public let pageUrl: Swift.String
+  final public let componentId: Swift.String
+  public init(cardBrand: Swift.String, cardType: Swift.String, sessionId: Swift.String, pageUrl: Swift.String, componentId: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public class TokenListPreselectedCardAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let pageUrl: Swift.String
+  final public let componentId: Swift.String
+  public init(sessionId: Swift.String, pageUrl: Swift.String, componentId: Swift.String, timestamp: Foundation.Date = Date())
+  @objc deinit
+}
+public struct CheckoutConfig {
+  public let environment: PXPCheckoutSDK.Environment
+  public let session: PXPCheckoutSDK.SessionData
+  public var transactionData: PXPCheckoutSDK.TransactionData
+  public let merchantShopperId: Swift.String
+  public let ownerType: Swift.String?
+  public let ownerId: Swift.String
+  public let localisation: (any PXPCheckoutSDK.Localisation)?
+  public let locale: Swift.String?
+  public let onGetShippingAddress: (() async -> PXPCheckoutSDK.ShippingAddress?)?
+  public let onGetShopper: (() async -> PXPCheckoutSDK.TransactionShopper?)?
+  public let analyticsEvent: ((PXPCheckoutSDK.BaseAnalyticsEvent) -> Swift.Void)?
+  public init(environment: PXPCheckoutSDK.Environment, session: PXPCheckoutSDK.SessionData, transactionData: PXPCheckoutSDK.TransactionData, merchantShopperId: Swift.String, ownerType: Swift.String? = nil, ownerId: Swift.String, localisation: (any PXPCheckoutSDK.Localisation)? = nil, locale: Swift.String? = nil, onGetShippingAddress: (() async -> PXPCheckoutSDK.ShippingAddress?)? = nil, onGetShopper: (() async -> PXPCheckoutSDK.TransactionShopper?)? = nil, analyticsEvent: ((PXPCheckoutSDK.BaseAnalyticsEvent) -> Swift.Void)? = nil)
+}
+public enum ComponentType : Swift.String, Swift.CaseIterable {
+  case newCard
+  case cardNumber
+  case cardExpiryDate
+  case cardCvc
+  case cardHolderName
+  case cardSubmit
+  case cardBrandSelector
+  case cardConsent
+  case dynamicCardImage
+  case cardOnFile
+  case clickOnce
+  case clickOnceStandalone
+  case countrySelection
+  case postcode
+  case address
+  case billingAddress
+  case prefillBillingAddressCheckbox
+  case paypalButton
+  case paypalConsent
+  case applePayButton
+  case applePayConsent
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.ComponentType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.ComponentType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum FundingType : Swift.String, Swift.CaseIterable {
+  case card
+  case paypal
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.FundingType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.FundingType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SessionData {
+  public let sessionId: Swift.String
+  public let hmacKey: Swift.String
+  public let encryptionKey: Swift.String
+  public let allowedFundingTypes: PXPCheckoutSDK.AllowedFundingType?
+  public init(sessionId: Swift.String, hmacKey: Swift.String, encryptionKey: Swift.String, allowedFundingTypes: PXPCheckoutSDK.AllowedFundingType? = nil)
+}
+public struct AllowedFundingType {
+  public let cards: [Swift.String]?
+  public let wallets: PXPCheckoutSDK.Wallets?
+  public init(cards: [Swift.String]? = nil, wallets: PXPCheckoutSDK.Wallets? = nil)
+}
+public struct Wallets {
+  public let paypal: PXPCheckoutSDK.Paypal?
+  public let applePay: PXPCheckoutSDK.ApplePay?
+  public let googlePay: PXPCheckoutSDK.GooglePay?
+  public init(paypal: PXPCheckoutSDK.Paypal? = nil, applePay: PXPCheckoutSDK.ApplePay? = nil, googlePay: PXPCheckoutSDK.GooglePay? = nil)
+}
+public struct Paypal {
+  public let allowedFundingOptions: [Swift.String]?
+  public let merchantId: Swift.String?
+  public init(allowedFundingOptions: [Swift.String]? = nil, merchantId: Swift.String? = nil)
+}
+public struct ApplePay {
+  public let merchantId: Swift.String?
+  public init(merchantId: Swift.String? = nil)
+}
+public struct GooglePay {
+  public let merchantId: Swift.String?
+  public let merchantName: Swift.String?
+  public init(merchantId: Swift.String? = nil, merchantName: Swift.String? = nil)
+}
+public struct ShippingAddress {
+  public let countryCode: Swift.String?
+  public let postalCode: Swift.String?
+  public let address: Swift.String?
+  public let addressLine2: Swift.String?
+  public let city: Swift.String?
+  public let county: Swift.String?
+  public let state: Swift.String?
+  public init(countryCode: Swift.String? = nil, postalCode: Swift.String? = nil, address: Swift.String? = nil, addressLine2: Swift.String? = nil, city: Swift.String? = nil, county: Swift.String? = nil, state: Swift.String? = nil)
+}
+public struct TransactionData {
+  public var amount: Swift.Double
+  public let currency: Swift.String
+  public let entryType: PXPCheckoutSDK.EntryType
+  public var intent: PXPCheckoutSDK.TransactionIntentData
+  public let cardAcceptorName: Swift.String?
+  public let merchantTransactionId: Swift.String
+  public let merchantTransactionDate: () -> Foundation.Date
+  public let recurring: PXPCheckoutSDK.RecurringType?
+  public let linkId: Swift.String?
+  public init(amount: Swift.Double, currency: Swift.String, entryType: PXPCheckoutSDK.EntryType, intent: PXPCheckoutSDK.TransactionIntentData, cardAcceptorName: Swift.String? = nil, merchantTransactionId: Swift.String, merchantTransactionDate: @escaping () -> Foundation.Date, recurring: PXPCheckoutSDK.RecurringType? = nil, linkId: Swift.String? = nil)
+}
+public enum EntryType : Swift.String, Swift.CaseIterable {
+  case ecom
+  case moto
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.EntryType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.EntryType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum IntentType : Swift.String, Swift.CaseIterable {
+  case purchase
+  case authorisation
+  case estimatedAuthorisation
+  case verification
+  case payout
+  case create
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.IntentType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.IntentType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct RecurringType {
+  public let frequencyInDays: Swift.Int?
+  public let frequencyExpiration: Swift.String?
+  public init(frequencyInDays: Swift.Int? = nil, frequencyExpiration: Swift.String? = nil)
+}
+public enum CardIntentType : Swift.String, Swift.CaseIterable {
+  case purchase
+  case authorisation
+  case estimatedAuthorisation
+  case verification
+  case payout
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.CardIntentType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.CardIntentType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PayPalIntentType : Swift.String, Swift.CaseIterable {
+  case purchase
+  case authorisation
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.PayPalIntentType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.PayPalIntentType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct TransactionIntentData {
+  public let card: PXPCheckoutSDK.CardIntentType?
+  public let paypal: PXPCheckoutSDK.PayPalIntentType?
+  public init(card: PXPCheckoutSDK.CardIntentType? = nil, paypal: PXPCheckoutSDK.PayPalIntentType? = nil)
+}
+public enum ApplicableExemptionsType : Swift.String {
+  case lvp
+  case tra
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum Environment : Swift.String, Swift.CaseIterable {
+  case test
+  case live
+  public var description: Swift.String {
+    get
+  }
+  public func getDomain() -> Swift.String
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.Environment]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.Environment] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class EnvironmentConfig {
+  public static let shared: PXPCheckoutSDK.EnvironmentConfig
+  public func getDomain(for environment: PXPCheckoutSDK.Environment) -> Swift.String
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class AcceptHeaderEmptyException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ChallengeCallbackUrlEmptyException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ChallengeWindowSizeInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class CountryNumericCodeInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class EmailInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class IpAddressInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class LanguageInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class MerchantLegalNameInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class RecurringExpirationDateInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class RecurringFrequencyInDaysInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class RequestorChallengeIndicatorInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ScreenHeightInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ScreenWidthInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class AcquirerProfileIdInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class CardTokenIdRequiredException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class CurrencyCodeInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class CurrencyInvalidDecimalException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init(parameters _: [Swift.String])
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class CurrencyNotRequireDecimalException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init(parameters _: [Swift.String])
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class FingerprintCallbackUrlEmptyException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class GatewayTokenIdInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class ProviderIdInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class SchemeTokenIdInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  public init()
+  @objc deinit
+}
+public struct Address {
+  public let city: Swift.String?
+  public let countryNumericCode: Swift.String?
+  public let line1: Swift.String?
+  public let line2: Swift.String?
+  public let line3: Swift.String?
+  public let postalCode: Swift.String?
+  public let stateCode: Swift.String?
+  public init(city: Swift.String? = nil, countryNumericCode: Swift.String? = nil, line1: Swift.String? = nil, line2: Swift.String? = nil, line3: Swift.String? = nil, postalCode: Swift.String? = nil, stateCode: Swift.String? = nil)
+}
+public protocol AuthenticationResult {
+  var stateData: PXPCheckoutSDK.TransactionStateData { get }
+}
+public struct TransactionStateData : Swift.Codable {
+  public let code: Swift.String
+  public let message: Swift.String
+  public init(code: Swift.String, message: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BrowserData : Swift.Codable {
+  public let acceptHeader: Swift.String
+  public let colorDepth: Swift.Int
+  public let ipAddress: Swift.String
+  public let javaEnabled: Swift.Bool
+  public let javaScriptEnabled: Swift.Bool
+  public let language: Swift.String
+  public let screenHeight: Swift.Int
+  public let screenWidth: Swift.Int
+  public let timeZoneOffsetInMinutes: Swift.Int
+  public let userAgent: Swift.String
+  public init(acceptHeader: Swift.String, colorDepth: Swift.Int, ipAddress: Swift.String, javaEnabled: Swift.Bool, javaScriptEnabled: Swift.Bool, language: Swift.String, screenHeight: Swift.Int, screenWidth: Swift.Int, timeZoneOffsetInMinutes: Swift.Int, userAgent: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InitiateIntegratedAuthenticationRequest : Swift.Codable {
+  public let browserData: PXPCheckoutSDK.BrowserData
+  public let shopper: PXPCheckoutSDK.ThreeDSShopper?
+  public let recurring: PXPCheckoutSDK.ThreeDSRecurring?
+  public let challengeCallbackUrl: Swift.String
+  public let challengeWindowSize: Swift.String
+  public let merchantLegalName: Swift.String
+  public let requestorChallengeIndicator: PXPCheckoutSDK.RequestorChallengeIndicatorType
+  public init(browserData: PXPCheckoutSDK.BrowserData, shopper: PXPCheckoutSDK.ThreeDSShopper? = nil, recurring: PXPCheckoutSDK.ThreeDSRecurring? = nil, challengeCallbackUrl: Swift.String, challengeWindowSize: Swift.String, merchantLegalName: Swift.String, requestorChallengeIndicator: PXPCheckoutSDK.RequestorChallengeIndicatorType)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InitiateIntegratedAuthenticationData : Swift.Codable {
+  public let merchantCountryNumericCode: Swift.String
+  public let merchantLegalName: Swift.String
+  public let email: Swift.String?
+  public init(merchantCountryNumericCode: Swift.String, merchantLegalName: Swift.String, email: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PreInitiateIntegratedAuthenticationRequest : Swift.Codable {
+  public let amount: PXPCheckoutSDK.AmountData
+  public let providerId: Swift.String?
+  public let fingerprintCallbackUrl: Swift.String
+  public let card: PXPCheckoutSDK.PreInitiateIntegratedAuthenticationRequest.Card
+  public let requestorAuthenticationIndicator: PXPCheckoutSDK.RequestorAuthenticationIndicatorType?
+  public let intent: Swift.String?
+  public init(amount: PXPCheckoutSDK.AmountData, providerId: Swift.String? = nil, fingerprintCallbackUrl: Swift.String, gatewayTokenId: Swift.String? = nil, schemeTokenId: Swift.String? = nil, requestorAuthenticationIndicator: PXPCheckoutSDK.RequestorAuthenticationIndicatorType? = nil, intent: Swift.String? = nil) throws
+  public enum Card : Swift.Codable {
+    case gatewayToken(gatewayTokenId: Swift.String)
+    case schemeToken(schemeTokenId: Swift.String)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AmountData : Swift.Codable {
+  public let transactionValue: Swift.Double
+  public let currencyCode: Swift.String
+  public init(transactionValue: Swift.Double, currencyCode: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PreInitiateIntegratedAuthenticationData : Swift.Codable {
+  public let amount: Swift.Double
+  public let currency: Swift.String
+  public let providerId: Swift.String?
+  public let fingerprintCallbackUrl: Swift.String
+  public let gatewayTokenId: Swift.String?
+  public let schemeTokenId: Swift.String?
+  public let requestorAuthenticationIndicator: PXPCheckoutSDK.RequestorAuthenticationIndicatorType?
+  public let intent: Swift.String?
+  public init(amount: Swift.Double, currency: Swift.String, providerId: Swift.String? = nil, fingerprintCallbackUrl: Swift.String, gatewayTokenId: Swift.String? = nil, schemeTokenId: Swift.String? = nil, requestorAuthenticationIndicator: PXPCheckoutSDK.RequestorAuthenticationIndicatorType? = nil, intent: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum RequestorAuthenticationIndicatorType : Swift.String, Swift.Codable {
+  case paymentTransaction
+  case recurringTransaction
+  case installmentTransaction
+  case addCard
+  case maintainCard
+  case cardholderVerification
+  case billingAgreement
+  case splitShipment
+  case delayedShipment
+  case splitPayment
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ThreeDSRecurring : Swift.Codable {
+  public let expirationDate: Foundation.Date?
+  public let frequencyInDays: Swift.Int?
+  public init(expirationDate: Foundation.Date? = nil, frequencyInDays: Swift.Int? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum RequestorChallengeIndicatorType : Swift.String, Swift.Codable {
+  case paymentTransaction
+  case recurringTransaction
+  case installmentTransaction
+  case addCard
+  case maintainCard
+  case cardholderVerification
+  case billingAgreement
+  case splitShipment
+  case delayedShipment
+  case delayedCharges
+  case reorderItems
+  case orderUpdates
+  case topUp
+  case accountVerification
+  case maintainCardInfo
+  case other
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ThreeDSShopper : Swift.Codable {
+  public let email: Swift.String?
+  public let homePhoneNumber: Swift.String?
+  public let mobilePhoneNumber: Swift.String?
+  public let workPhoneNumber: Swift.String?
+  public init(email: Swift.String? = nil, homePhoneNumber: Swift.String? = nil, mobilePhoneNumber: Swift.String? = nil, workPhoneNumber: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ThreeDSAuthenticationData : Swift.Codable {
+  public let authenticationId: Swift.String
+  public let state: Swift.String
+  public let threeDSecureVersion: Swift.String
+  public let directoryServerTransactionId: Swift.String?
+  public let cardholderAuthenticationVerificationValue: Swift.String?
+  public let electronicCommerceIndicator: Swift.String?
+  public init(authenticationId: Swift.String, state: Swift.String, threeDSecureVersion: Swift.String, directoryServerTransactionId: Swift.String? = nil, cardholderAuthenticationVerificationValue: Swift.String? = nil, electronicCommerceIndicator: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AnyCodable : Swift.Codable {
+  public let value: Any
+  public init<T>(_ value: T)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension PXPCheckoutSDK.AnyCodable : Swift.Equatable {
+  public static func == (lhs: PXPCheckoutSDK.AnyCodable, rhs: PXPCheckoutSDK.AnyCodable) -> Swift.Bool
+}
+public struct ApiResponse<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable {
+  public let data: T
+  public let status: Swift.Int
+  public let rawData: Foundation.Data?
+  public init(data: T, status: Swift.Int, rawData: Foundation.Data? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public typealias DictionaryResponse = [Swift.String : PXPCheckoutSDK.AnyCodable]
+public struct ErrorResponse : Swift.Codable {
+  public let errorCode: Swift.String?
+  public let errorReason: Swift.String?
+  public let correlationId: Swift.String?
+  public let details: [Swift.String]?
+  public init(errorCode: Swift.String?, errorReason: Swift.String?, correlationId: Swift.String?, details: [Swift.String]?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CardComponentData : Swift.Codable {
+  public let number: Swift.String
+  public let expiryDate: Swift.String
+  public let securityCode: Swift.String?
+  public let holderName: Swift.String
+  public init(number: Swift.String, expiryDate: Swift.String, securityCode: Swift.String? = nil, holderName: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DeleteCardTokenResponse : PXPCheckoutSDK.TokenResponse {
+  public let tokenId: Swift.String
+  public let status: Swift.String
+  public init(tokenId: Swift.String, status: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UpdateCardTokenResponse : PXPCheckoutSDK.TokenResponse {
+  public let tokenId: Swift.String
+  public let maskedCardNumber: Swift.String
+  public let expiryMonth: Swift.String
+  public let expiryYear: Swift.String
+  public let cardBrand: Swift.String
+  public let holderName: Swift.String?
+  public init(tokenId: Swift.String, maskedCardNumber: Swift.String, expiryMonth: Swift.String, expiryYear: Swift.String, cardBrand: Swift.String, holderName: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UpdateCardTokenRequest : Swift.Codable {
+  public let newCardExpiryMonth: Swift.String
+  public let newCardExpiryYear: Swift.String
+  public let newCardHolderName: Swift.String?
+  public init(newCardExpiryMonth: Swift.String, newCardExpiryYear: Swift.String, newCardHolderName: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol CardTokenizationResult : Swift.Decodable, Swift.Encodable {
+}
+public struct CardTokenizationResultSuccess : PXPCheckoutSDK.CardTokenizationResult {
+  public let gatewayTokenId: Swift.String
+  public init(gatewayTokenId: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CardTokenizationResultError : PXPCheckoutSDK.CardTokenizationResult {
+  public let code: Swift.String
+  public let message: Swift.String
+  public let details: [[Swift.String : PXPCheckoutSDK.AnyCodable]]
+  public init(code: Swift.String, message: Swift.String, details: [[Swift.String : PXPCheckoutSDK.AnyCodable]] = [])
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CardTokenizationResultFailed : PXPCheckoutSDK.CardTokenizationResult {
+  public let correlationId: Swift.String
+  public let details: [[Swift.String : PXPCheckoutSDK.AnyCodable]]
+  public let errorCode: Swift.String
+  public let errorReason: Swift.String
+  public init(correlationId: Swift.String, details: [[Swift.String : PXPCheckoutSDK.AnyCodable]] = [], errorCode: Swift.String, errorReason: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum CardType : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case gateway
+  case scheme
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.CardType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.CardType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CustomerConsentData : Swift.Codable {
+  public let hasCustomerConsent: Swift.Bool
+  public let merchantShopperId: Swift.String?
+  public init(hasCustomerConsent: Swift.Bool, merchantShopperId: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DeleteCardTokenResponseFailed : PXPCheckoutSDK.TokenResponse {
+  public let status: Swift.Int
+  public let correlationId: Swift.String
+  public let details: [[Swift.String : PXPCheckoutSDK.AnyCodable]]
+  public let errorCode: Swift.String
+  public let errorReason: Swift.String
+  public init(status: Swift.Int, correlationId: Swift.String, details: [[Swift.String : PXPCheckoutSDK.AnyCodable]] = [], errorCode: Swift.String, errorReason: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DeleteCardTokenResponseSuccess : PXPCheckoutSDK.TokenResponse {
+  public let status: Swift.Int
+  public init(status: Swift.Int)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RetrieveCardTokensResponseFailed : PXPCheckoutSDK.TokenResponse {
+  public let statusCode: Swift.Int
+  public let correlationId: Swift.String
+  public let details: [Swift.String?]
+  public let errorCode: Swift.String
+  public let errorReason: Swift.String
+  public init(statusCode: Swift.Int, correlationId: Swift.String, details: [Swift.String?] = [], errorCode: Swift.String, errorReason: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol TokenResponse : Swift.Decodable, Swift.Encodable {
+}
+public struct BaseCardToken : Swift.Codable {
+  public let cardExpiryMonth: Swift.String
+  public let cardExpiryYear: Swift.String
+  public let fundingSource: Swift.String
+  public let ownerType: Swift.String
+  public let maskedPrimaryAccountNumber: Swift.String
+  public let issuerName: Swift.String?
+  public let issuerCountryCode: Swift.String?
+  public let lastSuccessfulPurchaseDate: Swift.String?
+  public let lastSuccessfulPayoutDate: Swift.String?
+  public let scheme: Swift.String
+  public init(cardExpiryMonth: Swift.String, cardExpiryYear: Swift.String, fundingSource: Swift.String, ownerType: Swift.String, maskedPrimaryAccountNumber: Swift.String, issuerName: Swift.String? = nil, issuerCountryCode: Swift.String? = nil, lastSuccessfulPurchaseDate: Swift.String? = nil, lastSuccessfulPayoutDate: Swift.String? = nil, scheme: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GatewayToken : Swift.Codable {
+  public let base: PXPCheckoutSDK.BaseCardToken
+  public let gatewayTokenId: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SchemeToken : Swift.Codable {
+  public let base: PXPCheckoutSDK.BaseCardToken
+  public let schemeTokenId: Swift.String
+  public let status: Swift.String
+  public let cardArtUri: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public typealias RetrieveCardTokensResponse = PXPCheckoutSDK.RetrieveCardTokensResponseSuccess
+public struct RetrieveCardTokensResponseSuccess : PXPCheckoutSDK.TokenResponse {
+  public let gatewayTokens: [PXPCheckoutSDK.GatewayToken]
+  public let schemeTokens: [PXPCheckoutSDK.SchemeToken]
+  public init(gatewayTokens: [PXPCheckoutSDK.GatewayToken], schemeTokens: [PXPCheckoutSDK.SchemeToken])
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TokenVaultRequest : Swift.Codable {
+  public let card: PXPCheckoutSDK.CardData
+  public let customerConsent: PXPCheckoutSDK.CustomerConsent
+  public init(card: PXPCheckoutSDK.CardData, customerConsent: PXPCheckoutSDK.CustomerConsent)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CardData : Swift.Codable {
+  public let primaryAccountNumber: Swift.String
+  public let expiryMonth: Swift.String
+  public let expiryYear: Swift.String
+  public let cardVerificationCode: Swift.String?
+  public let holderName: Swift.String?
+  public init(primaryAccountNumber: Swift.String, expiryMonth: Swift.String, expiryYear: Swift.String, cardVerificationCode: Swift.String? = nil, holderName: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CustomerConsent : Swift.Codable {
+  public let hasCustomerConsent: Swift.Bool
+  public let merchantShopperId: Swift.String
+  public init(hasCustomerConsent: Swift.Bool, merchantShopperId: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TokenVaultResponse : PXPCheckoutSDK.TokenResponse, Swift.Codable {
+  public let tokenId: Swift.String
+  public let maskedCardNumber: Swift.String
+  public let expiryMonth: Swift.String
+  public let expiryYear: Swift.String
+  public let cardBrand: Swift.String
+  public let holderName: Swift.String?
+  public init(tokenId: Swift.String, maskedCardNumber: Swift.String, expiryMonth: Swift.String, expiryYear: Swift.String, cardBrand: Swift.String, holderName: Swift.String? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct UpdateCardTokenResponseFailed : PXPCheckoutSDK.TokenResponse {
+  public let status: Swift.Int
+  public let correlationId: Swift.String
+  public let details: [[Swift.String : PXPCheckoutSDK.AnyCodable]]
+  public let errorCode: Swift.String
+  public let errorReason: Swift.String
+  public init(status: Swift.Int, correlationId: Swift.String, details: [[Swift.String : PXPCheckoutSDK.AnyCodable]] = [], errorCode: Swift.String, errorReason: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UpdateCardGatewayTokenResponseSuccess : PXPCheckoutSDK.TokenResponse {
+  public let gatewayTokenId: Swift.String
+  public let cardExpiryMonth: Swift.String
+  public let cardExpiryYear: Swift.String
+  public init(gatewayTokenId: Swift.String, cardExpiryMonth: Swift.String, cardExpiryYear: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UpdateCardSchemeTokenResponseSuccess : PXPCheckoutSDK.TokenResponse {
+  public let schemeTokenId: Swift.String
+  public let cardExpiryMonth: Swift.String
+  public let cardExpiryYear: Swift.String
+  public init(schemeTokenId: Swift.String, cardExpiryMonth: Swift.String, cardExpiryYear: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AddressVerification : Swift.Codable {
+  public let countryCode: Swift.String?
+  public let houseNumberOrName: Swift.String
+  public let postalCode: Swift.String
+  public init(countryCode: Swift.String? = nil, houseNumberOrName: Swift.String, postalCode: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Amounts : Swift.Codable {
+  public let transaction: Swift.Double
+  public let currencyCode: Swift.String
+  public init(transaction: Swift.Double, currencyCode: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FundingData<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable {
+  public let card: T?
+  public let paypal: T?
+  public init(card: T? = nil, paypal: T? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ApplePayFundingData : Swift.Codable {
+  public let applePayToken: Swift.String?
+  public init(token: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CardFundingData : Swift.Codable {
+  public let gatewayTokenId: Swift.String?
+  public let schemeTokenId: Swift.String?
+  public let cardVerificationCode: Swift.String?
+  public init(gatewayTokenId: Swift.String? = nil, schemeTokenId: Swift.String? = nil, cardVerificationCode: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PayPalFundingData : Swift.Codable {
+  public let payeeEmailAddress: Swift.String?
+  public let paymentSource: Swift.String
+  public let dynamicDescriptors: PXPCheckoutSDK.DynamicDescriptors
+  public let experienceContext: PXPCheckoutSDK.ExperienceContext
+  public let vaultingConsent: Swift.Bool?
+  public init(payeeEmailAddress: Swift.String? = nil, paymentSource: Swift.String, dynamicDescriptors: PXPCheckoutSDK.DynamicDescriptors, experienceContext: PXPCheckoutSDK.ExperienceContext, vaultingConsent: Swift.Bool? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DynamicDescriptors : Swift.Codable {
+  public let cardAcceptorName: Swift.String?
+  public init(cardAcceptorName: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ExperienceContext : Swift.Codable {
+  public let paymentDescription: Swift.String?
+  public let orderType: Swift.String?
+  public let shippingPreference: Swift.String?
+  public let userAction: Swift.String?
+  public let locale: Swift.String?
+  public let shippingOptions: [PXPCheckoutSDK.ExperienceContextShippingOption]?
+  public init(paymentDescription: Swift.String? = nil, orderType: Swift.String? = nil, shippingPreference: Swift.String? = nil, userAction: Swift.String? = nil, locale: Swift.String? = nil, shippingOptions: [PXPCheckoutSDK.ExperienceContextShippingOption]? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ExperienceContextShippingOption : Swift.Codable {
+  public let id: Swift.String
+  public let label: Swift.String
+  public let selected: Swift.Bool
+  public let amounts: PXPCheckoutSDK.ExperienceContextShippingAmounts?
+  public let type: Swift.String?
+  public init(id: Swift.String, label: Swift.String, selected: Swift.Bool, amounts: PXPCheckoutSDK.ExperienceContextShippingAmounts? = nil, type: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ExperienceContextShippingAmounts : Swift.Codable {
+  public let currencyCode: Swift.String
+  public let shipping: Swift.String
+  public init(currencyCode: Swift.String, shipping: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ApplePayErrorResponse : Swift.Codable {
+  public let errorCode: Swift.String
+  public let errorType: Swift.String
+  public let errorReason: Swift.String
+  public init(errorCode: Swift.String, errorType: Swift.String, errorReason: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class BaseTransactionResponse : Swift.Codable {
+  final public let state: Swift.String
+  public init(state: Swift.String)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class FailedTransactionResponse : PXPCheckoutSDK.BaseTransactionResponse {
+  final public let errorCode: Swift.String
+  final public let errorReason: Swift.String
+  final public let correlationId: Swift.String
+  final public let details: [PXPCheckoutSDK.FailureDetail]
+  public init(state: Swift.String = "Failed", errorCode: Swift.String, errorReason: Swift.String, correlationId: Swift.String, details: [PXPCheckoutSDK.FailureDetail] = [])
+  @objc deinit
+}
+public struct FailureDetail : Swift.Codable {
+  public let code: Swift.String
+  public let message: Swift.String
+  public init(code: Swift.String, message: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FundingDataResponse : Swift.Codable {
+  public let cardScheme: Swift.String
+  public let gatewayTokenId: Swift.String
+  public let processorTransactionId: Swift.String?
+  public let schemeTokenNumber: Swift.String?
+  public let cardVerificationCodeResult: Swift.String?
+  public let addressVerificationServiceResult: Swift.String?
+  public let avsResult: Swift.String?
+  public let cvcResult: Swift.String?
+  public let expiryMonth: Swift.String?
+  public let expiryYear: Swift.String?
+  public let providerResponse: PXPCheckoutSDK.ProviderResponse
+  public init(cardScheme: Swift.String, gatewayTokenId: Swift.String, processorTransactionId: Swift.String? = nil, schemeTokenNumber: Swift.String? = nil, cardVerificationCodeResult: Swift.String? = nil, addressVerificationServiceResult: Swift.String? = nil, avsResult: Swift.String? = nil, cvcResult: Swift.String? = nil, expiryMonth: Swift.String? = nil, expiryYear: Swift.String? = nil, providerResponse: PXPCheckoutSDK.ProviderResponse)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct MerchantAdvice : Swift.Codable {
+  public let code: Swift.String?
+  public let message: Swift.String?
+  public init(code: Swift.String? = nil, message: Swift.String? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum MerchantTransactionState : Swift.String, Swift.CaseIterable {
+  case authorised
+  case captured
+  case refused
+  case pending
+  case error
+  public init(from string: Swift.String)
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.MerchantTransactionState]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.MerchantTransactionState] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class MerchantTransactionResponse : PXPCheckoutSDK.BaseTransactionResponse {
+  final public let merchantTransactionId: Swift.String
+  final public let systemTransactionId: Swift.String
+  final public let providerResponseCode: Swift.String
+  final public let providerTransactionId: Swift.String
+  final public let stateData: PXPCheckoutSDK.StateData?
+  public var transactionState: PXPCheckoutSDK.MerchantTransactionState {
+    get
+  }
+  public init(merchantTransactionId: Swift.String, systemTransactionId: Swift.String, providerResponseCode: Swift.String = "", providerTransactionId: Swift.String = "", stateData: PXPCheckoutSDK.StateData? = nil, state: Swift.String)
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public struct PayPalDetails : Swift.Codable {
+  public let emailAddress: Swift.String
+  public init(emailAddress: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PayPalFundingDataResponse : Swift.Codable {
+  public let providerResponse: PXPCheckoutSDK.PayPalProviderResponse
+  public init(providerResponse: PXPCheckoutSDK.PayPalProviderResponse)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PayPalPaymentSource : Swift.Codable {
+  public let paypal: PXPCheckoutSDK.PayPalDetails
+  public init(paypal: PXPCheckoutSDK.PayPalDetails)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PayPalProviderResponse : Swift.Codable {
+  public let provider: Swift.String
+  public let paymentSource: PXPCheckoutSDK.PayPalPaymentSource
+  public init(provider: Swift.String, paymentSource: PXPCheckoutSDK.PayPalPaymentSource)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ProviderResponse : Swift.Codable {
+  public let provider: Swift.String
+  public let code: Swift.String
+  public let message: Swift.String
+  public let merchantId: Swift.String?
+  public let cardVerificationCodeResult: Swift.String?
+  public let addressVerificationServiceResult: Swift.String?
+  public let avsResult: Swift.String?
+  public let cvcResult: Swift.String?
+  public let schemeTransactionId: Swift.String?
+  public let paymentAccountReference: Swift.String?
+  public let electronicCommerceIndicatorAdjustment: Swift.String?
+  public let settlementDate: Swift.String?
+  public let merchantAdvice: PXPCheckoutSDK.MerchantAdvice?
+  public let authorisedAmount: Swift.Double?
+  public init(provider: Swift.String, code: Swift.String, message: Swift.String, merchantId: Swift.String? = nil, cardVerificationCodeResult: Swift.String? = nil, addressVerificationServiceResult: Swift.String? = nil, avsResult: Swift.String? = nil, cvcResult: Swift.String? = nil, schemeTransactionId: Swift.String? = nil, paymentAccountReference: Swift.String? = nil, electronicCommerceIndicatorAdjustment: Swift.String? = nil, settlementDate: Swift.String? = nil, merchantAdvice: PXPCheckoutSDK.MerchantAdvice? = nil, authorisedAmount: Swift.Double? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct StateData : Swift.Codable {
+  public let code: Swift.String?
+  public let message: Swift.String?
+  public init(code: Swift.String? = nil, message: Swift.String? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct PSD2Data : Swift.Codable {
+  public let scaExemption: Swift.String?
+  public init(scaExemption: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TransactionMethod : Swift.Codable {
+  public let entryType: Swift.String
+  public let fundingType: Swift.String
+  public let intent: Swift.String
+  public init(entryType: Swift.String, fundingType: Swift.String, intent: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TransactionRecurring : Swift.Codable {
+  public let processingModel: Swift.String?
+  public let frequencyInDays: Swift.Int?
+  public let frequencyExpiration: Swift.String?
+  public init(processingModel: Swift.String? = nil, frequencyInDays: Swift.Int? = nil, frequencyExpiration: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TransactionIdentifiers : Swift.Codable {
+  public let linkId: Swift.String?
+  public init(linkId: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TransactionThreeDSecureData : Swift.Codable {
+  public let authenticationId: Swift.String?
+  public init(authenticationId: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TransactionShippingAddress : Swift.Codable {
+  public let addressLine1: Swift.String?
+  public let addressLine2: Swift.String?
+  public let postalCode: Swift.String?
+  public let countryCode: Swift.String?
+  public let city: Swift.String?
+  public let county: Swift.String?
+  public let state: Swift.String?
+  public init(addressLine1: Swift.String? = nil, addressLine2: Swift.String? = nil, postalCode: Swift.String? = nil, countryCode: Swift.String? = nil, city: Swift.String? = nil, county: Swift.String? = nil, state: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TransactionShopper : Swift.Codable {
+  public let id: Swift.String?
+  public let firstName: Swift.String?
+  public let lastName: Swift.String?
+  public let dateOfBirth: Swift.String?
+  public let email: Swift.String?
+  public let phoneNumber: Swift.String?
+  public let productSpecification: Swift.String?
+  public let houseNumberOrName: Swift.String?
+  public let street: Swift.String?
+  public let city: Swift.String?
+  public let postalCode: Swift.String?
+  public let countryCode: Swift.String?
+  public let state: Swift.String?
+  public init(id: Swift.String? = nil, firstName: Swift.String? = nil, lastName: Swift.String? = nil, dateOfBirth: Swift.String? = nil, email: Swift.String? = nil, phoneNumber: Swift.String? = nil, productSpecification: Swift.String? = nil, houseNumberOrName: Swift.String? = nil, street: Swift.String? = nil, city: Swift.String? = nil, postalCode: Swift.String? = nil, countryCode: Swift.String? = nil, state: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum StateType : Swift.String {
+  case pendingClientData
+  case authenticationSuccessful
+  case authenticationFailed
+  case authenticationRejected
+  case authenticationError
+  case pendingCustomerChallenge
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TransactionState : Swift.String, Swift.CaseIterable {
+  case authorised
+  case captured
+  case refused
+  case failed
+  case error
+  case pending
+  public init(from string: Swift.String)
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.TransactionState]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.TransactionState] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class ValidationException : PXPCheckoutSDK.BaseSdkException {
+  public init(_ validationResult: PXPCheckoutSDK.ValidationResult, error: (any Swift.Error)? = nil)
+  public var validationResult: PXPCheckoutSDK.ValidationResult {
+    get
+  }
+  public var errorCode: Swift.String? {
+    get
+  }
+  public var message: Swift.String {
+    get
+  }
+  @objc deinit
+}
+public protocol Localisation {
+  var cardConsentLabel: Swift.String? { get }
+  var applePayConsentLabel: Swift.String? { get }
+  var paypalConsentLabel: Swift.String? { get }
+  var submitText: Swift.String? { get }
+  var withdrawText: Swift.String? { get }
+  var prefillBillingAddressLabel: Swift.String? { get }
+}
+public struct DefaultLocalisation : PXPCheckoutSDK.Localisation {
+  public let cardConsentLabel: Swift.String?
+  public let applePayConsentLabel: Swift.String?
+  public let paypalConsentLabel: Swift.String?
+  public let submitText: Swift.String?
+  public let withdrawText: Swift.String?
+  public let prefillBillingAddressLabel: Swift.String?
+  public init()
+}
+public protocol BaseResource {
+  var cardNumber: any PXPCheckoutSDK.CardNumberResource { get }
+  var expiryDate: any PXPCheckoutSDK.ExpiryDateResource { get }
+  var cvc: any PXPCheckoutSDK.CvcResource { get }
+  var holderName: any PXPCheckoutSDK.HolderNameResource { get }
+  var submitText: Swift.String { get }
+  var submitAriaLabel: Swift.String { get }
+  var withdrawText: Swift.String { get }
+  var cardConsentLabel: Swift.String { get }
+  var applePayConsentLabel: Swift.String { get }
+  var paypalConsentLabel: Swift.String { get }
+  var cardOnFile: any PXPCheckoutSDK.CardOnFileResource { get }
+  var clickOnce: any PXPCheckoutSDK.ClickOnceResource { get }
+  var countrySelection: any PXPCheckoutSDK.CountrySelectionResource { get }
+  var postcode: any PXPCheckoutSDK.PostcodeResource { get }
+  var address: any PXPCheckoutSDK.AddressResource { get }
+  var prefillBillingAddressLabel: Swift.String { get }
+  var cardBrandSelector: any PXPCheckoutSDK.CardBrandSelectorResource { get }
+}
+public protocol CardNumberResource {
+  var label: Swift.String { get }
+  var placeholder: Swift.String { get }
+  var guideText: Swift.String { get }
+  var validations: any PXPCheckoutSDK.CardNumberValidations { get }
+  var unrecognisedCardNumberAltText: Swift.String { get }
+  var tooltipAriaLabel: Swift.String { get }
+  var ariaLabel: Swift.String { get }
+}
+public protocol CardNumberValidations {
+  var CN01: Swift.String { get }
+  var CN02: Swift.String { get }
+  var CN03: Swift.String { get }
+  var CN04: Swift.String { get }
+  var CN05: Swift.String { get }
+  var CN06: Swift.String { get }
+}
+public protocol ExpiryDateResource {
+  var label: Swift.String { get }
+  var placeholder: Swift.String { get }
+  var guideText: Swift.String { get }
+  var validations: any PXPCheckoutSDK.ExpiryDateValidations { get }
+  var tooltipAriaLabel: Swift.String { get }
+  var ariaLabel: Swift.String { get }
+}
+public protocol ExpiryDateValidations {
+  var ED01: Swift.String { get }
+  var ED02: Swift.String { get }
+  var ED03: Swift.String { get }
+  var ED04: Swift.String { get }
+  var ED05: Swift.String { get }
+}
+public protocol CvcResource {
+  var label: Swift.String { get }
+  var placeholder: Swift.String { get }
+  var cvcAmexPlaceholder: Swift.String { get }
+  var guideText: Swift.String { get }
+  var validations: any PXPCheckoutSDK.CvcValidations { get }
+  var tooltipAriaLabel: Swift.String { get }
+  var ariaLabel: Swift.String { get }
+  var maskButtonAriaLabel: Swift.String { get }
+  var unmaskButtonAriaLabel: Swift.String { get }
+}
+public protocol CvcValidations {
+  var CVC01: Swift.String { get }
+  var CVC02: Swift.String { get }
+  var CVC03: Swift.String { get }
+  var CVC04: Swift.String { get }
+}
+public protocol HolderNameResource {
+  var label: Swift.String { get }
+  var placeholder: Swift.String { get }
+  var guideText: Swift.String { get }
+  var validations: any PXPCheckoutSDK.HolderNameValidations { get }
+  var tooltipAriaLabel: Swift.String { get }
+  var ariaLabel: Swift.String { get }
+}
+public protocol HolderNameValidations {
+  var HN01: Swift.String { get }
+  var HN02: Swift.String { get }
+  var HN03: Swift.String { get }
+  var HN04: Swift.String { get }
+}
+public protocol CardOnFileResource {
+  var validThruText: Swift.String { get }
+  var expiredText: Swift.String { get }
+  var deleteModal: any PXPCheckoutSDK.DeleteModalResource { get }
+  var deleteErrorMessage: Swift.String { get }
+  var deleteSuccessMessage: Swift.String { get }
+  var updateErrorMessage: Swift.String { get }
+  var updateSuccessMessage: Swift.String { get }
+  var editCardInformationAriaLabel: Swift.String { get }
+  var saveCardInformationAriaLabel: Swift.String { get }
+  var cancelEditCardInformationAriaLabel: Swift.String { get }
+  var deleteCardButtonAriaLabel: Swift.String { get }
+  var cardNumberAriaLabel: Swift.String { get }
+  var cardExpiryDateAriaLabel: Swift.String { get }
+}
+public protocol DeleteModalResource {
+  var dialogAriaLabel: Swift.String { get }
+  var bodyText: Swift.String { get }
+  var cancelButtonText: Swift.String { get }
+  var deleteButtonText: Swift.String { get }
+}
+public protocol ClickOnceResource {
+  var expiredText: Swift.String { get }
+  var validThruText: Swift.String { get }
+  var submitText: Swift.String { get }
+  var selectCardButtonAriaLabel: Swift.String { get }
+  var label: Swift.String { get }
+  var labelAriaLabel: Swift.String { get }
+  var submitAriaLabel: Swift.String { get }
+  var cardNumberAriaLabel: Swift.String { get }
+  var cardExpiryDateAriaLabel: Swift.String { get }
+}
+public protocol CountrySelectionResource {
+  var label: Swift.String { get }
+  var placeholder: Swift.String { get }
+  var noCountryText: Swift.String { get }
+  var guideText: Swift.String { get }
+  var validations: any PXPCheckoutSDK.CountrySelectionValidations { get }
+  var ariaLabel: Swift.String { get }
+}
+public protocol CountrySelectionValidations {
+  var CS01: Swift.String { get }
+}
+public protocol PostcodeResource {
+  var label: Swift.String { get }
+  var placeholder: Swift.String { get }
+  var guideText: Swift.String { get }
+  var validations: any PXPCheckoutSDK.PostcodeValidations { get }
+  var ariaLabel: Swift.String { get }
+}
+public protocol PostcodeValidations {
+  var PC01: Swift.String { get }
+  var PC02: Swift.String { get }
+}
+public protocol AddressResource {
+  var label: Swift.String { get }
+  var placeholder: Swift.String { get }
+  var guideText: Swift.String { get }
+  var validations: any PXPCheckoutSDK.AddressValidations { get }
+  var ariaLabel: Swift.String { get }
+}
+public protocol AddressValidations {
+  var AD01: Swift.String { get }
+  var AD02: Swift.String { get }
+}
+public protocol CardBrandSelectorResource {
+  var unrecognisedCardNumberAltText: Swift.String { get }
+}
+public enum FulfillmentType : Swift.String, Swift.Codable, Swift.CaseIterable {
+  case shipped
+  case digital
+  case storePickUp
+  case localDelivery
+  case storeDriveUp
+  case inPerson
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.FulfillmentType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.FulfillmentType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct RiskScreeningData : Swift.Codable {
+  public let performRiskScreening: Swift.Bool?
+  public let excludeDeviceData: Swift.Bool?
+  public let deviceSessionId: Swift.String?
+  public let items: [PXPCheckoutSDK.RiskScreeningItem]?
+  public let fulfillments: [PXPCheckoutSDK.RiskScreeningFulfillment]?
+  public let transaction: PXPCheckoutSDK.RiskScreeningTransaction?
+  public init(performRiskScreening: Swift.Bool? = nil, excludeDeviceData: Swift.Bool? = nil, deviceSessionId: Swift.String? = nil, items: [PXPCheckoutSDK.RiskScreeningItem]? = nil, fulfillments: [PXPCheckoutSDK.RiskScreeningFulfillment]? = nil, transaction: PXPCheckoutSDK.RiskScreeningTransaction? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RiskScreeningItem : Swift.Codable {
+  public let price: Swift.Double?
+  public let quantity: Swift.Int?
+  public let category: Swift.String?
+  public let sku: Swift.String?
+  public init(price: Swift.Double? = nil, quantity: Swift.Int? = nil, category: Swift.String? = nil, sku: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RiskScreeningFulfillment : Swift.Codable {
+  public let type: PXPCheckoutSDK.FulfillmentType?
+  public let recipientPerson: PXPCheckoutSDK.RiskScreeningRecipientPerson?
+  public init(type: PXPCheckoutSDK.FulfillmentType? = nil, recipientPerson: PXPCheckoutSDK.RiskScreeningRecipientPerson? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RiskScreeningRecipientPerson : Swift.Codable {
+  public let name: PXPCheckoutSDK.RiskScreeningPersonName?
+  public let email: Swift.String?
+  public let phoneNumber: Swift.String?
+  public let address: PXPCheckoutSDK.RiskScreeningAddress?
+  public init(name: PXPCheckoutSDK.RiskScreeningPersonName? = nil, email: Swift.String? = nil, phoneNumber: Swift.String? = nil, address: PXPCheckoutSDK.RiskScreeningAddress? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RiskScreeningPersonName : Swift.Codable {
+  public let first: Swift.String?
+  public let middle: Swift.String?
+  public let family: Swift.String?
+  public let prefix: Swift.String?
+  public let suffix: Swift.String?
+  public let preferred: Swift.String?
+  public init(first: Swift.String? = nil, middle: Swift.String? = nil, family: Swift.String? = nil, prefix: Swift.String? = nil, suffix: Swift.String? = nil, preferred: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RiskScreeningAddress : Swift.Codable {
+  public let line1: Swift.String?
+  public let line2: Swift.String?
+  public let city: Swift.String?
+  public let region: Swift.String?
+  public let countryCode: Swift.String?
+  public let postalCode: Swift.String?
+  public init(line1: Swift.String? = nil, line2: Swift.String? = nil, city: Swift.String? = nil, region: Swift.String? = nil, countryCode: Swift.String? = nil, postalCode: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RiskScreeningTransaction : Swift.Codable {
+  public let subtotal: Swift.Double?
+  public init(subtotal: Swift.Double? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public class AuthorisedSubmitResult : PXPCheckoutSDK.BaseStatusCode200SubmitResult {
+  final public let provider: PXPCheckoutSDK.ProviderResult
+  final public let fundingData: PXPCheckoutSDK.FundingDataResult
+  public init(provider: PXPCheckoutSDK.ProviderResult, fundingData: PXPCheckoutSDK.FundingDataResult)
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+open class BaseStatusCode200SubmitResult : PXPCheckoutSDK.BaseSubmitResult {
+  final public let state: Swift.String?
+  public init(state: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+open class BaseSubmitResult : Swift.Codable {
+  public init()
+  required public init(from decoder: any Swift.Decoder) throws
+  open func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class CapturedSubmitResult : PXPCheckoutSDK.BaseStatusCode200SubmitResult {
+  final public let provider: PXPCheckoutSDK.ProviderResult
+  final public let fundingData: PXPCheckoutSDK.FundingDataResult
+  public init(provider: PXPCheckoutSDK.ProviderResult, fundingData: PXPCheckoutSDK.FundingDataResult)
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class FailedSubmitResult : PXPCheckoutSDK.BaseSubmitResult {
+  final public let errorCode: Swift.String?
+  final public let errorReason: Swift.String?
+  final public let correlationId: Swift.String?
+  final public let httpStatusCode: Swift.Int?
+  final public let details: [Swift.String]?
+  public init(errorCode: Swift.String? = nil, errorReason: Swift.String? = nil, correlationId: Swift.String? = nil, httpStatusCode: Swift.Int? = nil, details: [Swift.String]? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class FundingDataResult : Swift.Codable {
+  final public let cardVerificationCodeResult: Swift.String?
+  final public let addressVerificationServiceResult: Swift.String?
+  public init(cardVerificationCodeResult: Swift.String? = nil, addressVerificationServiceResult: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class MerchantSubmitResult : PXPCheckoutSDK.BaseSubmitResult {
+  final public let merchantTransactionId: Swift.String
+  final public let systemTransactionId: Swift.String
+  public init(merchantTransactionId: Swift.String, systemTransactionId: Swift.String)
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class PendingSubmitResult : PXPCheckoutSDK.BaseStatusCode200SubmitResult {
+  final public let merchantTransactionId: Swift.String
+  final public let systemTransactionId: Swift.String
+  final public let providerTransactionId: Swift.String
+  final public let merchantTransactionDate: Swift.String
+  final public let stateData: [Swift.String : Any]
+  final public let fundingData: PXPCheckoutSDK.PayPalFundingDataResponse
+  public init(merchantTransactionId: Swift.String, systemTransactionId: Swift.String, providerTransactionId: Swift.String, merchantTransactionDate: Swift.String, stateData: [Swift.String : Any], fundingData: PXPCheckoutSDK.PayPalFundingDataResponse)
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class ProviderResult : Swift.Codable {
+  final public let code: Swift.String?
+  final public let message: Swift.String?
+  final public let cardVerificationCodeResult: Swift.String?
+  final public let addressVerificationServiceResult: Swift.String?
+  public init(code: Swift.String?, message: Swift.String?, cardVerificationCodeResult: Swift.String? = nil, addressVerificationServiceResult: Swift.String? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class RefusedProviderResult : PXPCheckoutSDK.ProviderResult {
+  final public let merchantAdvice: PXPCheckoutSDK.MerchantAdvice?
+  public init(code: Swift.String?, message: Swift.String?, cardVerificationCodeResult: Swift.String? = nil, addressVerificationServiceResult: Swift.String? = nil, merchantAdvice: PXPCheckoutSDK.MerchantAdvice? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class RefusedSubmitResult : PXPCheckoutSDK.BaseStatusCode200SubmitResult {
+  final public let stateData: PXPCheckoutSDK.StateData
+  final public let provider: PXPCheckoutSDK.ProviderResult?
+  final public let fundingData: PXPCheckoutSDK.FundingDataResult?
+  public init(stateData: PXPCheckoutSDK.StateData, provider: PXPCheckoutSDK.ProviderResult? = nil, fundingData: PXPCheckoutSDK.FundingDataResult? = nil)
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public class UnknownSubmitResult : PXPCheckoutSDK.BaseStatusCode200SubmitResult {
+  final public let stateData: PXPCheckoutSDK.StateData
+  public init(state: Swift.String, stateData: PXPCheckoutSDK.StateData)
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+public typealias JSONDictionary = [Swift.String : Any]
+public struct ValidationResult {
+  public let valid: Swift.Bool
+  public let errors: [Swift.String : PXPCheckoutSDK.ValidationError]?
+  public init(valid: Swift.Bool, errors: [Swift.String : PXPCheckoutSDK.ValidationError]? = nil)
+}
+public struct ValidationError {
+  public let message: Swift.String
+  public let code: Swift.String
+  public init(message: Swift.String, code: Swift.String)
+}
+extension PXPCheckoutSDK.ApplePayPaymentState : Swift.Equatable {}
+extension PXPCheckoutSDK.ApplePayPaymentState : Swift.Hashable {}
+extension PXPCheckoutSDK.ApplePayRequestUpdateErrorType : Swift.Equatable {}
+extension PXPCheckoutSDK.ApplePayRequestUpdateErrorType : Swift.Hashable {}
+extension PXPCheckoutSDK.ApplePayPaymentSummaryItemType : Swift.Equatable {}
+extension PXPCheckoutSDK.ApplePayPaymentSummaryItemType : Swift.Hashable {}
+extension PXPCheckoutSDK.ApplePayPaymentSummaryItemType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.ApplePayPaymentTiming : Swift.Equatable {}
+extension PXPCheckoutSDK.ApplePayPaymentTiming : Swift.Hashable {}
+extension PXPCheckoutSDK.ApplePayPaymentTiming : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.ApplePayRecurringPaymentDateUnit : Swift.Equatable {}
+extension PXPCheckoutSDK.ApplePayRecurringPaymentDateUnit : Swift.Hashable {}
+extension PXPCheckoutSDK.ApplePayRecurringPaymentDateUnit : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.ApplePaymentButtonStyle : Swift.Equatable {}
+extension PXPCheckoutSDK.ApplePaymentButtonStyle : Swift.Hashable {}
+extension PXPCheckoutSDK.ApplePaymentButtonType : Swift.Equatable {}
+extension PXPCheckoutSDK.ApplePaymentButtonType : Swift.Hashable {}
+extension PXPCheckoutSDK.PaymentNetwork : Swift.Equatable {}
+extension PXPCheckoutSDK.PaymentNetwork : Swift.Hashable {}
+extension PXPCheckoutSDK.PaymentNetwork : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.MerchantCapability : Swift.Equatable {}
+extension PXPCheckoutSDK.MerchantCapability : Swift.Hashable {}
+extension PXPCheckoutSDK.MerchantCapability : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.ContactField : Swift.Equatable {}
+extension PXPCheckoutSDK.ContactField : Swift.Hashable {}
+extension PXPCheckoutSDK.ContactField : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.ShippingType : Swift.Equatable {}
+extension PXPCheckoutSDK.ShippingType : Swift.Hashable {}
+extension PXPCheckoutSDK.ShippingType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.ShippingContactEditingMode : Swift.Equatable {}
+extension PXPCheckoutSDK.ShippingContactEditingMode : Swift.Hashable {}
+extension PXPCheckoutSDK.ShippingContactEditingMode : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.SummaryItemType : Swift.Equatable {}
+extension PXPCheckoutSDK.SummaryItemType : Swift.Hashable {}
+extension PXPCheckoutSDK.SummaryItemType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.PKPaymentButtonRepresentable : Swift.Sendable {}
+extension PXPCheckoutSDK.ApplePayButtonView : Swift.Sendable {}
+extension PXPCheckoutSDK.CardStyleModifier : Swift.Sendable {}
+extension PXPCheckoutSDK.ButtonStyleModifier : Swift.Sendable {}
+extension PXPCheckoutSDK.ErrorStyleModifier : Swift.Sendable {}
+extension PXPCheckoutSDK.LoadingStyleModifier : Swift.Sendable {}
+extension PXPCheckoutSDK.PxpBrandStyleModifier : Swift.Sendable {}
+extension PXPCheckoutSDK.PayPalButtonColor : Swift.Equatable {}
+extension PXPCheckoutSDK.PayPalButtonColor : Swift.Hashable {}
+extension PXPCheckoutSDK.PayPalButtonColor : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.PayPalButtonLabel : Swift.Equatable {}
+extension PXPCheckoutSDK.PayPalButtonLabel : Swift.Hashable {}
+extension PXPCheckoutSDK.PayPalButtonLabel : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.PayPalButtonType : Swift.Equatable {}
+extension PXPCheckoutSDK.PayPalButtonType : Swift.Hashable {}
+extension PXPCheckoutSDK.PayPalButtonType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.PayPalButtonSize : Swift.Equatable {}
+extension PXPCheckoutSDK.PayPalButtonSize : Swift.Hashable {}
+extension PXPCheckoutSDK.PayPalButtonSize : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.PayPalEnvironment : Swift.Equatable {}
+extension PXPCheckoutSDK.PayPalEnvironment : Swift.Hashable {}
+extension PXPCheckoutSDK.PayPalEnvironment : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.PayPalFundingSource : Swift.Equatable {}
+extension PXPCheckoutSDK.PayPalFundingSource : Swift.Hashable {}
+extension PXPCheckoutSDK.PayPalFundingSource : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.PayPalShippingOptionType : Swift.Equatable {}
+extension PXPCheckoutSDK.PayPalShippingOptionType : Swift.Hashable {}
+extension PXPCheckoutSDK.PayPalShippingOptionType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.PayPalShippingPreference : Swift.Equatable {}
+extension PXPCheckoutSDK.PayPalShippingPreference : Swift.Hashable {}
+extension PXPCheckoutSDK.PayPalShippingPreference : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.PayPalUserAction : Swift.Equatable {}
+extension PXPCheckoutSDK.PayPalUserAction : Swift.Hashable {}
+extension PXPCheckoutSDK.PayPalUserAction : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.ApplePayAnalyticsEventErrorCode : Swift.Equatable {}
+extension PXPCheckoutSDK.ApplePayAnalyticsEventErrorCode : Swift.Hashable {}
+extension PXPCheckoutSDK.ApplePayAnalyticsEventErrorCode : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.DeviceType : Swift.Equatable {}
+extension PXPCheckoutSDK.DeviceType : Swift.Hashable {}
+extension PXPCheckoutSDK.DeviceType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.InteractionType : Swift.Equatable {}
+extension PXPCheckoutSDK.InteractionType : Swift.Hashable {}
+extension PXPCheckoutSDK.InteractionType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.LifecycleEventType : Swift.Equatable {}
+extension PXPCheckoutSDK.LifecycleEventType : Swift.Hashable {}
+extension PXPCheckoutSDK.LifecycleEventType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.ComponentType : Swift.Equatable {}
+extension PXPCheckoutSDK.ComponentType : Swift.Hashable {}
+extension PXPCheckoutSDK.ComponentType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.FundingType : Swift.Equatable {}
+extension PXPCheckoutSDK.FundingType : Swift.Hashable {}
+extension PXPCheckoutSDK.FundingType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.EntryType : Swift.Equatable {}
+extension PXPCheckoutSDK.EntryType : Swift.Hashable {}
+extension PXPCheckoutSDK.EntryType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.IntentType : Swift.Equatable {}
+extension PXPCheckoutSDK.IntentType : Swift.Hashable {}
+extension PXPCheckoutSDK.IntentType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.CardIntentType : Swift.Equatable {}
+extension PXPCheckoutSDK.CardIntentType : Swift.Hashable {}
+extension PXPCheckoutSDK.CardIntentType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.PayPalIntentType : Swift.Equatable {}
+extension PXPCheckoutSDK.PayPalIntentType : Swift.Hashable {}
+extension PXPCheckoutSDK.PayPalIntentType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.ApplicableExemptionsType : Swift.Equatable {}
+extension PXPCheckoutSDK.ApplicableExemptionsType : Swift.Hashable {}
+extension PXPCheckoutSDK.ApplicableExemptionsType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.Environment : Swift.Equatable {}
+extension PXPCheckoutSDK.Environment : Swift.Hashable {}
+extension PXPCheckoutSDK.Environment : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.RequestorAuthenticationIndicatorType : Swift.Equatable {}
+extension PXPCheckoutSDK.RequestorAuthenticationIndicatorType : Swift.Hashable {}
+extension PXPCheckoutSDK.RequestorAuthenticationIndicatorType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.RequestorChallengeIndicatorType : Swift.Equatable {}
+extension PXPCheckoutSDK.RequestorChallengeIndicatorType : Swift.Hashable {}
+extension PXPCheckoutSDK.RequestorChallengeIndicatorType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.CardType : Swift.Equatable {}
+extension PXPCheckoutSDK.CardType : Swift.Hashable {}
+extension PXPCheckoutSDK.CardType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.MerchantTransactionState : Swift.Equatable {}
+extension PXPCheckoutSDK.MerchantTransactionState : Swift.Hashable {}
+extension PXPCheckoutSDK.MerchantTransactionState : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.StateType : Swift.Equatable {}
+extension PXPCheckoutSDK.StateType : Swift.Hashable {}
+extension PXPCheckoutSDK.StateType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.TransactionState : Swift.Equatable {}
+extension PXPCheckoutSDK.TransactionState : Swift.Hashable {}
+extension PXPCheckoutSDK.TransactionState : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.FulfillmentType : Swift.Equatable {}
+extension PXPCheckoutSDK.FulfillmentType : Swift.Hashable {}
+extension PXPCheckoutSDK.FulfillmentType : Swift.RawRepresentable {}

@@ -1,0 +1,1868 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "PayPalWebPayments",
+    "printedName": "PayPalWebPayments",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayPalWebPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayPalVaultRequest",
+        "printedName": "PayPalVaultRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0aB12VaultRequestV3url10Foundation3URLVSgvp",
+            "mangledName": "$s17PayPalWebPayments0aB12VaultRequestV3url10Foundation3URLVSgvp",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0aB12VaultRequestV3url10Foundation3URLVSgvg",
+                "mangledName": "$s17PayPalWebPayments0aB12VaultRequestV3url10Foundation3URLVSgvg",
+                "moduleName": "PayPalWebPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "setupTokenID",
+            "printedName": "setupTokenID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0aB12VaultRequestV12setupTokenIDSSvp",
+            "mangledName": "$s17PayPalWebPayments0aB12VaultRequestV12setupTokenIDSSvp",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0aB12VaultRequestV12setupTokenIDSSvg",
+                "mangledName": "$s17PayPalWebPayments0aB12VaultRequestV12setupTokenIDSSvg",
+                "moduleName": "PayPalWebPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:setupTokenID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalVaultRequest",
+                "printedName": "PayPalWebPayments.PayPalVaultRequest",
+                "usr": "s:17PayPalWebPayments0aB12VaultRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17PayPalWebPayments0aB12VaultRequestV3url12setupTokenIDAC10Foundation3URLV_SStcfc",
+            "mangledName": "$s17PayPalWebPayments0aB12VaultRequestV3url12setupTokenIDAC10Foundation3URLV_SStcfc",
+            "moduleName": "PayPalWebPayments",
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(setupTokenID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalVaultRequest",
+                "printedName": "PayPalWebPayments.PayPalVaultRequest",
+                "usr": "s:17PayPalWebPayments0aB12VaultRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17PayPalWebPayments0aB12VaultRequestV12setupTokenIDACSS_tcfc",
+            "mangledName": "$s17PayPalWebPayments0aB12VaultRequestV12setupTokenIDACSS_tcfc",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17PayPalWebPayments0aB12VaultRequestV",
+        "mangledName": "$s17PayPalWebPayments0aB12VaultRequestV",
+        "moduleName": "PayPalWebPayments",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayPalWebPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "PayPalWebPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayPalVaultResult",
+        "printedName": "PayPalVaultResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "tokenID",
+            "printedName": "tokenID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0aB11VaultResultV7tokenIDSSvp",
+            "mangledName": "$s17PayPalWebPayments0aB11VaultResultV7tokenIDSSvp",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0aB11VaultResultV7tokenIDSSvg",
+                "mangledName": "$s17PayPalWebPayments0aB11VaultResultV7tokenIDSSvg",
+                "moduleName": "PayPalWebPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "approvalSessionID",
+            "printedName": "approvalSessionID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0aB11VaultResultV17approvalSessionIDSSvp",
+            "mangledName": "$s17PayPalWebPayments0aB11VaultResultV17approvalSessionIDSSvp",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0aB11VaultResultV17approvalSessionIDSSvg",
+                "mangledName": "$s17PayPalWebPayments0aB11VaultResultV17approvalSessionIDSSvg",
+                "moduleName": "PayPalWebPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalVaultResult",
+                "printedName": "PayPalWebPayments.PayPalVaultResult",
+                "usr": "s:17PayPalWebPayments0aB11VaultResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17PayPalWebPayments0aB11VaultResultV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s17PayPalWebPayments0aB11VaultResultV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PayPalWebPayments",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalVaultResult",
+                "printedName": "PayPalWebPayments.PayPalVaultResult",
+                "usr": "s:17PayPalWebPayments0aB11VaultResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalVaultResult",
+                "printedName": "PayPalWebPayments.PayPalVaultResult",
+                "usr": "s:17PayPalWebPayments0aB11VaultResultV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PayPalWebPayments0aB11VaultResultV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17PayPalWebPayments0aB11VaultResultV2eeoiySbAC_ACtFZ",
+            "moduleName": "PayPalWebPayments",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17PayPalWebPayments0aB11VaultResultV",
+        "mangledName": "$s17PayPalWebPayments0aB11VaultResultV",
+        "moduleName": "PayPalWebPayments",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayPalWebPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "PayPalWebPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "PayPalWebPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "PayPalWebPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayPalWebCheckoutClient",
+        "printedName": "PayPalWebCheckoutClient",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalWebCheckoutClient",
+                "printedName": "PayPalWebPayments.PayPalWebCheckoutClient",
+                "usr": "c:@M@PayPalWebPayments@objc(cs)PayPalWebCheckoutClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CoreConfig",
+                "printedName": "CorePayments.CoreConfig",
+                "usr": "s:12CorePayments0A6ConfigV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17PayPalWebPayments0abC14CheckoutClientC6configAC04CoreD00H6ConfigV_tcfc",
+            "mangledName": "$s17PayPalWebPayments0abC14CheckoutClientC6configAC04CoreD00H6ConfigV_tcfc",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(request:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalWebCheckoutRequest",
+                "printedName": "PayPalWebPayments.PayPalWebCheckoutRequest",
+                "usr": "s:17PayPalWebPayments0abC15CheckoutRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<PayPalWebPayments.PayPalWebCheckoutResult, CorePayments.CoreSDKError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<PayPalWebPayments.PayPalWebCheckoutResult, CorePayments.CoreSDKError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayPalWebCheckoutResult",
+                        "printedName": "PayPalWebPayments.PayPalWebCheckoutResult",
+                        "usr": "s:17PayPalWebPayments0abC14CheckoutResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CoreSDKError",
+                        "printedName": "CorePayments.CoreSDKError",
+                        "usr": "s:12CorePayments0A8SDKErrorV"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PayPalWebPayments0abC14CheckoutClientC5start7request10completionyAA0abcE7RequestV_ys6ResultOyAA0abceK0V04CoreD00L8SDKErrorVGctF",
+            "mangledName": "$s17PayPalWebPayments0abC14CheckoutClientC5start7request10completionyAA0abcE7RequestV_ys6ResultOyAA0abceK0V04CoreD00L8SDKErrorVGctF",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(request:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalWebCheckoutResult",
+                "printedName": "PayPalWebPayments.PayPalWebCheckoutResult",
+                "usr": "s:17PayPalWebPayments0abC14CheckoutResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalWebCheckoutRequest",
+                "printedName": "PayPalWebPayments.PayPalWebCheckoutRequest",
+                "usr": "s:17PayPalWebPayments0abC15CheckoutRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PayPalWebPayments0abC14CheckoutClientC5start7requestAA0abcE6ResultVAA0abcE7RequestV_tYaKF",
+            "mangledName": "$s17PayPalWebPayments0abC14CheckoutClientC5start7requestAA0abcE6ResultVAA0abcE7RequestV_tYaKF",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "vault",
+            "printedName": "vault(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalVaultRequest",
+                "printedName": "PayPalWebPayments.PayPalVaultRequest",
+                "usr": "s:17PayPalWebPayments0aB12VaultRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<PayPalWebPayments.PayPalVaultResult, CorePayments.CoreSDKError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<PayPalWebPayments.PayPalVaultResult, CorePayments.CoreSDKError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayPalVaultResult",
+                        "printedName": "PayPalWebPayments.PayPalVaultResult",
+                        "usr": "s:17PayPalWebPayments0aB11VaultResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CoreSDKError",
+                        "printedName": "CorePayments.CoreSDKError",
+                        "usr": "s:12CorePayments0A8SDKErrorV"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PayPalWebPayments0abC14CheckoutClientC5vault_10completionyAA0aB12VaultRequestV_ys6ResultOyAA0abiK0V04CoreD00L8SDKErrorVGctF",
+            "mangledName": "$s17PayPalWebPayments0abC14CheckoutClientC5vault_10completionyAA0aB12VaultRequestV_ys6ResultOyAA0abiK0V04CoreD00L8SDKErrorVGctF",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "vault",
+            "printedName": "vault(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalVaultResult",
+                "printedName": "PayPalWebPayments.PayPalVaultResult",
+                "usr": "s:17PayPalWebPayments0aB11VaultResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalVaultRequest",
+                "printedName": "PayPalWebPayments.PayPalVaultRequest",
+                "usr": "s:17PayPalWebPayments0aB12VaultRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PayPalWebPayments0abC14CheckoutClientC5vaultyAA0aB11VaultResultVAA0abH7RequestVYaKF",
+            "mangledName": "$s17PayPalWebPayments0abC14CheckoutClientC5vaultyAA0aB11VaultResultVAA0abH7RequestVYaKF",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalWebCheckoutClient",
+                "printedName": "PayPalWebPayments.PayPalWebCheckoutClient",
+                "usr": "c:@M@PayPalWebPayments@objc(cs)PayPalWebCheckoutClient"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayPalWebPayments@objc(cs)PayPalWebCheckoutClient(im)init",
+            "mangledName": "$s17PayPalWebPayments0abC14CheckoutClientCACycfc",
+            "moduleName": "PayPalWebPayments",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "presentationAnchor",
+            "printedName": "presentationAnchor(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIWindow",
+                "printedName": "UIKit.UIWindow",
+                "usr": "c:objc(cs)UIWindow"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ASWebAuthenticationSession",
+                "printedName": "AuthenticationServices.ASWebAuthenticationSession",
+                "usr": "c:objc(cs)ASWebAuthenticationSession"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayPalWebPayments@objc(cs)PayPalWebCheckoutClient(im)presentationAnchorForWebAuthenticationSession:",
+            "mangledName": "$s17PayPalWebPayments0abC14CheckoutClientC18presentationAnchor3forSo8UIWindowCSo26ASWebAuthenticationSessionC_tF",
+            "moduleName": "PayPalWebPayments",
+            "objc_name": "presentationAnchorForWebAuthenticationSession:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PayPalWebPayments@objc(cs)PayPalWebCheckoutClient",
+        "mangledName": "$s17PayPalWebPayments0abC14CheckoutClientC",
+        "moduleName": "PayPalWebPayments",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayPalWebPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "PayPalWebPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayPalError",
+        "printedName": "PayPalError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "webSessionError",
+            "printedName": "webSessionError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> CorePayments.CoreSDKError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoreSDKError",
+                    "printedName": "CorePayments.CoreSDKError",
+                    "usr": "s:12CorePayments0A8SDKErrorV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0aB5ErrorO010webSessionE0y04CoreD00H8SDKErrorVs0E0_pcvpZ",
+            "mangledName": "$s17PayPalWebPayments0aB5ErrorO010webSessionE0y04CoreD00H8SDKErrorVs0E0_pcvpZ",
+            "moduleName": "PayPalWebPayments",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> CorePayments.CoreSDKError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CoreSDKError",
+                        "printedName": "CorePayments.CoreSDKError",
+                        "usr": "s:12CorePayments0A8SDKErrorV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0aB5ErrorO010webSessionE0y04CoreD00H8SDKErrorVs0E0_pcvgZ",
+                "mangledName": "$s17PayPalWebPayments0aB5ErrorO010webSessionE0y04CoreD00H8SDKErrorVs0E0_pcvgZ",
+                "moduleName": "PayPalWebPayments",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payPalURLError",
+            "printedName": "payPalURLError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CoreSDKError",
+                "printedName": "CorePayments.CoreSDKError",
+                "usr": "s:12CorePayments0A8SDKErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0aB5ErrorO03payB8URLError04CoreD00H8SDKErrorVvpZ",
+            "mangledName": "$s17PayPalWebPayments0aB5ErrorO03payB8URLError04CoreD00H8SDKErrorVvpZ",
+            "moduleName": "PayPalWebPayments",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoreSDKError",
+                    "printedName": "CorePayments.CoreSDKError",
+                    "usr": "s:12CorePayments0A8SDKErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0aB5ErrorO03payB8URLError04CoreD00H8SDKErrorVvgZ",
+                "mangledName": "$s17PayPalWebPayments0aB5ErrorO03payB8URLError04CoreD00H8SDKErrorVvgZ",
+                "moduleName": "PayPalWebPayments",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "malformedResultError",
+            "printedName": "malformedResultError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CoreSDKError",
+                "printedName": "CorePayments.CoreSDKError",
+                "usr": "s:12CorePayments0A8SDKErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0aB5ErrorO015malformedResultE004CoreD00H8SDKErrorVvpZ",
+            "mangledName": "$s17PayPalWebPayments0aB5ErrorO015malformedResultE004CoreD00H8SDKErrorVvpZ",
+            "moduleName": "PayPalWebPayments",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoreSDKError",
+                    "printedName": "CorePayments.CoreSDKError",
+                    "usr": "s:12CorePayments0A8SDKErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0aB5ErrorO015malformedResultE004CoreD00H8SDKErrorVvgZ",
+                "mangledName": "$s17PayPalWebPayments0aB5ErrorO015malformedResultE004CoreD00H8SDKErrorVvgZ",
+                "moduleName": "PayPalWebPayments",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payPalVaultResponseError",
+            "printedName": "payPalVaultResponseError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CoreSDKError",
+                "printedName": "CorePayments.CoreSDKError",
+                "usr": "s:12CorePayments0A8SDKErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0aB5ErrorO03payb13VaultResponseE004CoreD00I8SDKErrorVvpZ",
+            "mangledName": "$s17PayPalWebPayments0aB5ErrorO03payb13VaultResponseE004CoreD00I8SDKErrorVvpZ",
+            "moduleName": "PayPalWebPayments",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoreSDKError",
+                    "printedName": "CorePayments.CoreSDKError",
+                    "usr": "s:12CorePayments0A8SDKErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0aB5ErrorO03payb13VaultResponseE004CoreD00I8SDKErrorVvgZ",
+                "mangledName": "$s17PayPalWebPayments0aB5ErrorO03payb13VaultResponseE004CoreD00I8SDKErrorVvgZ",
+                "moduleName": "PayPalWebPayments",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "checkoutCanceledError",
+            "printedName": "checkoutCanceledError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CoreSDKError",
+                "printedName": "CorePayments.CoreSDKError",
+                "usr": "s:12CorePayments0A8SDKErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0aB5ErrorO016checkoutCanceledE004CoreD00H8SDKErrorVvpZ",
+            "mangledName": "$s17PayPalWebPayments0aB5ErrorO016checkoutCanceledE004CoreD00H8SDKErrorVvpZ",
+            "moduleName": "PayPalWebPayments",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoreSDKError",
+                    "printedName": "CorePayments.CoreSDKError",
+                    "usr": "s:12CorePayments0A8SDKErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0aB5ErrorO016checkoutCanceledE004CoreD00H8SDKErrorVvgZ",
+                "mangledName": "$s17PayPalWebPayments0aB5ErrorO016checkoutCanceledE004CoreD00H8SDKErrorVvgZ",
+                "moduleName": "PayPalWebPayments",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vaultCanceledError",
+            "printedName": "vaultCanceledError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CoreSDKError",
+                "printedName": "CorePayments.CoreSDKError",
+                "usr": "s:12CorePayments0A8SDKErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0aB5ErrorO013vaultCanceledE004CoreD00H8SDKErrorVvpZ",
+            "mangledName": "$s17PayPalWebPayments0aB5ErrorO013vaultCanceledE004CoreD00H8SDKErrorVvpZ",
+            "moduleName": "PayPalWebPayments",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CoreSDKError",
+                    "printedName": "CorePayments.CoreSDKError",
+                    "usr": "s:12CorePayments0A8SDKErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0aB5ErrorO013vaultCanceledE004CoreD00H8SDKErrorVvgZ",
+                "mangledName": "$s17PayPalWebPayments0aB5ErrorO013vaultCanceledE004CoreD00H8SDKErrorVvgZ",
+                "moduleName": "PayPalWebPayments",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "isCheckoutCanceled",
+            "printedName": "isCheckoutCanceled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PayPalWebPayments0aB5ErrorO18isCheckoutCanceledySbs0E0_pFZ",
+            "mangledName": "$s17PayPalWebPayments0aB5ErrorO18isCheckoutCanceledySbs0E0_pFZ",
+            "moduleName": "PayPalWebPayments",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isVaultCanceled",
+            "printedName": "isVaultCanceled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PayPalWebPayments0aB5ErrorO15isVaultCanceledySbs0E0_pFZ",
+            "mangledName": "$s17PayPalWebPayments0aB5ErrorO15isVaultCanceledySbs0E0_pFZ",
+            "moduleName": "PayPalWebPayments",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17PayPalWebPayments0aB5ErrorO",
+        "mangledName": "$s17PayPalWebPayments0aB5ErrorO",
+        "moduleName": "PayPalWebPayments",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayPalWebPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayPalWebCheckoutRequest",
+        "printedName": "PayPalWebCheckoutRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "orderID",
+            "printedName": "orderID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0abC15CheckoutRequestV7orderIDSSvp",
+            "mangledName": "$s17PayPalWebPayments0abC15CheckoutRequestV7orderIDSSvp",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0abC15CheckoutRequestV7orderIDSSvg",
+                "mangledName": "$s17PayPalWebPayments0abC15CheckoutRequestV7orderIDSSvg",
+                "moduleName": "PayPalWebPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fundingSource",
+            "printedName": "fundingSource",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalWebCheckoutFundingSource",
+                "printedName": "PayPalWebPayments.PayPalWebCheckoutFundingSource",
+                "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0abC15CheckoutRequestV13fundingSourceAA0abce7FundingH0Ovp",
+            "mangledName": "$s17PayPalWebPayments0abC15CheckoutRequestV13fundingSourceAA0abce7FundingH0Ovp",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayPalWebCheckoutFundingSource",
+                    "printedName": "PayPalWebPayments.PayPalWebCheckoutFundingSource",
+                    "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0abC15CheckoutRequestV13fundingSourceAA0abce7FundingH0Ovg",
+                "mangledName": "$s17PayPalWebPayments0abC15CheckoutRequestV13fundingSourceAA0abce7FundingH0Ovg",
+                "moduleName": "PayPalWebPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(orderID:fundingSource:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalWebCheckoutRequest",
+                "printedName": "PayPalWebPayments.PayPalWebCheckoutRequest",
+                "usr": "s:17PayPalWebPayments0abC15CheckoutRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayPalWebCheckoutFundingSource",
+                "printedName": "PayPalWebPayments.PayPalWebCheckoutFundingSource",
+                "hasDefaultArg": true,
+                "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17PayPalWebPayments0abC15CheckoutRequestV7orderID13fundingSourceACSS_AA0abce7FundingJ0Otcfc",
+            "mangledName": "$s17PayPalWebPayments0abC15CheckoutRequestV7orderID13fundingSourceACSS_AA0abce7FundingJ0Otcfc",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17PayPalWebPayments0abC15CheckoutRequestV",
+        "mangledName": "$s17PayPalWebPayments0abC15CheckoutRequestV",
+        "moduleName": "PayPalWebPayments",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayPalWebPayments"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayPalWebCheckoutResult",
+        "printedName": "PayPalWebCheckoutResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "orderID",
+            "printedName": "orderID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0abC14CheckoutResultV7orderIDSSvp",
+            "mangledName": "$s17PayPalWebPayments0abC14CheckoutResultV7orderIDSSvp",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0abC14CheckoutResultV7orderIDSSvg",
+                "mangledName": "$s17PayPalWebPayments0abC14CheckoutResultV7orderIDSSvg",
+                "moduleName": "PayPalWebPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "payerID",
+            "printedName": "payerID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0abC14CheckoutResultV7payerIDSSvp",
+            "mangledName": "$s17PayPalWebPayments0abC14CheckoutResultV7payerIDSSvp",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0abC14CheckoutResultV7payerIDSSvg",
+                "mangledName": "$s17PayPalWebPayments0abC14CheckoutResultV7payerIDSSvg",
+                "moduleName": "PayPalWebPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17PayPalWebPayments0abC14CheckoutResultV",
+        "mangledName": "$s17PayPalWebPayments0abC14CheckoutResultV",
+        "moduleName": "PayPalWebPayments",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayPalWebCheckoutFundingSource",
+        "printedName": "PayPalWebCheckoutFundingSource",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "paypalCredit",
+            "printedName": "paypalCredit",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayPalWebPayments.PayPalWebCheckoutFundingSource.Type) -> PayPalWebPayments.PayPalWebCheckoutFundingSource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayPalWebCheckoutFundingSource",
+                    "printedName": "PayPalWebPayments.PayPalWebCheckoutFundingSource",
+                    "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayPalWebPayments.PayPalWebCheckoutFundingSource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayPalWebCheckoutFundingSource",
+                        "printedName": "PayPalWebPayments.PayPalWebCheckoutFundingSource",
+                        "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO12paypalCredityA2CmF",
+            "mangledName": "$s17PayPalWebPayments0abC21CheckoutFundingSourceO12paypalCredityA2CmF",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paylater",
+            "printedName": "paylater",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayPalWebPayments.PayPalWebCheckoutFundingSource.Type) -> PayPalWebPayments.PayPalWebCheckoutFundingSource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayPalWebCheckoutFundingSource",
+                    "printedName": "PayPalWebPayments.PayPalWebCheckoutFundingSource",
+                    "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayPalWebPayments.PayPalWebCheckoutFundingSource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayPalWebCheckoutFundingSource",
+                        "printedName": "PayPalWebPayments.PayPalWebCheckoutFundingSource",
+                        "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO8paylateryA2CmF",
+            "mangledName": "$s17PayPalWebPayments0abC21CheckoutFundingSourceO8paylateryA2CmF",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paypal",
+            "printedName": "paypal",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayPalWebPayments.PayPalWebCheckoutFundingSource.Type) -> PayPalWebPayments.PayPalWebCheckoutFundingSource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayPalWebCheckoutFundingSource",
+                    "printedName": "PayPalWebPayments.PayPalWebCheckoutFundingSource",
+                    "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayPalWebPayments.PayPalWebCheckoutFundingSource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayPalWebCheckoutFundingSource",
+                        "printedName": "PayPalWebPayments.PayPalWebCheckoutFundingSource",
+                        "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO6paypalyA2CmF",
+            "mangledName": "$s17PayPalWebPayments0abC21CheckoutFundingSourceO6paypalyA2CmF",
+            "moduleName": "PayPalWebPayments",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayPalWebPayments.PayPalWebCheckoutFundingSource?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayPalWebCheckoutFundingSource",
+                    "printedName": "PayPalWebPayments.PayPalWebCheckoutFundingSource",
+                    "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO8rawValueACSgSS_tcfc",
+            "mangledName": "$s17PayPalWebPayments0abC21CheckoutFundingSourceO8rawValueACSgSS_tcfc",
+            "moduleName": "PayPalWebPayments",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO8rawValueSSvp",
+            "mangledName": "$s17PayPalWebPayments0abC21CheckoutFundingSourceO8rawValueSSvp",
+            "moduleName": "PayPalWebPayments",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO8rawValueSSvg",
+                "mangledName": "$s17PayPalWebPayments0abC21CheckoutFundingSourceO8rawValueSSvg",
+                "moduleName": "PayPalWebPayments",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17PayPalWebPayments0abC21CheckoutFundingSourceO",
+        "mangledName": "$s17PayPalWebPayments0abC21CheckoutFundingSourceO",
+        "moduleName": "PayPalWebPayments",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "kind": "StringLiteral",
+      "offset": 126,
+      "length": 25,
+      "value": "\"PayPalClientErrorDomain\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 319,
+      "length": 15,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 395,
+      "length": 14,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 481,
+      "length": 20,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 570,
+      "length": 24,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 669,
+      "length": 21,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 762,
+      "length": 18,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "kind": "StringLiteral",
+      "offset": 1184,
+      "length": 44,
+      "value": "\"Error constructing URL for PayPal request.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "kind": "StringLiteral",
+      "offset": 1395,
+      "length": 43,
+      "value": "\"Result did not contain the expected data.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "kind": "StringLiteral",
+      "offset": 1613,
+      "length": 37,
+      "value": "\"Error parsing PayPal vault response\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "kind": "StringLiteral",
+      "offset": 1819,
+      "length": 47,
+      "value": "\"PayPal checkout has been canceled by the user\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "kind": "StringLiteral",
+      "offset": 2029,
+      "length": 44,
+      "value": "\"PayPal vault has been canceled by the user\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalWebCheckoutFundingSource.swift",
+      "kind": "StringLiteral",
+      "offset": 437,
+      "length": 8,
+      "value": "\"credit\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalWebCheckoutFundingSource.swift",
+      "kind": "StringLiteral",
+      "offset": 711,
+      "length": 10,
+      "value": "\"paylater\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalWebCheckoutFundingSource.swift",
+      "kind": "StringLiteral",
+      "offset": 821,
+      "length": 8,
+      "value": "\"paypal\""
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CardPayments
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import AuthenticationServices
+import CorePayments
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_hasMissingDesignatedInitializers public class CardClient : ObjectiveC.NSObject {
+  public init(config: CorePayments.CoreConfig)
+  public func vault(_ vaultRequest: CardPayments.CardVaultRequest, completion: @escaping (Swift.Result<CardPayments.CardVaultResult, CorePayments.CoreSDKError>) -> Swift.Void)
+  public func vault(_ vaultRequest: CardPayments.CardVaultRequest) async throws -> CardPayments.CardVaultResult
+  public func approveOrder(request: CardPayments.CardRequest, completion: @escaping (Swift.Result<CardPayments.CardResult, CorePayments.CoreSDKError>) -> Swift.Void)
+  public func approveOrder(request: CardPayments.CardRequest) async throws -> CardPayments.CardResult
+  @objc deinit
+}
+extension CardPayments.CardClient : AuthenticationServices.ASWebAuthenticationPresentationContextProviding {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func presentationAnchor(for session: AuthenticationServices.ASWebAuthenticationSession) -> AuthenticationServices.ASPresentationAnchor
+}
+public struct CardResult {
+  public let orderID: Swift.String
+  public let status: Swift.String?
+  public let didAttemptThreeDSecureAuthentication: Swift.Bool
+}
+public struct Card : Swift.Encodable {
+  public var number: Swift.String
+  public var expirationMonth: Swift.String
+  public var expirationYear: Swift.String
+  public var securityCode: Swift.String
+  public var cardholderName: Swift.String?
+  public var billingAddress: CardPayments.Address?
+  @_documentation(visibility: private) public var expiry: Swift.String {
+    get
+  }
+  public init(number: Swift.String, expirationMonth: Swift.String, expirationYear: Swift.String, securityCode: Swift.String, cardholderName: Swift.String? = nil, billingAddress: CardPayments.Address? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct CardVaultResult {
+  public let setupTokenID: Swift.String
+  public let status: Swift.String?
+  public let didAttemptThreeDSecureAuthentication: Swift.Bool
+}
+public struct PaymentSource : Swift.Decodable {
+  public let card: CardPayments.PaymentSource.Card
+  public struct Card : Swift.Decodable {
+    public let lastFourDigits: Swift.String?
+    public let brand: Swift.String?
+    public let type: Swift.String?
+    public let authenticationResult: CardPayments.AuthenticationResult?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AuthenticationResult : Swift.Decodable {
+  public let liabilityShift: Swift.String?
+  public let threeDSecure: CardPayments.ThreeDSecure?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ThreeDSecure : Swift.Decodable {
+  public let enrollmentStatus: Swift.String?, authenticationStatus: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum CardError {
+  public static let unknownError: CorePayments.CoreSDKError
+  public static let encodingError: CorePayments.CoreSDKError
+  public static let threeDSecureError: (_ error: any Swift.Error) -> CorePayments.CoreSDKError
+  public static let threeDSecureURLError: CorePayments.CoreSDKError
+  public static let threeDSecureCanceledError: CorePayments.CoreSDKError
+  public static let noVaultTokenDataError: CorePayments.CoreSDKError
+  public static let vaultTokenError: CorePayments.CoreSDKError
+  public static let nilGraphQLClientError: CorePayments.CoreSDKError
+  public static func isThreeDSecureCanceled(_ error: any Swift.Error) -> Swift.Bool
+}
+public struct CardVaultRequest {
+  public let card: CardPayments.Card
+  public let setupTokenID: Swift.String
+  public init(card: CardPayments.Card, setupTokenID: Swift.String)
+}
+public enum SCA : Swift.String {
+  case scaAlways
+  case scaWhenRequired
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Address : Swift.Codable, Swift.Equatable {
+  public var addressLine1: Swift.String?
+  public var addressLine2: Swift.String?
+  public var locality: Swift.String?
+  public var region: Swift.String?
+  public var postalCode: Swift.String?
+  public var countryCode: Swift.String
+  public init(addressLine1: Swift.String? = nil, addressLine2: Swift.String? = nil, locality: Swift.String? = nil, region: Swift.String? = nil, postalCode: Swift.String? = nil, countryCode: Swift.String)
+  public static func == (a: CardPayments.Address, b: CardPayments.Address) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CardRequest {
+  public let orderID: Swift.String
+  public let card: CardPayments.Card
+  public let sca: CardPayments.SCA
+  public init(orderID: Swift.String, card: CardPayments.Card, sca: CardPayments.SCA = .scaWhenRequired)
+}
+extension CardPayments.SCA : Swift.Equatable {}
+extension CardPayments.SCA : Swift.Hashable {}
+extension CardPayments.SCA : Swift.RawRepresentable {}
