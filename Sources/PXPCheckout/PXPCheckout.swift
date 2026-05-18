@@ -1,9 +1,11 @@
 //
-//  PXPCheckout.swift
-//  PXPCheckout
+// PXPCheckout.swift
+// PXP Checkout iOS SDK
 //
-//  Swift Package Manager target for PXPCheckout
+// Created by PXP Checkout Team on 1/15/2026.
 //
+
+// Swift Package Manager target for PXPCheckout
 
 /// Re-export PXPCheckoutSDK functionality
 @_exported import PXPCheckoutSDK

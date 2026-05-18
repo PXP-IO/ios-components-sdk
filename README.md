@@ -1,16 +1,6 @@
 # PXPCheckout Swift Package
 
-A comprehensive iOS SDK for payment processing with Apple Pay, PayPal, and card payments.
-
-## Features
-
-- 🍎 **Apple Pay Integration**: Complete Apple Pay support with DPAN consent and advanced payment features
-- 💰 **PayPal Integration**: PayPal, Pay Later, and Venmo with consent management
-- 💳 **Card Payments**: Secure card input and processing with consent components
-- 🔒 **Security**: Built-in fraud detection with Kount integration and 3DS support
-- 📊 **Analytics**: Comprehensive payment analytics and event tracking
-- 🎨 **UI Components**: Pre-built, customizable payment components for iOS
-- 🌍 **Localization**: Multi-language support (EN, ES, EL)
+PXP Unity iOS SDK for integrating secure payment processing with multiple payment methods.
 
 ## Requirements
 
@@ -22,128 +12,206 @@ A comprehensive iOS SDK for payment processing with Apple Pay, PayPal, and card 
 
 ### Swift Package Manager
 
+#### Option 1: Add via Xcode (Recommended)
+
+1. Open your project in Xcode
+2. Go to **File → Add Package Dependencies...**
+3. Enter the repository URL:
+   - **Production**: `https://github.com/PXP-IO/ios-components-sdk.git`
+   - **Development/QA**: `https://dev.azure.com/pxphq/Unity/_git/Pxp.Unity.Components.iOS.SDK`
+4. Select the version rule (e.g., "Up to Next Major Version")
+5. Click **Add Package**
+6. Select `PXPCheckoutSDK` and add to your target
+
+#### Option 2: Add via Package.swift
+
 Add the following to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://dev.azure.com/pxphq/Unity/_git/Pxp.Unity.Components.iOS.SDK", branch: "main")
+    // Production
+    .package(url: "https://github.com/PXP-IO/ios-components-sdk.git", from: "1.0.0")
+    
+    // Or Development/QA
+    // .package(url: "https://dev.azure.com/pxphq/Unity/_git/Pxp.Unity.Components.iOS.SDK", from: "1.0.0")
 ]
 ```
 
-Or add it through Xcode:
-1. File → Add Package Dependencies
-2. Enter the repository URL: `https://dev.azure.com/pxphq/Unity/_git/Pxp.Unity.Components.iOS.SDK`
-3. Select branch (`main`) or version and add to target
+Then add `PXPCheckoutSDK` to your target dependencies:
 
-## Quick Start
+```swift
+targets: [
+    .target(
+        name: "YourApp",
+        dependencies: ["PXPCheckoutSDK"]
+    )
+]
+```
 
-### 1. SDK Initialization
+#### Version Options
 
-The SDK requires session data from the Unity API. The sample app includes a utility class that handles initialization:
+```swift
+// Specific version
+.package(url: "...", exact: "1.2.3")
+
+// Version range
+.package(url: "...", from: "1.0.0")
+
+// Branch (for development)
+.package(url: "...", branch: "development")
+```
+
+### Azure DevOps Authentication (for QA/Dev)
+
+If using the Azure DevOps repository, you may need to configure authentication:
+
+1. Generate a Personal Access Token (PAT) in Azure DevOps
+2. Configure Xcode to use the PAT for authentication
+3. Or use the HTTPS URL with credentials embedded
+
+## Usage
+
+### Basic Setup
 
 ```swift
 import PXPCheckoutSDK
 
-// Create checkout configuration
-let checkoutData = PXPCheckoutData(
-    merchant: "Unity",
-    site: "Unity",
-    amount: 100.0,
-    currency: .usd,
-    entryType: .ecom,
-    intentType: .authorisation,
-    merchantTransactionId: UUID().uuidString.lowercased(),
-    merchantShopperId: "Shopper_Demo"
+// 1. Create session data (obtained from your backend via PXP Unity API)
+let sessionData = SessionData(
+    sessionId: "session-id-from-api",
+    hmacKey: "hmac-key-from-api",
+    encryptionKey: "encryption-key-from-api",
+    allowedFundingTypes: AllowedFundingType(
+        cards: ["visa", "mastercard", "amex"],
+        wallets: Wallets(
+            paypal: Paypal(
+                allowedFundingOptions: ["paypal", "paylater"],
+                merchantId: "your-paypal-merchant-id"
+            ),
+            applePay: ApplePay(merchantId: "merchant.com.yourapp")
+        )
+    )
 )
 
-// Initialize SDK with real API data (fallback to mock on failure)
-let pxpCheckout = try await PxpCheckoutSdkUtils.getPxpCheckoutSdk(
-    checkoutData: checkoutData,
-    analyticsEventHandler: { event in
-        // Handle analytics events
-        print("Analytics: \(event.eventName)")
+// 2. Create transaction data
+let transactionData = TransactionData(
+    amount: 99.99,
+    currency: "USD",
+    entryType: .ecom,
+    intent: TransactionIntentData(
+        card: .authorisation,      // or .capture
+        paypal: .authorisation     // or .capture
+    ),
+    merchantTransactionId: "order-12345",
+    merchantTransactionDate: { Date() }
+)
+
+// 3. Create checkout configuration
+let config = CheckoutConfig(
+    environment: .test,            // .test or .live
+    session: sessionData,
+    transactionData: transactionData,
+    merchantShopperId: "shopper-123",
+    ownerType: "MerchantGroup",
+    ownerId: "your-owner-id",
+    onGetShippingAddress: {
+        // Return shipping address for AVS
+        return ShippingAddress(
+            countryCode: "US",
+            postalCode: "12345",
+            address: "123 Main St"
+        )
+    },
+    onGetShopper: {
+        // Return shopper info for saved cards
+        return TransactionShopper(
+            id: "shopper-123",
+            firstName: "John",
+            lastName: "Doe",
+            email: "john@example.com"
+        )
+    },
+    analyticsEvent: { event in
+        print("Analytics: \(event)")
     }
 )
+
+// 4. Initialize SDK
+let pxpCheckout = try PxpCheckout.initialize(config: config)
 ```
 
-### 2. Create Components
+### Using Checkout Drop-In (Recommended)
 
-Use type-safe component creation:
-
-```swift
-// Create Apple Pay Button Component
-let applePayConfig = ApplePayButtonComponentConfig()
-applePayConfig.currencyCode = "USD"
-applePayConfig.countryCode = "US"
-applePayConfig.buttonType = .plain
-applePayConfig.buttonStyle = .black
-
-let applePayComponent = try pxpCheckout.create(
-    .applePayButton,
-    componentConfig: applePayConfig
-)
-
-// Create PayPal Button Component
-let paypalConfig = PayPalButtonComponentConfig()
-paypalConfig.clientId = "your-paypal-client-id"
-paypalConfig.environment = .sandbox
-paypalConfig.fundingSource = .paypal
-
-let paypalComponent = try pxpCheckout.create(
-    .paypalButton,
-    componentConfig: paypalConfig
-)
-```
-
-## Analytics
-
-The SDK provides comprehensive analytics for tracking payment events:
+The Drop-In provides a complete pre-built UI with all payment methods:
 
 ```swift
-let checkout = try await PxpCheckoutSdkUtils.getPxpCheckoutSdk(
-    checkoutData: checkoutData,
-    analyticsEventHandler: { event in
-        print("Event: \(event.eventName)")
-        print("Session ID: \(event.sessionId)")
-        print("Timestamp: \(event.timestamp)")
-        
-        // Handle different event types
-        if let interactionEvent = event as? ComponentInteractionAnalyticsEvent {
-            print("Component: \(interactionEvent.componentId)")
-            print("Interaction: \(interactionEvent.interactionType)")
+import SwiftUI
+import PXPCheckoutSDK
+
+struct CheckoutView: View {
+    @State private var checkoutDropIn: CheckoutDropIn?
+    
+    var body: some View {
+        VStack {
+            if let dropIn = checkoutDropIn {
+                dropIn.Content()
+            }
+        }
+        .task {
+            await initializeCheckout()
         }
     }
-)
-```
-
-## Troubleshooting
-
-### SSL Certificate Issues (QA Environment)
-
-The sample app includes an `SSLTrustDelegate` for QA environments that bypasses SSL validation for `*.qa.kube.qa` domains. Remove this for production:
-
-```swift
-// For production, use default SSL validation
-let session = URLSession(configuration: sessionConfig)
-```
-
-### PayPal Not Enabled
-
-If you see error `SDK0108: PayPal is not enabled for this merchant`:
-
-1. Check Unity API response includes `allowedFundingTypes.wallets.paypal`
-2. Verify merchant/site configuration in Unity backend
-3. Contact backend team to enable PayPal for your merchant
-
-### Component Creation Failures
-
-Always wrap component creation in error handling:
-
-```swift
-do {
-    let component = try checkout.create(.applePayButton, componentConfig: config)
-    // Use component
-} catch {
-    print("Failed to create component: \(error.localizedDescription)")
+    
+    private func initializeCheckout() async {
+        let dropInConfig = CheckoutDropInConfig(
+            environment: .test,
+            session: sessionData,
+            transactionData: DropInTransactionData(
+                amount: 99.99,
+                currency: "USD",
+                entryType: .ecom,
+                intent: TransactionIntentData(card: .authorisation, paypal: .authorisation),
+                merchantTransactionId: "order-12345",
+                merchantTransactionDate: { Date() }
+            ),
+            merchantShopperId: "shopper-123",
+            ownerId: "your-owner-id",
+            onSuccess: { result in
+                print("Payment successful: \(result.systemTransactionId)")
+            },
+            onError: { paymentMethod, error in
+                print("Payment failed: \(error.errorMessage)")
+            }
+        )
+        
+        do {
+            checkoutDropIn = try CheckoutDropIn(config: dropInConfig)
+            await checkoutDropIn?.create()
+        } catch {
+            print("Failed to initialize: \(error)")
+        }
+    }
 }
 ```
+
+## Dependencies
+
+This package includes the following dependencies (automatically resolved by SPM):
+
+| Dependency | Version | Purpose |
+|------------|---------|---------|
+| [Alamofire](https://github.com/Alamofire/Alamofire) | 5.8.0+ | HTTP networking |
+| [Kount iOS SDK](https://github.com/Kount/kount-ios-swift-package) | 4.2.2+ | Fraud detection and risk management |
+| [PayPal iOS SDK](https://github.com/paypal/paypal-ios) | 2.0.0+ | PayPal payments integration |
+| [Swinject](https://github.com/Swinject/Swinject) | 2.8.0+ | Dependency injection |
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+For support and questions:
+- Documentation: [Link to docs]
+- Issues: [Link to issues]
+- Contact: [Support email]

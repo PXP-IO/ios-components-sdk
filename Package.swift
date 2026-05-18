@@ -18,51 +18,51 @@ let package = Package(
             name: "PXPCheckout",
             dependencies: [
                 "PXPCheckoutSDK",
+                "KountDataCollector",
                 "Alamofire",
                 "CorePayments",
                 "PaymentButtons",
                 "PayPalWebPayments",
                 "CardPayments",
                 "FraudProtection",
-                "PPRiskMagnes",
-                "KountDataCollector",
+                "PPRiskMagnes"
             ]
         ),
         .binaryTarget(
+            name: "PXPCheckoutSDK",
+            path: "Build/Frameworks/PXPCheckoutSDK.xcframework"
+        ),
+        .binaryTarget(
             name: "Alamofire",
-            path: "Frameworks/Alamofire.xcframework"
+            path: "Build/Frameworks/Alamofire.xcframework"
         ),
         .binaryTarget(
             name: "CorePayments",
-            path: "Frameworks/CorePayments.xcframework"
+            path: "Build/Frameworks/CorePayments.xcframework"
         ),
         .binaryTarget(
             name: "PaymentButtons",
-            path: "Frameworks/PaymentButtons.xcframework"
+            path: "Build/Frameworks/PaymentButtons.xcframework"
         ),
         .binaryTarget(
             name: "PayPalWebPayments",
-            path: "Frameworks/PayPalWebPayments.xcframework"
+            path: "Build/Frameworks/PayPalWebPayments.xcframework"
         ),
         .binaryTarget(
             name: "CardPayments",
-            path: "Frameworks/CardPayments.xcframework"
+            path: "Build/Frameworks/CardPayments.xcframework"
         ),
         .binaryTarget(
             name: "FraudProtection",
-            path: "Frameworks/FraudProtection.xcframework"
+            path: "Build/Frameworks/FraudProtection.xcframework"
         ),
         .binaryTarget(
             name: "PPRiskMagnes",
-            path: "Frameworks/PPRiskMagnes.xcframework"
+            path: "Build/Frameworks/PPRiskMagnes.xcframework"
         ),
         .binaryTarget(
             name: "KountDataCollector",
-            path: "Frameworks/KountDataCollector.xcframework"
-        ),
-        .binaryTarget(
-            name: "PXPCheckoutSDK",
-            path: "Frameworks/PXPCheckoutSDK.xcframework"
+            path: "Build/Frameworks/KountDataCollector.xcframework"
         )
     ]
 )
