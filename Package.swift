@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [],
     targets: [
         .target(
-            name: "PXPCheckout",
+            name: "PXPCheckoutSDK",
             dependencies: [
                 "PXPCheckoutSDK",
                 "KountDataCollector",
