@@ -16,7 +16,7 @@ let sdkBinaryDependencies: [Target.Dependency] = [
 ]
 
 let package = Package(
-    name: "PXPCheckout",
+    name: "ios-components-sdk",
     platforms: [
         .iOS(.v14)
     ],
