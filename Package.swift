@@ -30,39 +30,39 @@ let package = Package(
         ),
         .binaryTarget(
             name: "PXPCheckoutSDK",
-            path: "Build/Frameworks/PXPCheckoutSDK.xcframework"
+            path: "Frameworks/PXPCheckoutSDK.xcframework"
         ),
         .binaryTarget(
             name: "Alamofire",
-            path: "Build/Frameworks/Alamofire.xcframework"
+            path: "Frameworks/Alamofire.xcframework"
         ),
         .binaryTarget(
             name: "CorePayments",
-            path: "Build/Frameworks/CorePayments.xcframework"
+            path: "Frameworks/CorePayments.xcframework"
         ),
         .binaryTarget(
             name: "PaymentButtons",
-            path: "Build/Frameworks/PaymentButtons.xcframework"
+            path: "Frameworks/PaymentButtons.xcframework"
         ),
         .binaryTarget(
             name: "PayPalWebPayments",
-            path: "Build/Frameworks/PayPalWebPayments.xcframework"
+            path: "Frameworks/PayPalWebPayments.xcframework"
         ),
         .binaryTarget(
             name: "CardPayments",
-            path: "Build/Frameworks/CardPayments.xcframework"
+            path: "Frameworks/CardPayments.xcframework"
         ),
         .binaryTarget(
             name: "FraudProtection",
-            path: "Build/Frameworks/FraudProtection.xcframework"
+            path: "Frameworks/FraudProtection.xcframework"
         ),
         .binaryTarget(
             name: "PPRiskMagnes",
-            path: "Build/Frameworks/PPRiskMagnes.xcframework"
+            path: "Frameworks/PPRiskMagnes.xcframework"
         ),
         .binaryTarget(
             name: "KountDataCollector",
-            path: "Build/Frameworks/KountDataCollector.xcframework"
+            path: "Frameworks/KountDataCollector.xcframework"
         )
     ]
 )
