@@ -2,5 +2,6 @@
   "PXP_TEST_API_DOMAIN": "https://api-services.test.pxp.io",
   "PXP_LIVE_API_DOMAIN": "https://api-services.pxp.io",
   "PXP_TEST_PAYPAL_CLIENT_ID": "test",
-  "PXP_LIVE_PAYPAL_CLIENT_ID": "AUQC7DCLqtxI1KrVr8nteeZTs1ZzgBeQYDPGhxMiEUa45iqz0-aWNlYSSDTGxGixhVy37uaDblKMCwtT"
+  "PXP_LIVE_PAYPAL_CLIENT_ID": "AUQC7DCLqtxI1KrVr8nteeZTs1ZzgBeQYDPGhxMiEUa45iqz0-aWNlYSSDTGxGixhVy37uaDblKMCwtT",
+  "PXP_CALLBACK_SCHEME": "pxpcheckout"
 }

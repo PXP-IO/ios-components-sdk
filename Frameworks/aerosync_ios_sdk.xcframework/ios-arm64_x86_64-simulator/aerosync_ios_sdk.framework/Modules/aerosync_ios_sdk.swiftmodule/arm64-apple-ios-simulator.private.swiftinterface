@@ -1,0 +1,57 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -module-name aerosync_ios_sdk -package-name aerosync_ios_sdk
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
+import Swift
+import SwiftUI
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import _WebKit_SwiftUI
+@available(iOS 14.0, *)
+@_Concurrency.MainActor @preconcurrency public struct AerosyncEmbeddedView : SwiftUI.UIViewRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init(token: Swift.String, env: Swift.String, deeplink: Swift.String, configurationId: Swift.String? = nil, theme: Swift.String = "light", onLoad: @escaping (Any) -> Swift.Void, onBankClick: @escaping (Any) -> Swift.Void, onError: @escaping (Any) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: aerosync_ios_sdk.AerosyncEmbeddedView.Context) -> WebKit.WKWebView
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: WebKit.WKWebView, context: aerosync_ios_sdk.AerosyncEmbeddedView.Context)
+  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> aerosync_ios_sdk.AerosyncEmbeddedView.Coordinator
+  @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class Coordinator : ObjectiveC.NSObject, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler, WebKit.WKUIDelegate {
+    @_Concurrency.MainActor @preconcurrency @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+    @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+    @objc deinit
+  }
+  @available(iOS 14.0, *)
+  public typealias Body = Swift.Never
+  @available(iOS 14.0, *)
+  public typealias UIViewType = WebKit.WKWebView
+}
+@available(iOS 14.0, *)
+@_Concurrency.MainActor @preconcurrency public struct AerosyncSDK : SwiftUI.UIViewRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init(shouldDismiss: Swift.Bool = false, token: Swift.String, env: Swift.String, deeplink: Swift.String, aeroPassUserUuid: Swift.String, configurationId: Swift.String? = nil, stateCode: Swift.String? = nil, theme: Swift.String = "light", manualLinkOnly: Swift.Bool = false, handleMFA: Swift.Bool = false, jobId: Swift.String? = "", connectionId: Swift.String? = "", onEvent: @escaping (Any) -> Swift.Void, onSuccess: @escaping (Swift.String) -> Swift.Void, onClose: @escaping (Any) -> Swift.Void, onLoad: @escaping (Any) -> Swift.Void, onError: @escaping (Any) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: aerosync_ios_sdk.AerosyncSDK.Context) -> WebKit.WKWebView
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: WebKit.WKWebView, context: aerosync_ios_sdk.AerosyncSDK.Context)
+  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> aerosync_ios_sdk.AerosyncSDK.Coordinator
+  @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class Coordinator : ObjectiveC.NSObject, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler, WebKit.WKUIDelegate, UIKit.UIGestureRecognizerDelegate {
+    @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+    @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+    @objc @_Concurrency.MainActor @preconcurrency public func handleBack()
+    @objc @_Concurrency.MainActor @preconcurrency public func handleForward()
+    @_Concurrency.MainActor @preconcurrency @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+    @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
+    @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+    @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+    @objc deinit
+  }
+  @available(iOS 14.0, *)
+  public typealias Body = Swift.Never
+  @available(iOS 14.0, *)
+  public typealias UIViewType = WebKit.WKWebView
+}
+@available(iOS 14.0, *)
+extension aerosync_ios_sdk.AerosyncEmbeddedView : Swift.Sendable {}
+@available(iOS 14.0, *)
+extension aerosync_ios_sdk.AerosyncEmbeddedView.Coordinator : Swift.Sendable {}
+@available(iOS 14.0, *)
+extension aerosync_ios_sdk.AerosyncSDK : Swift.Sendable {}
+@available(iOS 14.0, *)
+extension aerosync_ios_sdk.AerosyncSDK.Coordinator : Swift.Sendable {}

@@ -1,4 +1,3 @@
 framework module CorePayments {
   header "CorePayments-Swift.h"
-  requires objc
 }

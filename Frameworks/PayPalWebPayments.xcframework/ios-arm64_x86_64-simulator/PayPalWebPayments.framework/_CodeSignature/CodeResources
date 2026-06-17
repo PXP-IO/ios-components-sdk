@@ -6,55 +6,55 @@
 	<dict>
 		<key>Headers/PayPalWebPayments-Swift.h</key>
 		<data>
-		8Vd2TfMucftGNpFr5YfmC7PlD+Y=
+		yz1DdAcXJ6XLCvI5qrcjQtoORSI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HGIQSeF617LsCaGZY4kAWu+Bwoo=
+		IHT/v4kMtb5l9zHO7GuSTd3Rqeo=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		EfVHrcUiy0CY/popt3t/RGrVkiQ=
+		xRrAiDC8rAQldiPaHYoQWxN76TQ=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		2eprAc530//PhcTCp7Bu6+2IjNw=
+		7SmSmxateH7E1gtfP2eDflp7TEc=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		YljZAYpD/E8mMiDvR3Ql6fbwrwU=
+		C7XMELounQ5Ax9V+dofaSaNsVqs=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2eprAc530//PhcTCp7Bu6+2IjNw=
+		7SmSmxateH7E1gtfP2eDflp7TEc=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+ntUtOPOuyZXJ5BqD3nqQorjrJ4=
+		whUEZ7ItFzzt9diOPaIEzahZrnw=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		EfVHrcUiy0CY/popt3t/RGrVkiQ=
+		xRrAiDC8rAQldiPaHYoQWxN76TQ=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		CQIDQBl3gNj1EZnjT+VktSd0RFA=
+		9URBwu0oWkTg/6tL9A2yqYDBI9E=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		EjPP643/128kZ0amT4ZsLQNWH38=
+		z1XVkJRRpo/d/Z0ubRndoM9lWoA=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		CQIDQBl3gNj1EZnjT+VktSd0RFA=
+		9URBwu0oWkTg/6tL9A2yqYDBI9E=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MuXRlXPWQycTxPKXGhNvhbZnpGM=
+		Ekgq+e1qGunKDGYyJdmhQW/sjfQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		jVDsHCVHAMYTHhbZ1i5or/Wlz4w=
+		3TydHp9MPJWnu+QxU3r3V9v2uVU=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -67,84 +67,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yyqtjONqYfa+fwmYsF1jKV/toPyqIhOiTROjuqeER74=
+			JWK62o43OJUZ4M5LFxRPD49b2sLeE/NmRO8Bgu05WzQ=
 			</data>
 		</dict>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rDuX+b4P8NImR9l+MkdXtTSAEcDGYALbLRobFOOu5QI=
+			7xPzDPhM+q6ipPaL1qoBGcPoM5n0vkLv9jLedxp4Am0=
 			</data>
 		</dict>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f0Q/b1HDTnCLYBxy4KIl0lNWn3dW3licdnjvM9g0bNI=
+			+mpklmKG7jTYoZq9dAkhOmtlGtSPGAq50XteZjYGzuI=
 			</data>
 		</dict>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+IVCvEHskWzCUnRqW9rIv2DMdLz1dZKfiIqLG8o4GZI=
+			t9MVOUOIfImo6112DAhYlTPjQ/mzthnvPForCaaxoZ8=
 			</data>
 		</dict>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f0Q/b1HDTnCLYBxy4KIl0lNWn3dW3licdnjvM9g0bNI=
+			+mpklmKG7jTYoZq9dAkhOmtlGtSPGAq50XteZjYGzuI=
 			</data>
 		</dict>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iwmFKw/2tX54EHWsfQfhkAeN4vl5WunNZDtFtQ+UUTY=
+			Id0QTGD6QLRIm9Is7ar3wQa+NDXwvskcu60RfgPw65E=
 			</data>
 		</dict>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rDuX+b4P8NImR9l+MkdXtTSAEcDGYALbLRobFOOu5QI=
+			7xPzDPhM+q6ipPaL1qoBGcPoM5n0vkLv9jLedxp4Am0=
 			</data>
 		</dict>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4vFN878/7SIeBFhh2/lnf2VjJvFzSUtyyOO1qZ7PUek=
+			XUR7uccSW371nrAZQWafRJa3H9sZX8q5lTGjU7aZ9TY=
 			</data>
 		</dict>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LaHzEa9BNrReZU27qOKl4pDyJ5/9dGZ61ImA7riM5lA=
+			UmsPG8F0Z1oCbNjZnWK6U7XS/2kSnd4Q3oCQvNCeEI0=
 			</data>
 		</dict>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4vFN878/7SIeBFhh2/lnf2VjJvFzSUtyyOO1qZ7PUek=
+			XUR7uccSW371nrAZQWafRJa3H9sZX8q5lTGjU7aZ9TY=
 			</data>
 		</dict>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VyLISimWrhEP8FTqCQG4j5/gOXY3p2RdUc/FnWatFSc=
+			tOck0qvV12w9sLaoIar/Wib2o16eXkb3oukHu8j3uX4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f3/rJ/dIWI/H9whZrB9Dd6jhctCo9o1DospGACodx9A=
+			HG4CPLT8XVdqdAhlzxcGhkuZ8WtYzbLQrNBgF4AMZRA=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

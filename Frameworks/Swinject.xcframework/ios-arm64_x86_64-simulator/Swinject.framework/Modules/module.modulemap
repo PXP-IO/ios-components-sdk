@@ -1,4 +1,3 @@
 framework module Swinject {
   header "Swinject-Swift.h"
-  requires objc
 }

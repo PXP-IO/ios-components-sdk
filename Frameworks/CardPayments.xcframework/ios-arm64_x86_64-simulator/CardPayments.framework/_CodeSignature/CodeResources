@@ -6,55 +6,55 @@
 	<dict>
 		<key>Headers/CardPayments-Swift.h</key>
 		<data>
-		qlACl0t+Cokzep3X4evcpyEduQs=
+		Ds2soEa6Yc19QZ06bQNVxRX3xpw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QmpcVO6PPMKjP05OT5ZBJIjYyic=
+		gfHX4cxXW70CGgo4n+kJyAOPmBw=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		uJx1Fus8EWX0mk7fJCnAIBWx/vo=
+		9LlDJDyMae+2FQE39yvhCvANfP0=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0B2KmpwIPoWxC+gwYHj6C0plSPk=
+		Q+qgzY+gOfqJ9d/bSG7Yt0+D3n0=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vFL7TmzEt9o9kocYJSosBuPNspQ=
+		YIpzPAq90BJCuliPArZLXIMcoJs=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0B2KmpwIPoWxC+gwYHj6C0plSPk=
+		Q+qgzY+gOfqJ9d/bSG7Yt0+D3n0=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		b6NDqDRSeewj46SNwIaLuh77CQ4=
+		3kzYHduDeG45z6zDLCximAgJplY=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		uJx1Fus8EWX0mk7fJCnAIBWx/vo=
+		9LlDJDyMae+2FQE39yvhCvANfP0=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ror3RYVzSyeN0DZPDGo85+FM3eA=
+		4V0HfDdV9odl2eHsIY7F6ny2ZcU=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		FeX3pzfhZKgJ/+pvZCha2lljBwE=
+		4QNwbOZc5s3Yavw6xpIGI5fkWIc=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ror3RYVzSyeN0DZPDGo85+FM3eA=
+		4V0HfDdV9odl2eHsIY7F6ny2ZcU=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gJDolTObKZlPjZg9XMFRXpuHIlU=
+		ZnokZNc9homMR8vD+HFQaFpn3x8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		jcGQtZmMgTfkpskHuNcwMfmf4r4=
+		1e2JYkHgPtnR0ctcakGujWwPEW0=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -67,84 +67,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IQLV4LLNRfVexopLmfUBB5SE19UuHt4zNxZEaZ6GzqI=
+			Ptmg1aMA6m+E7xKaHmbK2n1zgOfY2qL2hlgpNmxHsrU=
 			</data>
 		</dict>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6OcKgNbP0vOPVtAki/601mzxV+yayUKP04BzrdKKSkw=
+			mpNGuW29laYcBPVoInIFubJlQM4kSGEEBXrHuvJBcsk=
 			</data>
 		</dict>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zix4N+hOxFT1XkIBA1C9b0ig3KrfyMFad6qbH2/kcl8=
+			BmxEZx163FQ+9Gd4cFrZO0DSoOxlKZG06+c7NJbaCY8=
 			</data>
 		</dict>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tqh2d/3C8PmyAV+hPqe3zEa7+4APR464v1FYMHWOFTM=
+			3N+5myGNo6tGyQh6bAEk8F6HhRMVJ15W6irlsNrPZCs=
 			</data>
 		</dict>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zix4N+hOxFT1XkIBA1C9b0ig3KrfyMFad6qbH2/kcl8=
+			BmxEZx163FQ+9Gd4cFrZO0DSoOxlKZG06+c7NJbaCY8=
 			</data>
 		</dict>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YlbnLAnW/HSac5IJDxxbnoGrBMMWWgpSl9qaehG0hz8=
+			CHMY2b7e9TKbXMGFlLK7aFX29Z2pL4PlP2loDf9iYDM=
 			</data>
 		</dict>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6OcKgNbP0vOPVtAki/601mzxV+yayUKP04BzrdKKSkw=
+			mpNGuW29laYcBPVoInIFubJlQM4kSGEEBXrHuvJBcsk=
 			</data>
 		</dict>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4w9LSouoRBaQHxyN1hqd5kxkA5IRLPPD062gOG0XSmM=
+			cDcZNIJPXQf3PS3KYeIxYGXhxe2gw8fFQXePz+MSU3w=
 			</data>
 		</dict>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/jk/l8xZDX+OVJMvmU9eTVvrzNMiwiLUY6inWeVuDq4=
+			dq/IXJ9QIgCGd5A1lNHFWhSxvh64PBrmcv+H2mrBN34=
 			</data>
 		</dict>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4w9LSouoRBaQHxyN1hqd5kxkA5IRLPPD062gOG0XSmM=
+			cDcZNIJPXQf3PS3KYeIxYGXhxe2gw8fFQXePz+MSU3w=
 			</data>
 		</dict>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4mUVIMoNF6a7a0Gc2s47RGubv2OVqcDwuu7ZuyDZYso=
+			mGuAtFKk7MpatZxFviEySd2Ze9zaqwg9ln5TQBTqhAk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hfn+94WI8eddY+YBrAqxZzlqsZiXMhy5BIWk62HKjDc=
+			GvxyVr0KeRbyXtAEn7Ai32Vrq/lc9Tne9C6gyPNg0iQ=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

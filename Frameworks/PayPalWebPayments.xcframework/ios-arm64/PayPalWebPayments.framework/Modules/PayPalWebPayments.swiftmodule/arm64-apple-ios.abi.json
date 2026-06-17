@@ -397,13 +397,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -415,6 +408,13 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -731,38 +731,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -773,10 +745,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -787,10 +773,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -1712,17 +1712,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -1760,105 +1760,105 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
       "kind": "StringLiteral",
       "offset": 126,
       "length": 25,
       "value": "\"PayPalClientErrorDomain\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
       "kind": "IntegerLiteral",
       "offset": 319,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
       "kind": "IntegerLiteral",
       "offset": 395,
       "length": 14,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
       "kind": "IntegerLiteral",
       "offset": 481,
       "length": 20,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
       "kind": "IntegerLiteral",
       "offset": 570,
       "length": 24,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
       "kind": "IntegerLiteral",
       "offset": 669,
       "length": 21,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
       "kind": "IntegerLiteral",
       "offset": 762,
       "length": 18,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
       "kind": "StringLiteral",
       "offset": 1184,
       "length": 44,
       "value": "\"Error constructing URL for PayPal request.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
       "kind": "StringLiteral",
       "offset": 1395,
       "length": 43,
       "value": "\"Result did not contain the expected data.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
       "kind": "StringLiteral",
       "offset": 1613,
       "length": 37,
       "value": "\"Error parsing PayPal vault response\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
       "kind": "StringLiteral",
       "offset": 1819,
       "length": 47,
       "value": "\"PayPal checkout has been canceled by the user\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalError.swift",
       "kind": "StringLiteral",
       "offset": 2029,
       "length": 44,
       "value": "\"PayPal vault has been canceled by the user\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalWebCheckoutFundingSource.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalWebCheckoutFundingSource.swift",
       "kind": "StringLiteral",
       "offset": 437,
       "length": 8,
       "value": "\"credit\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalWebCheckoutFundingSource.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalWebCheckoutFundingSource.swift",
       "kind": "StringLiteral",
       "offset": 711,
       "length": 10,
       "value": "\"paylater\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalWebCheckoutFundingSource.swift",
+      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/PayPalWebPayments\/PayPalWebCheckoutFundingSource.swift",
       "kind": "StringLiteral",
       "offset": 821,
       "length": 8,
