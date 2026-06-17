@@ -19,9 +19,9 @@ PXP Unity iOS SDK for integrating secure payment processing with multiple paymen
 3. Enter the repository URL:
    - **Production**: `https://github.com/PXP-IO/ios-components-sdk.git`
    - **Development/QA**: `https://dev.azure.com/pxphq/Unity/_git/Pxp.Unity.Components.iOS.SDK`
-4. Select the version rule: **Up to Next Major Version** starting from `1.0.1`
+4. Select the version rule (e.g., "Up to Next Major Version")
 5. Click **Add Package**
-6. Select **`PXPCheckout`** and add to your target (re-exports `PXPCheckoutSDK` and `KountDataCollector`)
+6. Select `PXPCheckoutSDK` and add to your target
 
 #### Option 2: Add via Package.swift
 
@@ -30,22 +30,20 @@ Add the following to your `Package.swift` file:
 ```swift
 dependencies: [
     // Production
-    .package(url: "https://github.com/PXP-IO/ios-components-sdk.git", from: "1.0.1")
+    .package(url: "https://github.com/PXP-IO/ios-components-sdk.git", from: "1.0.0")
     
     // Or Development/QA
     // .package(url: "https://dev.azure.com/pxphq/Unity/_git/Pxp.Unity.Components.iOS.SDK", from: "1.0.0")
 ]
 ```
 
-Then add `PXPCheckout` to your target dependencies:
+Then add `PXPCheckoutSDK` to your target dependencies:
 
 ```swift
 targets: [
     .target(
         name: "YourApp",
-        dependencies: [
-            .product(name: "PXPCheckout", package: "ios-components-sdk")
-        ]
+        dependencies: ["PXPCheckoutSDK"]
     )
 ]
 ```
@@ -62,20 +60,6 @@ targets: [
 // Branch (for development)
 .package(url: "...", branch: "development")
 ```
-
-#### Troubleshooting SPM resolution
-
-If Xcode shows `unexpectedly did not find the new dependency in the package graph` after a tag update:
-
-1. Quit Xcode
-2. Delete your project's `Package.resolved` (in `.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/`)
-3. Clear SPM caches:
-   ```bash
-   rm -rf ~/Library/Caches/org.swift.swiftpm
-   rm -rf ~/Library/org.swift.swiftpm
-   ```
-4. Reopen Xcode → **File → Packages → Reset Package Caches** → **Resolve Package Versions**
-5. Add the package again using version `1.0.1` or later
 
 ### Azure DevOps Authentication (for QA/Dev)
 
