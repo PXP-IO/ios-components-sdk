@@ -2,14 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "PXPCheckout",
+    name: "PXPCheckoutSDK",
     platforms: [
         .iOS(.v14)
     ],
     products: [
         .library(
-            name: "PXPCheckout",
-            targets: ["PXPCheckout"]
+            name: "PXPCheckoutSDK",
+            targets: ["PXPCheckoutSDK"]
         )
     ],
     dependencies: [],
