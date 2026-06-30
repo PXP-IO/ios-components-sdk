@@ -6,47 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		xOIxLEuC3gGcZMnWNsQJOjpUhac=
+		z8F4nf4UWsznr5VJcyvQsNQsXDQ=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		8VwTgDIWJDjvf+p8Y3CBv9TugkE=
+		+LRqpwC91o30woW2wSTcPrwVYXw=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
-		O3aQ/+HCcjX5W/HRe2LL+SUbHoA=
+		Q1Y7VQWBAeWjhHeBB/N+6XSkGfs=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		O3aQ/+HCcjX5W/HRe2LL+SUbHoA=
+		Q1Y7VQWBAeWjhHeBB/N+6XSkGfs=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zfkkP5nJuU4bVmVs95YmkktS2vI=
+		iFhMqm0z7ptUD5yoaB7+jdiOgds=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		O3aQ/+HCcjX5W/HRe2LL+SUbHoA=
+		Q1Y7VQWBAeWjhHeBB/N+6XSkGfs=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		8VwTgDIWJDjvf+p8Y3CBv9TugkE=
+		+LRqpwC91o30woW2wSTcPrwVYXw=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
-		uhSYCoOJHfQPqLD/8OSQ/3jWZfk=
+		CaN57VWkzySSBg8fk9ykvgQcmHA=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		uhSYCoOJHfQPqLD/8OSQ/3jWZfk=
+		CaN57VWkzySSBg8fk9ykvgQcmHA=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		g3Vpt6SJIehYLasge+A7qmNDO6k=
+		8jWX3ftRBdx0PzLxe0VHyCg4mP0=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		uhSYCoOJHfQPqLD/8OSQ/3jWZfk=
+		CaN57VWkzySSBg8fk9ykvgQcmHA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9i0VScFReY+Cw029ZYQYzp6TxpzXQ9hSLhb0VznwwR0=
+			yTNF7qwS7qzmoPjpAlTr9KobD3fF7PCrsYa5kyipdRs=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EtMBXfgYndzKjRJ4bYlZg320JsU2XVWZ+FZ+dH1KiYM=
+			kgAA3QxfhziKT+mIN3LSB6uwS97lVEOgTtu+WytCqJc=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EtMBXfgYndzKjRJ4bYlZg320JsU2XVWZ+FZ+dH1KiYM=
+			kgAA3QxfhziKT+mIN3LSB6uwS97lVEOgTtu+WytCqJc=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HOmIaMhK5taqgWRGNi5dm1/Ej6XoShHq6XwI8SkeHFk=
+			s29gkOzyWmzLt0ewL2/A8SXClU3ibaaiRMzwl0QxPBg=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EtMBXfgYndzKjRJ4bYlZg320JsU2XVWZ+FZ+dH1KiYM=
+			kgAA3QxfhziKT+mIN3LSB6uwS97lVEOgTtu+WytCqJc=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9i0VScFReY+Cw029ZYQYzp6TxpzXQ9hSLhb0VznwwR0=
+			yTNF7qwS7qzmoPjpAlTr9KobD3fF7PCrsYa5kyipdRs=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1DvukIGpFeI4OjRD1x4tcjFX+M1PfEe/0BLqtkVIt7o=
+			l6DQB3B3QribiFoJM9CN7x0y10RsuSzh/Yh09hldx6Q=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1DvukIGpFeI4OjRD1x4tcjFX+M1PfEe/0BLqtkVIt7o=
+			l6DQB3B3QribiFoJM9CN7x0y10RsuSzh/Yh09hldx6Q=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MR9ZtHr2HM7A+8n+cVoGtCBOB3POS/fLaQzARM7HQ8g=
+			eb99GfETjwyNnDH0gLcJJVEqidio6Eupq2Os6hIDIY8=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1DvukIGpFeI4OjRD1x4tcjFX+M1PfEe/0BLqtkVIt7o=
+			l6DQB3B3QribiFoJM9CN7x0y10RsuSzh/Yh09hldx6Q=
 			</data>
 		</dict>
 	</dict>

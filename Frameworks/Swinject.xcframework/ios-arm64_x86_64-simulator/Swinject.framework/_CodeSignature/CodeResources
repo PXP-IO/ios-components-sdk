@@ -6,55 +6,55 @@
 	<dict>
 		<key>Headers/Swinject-Swift.h</key>
 		<data>
-		lnRgl7fisJw42q1p5/b/Q1GMA+8=
+		qo+FxpGCENFA7RPS7jf77SGIbgo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VRM/8VMqHdcMOCcCvas+dS3qxug=
+		7pVns2ZO6ytprwgzMElGHREMMLs=
 		</data>
 		<key>Modules/Swinject.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		E4gY7wPgytkWtSjPzgU8lp6OHkM=
+		Gj50xlkF+/I00XO8kTh8i5fhwZE=
 		</data>
 		<key>Modules/Swinject.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		e5ih2/mdb/Nrd1fKPzFw3nENpuQ=
+		3aI8DmPf8jPMDEGMPmgQTkIDYEo=
 		</data>
 		<key>Modules/Swinject.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vcV83zjgQwZEbe7n1daJdupN6ec=
+		g25U+6CfLc/aP3cY5UjrbPQXxzM=
 		</data>
 		<key>Modules/Swinject.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		e5ih2/mdb/Nrd1fKPzFw3nENpuQ=
+		3aI8DmPf8jPMDEGMPmgQTkIDYEo=
 		</data>
 		<key>Modules/Swinject.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mPjOE1KVI4EN3xLvGgAAxyipe5I=
+		8GUm8Q4/Oq3cTkn28IaXNEZdWFE=
 		</data>
 		<key>Modules/Swinject.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		E4gY7wPgytkWtSjPzgU8lp6OHkM=
+		Gj50xlkF+/I00XO8kTh8i5fhwZE=
 		</data>
 		<key>Modules/Swinject.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		BkAy6QgAmSzlceksFC0Rg4rmspc=
+		sQHayfJ+Q5TXQYmu8PDm+YRUPcU=
 		</data>
 		<key>Modules/Swinject.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		99MdWxLJsoBGv3KdZw2xmEkOS5o=
+		UBQgABE72tW1pbAEUL+Q2pOt5MY=
 		</data>
 		<key>Modules/Swinject.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		BkAy6QgAmSzlceksFC0Rg4rmspc=
+		sQHayfJ+Q5TXQYmu8PDm+YRUPcU=
 		</data>
 		<key>Modules/Swinject.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9d8uqxcqkznBpVzKbSuAkIBMlqQ=
+		ZIGLFK5Js5V9QBFM5J2v1eaVz1A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		FqCQ5wJu6AI6wH9tuRCYX7eHip4=
+		GBwbwMbnm2g06LMCX8EPHaIT2q0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,84 +63,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BT87sIzFTHSJuUytR1X5UXaToKPKsnpCUudOSOmhfws=
+			4dPQymoBvu/VRQVCi0F4ieoZi3dRkSDbyf3uzFns344=
 			</data>
 		</dict>
 		<key>Modules/Swinject.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uNnvjwFZ8M6/BpR91W781ZcQpV2KiHmpq1HuJxs8K1k=
+			sdeVJ2+vy3IuMfHGlhoY3tkzntqZix2T5cGXgjCT4pc=
 			</data>
 		</dict>
 		<key>Modules/Swinject.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7sCnhg8JBthtEKaqrAcg10SL3xYKZUuW8l5hHNY7jFA=
+			k2EhG6jIQD4L0nLEH07KncGfc5aWvo+b1m0kknOHcMc=
 			</data>
 		</dict>
 		<key>Modules/Swinject.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3zUUKXOH3Jw1dL74BjMNfUzEYAXPi9AXMoq9lh9+/gw=
+			bmHYu0uADihBRjOrHbedCba2+q8CxS5izOYeif7sGCo=
 			</data>
 		</dict>
 		<key>Modules/Swinject.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7sCnhg8JBthtEKaqrAcg10SL3xYKZUuW8l5hHNY7jFA=
+			k2EhG6jIQD4L0nLEH07KncGfc5aWvo+b1m0kknOHcMc=
 			</data>
 		</dict>
 		<key>Modules/Swinject.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g1Kv5OihHJx0U7aAvZ1St6m1naR1UPPLcyKplDXzsRo=
+			FtJz0HbSonzCVqhqIG/qfHlf93ZwT+P0WZ+Ahua03oA=
 			</data>
 		</dict>
 		<key>Modules/Swinject.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uNnvjwFZ8M6/BpR91W781ZcQpV2KiHmpq1HuJxs8K1k=
+			sdeVJ2+vy3IuMfHGlhoY3tkzntqZix2T5cGXgjCT4pc=
 			</data>
 		</dict>
 		<key>Modules/Swinject.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wWlThPD0rp2n4cVskI218a0eOHsiLZ2MgwR2HEyCQ6E=
+			eUZAN4aihIeJDFq3d6kDwYRzkb6Sqvh6qGkkMjgIhVs=
 			</data>
 		</dict>
 		<key>Modules/Swinject.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IDL0oK+rwaPqXsClCz1EEL99r+bPdtJW3HtcPDGmrcA=
+			5SrS+9ZnJzTi0dilHtIVOutkfGNXUFih2I3z3LUdTy0=
 			</data>
 		</dict>
 		<key>Modules/Swinject.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wWlThPD0rp2n4cVskI218a0eOHsiLZ2MgwR2HEyCQ6E=
+			eUZAN4aihIeJDFq3d6kDwYRzkb6Sqvh6qGkkMjgIhVs=
 			</data>
 		</dict>
 		<key>Modules/Swinject.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dWksOu6CQlTs2uZ618EKu67mLy3eSUwux4zF2lgVp0A=
+			qOhud2KDtkVL41OCuKX90U3wHl0uzWJbxrPDMCVt44A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N0FeU7WVlmciwrvmKDWUcD4zKNQ+j08qeuGKQRDnmhQ=
+			QsoKDgd/bLzW8M5PwDXEh48KTdJSaFvSj7K1Ym0lotc=
 			</data>
 		</dict>
 	</dict>

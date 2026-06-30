@@ -126,17 +126,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
           }
         ]
       },
@@ -837,17 +837,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -1205,17 +1205,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -1407,52 +1407,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -1463,10 +1421,52 @@
           },
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -1799,17 +1799,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Escapable",
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -2981,6 +2981,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -3002,24 +3009,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -3459,31 +3452,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "URLSessionProtocol",
-            "printedName": "URLSessionProtocol",
-            "usr": "s:12CorePayments18URLSessionProtocolP",
-            "mangledName": "$s12CorePayments18URLSessionProtocolP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -3494,17 +3466,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -3515,13 +3480,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -3529,17 +3487,45 @@
           },
           {
             "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "URLSessionProtocol",
+            "printedName": "URLSessionProtocol",
+            "usr": "s:12CorePayments18URLSessionProtocolP",
+            "mangledName": "$s12CorePayments18URLSessionProtocolP"
           }
         ]
       }
@@ -3548,469 +3534,469 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 203,
       "length": 14,
       "value": "\"event_params\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 313,
       "length": 8,
       "value": "\"app_id\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 345,
       "length": 10,
       "value": "\"app_name\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 382,
       "length": 13,
       "value": "\"button_type\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 420,
       "length": 19,
       "value": "\"partner_client_id\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 472,
       "length": 11,
       "value": "\"c_sdk_ver\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 508,
       "length": 11,
       "value": "\"client_os\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 545,
       "length": 6,
       "value": "\"comp\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 581,
       "length": 16,
       "value": "\"correlation_id\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 632,
       "length": 21,
       "value": "\"device_manufacturer\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 681,
       "length": 18,
       "value": "\"merchant_sdk_env\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 725,
       "length": 12,
       "value": "\"event_name\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 765,
       "length": 14,
       "value": "\"event_source\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 803,
       "length": 10,
       "value": "\"order_id\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 844,
       "length": 21,
       "value": "\"ios_package_manager\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 893,
       "length": 14,
       "value": "\"is_simulator\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 942,
       "length": 6,
       "value": "\"mapv\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 976,
       "length": 21,
       "value": "\"mobile_device_model\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 1022,
       "length": 10,
       "value": "\"platform\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 1059,
       "length": 19,
       "value": "\"vault_setup_token\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 1104,
       "length": 3,
       "value": "\"t\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 1134,
       "length": 13,
       "value": "\"tenant_name\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 1259,
       "length": 5,
       "value": "\"N\/A\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 1366,
       "length": 5,
       "value": "\"N\/A\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 1525,
       "length": 3,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 1583,
       "length": 15,
       "value": "\"ppcpclientsdk\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 1661,
       "length": 7,
       "value": "\"Apple\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 1719,
       "length": 15,
       "value": "\"mobile-native\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 1972,
       "length": 19,
       "value": "\"Carthage or Other\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "BooleanLiteral",
       "offset": 2099,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 2274,
       "length": 5,
       "value": "\"N\/A\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 2497,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "IntegerLiteral",
       "offset": 2589,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 2750,
       "length": 5,
       "value": "\"iOS\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "IntegerLiteral",
       "offset": 2846,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/AnalyticsEventData.swift",
       "kind": "StringLiteral",
       "offset": 2874,
       "length": 8,
       "value": "\"PayPal\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/PayPalCoreConstants.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/PayPalCoreConstants.swift",
       "kind": "StringLiteral",
       "offset": 496,
       "length": 7,
       "value": "\"2.0.0\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/PayPalCoreConstants.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/PayPalCoreConstants.swift",
       "kind": "StringLiteral",
       "offset": 559,
       "length": 16,
       "value": "\"sdk.ios.paypal\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/GraphQL\/GraphQLErrorResponse.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/GraphQL\/GraphQLErrorResponse.swift",
       "kind": "StringLiteral",
       "offset": 201,
       "length": 7,
       "value": "\"error\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/GraphQL\/GraphQLErrorResponse.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/GraphQL\/GraphQLErrorResponse.swift",
       "kind": "StringLiteral",
       "offset": 238,
       "length": 16,
       "value": "\"correlation_id\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/CorePaymentsError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/CorePaymentsError.swift",
       "kind": "StringLiteral",
       "offset": 57,
       "length": 25,
       "value": "\"CorePaymentsErrorDomain\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/CorePaymentsError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/CorePaymentsError.swift",
       "kind": "IntegerLiteral",
       "offset": 246,
       "length": 17,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/CorePaymentsError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/CorePaymentsError.swift",
       "kind": "StringLiteral",
       "offset": 424,
       "length": 89,
       "value": "\"An error occured constructing the PayPal API URL. Contact developer.paypal.com\/support.\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPMethod.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 254,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPMethod.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 276,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPHeader.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPHeader.swift",
       "kind": "StringLiteral",
       "offset": 70,
       "length": 8,
       "value": "\"Accept\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPHeader.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPHeader.swift",
       "kind": "StringLiteral",
       "offset": 105,
       "length": 17,
       "value": "\"Accept-Language\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPHeader.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPHeader.swift",
       "kind": "StringLiteral",
       "offset": 142,
       "length": 12,
       "value": "\"x-app-name\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPHeader.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPHeader.swift",
       "kind": "StringLiteral",
       "offset": 180,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPHeader.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPHeader.swift",
       "kind": "StringLiteral",
       "offset": 219,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPHeader.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/Enums\/HTTPHeader.swift",
       "kind": "StringLiteral",
       "offset": 252,
       "length": 8,
       "value": "\"Origin\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
       "kind": "StringLiteral",
       "offset": 74,
       "length": 29,
       "value": "\"NetworkingClientErrorDomain\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
       "kind": "IntegerLiteral",
       "offset": 270,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
       "kind": "IntegerLiteral",
       "offset": 360,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
       "kind": "IntegerLiteral",
       "offset": 445,
       "length": 18,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
       "kind": "IntegerLiteral",
       "offset": 521,
       "length": 14,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
       "kind": "IntegerLiteral",
       "offset": 613,
       "length": 17,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
       "kind": "IntegerLiteral",
       "offset": 714,
       "length": 19,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
       "kind": "IntegerLiteral",
       "offset": 815,
       "length": 16,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
       "kind": "StringLiteral",
       "offset": 977,
       "length": 65,
       "value": "\"An unknown error occured. Contact developer.paypal.com\/support.\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
       "kind": "StringLiteral",
       "offset": 1199,
       "length": 77,
       "value": "\"An error occured during network call. Contact developer.paypal.com\/support.\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
       "kind": "StringLiteral",
       "offset": 1689,
       "length": 89,
       "value": "\"An error occured due to an invalid HTTP response. Contact developer.paypal.com\/support.\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
       "kind": "StringLiteral",
       "offset": 1938,
       "length": 91,
       "value": "\"An error occured due to missing HTTP response data. Contact developer.paypal.com\/support.\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
       "kind": "StringLiteral",
       "offset": 2195,
       "length": 86,
       "value": "\"An error occured constructing an HTTP request. Contact developer.paypal.com\/support.\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/NetworkingError.swift",
       "kind": "StringLiteral",
       "offset": 2693,
       "length": 109,
       "value": "\"An error occured due to missing `data` key in GraphQL query response. Contact developer.paypal.com\/support.\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/HTTPResponseParser.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/HTTPResponseParser.swift",
       "kind": "BooleanLiteral",
       "offset": 1394,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/HTTPResponseParser.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/paypal-ios\/Sources\/CorePayments\/Networking\/HTTPResponseParser.swift",
       "kind": "BooleanLiteral",
       "offset": 1978,
       "length": 5,

@@ -6,59 +6,59 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		mZkXAn0CmmURtmnb1FON3StXYps=
+		uedquSP1HTE8nryhbKwhwD4VVFk=
 		</data>
 		<key>Headers/PaymentButtons-Swift.h</key>
 		<data>
-		W9zga54u4xZbvraUKtWTpkK6k9k=
+		xXk18HCviCLt3GJXYmaiO5llcVU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gsJ1Jc/eMkkLN66Xkgr4+K0rxoc=
+		HMepN1WZBF3pn9soOS/da4yPnKw=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		B2i/+1sqLo6dUH3r1ow/ddPa6uE=
+		d0VFrhKLpe62a53GQOEFGcbng6M=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ohbCWqmo8zcX1ikMRK+ne+Mc5Rc=
+		GyMFrIn0xubOR+kvBX/QWCQ9BxY=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		SU9Bpf2bSoBY823SSQtIlVCeH0o=
+		2RJRFIa9vW37OEITmyD8kg269lw=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ohbCWqmo8zcX1ikMRK+ne+Mc5Rc=
+		GyMFrIn0xubOR+kvBX/QWCQ9BxY=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KADbyVA9JewZi1qOh/28Q2gB7as=
+		iAHA8dn+ZYrQwBGxCegQ7Kx8N80=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		B2i/+1sqLo6dUH3r1ow/ddPa6uE=
+		d0VFrhKLpe62a53GQOEFGcbng6M=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		D7utqng+hAnwW8Y1jm12uiHEf3U=
+		4FPfJmRYMY7eQVdhluz6GvHg1WU=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GZKIWh/fLgIWjUe1uqfUUJZ5ixU=
+		V+3+yPhHWFNdaqqUX176Ufw0NZI=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		D7utqng+hAnwW8Y1jm12uiHEf3U=
+		4FPfJmRYMY7eQVdhluz6GvHg1WU=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xfIuVDAivWT8FkBrTn8sEaAgh7Q=
+		lh7+oYlrJREGBeLi5cynPrtLqmY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		xngReTC1P2VIx4bS4yrdQEQw0Eg=
+		SBK+HGZDFNJSNsppGw91JLFciqk=
 		</data>
 		<key>PayPalOpen-Regular.otf</key>
 		<data>
@@ -75,91 +75,91 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pPEFVqUyWOHevf+ZMduzrUQw2uAt6YPro2yz61Nhh1E=
+			LT6izYcgCLfxpDM5XSLcQaD4Yv6jiuT2zMvxuKrA9tY=
 			</data>
 		</dict>
 		<key>Headers/PaymentButtons-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nxKhX/AjtPzNZA07GX+J8PfMyRImTi2iNHPHZ2bQiHA=
+			+q+XTQRfiIzA8i8xkSJjgDeJyDzgP+k5pe2KMllsFkI=
 			</data>
 		</dict>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jO+G9cD/opZQHu7YSdFunf0nQS1037npHzmjoA21wf8=
+			JXLT1MmpVqUB5vi7onObo8FlvP/FypbFjuNfGs3NM5k=
 			</data>
 		</dict>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eLTvubW6s4rH3XJnvPsHz8p8WmAT8hrWwWyA74TURzw=
+			XIMUeFK60sHi07OOMFzKORV0e2Z57SrXztT/CNsgtYw=
 			</data>
 		</dict>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p1HOz+VSq/BqKf9/095HaRQiTac7x3C6XZNmirgU/BI=
+			QO1i/VdRZaX2UIYFPUxr9hlc/efrbVsEP7MvdNa7aiQ=
 			</data>
 		</dict>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eLTvubW6s4rH3XJnvPsHz8p8WmAT8hrWwWyA74TURzw=
+			XIMUeFK60sHi07OOMFzKORV0e2Z57SrXztT/CNsgtYw=
 			</data>
 		</dict>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n0CwrgcELvOkObLH4R6aoWK5rXDNzVlS8GoP0xT8pQ4=
+			1YYf/NrBm+XSj3b+pM13PvTGRMiGJDas477yDPHr++I=
 			</data>
 		</dict>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jO+G9cD/opZQHu7YSdFunf0nQS1037npHzmjoA21wf8=
+			JXLT1MmpVqUB5vi7onObo8FlvP/FypbFjuNfGs3NM5k=
 			</data>
 		</dict>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XPrSMtm8wh/tbnYI3pKEzz2j0Zv+BGC9HFL19yRhBns=
+			oADg+PM1Q2rY2+gwa+6MZZlXsba7a9YJGGoKQnPSFp0=
 			</data>
 		</dict>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wgOqclcs/XLuWmo4T9bkOj2nqkAiJ1HnuhBQyl13wys=
+			6a8xGh+pE/85AXff/Hy7ZPRdfDYRAxo1eJBRNP+DKPc=
 			</data>
 		</dict>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XPrSMtm8wh/tbnYI3pKEzz2j0Zv+BGC9HFL19yRhBns=
+			oADg+PM1Q2rY2+gwa+6MZZlXsba7a9YJGGoKQnPSFp0=
 			</data>
 		</dict>
 		<key>Modules/PaymentButtons.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bDgKdw8BiRziwr5SyZuEaCdHf83Hg2fAV7nUZA2ySnI=
+			adZWZ8uDg3z3cDVXpJFIkj1epB9+JoJC2HlTNYslFmc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xtkh7pohuayhMMTlDEMi3zp0L8F+s2gbhzcx8gmk4/4=
+			dxhi5sV7JSx6vmA3yGzX/xIFnsQHdRx7Mcml4hYPZPQ=
 			</data>
 		</dict>
 		<key>PayPalOpen-Regular.otf</key>

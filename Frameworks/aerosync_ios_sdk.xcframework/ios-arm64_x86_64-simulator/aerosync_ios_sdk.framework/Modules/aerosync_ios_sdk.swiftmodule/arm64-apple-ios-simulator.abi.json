@@ -371,52 +371,10 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "_KeyValueCodingAndObserving",
-                "printedName": "_KeyValueCodingAndObserving",
-                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "_KeyValueCodingAndObservingPublishing",
-                "printedName": "_KeyValueCodingAndObservingPublishing",
-                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CVarArg",
-                "printedName": "CVarArg",
-                "usr": "s:s7CVarArgP",
-                "mangledName": "$ss7CVarArgP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Copyable",
                 "printedName": "Copyable",
                 "usr": "s:s8CopyableP",
                 "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomDebugStringConvertible",
-                "printedName": "CustomDebugStringConvertible",
-                "usr": "s:s28CustomDebugStringConvertibleP",
-                "mangledName": "$ss28CustomDebugStringConvertibleP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomStringConvertible",
-                "printedName": "CustomStringConvertible",
-                "usr": "s:s23CustomStringConvertibleP",
-                "mangledName": "$ss23CustomStringConvertibleP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
               },
               {
                 "kind": "Conformance",
@@ -427,10 +385,52 @@
               },
               {
                 "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Hashable",
                 "printedName": "Hashable",
                 "usr": "s:SH",
                 "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObservingPublishing",
+                "printedName": "_KeyValueCodingAndObservingPublishing",
+                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
               },
               {
                 "kind": "Conformance",
@@ -1233,52 +1233,10 @@
             "conformances": [
               {
                 "kind": "Conformance",
-                "name": "_KeyValueCodingAndObserving",
-                "printedName": "_KeyValueCodingAndObserving",
-                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "_KeyValueCodingAndObservingPublishing",
-                "printedName": "_KeyValueCodingAndObservingPublishing",
-                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CVarArg",
-                "printedName": "CVarArg",
-                "usr": "s:s7CVarArgP",
-                "mangledName": "$ss7CVarArgP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Copyable",
                 "printedName": "Copyable",
                 "usr": "s:s8CopyableP",
                 "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomDebugStringConvertible",
-                "printedName": "CustomDebugStringConvertible",
-                "usr": "s:s28CustomDebugStringConvertibleP",
-                "mangledName": "$ss28CustomDebugStringConvertibleP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CustomStringConvertible",
-                "printedName": "CustomStringConvertible",
-                "usr": "s:s23CustomStringConvertibleP",
-                "mangledName": "$ss23CustomStringConvertibleP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
               },
               {
                 "kind": "Conformance",
@@ -1289,10 +1247,52 @@
               },
               {
                 "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Hashable",
                 "printedName": "Hashable",
                 "usr": "s:SH",
                 "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObservingPublishing",
+                "printedName": "_KeyValueCodingAndObservingPublishing",
+                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
               },
               {
                 "kind": "Conformance",
@@ -1401,63 +1401,63 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_embedded_view.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_embedded_view.swift",
       "kind": "StringLiteral",
       "offset": 488,
       "length": 7,
       "value": "\"light\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "Dictionary",
       "offset": 49,
       "length": 221,
       "value": "[(\"dev\", \"https:\/\/qa-sync.aero.inc\"), (\"sandbox\", \"https:\/\/sandbox.aerosync.com\"), (\"staging\", \"https:\/\/staging-sync.aero.inc\"), (\"production\", \"https:\/\/sync.aero.inc\")]"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "BooleanLiteral",
       "offset": 399,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "BooleanLiteral",
       "offset": 896,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "StringLiteral",
       "offset": 1049,
       "length": 7,
       "value": "\"light\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "BooleanLiteral",
       "offset": 1081,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "BooleanLiteral",
       "offset": 1106,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "StringLiteral",
       "offset": 1130,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/hoanphanq\/Documents\/PXP\/Pxp.Unity.Components.iOS\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "StringLiteral",
       "offset": 1158,
       "length": 2,

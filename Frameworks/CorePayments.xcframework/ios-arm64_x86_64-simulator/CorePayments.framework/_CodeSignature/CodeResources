@@ -6,55 +6,55 @@
 	<dict>
 		<key>Headers/CorePayments-Swift.h</key>
 		<data>
-		58o8ypTWPCxVDmS2f/urX/sjHUY=
+		gUNqGhiX9Zov2kscMgZlnHLKcWU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BDsQCRk4WHTDUVLMiROo1pwfqHw=
+		YQFQ1O292XndIRjbAXpcI7RUqEs=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		j2s+qLvHyig6mBC5/FpkoBHLsBk=
+		zeg4HClJog3hvEa2iD/2zbPQ/pM=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8o6c1eYrQNGb3wlKOrD55COZthg=
+		hhT9Tw5ihY76Q8uRExBE6GrbXyk=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		OAt5KQDpL0cMRuYmM6lDW18fmd4=
+		vccPGfWblXlPIBImLQJW296ENzU=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8o6c1eYrQNGb3wlKOrD55COZthg=
+		hhT9Tw5ihY76Q8uRExBE6GrbXyk=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zv4zRD5486Lc5KuL0J9dccAVrKU=
+		GjP8GEj/bAN5toWQVARRWVq1n2s=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		j2s+qLvHyig6mBC5/FpkoBHLsBk=
+		zeg4HClJog3hvEa2iD/2zbPQ/pM=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9jHt53DRpHILvGvQ7g7WD5JNxv4=
+		xDuzudpgUpiMcqniEpmcscEOFaQ=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xO46g3d2Cyxt6efa/Q80yQhfrYg=
+		qyxeIUnjs7ceV748Gr+1CHcYfUw=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9jHt53DRpHILvGvQ7g7WD5JNxv4=
+		xDuzudpgUpiMcqniEpmcscEOFaQ=
 		</data>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		L1cWm+7LWNrCFiF4tSWbcQVVCjc=
+		bvPerEjpE5eb2HsYSRE49m69tGk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		I+99yDrNfOvEWL22yrfo84hQJLc=
+		VxLcpds1zAtgyi5NLWLUZJXDJWo=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -67,84 +67,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bXQUJysDRpSie3nCUXCZ1KoH1TQRe8IfjtHaz2DAtJM=
+			J6hhEnOcs3hmcADLm6GGZMUJoH1l1+A/D0WchsXH5q4=
 			</data>
 		</dict>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YE2DLSYNQnDHnBAbZBWcHYDNd9rYNq0pol+lt8yvthQ=
+			DW+KakuHbVV5LvIDaWaWw8/x21DBrUkRDWrtZeIwhnU=
 			</data>
 		</dict>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H/UiupFWT0LXjvd7XHqsey8b36Ci3pYMvir6H4n4414=
+			sGQzi3ApBpKbjAzcg9gSdnFDQprZncd2cx9X9pjUEEs=
 			</data>
 		</dict>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HxIpDZtaYVurfWSVtalXLzcAu/vrDrgCqUAil15DyjY=
+			E0NpDjNQKuIVAUmqfdL7dmEzl/o6sA1r+UUlZJ5YqAc=
 			</data>
 		</dict>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H/UiupFWT0LXjvd7XHqsey8b36Ci3pYMvir6H4n4414=
+			sGQzi3ApBpKbjAzcg9gSdnFDQprZncd2cx9X9pjUEEs=
 			</data>
 		</dict>
 		<key>Modules/CorePayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rOCkpcMcCJdXUDOyesVr8szP814a/Soj//+DJUExl2o=
+			RQvrgA7EimJTWswkFW/iYR51rQtpFt3jWB7ohqpPO74=
 			</data>
 		</dict>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YE2DLSYNQnDHnBAbZBWcHYDNd9rYNq0pol+lt8yvthQ=
+			DW+KakuHbVV5LvIDaWaWw8/x21DBrUkRDWrtZeIwhnU=
 			</data>
 		</dict>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h3bllxrB6QL+aDx51pL0VdB8rmzU/qTHNV0q/4OtFak=
+			FjG5oz5P/IIS1aOzrRfCyDN7B+PnXl/Z0hpLUlcelNY=
 			</data>
 		</dict>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mhNBzHlU7ipy6vyRNgmroNdKfq1oJSd3eYEGF8z68Aw=
+			LbjDiU51nToVMWI/Lz+MvnXgr2q13kjwnTqRXaBDBHI=
 			</data>
 		</dict>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h3bllxrB6QL+aDx51pL0VdB8rmzU/qTHNV0q/4OtFak=
+			FjG5oz5P/IIS1aOzrRfCyDN7B+PnXl/Z0hpLUlcelNY=
 			</data>
 		</dict>
 		<key>Modules/CorePayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RmVcz/xDtflwayUA28msBStlq20fb/ZmmmPQKUHngrM=
+			D2+/yDYUmgg+N2asusisydixTYKoZxa+uSQmF1/fDwY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G9NMSznWVVmU2L+0pMONcem0WKE8u6HO/NF7E7qtFrY=
+			jICLTXhqWc7s3KFxzyCmqMXussndMCDpScjQN6HEFTA=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
