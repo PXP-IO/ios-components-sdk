@@ -8817,6 +8817,220 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "DropInPaymentData",
+        "printedName": "DropInPaymentData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authorisation",
+            "printedName": "authorisation",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PXPCheckoutSDK.DropInPaymentData.Type) -> (PXPCheckoutSDK.AuthorisationPaymentData) -> PXPCheckoutSDK.DropInPaymentData",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PXPCheckoutSDK.AuthorisationPaymentData) -> PXPCheckoutSDK.DropInPaymentData",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DropInPaymentData",
+                        "printedName": "PXPCheckoutSDK.DropInPaymentData",
+                        "usr": "s:14PXPCheckoutSDK17DropInPaymentDataO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthorisationPaymentData",
+                        "printedName": "PXPCheckoutSDK.AuthorisationPaymentData",
+                        "usr": "s:14PXPCheckoutSDK24AuthorisationPaymentDataV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PXPCheckoutSDK.DropInPaymentData.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DropInPaymentData",
+                        "printedName": "PXPCheckoutSDK.DropInPaymentData",
+                        "usr": "s:14PXPCheckoutSDK17DropInPaymentDataO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PXPCheckoutSDK17DropInPaymentDataO13authorisationyAcA013AuthorisationeF0VcACmF",
+            "mangledName": "$s14PXPCheckoutSDK17DropInPaymentDataO13authorisationyAcA013AuthorisationeF0VcACmF",
+            "moduleName": "PXPCheckoutSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "paze",
+            "printedName": "paze",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PXPCheckoutSDK.DropInPaymentData.Type) -> (PXPCheckoutSDK.PazeCheckoutDecoded) -> PXPCheckoutSDK.DropInPaymentData",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PXPCheckoutSDK.PazeCheckoutDecoded) -> PXPCheckoutSDK.DropInPaymentData",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DropInPaymentData",
+                        "printedName": "PXPCheckoutSDK.DropInPaymentData",
+                        "usr": "s:14PXPCheckoutSDK17DropInPaymentDataO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PazeCheckoutDecoded",
+                        "printedName": "PXPCheckoutSDK.PazeCheckoutDecoded",
+                        "usr": "s:14PXPCheckoutSDK19PazeCheckoutDecodedV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PXPCheckoutSDK.DropInPaymentData.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DropInPaymentData",
+                        "printedName": "PXPCheckoutSDK.DropInPaymentData",
+                        "usr": "s:14PXPCheckoutSDK17DropInPaymentDataO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PXPCheckoutSDK17DropInPaymentDataO4pazeyAcA19PazeCheckoutDecodedVcACmF",
+            "mangledName": "$s14PXPCheckoutSDK17DropInPaymentDataO4pazeyAcA19PazeCheckoutDecodedVcACmF",
+            "moduleName": "PXPCheckoutSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DropInPaymentData",
+                "printedName": "PXPCheckoutSDK.DropInPaymentData",
+                "usr": "s:14PXPCheckoutSDK17DropInPaymentDataO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PXPCheckoutSDK17DropInPaymentDataO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14PXPCheckoutSDK17DropInPaymentDataO4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PXPCheckoutSDK17DropInPaymentDataO6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14PXPCheckoutSDK17DropInPaymentDataO6encode2toys7Encoder_p_tKF",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14PXPCheckoutSDK17DropInPaymentDataO",
+        "mangledName": "$s14PXPCheckoutSDK17DropInPaymentDataO",
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PXPCheckoutSDK"
+      },
+      {
+        "kind": "TypeDecl",
         "name": "DropInPaymentMethod",
         "printedName": "DropInPaymentMethod",
         "children": [
@@ -9377,21 +9591,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "PXPCheckoutSDK.AuthorisationPaymentData?",
+                "printedName": "PXPCheckoutSDK.DropInPaymentData?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "AuthorisationPaymentData",
-                    "printedName": "PXPCheckoutSDK.AuthorisationPaymentData",
-                    "usr": "s:14PXPCheckoutSDK24AuthorisationPaymentDataV"
+                    "name": "DropInPaymentData",
+                    "printedName": "PXPCheckoutSDK.DropInPaymentData",
+                    "usr": "s:14PXPCheckoutSDK17DropInPaymentDataO"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PXPCheckoutSDK18DropInSubmitResultV11paymentDataAA020AuthorisationPaymentH0VSgvp",
-            "mangledName": "$s14PXPCheckoutSDK18DropInSubmitResultV11paymentDataAA020AuthorisationPaymentH0VSgvp",
+            "usr": "s:14PXPCheckoutSDK18DropInSubmitResultV11paymentDataAA0cd7PaymentH0OSgvp",
+            "mangledName": "$s14PXPCheckoutSDK18DropInSubmitResultV11paymentDataAA0cd7PaymentH0OSgvp",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "HasStorage",
@@ -9409,21 +9623,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "PXPCheckoutSDK.AuthorisationPaymentData?",
+                    "printedName": "PXPCheckoutSDK.DropInPaymentData?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "AuthorisationPaymentData",
-                        "printedName": "PXPCheckoutSDK.AuthorisationPaymentData",
-                        "usr": "s:14PXPCheckoutSDK24AuthorisationPaymentDataV"
+                        "name": "DropInPaymentData",
+                        "printedName": "PXPCheckoutSDK.DropInPaymentData",
+                        "usr": "s:14PXPCheckoutSDK17DropInPaymentDataO"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PXPCheckoutSDK18DropInSubmitResultV11paymentDataAA020AuthorisationPaymentH0VSgvg",
-                "mangledName": "$s14PXPCheckoutSDK18DropInSubmitResultV11paymentDataAA020AuthorisationPaymentH0VSgvg",
+                "usr": "s:14PXPCheckoutSDK18DropInSubmitResultV11paymentDataAA0cd7PaymentH0OSgvg",
+                "mangledName": "$s14PXPCheckoutSDK18DropInSubmitResultV11paymentDataAA0cd7PaymentH0OSgvg",
                 "moduleName": "PXPCheckoutSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -9471,13 +9685,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "PXPCheckoutSDK.AuthorisationPaymentData?",
+                "printedName": "PXPCheckoutSDK.DropInPaymentData?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "AuthorisationPaymentData",
-                    "printedName": "PXPCheckoutSDK.AuthorisationPaymentData",
-                    "usr": "s:14PXPCheckoutSDK24AuthorisationPaymentDataV"
+                    "name": "DropInPaymentData",
+                    "printedName": "PXPCheckoutSDK.DropInPaymentData",
+                    "usr": "s:14PXPCheckoutSDK17DropInPaymentDataO"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -9485,8 +9699,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK18DropInSubmitResultV19systemTransactionId08merchanthI013paymentMethod0K4DataACSS_SSSgAA0cd7PaymentL0OAA013AuthorisationnM0VSgtcfc",
-            "mangledName": "$s14PXPCheckoutSDK18DropInSubmitResultV19systemTransactionId08merchanthI013paymentMethod0K4DataACSS_SSSgAA0cd7PaymentL0OAA013AuthorisationnM0VSgtcfc",
+            "usr": "s:14PXPCheckoutSDK18DropInSubmitResultV19systemTransactionId08merchanthI013paymentMethod0K4DataACSS_SSSgAA0cd7PaymentL0OAA0cdnM0OSgtcfc",
+            "mangledName": "$s14PXPCheckoutSDK18DropInSubmitResultV19systemTransactionId08merchanthI013paymentMethod0K4DataACSS_SSSgAA0cd7PaymentL0OAA0cdnM0OSgtcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
@@ -27857,6 +28071,54 @@
           },
           {
             "kind": "Var",
+            "name": "labelPayout",
+            "printedName": "labelPayout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK30AeropayButtonComponentResourceC11labelPayoutSSvp",
+            "mangledName": "$s14PXPCheckoutSDK30AeropayButtonComponentResourceC11labelPayoutSSvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK30AeropayButtonComponentResourceC11labelPayoutSSvg",
+                "mangledName": "$s14PXPCheckoutSDK30AeropayButtonComponentResourceC11labelPayoutSSvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -28518,6 +28780,54 @@
                 "declKind": "Accessor",
                 "usr": "s:14PXPCheckoutSDK30AeropayButtonComponentResourceC011aerosyncPayD4TextSSvg",
                 "mangledName": "$s14PXPCheckoutSDK30AeropayButtonComponentResourceC011aerosyncPayD4TextSSvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "aerosyncWithdrawButtonText",
+            "printedName": "aerosyncWithdrawButtonText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK30AeropayButtonComponentResourceC016aerosyncWithdrawD4TextSSvp",
+            "mangledName": "$s14PXPCheckoutSDK30AeropayButtonComponentResourceC016aerosyncWithdrawD4TextSSvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK30AeropayButtonComponentResourceC016aerosyncWithdrawD4TextSSvg",
+                "mangledName": "$s14PXPCheckoutSDK30AeropayButtonComponentResourceC016aerosyncWithdrawD4TextSSvg",
                 "moduleName": "PXPCheckoutSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -29586,13 +29896,25 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(label:description:popupTitle:consumerDataTitle:consumerDataDescription:otpTitle:otpDescription:otpResendCountdownText:otpResendText:otpVerifyCodeText:otpInvalidMessage:aerosyncTitle:aerosyncDescription:aerosyncLinkBankText:aerosyncPayButtonText:aerosyncFundingBankTitle:aerosyncBankAccountListLoadingAccessibilityLabel:aerosyncLinkBankButtonAccessibilityHint:aerosyncPayButtonAccessibilityHint:aerosyncPayButtonDisabledAccessibilityHint:fundingBankAccessibilityHint:continueText:accessibilityCloseButtonLabel:accessibilityCloseButtonHint:payByBankButtonAccessibilityLabel:payByBankButtonAccessibilityHint:otpDigitAccessibilityLabelFormat:actionButtonLoadingAccessibilityLabelFormat:fundingBankAccessibilityLabelFormat:fundingBankSelectedAccessibilityValue:fundingBankNotSelectedAccessibilityValue:linkBankButtonAccessibilityLabel:otpResendButtonAccessibilityLabel:firstName:lastName:emailAddress:phoneNumber:)",
+            "printedName": "init(label:labelPayout:description:popupTitle:consumerDataTitle:consumerDataDescription:otpTitle:otpDescription:otpResendCountdownText:otpResendText:otpVerifyCodeText:otpInvalidMessage:aerosyncTitle:aerosyncDescription:aerosyncLinkBankText:aerosyncPayButtonText:aerosyncWithdrawButtonText:aerosyncFundingBankTitle:aerosyncBankAccountListLoadingAccessibilityLabel:aerosyncLinkBankButtonAccessibilityHint:aerosyncPayButtonAccessibilityHint:aerosyncPayButtonDisabledAccessibilityHint:fundingBankAccessibilityHint:continueText:accessibilityCloseButtonLabel:accessibilityCloseButtonHint:payByBankButtonAccessibilityLabel:payByBankButtonAccessibilityHint:otpDigitAccessibilityLabelFormat:actionButtonLoadingAccessibilityLabelFormat:fundingBankAccessibilityLabelFormat:fundingBankSelectedAccessibilityValue:fundingBankNotSelectedAccessibilityValue:linkBankButtonAccessibilityLabel:otpResendButtonAccessibilityLabel:firstName:lastName:emailAddress:phoneNumber:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "AeropayButtonComponentResource",
                 "printedName": "PXPCheckoutSDK.AeropayButtonComponentResource",
                 "usr": "s:14PXPCheckoutSDK30AeropayButtonComponentResourceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -29818,8 +30140,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK30AeropayButtonComponentResourceC5label11description10popupTitle012consumerDataJ00kL11Description03otpJ00nM00N19ResendCountdownText0noQ00n10VerifyCodeQ00N14InvalidMessage08aerosyncJ00vM00v8LinkBankQ00v3PaydQ00v7FundingxJ00vX36AccountListLoadingAccessibilityLabel0vwxD17AccessibilityHint0vyD17AccessibilityHint0vyD25DisabledAccessibilityHint07fundingX17AccessibilityHint08continueQ0018accessibilityCloseD5Label018accessibilityCloseD4Hint05payByxD18AccessibilityLabel05payByxD17AccessibilityHint0N29DigitAccessibilityLabelFormat06actionD31LoadingAccessibilityLabelFormat07fundingX24AccessibilityLabelFormat07fundingX26SelectedAccessibilityValue07fundingX29NotSelectedAccessibilityValue04linkxD18AccessibilityLabel0noD18AccessibilityLabel9firstName8lastName12emailAddress11phoneNumberACSS_S32SAA0c19FirstNameValidationF0VAA0c18LastNameValidationF0VAA0c22EmailAddressValidationF0VAA0c21PhoneNumberValidationF0Vtcfc",
-            "mangledName": "$s14PXPCheckoutSDK30AeropayButtonComponentResourceC5label11description10popupTitle012consumerDataJ00kL11Description03otpJ00nM00N19ResendCountdownText0noQ00n10VerifyCodeQ00N14InvalidMessage08aerosyncJ00vM00v8LinkBankQ00v3PaydQ00v7FundingxJ00vX36AccountListLoadingAccessibilityLabel0vwxD17AccessibilityHint0vyD17AccessibilityHint0vyD25DisabledAccessibilityHint07fundingX17AccessibilityHint08continueQ0018accessibilityCloseD5Label018accessibilityCloseD4Hint05payByxD18AccessibilityLabel05payByxD17AccessibilityHint0N29DigitAccessibilityLabelFormat06actionD31LoadingAccessibilityLabelFormat07fundingX24AccessibilityLabelFormat07fundingX26SelectedAccessibilityValue07fundingX29NotSelectedAccessibilityValue04linkxD18AccessibilityLabel0noD18AccessibilityLabel9firstName8lastName12emailAddress11phoneNumberACSS_S32SAA0c19FirstNameValidationF0VAA0c18LastNameValidationF0VAA0c22EmailAddressValidationF0VAA0c21PhoneNumberValidationF0Vtcfc",
+            "usr": "s:14PXPCheckoutSDK30AeropayButtonComponentResourceC5label0G6Payout11description10popupTitle012consumerDataK00lM11Description03otpK00oN00O19ResendCountdownText0opR00o10VerifyCodeR00O14InvalidMessage08aerosyncK00wN00w8LinkBankR00w3PaydR00w8WithdrawdR00w7FundingyK00wY36AccountListLoadingAccessibilityLabel0wxyD17AccessibilityHint0wzD17AccessibilityHint0wzD25DisabledAccessibilityHint07fundingY17AccessibilityHint08continueR0018accessibilityCloseD5Label018accessibilityCloseD4Hint05payByyD18AccessibilityLabel05payByyD17AccessibilityHint0O29DigitAccessibilityLabelFormat06actionD31LoadingAccessibilityLabelFormat07fundingY24AccessibilityLabelFormat07fundingY26SelectedAccessibilityValue07fundingY29NotSelectedAccessibilityValue04linkyD18AccessibilityLabel0opD18AccessibilityLabel9firstName8lastName12emailAddress11phoneNumberACSS_S34SAA0c19FirstNameValidationF0VAA0c18LastNameValidationF0VAA0c22EmailAddressValidationF0VAA0c21PhoneNumberValidationF0Vtcfc",
+            "mangledName": "$s14PXPCheckoutSDK30AeropayButtonComponentResourceC5label0G6Payout11description10popupTitle012consumerDataK00lM11Description03otpK00oN00O19ResendCountdownText0opR00o10VerifyCodeR00O14InvalidMessage08aerosyncK00wN00w8LinkBankR00w3PaydR00w8WithdrawdR00w7FundingyK00wY36AccountListLoadingAccessibilityLabel0wxyD17AccessibilityHint0wzD17AccessibilityHint0wzD25DisabledAccessibilityHint07fundingY17AccessibilityHint08continueR0018accessibilityCloseD5Label018accessibilityCloseD4Hint05payByyD18AccessibilityLabel05payByyD17AccessibilityHint0O29DigitAccessibilityLabelFormat06actionD31LoadingAccessibilityLabelFormat07fundingY24AccessibilityLabelFormat07fundingY26SelectedAccessibilityValue07fundingY29NotSelectedAccessibilityValue04linkyD18AccessibilityLabel0opD18AccessibilityLabel9firstName8lastName12emailAddress11phoneNumberACSS_S34SAA0c19FirstNameValidationF0VAA0c18LastNameValidationF0VAA0c22EmailAddressValidationF0VAA0c21PhoneNumberValidationF0Vtcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
@@ -34908,9 +35230,95 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "allowLinkBankOnPayout",
+            "printedName": "allowLinkBankOnPayout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK19BankSelectionConfigC09allowLinkC8OnPayoutSbvp",
+            "mangledName": "$s14PXPCheckoutSDK19BankSelectionConfigC09allowLinkC8OnPayoutSbvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK19BankSelectionConfigC09allowLinkC8OnPayoutSbvg",
+                "mangledName": "$s14PXPCheckoutSDK19BankSelectionConfigC09allowLinkC8OnPayoutSbvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK19BankSelectionConfigC09allowLinkC8OnPayoutSbvs",
+                "mangledName": "$s14PXPCheckoutSDK19BankSelectionConfigC09allowLinkC8OnPayoutSbvs",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK19BankSelectionConfigC09allowLinkC8OnPayoutSbvM",
+                "mangledName": "$s14PXPCheckoutSDK19BankSelectionConfigC09allowLinkC8OnPayoutSbvM",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(payButtonStyles:linkBankButtonStyles:bankItemStyles:)",
+            "printedName": "init(payButtonStyles:linkBankButtonStyles:bankItemStyles:allowLinkBankOnPayout:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -34962,11 +35370,18 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK19BankSelectionConfigC15payButtonStyles04linkcgH008bankItemH0AcA0g5StateH0VSg_AiA0cklH0CSgtcfc",
-            "mangledName": "$s14PXPCheckoutSDK19BankSelectionConfigC15payButtonStyles04linkcgH008bankItemH0AcA0g5StateH0VSg_AiA0cklH0CSgtcfc",
+            "usr": "s:14PXPCheckoutSDK19BankSelectionConfigC15payButtonStyles04linkcgH008bankItemH009allowLinkC8OnPayoutAcA0g5StateH0VSg_AjA0ckpH0CSgSbtcfc",
+            "mangledName": "$s14PXPCheckoutSDK19BankSelectionConfigC15payButtonStyles04linkcgH008bankItemH009allowLinkC8OnPayoutAcA0g5StateH0VSg_AjA0ckpH0CSgSbtcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
@@ -37741,6 +38156,13 @@
         "moduleName": "PXPCheckoutSDK"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PXPCheckoutSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "PayByBankPopupScreen",
         "printedName": "PayByBankPopupScreen",
@@ -39109,13 +39531,6 @@
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "PXPCheckoutSDK"
       },
@@ -207761,8 +208176,8 @@
           },
           {
             "kind": "Var",
-            "name": "elementId",
-            "printedName": "elementId",
+            "name": "componentId",
+            "printedName": "componentId",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -207772,8 +208187,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PXPCheckoutSDK26MessageShownAnalyticsEventC9elementIdSSvp",
-            "mangledName": "$s14PXPCheckoutSDK26MessageShownAnalyticsEventC9elementIdSSvp",
+            "usr": "s:14PXPCheckoutSDK26MessageShownAnalyticsEventC11componentIdSSvp",
+            "mangledName": "$s14PXPCheckoutSDK26MessageShownAnalyticsEventC11componentIdSSvp",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "Final",
@@ -207796,8 +208211,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PXPCheckoutSDK26MessageShownAnalyticsEventC9elementIdSSvg",
-                "mangledName": "$s14PXPCheckoutSDK26MessageShownAnalyticsEventC9elementIdSSvg",
+                "usr": "s:14PXPCheckoutSDK26MessageShownAnalyticsEventC11componentIdSSvg",
+                "mangledName": "$s14PXPCheckoutSDK26MessageShownAnalyticsEventC11componentIdSSvg",
                 "moduleName": "PXPCheckoutSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -207810,7 +208225,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(componentType:messageContent:elementId:sessionId:timestamp:)",
+            "printedName": "init(componentType:messageContent:componentId:sessionId:timestamp:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -207851,8 +208266,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK26MessageShownAnalyticsEventC13componentType14messageContent9elementId07sessionL09timestampACSS_S3S10Foundation4DateVtcfc",
-            "mangledName": "$s14PXPCheckoutSDK26MessageShownAnalyticsEventC13componentType14messageContent9elementId07sessionL09timestampACSS_S3S10Foundation4DateVtcfc",
+            "usr": "s:14PXPCheckoutSDK26MessageShownAnalyticsEventC13componentType14messageContent0G2Id07sessionK09timestampACSS_S3S10Foundation4DateVtcfc",
+            "mangledName": "$s14PXPCheckoutSDK26MessageShownAnalyticsEventC13componentType14messageContent0G2Id07sessionK09timestampACSS_S3S10Foundation4DateVtcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
@@ -268806,6 +269221,64 @@
           },
           {
             "kind": "Var",
+            "name": "aeropayAerosyncWithdrawButtonText",
+            "printedName": "aeropayAerosyncWithdrawButtonText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK12LocalisationP33aeropayAerosyncWithdrawButtonTextSSSgvp",
+            "mangledName": "$s14PXPCheckoutSDK12LocalisationP33aeropayAerosyncWithdrawButtonTextSSSgvp",
+            "moduleName": "PXPCheckoutSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK12LocalisationP33aeropayAerosyncWithdrawButtonTextSSSgvg",
+                "mangledName": "$s14PXPCheckoutSDK12LocalisationP33aeropayAerosyncWithdrawButtonTextSSSgvg",
+                "moduleName": "PXPCheckoutSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PXPCheckoutSDK.Localisation>",
+                "sugared_genericSig": "<Self where Self : PXPCheckoutSDK.Localisation>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "aeropayAerosyncFundingBankTitle",
             "printedName": "aeropayAerosyncFundingBankTitle",
             "children": [
@@ -276265,6 +276738,67 @@
           },
           {
             "kind": "Var",
+            "name": "aeropayAerosyncWithdrawButtonText",
+            "printedName": "aeropayAerosyncWithdrawButtonText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK19DefaultLocalisationV33aeropayAerosyncWithdrawButtonTextSSSgvp",
+            "mangledName": "$s14PXPCheckoutSDK19DefaultLocalisationV33aeropayAerosyncWithdrawButtonTextSSSgvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK19DefaultLocalisationV33aeropayAerosyncWithdrawButtonTextSSSgvg",
+                "mangledName": "$s14PXPCheckoutSDK19DefaultLocalisationV33aeropayAerosyncWithdrawButtonTextSSSgvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "aeropayAerosyncFundingBankTitle",
             "printedName": "aeropayAerosyncFundingBankTitle",
             "children": [
@@ -282068,6 +282602,64 @@
                 "declKind": "Accessor",
                 "usr": "s:14PXPCheckoutSDK34AeropayPayByBankButtonLocalisationP5labelSSSgvg",
                 "mangledName": "$s14PXPCheckoutSDK34AeropayPayByBankButtonLocalisationP5labelSSSgvg",
+                "moduleName": "PXPCheckoutSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PXPCheckoutSDK.AeropayPayByBankButtonLocalisation>",
+                "sugared_genericSig": "<Self where Self : PXPCheckoutSDK.AeropayPayByBankButtonLocalisation>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "labelPayout",
+            "printedName": "labelPayout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK34AeropayPayByBankButtonLocalisationP11labelPayoutSSSgvp",
+            "mangledName": "$s14PXPCheckoutSDK34AeropayPayByBankButtonLocalisationP11labelPayoutSSSgvp",
+            "moduleName": "PXPCheckoutSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK34AeropayPayByBankButtonLocalisationP11labelPayoutSSSgvg",
+                "mangledName": "$s14PXPCheckoutSDK34AeropayPayByBankButtonLocalisationP11labelPayoutSSSgvg",
                 "moduleName": "PXPCheckoutSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : PXPCheckoutSDK.AeropayPayByBankButtonLocalisation>",
                 "sugared_genericSig": "<Self where Self : PXPCheckoutSDK.AeropayPayByBankButtonLocalisation>",
@@ -293997,6 +294589,48 @@
           },
           {
             "kind": "Var",
+            "name": "aerosyncWithdrawButtonText",
+            "printedName": "aerosyncWithdrawButtonText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK21AeropayButtonResourceP016aerosyncWithdrawD4TextSSvp",
+            "mangledName": "$s14PXPCheckoutSDK21AeropayButtonResourceP016aerosyncWithdrawD4TextSSvp",
+            "moduleName": "PXPCheckoutSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK21AeropayButtonResourceP016aerosyncWithdrawD4TextSSvg",
+                "mangledName": "$s14PXPCheckoutSDK21AeropayButtonResourceP016aerosyncWithdrawD4TextSSvg",
+                "moduleName": "PXPCheckoutSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PXPCheckoutSDK.AeropayButtonResource>",
+                "sugared_genericSig": "<Self where Self : PXPCheckoutSDK.AeropayButtonResource>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "aerosyncFundingBankTitle",
             "printedName": "aerosyncFundingBankTitle",
             "children": [
@@ -294928,6 +295562,48 @@
                 "declKind": "Accessor",
                 "usr": "s:14PXPCheckoutSDK30AeropayPayByBankButtonResourceP5labelSSvg",
                 "mangledName": "$s14PXPCheckoutSDK30AeropayPayByBankButtonResourceP5labelSSvg",
+                "moduleName": "PXPCheckoutSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PXPCheckoutSDK.AeropayPayByBankButtonResource>",
+                "sugared_genericSig": "<Self where Self : PXPCheckoutSDK.AeropayPayByBankButtonResource>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "labelPayout",
+            "printedName": "labelPayout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK30AeropayPayByBankButtonResourceP11labelPayoutSSvp",
+            "mangledName": "$s14PXPCheckoutSDK30AeropayPayByBankButtonResourceP11labelPayoutSSvp",
+            "moduleName": "PXPCheckoutSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK30AeropayPayByBankButtonResourceP11labelPayoutSSvg",
+                "mangledName": "$s14PXPCheckoutSDK30AeropayPayByBankButtonResourceP11labelPayoutSSvg",
                 "moduleName": "PXPCheckoutSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : PXPCheckoutSDK.AeropayPayByBankButtonResource>",
                 "sugared_genericSig": "<Self where Self : PXPCheckoutSDK.AeropayPayByBankButtonResource>",
@@ -306175,6 +306851,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PXPCheckoutSDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -309064,21 +309747,21 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/AeropayButtonComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 22329,
+      "offset": 23988,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/AeropayButtonComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 36612,
+      "offset": 39311,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/AeropayButtonComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 54777,
+      "offset": 57635,
       "length": 5,
       "value": "false"
     },
@@ -309468,6 +310151,13 @@
       "value": "6"
     },
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/BankSelectionConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 769,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 697,
@@ -309652,168 +310342,168 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "FloatLiteral",
-      "offset": 5945,
+      "offset": 6009,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "FloatLiteral",
-      "offset": 6000,
+      "offset": 6064,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6039,
+      "offset": 6103,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6080,
+      "offset": 6144,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6121,
+      "offset": 6185,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6163,
+      "offset": 6227,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6212,
+      "offset": 6276,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6437,
+      "offset": 6501,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6473,
+      "offset": 6537,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6486,
+      "offset": 6550,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6498,
+      "offset": 6562,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6512,
+      "offset": 6576,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6652,
+      "offset": 6716,
       "length": 4,
       "value": "0x75"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "FloatLiteral",
-      "offset": 6660,
+      "offset": 6724,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6690,
+      "offset": 6754,
       "length": 4,
       "value": "0x8C"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "FloatLiteral",
-      "offset": 6698,
+      "offset": 6762,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6727,
+      "offset": 6791,
       "length": 4,
       "value": "0xFF"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "FloatLiteral",
-      "offset": 6735,
+      "offset": 6799,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6803,
+      "offset": 6867,
       "length": 4,
       "value": "0x38"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "FloatLiteral",
-      "offset": 6811,
+      "offset": 6875,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6841,
+      "offset": 6905,
       "length": 4,
       "value": "0x30"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "FloatLiteral",
-      "offset": 6849,
+      "offset": 6913,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6878,
+      "offset": 6942,
       "length": 4,
       "value": "0xF5"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "FloatLiteral",
-      "offset": 6886,
+      "offset": 6950,
       "length": 5,
       "value": "255.0"
     },
@@ -310429,147 +311119,140 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 693,
+      "offset": 680,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 742,
+      "offset": 729,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 796,
+      "offset": 783,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 857,
+      "offset": 844,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 908,
+      "offset": 895,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1050,
+      "offset": 1037,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "Array",
-      "offset": 1179,
+      "offset": 1166,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 1283,
+      "offset": 1270,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 31105,
+      "offset": 32263,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 31740,
+      "offset": 32898,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 31790,
+      "offset": 32948,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 31829,
-      "length": 2,
-      "value": "96"
+      "offset": 32991,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 31892,
-      "length": 3,
-      "value": "116"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
-      "kind": "IntegerLiteral",
-      "offset": 31951,
+      "offset": 33048,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 32010,
+      "offset": 33107,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 32055,
+      "offset": 33152,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 32101,
+      "offset": 33198,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 32156,
+      "offset": 33253,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 32197,
+      "offset": 33294,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 32236,
+      "offset": 33333,
       "length": 2,
       "value": "96"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "Dictionary",
-      "offset": 32490,
+      "offset": 33587,
       "length": 1087,
       "value": "[(\"wells fargo bank\", \"ic-aeropay-bank-wells-fargo\"), (\"chase\", \"ic-aeropay-bank-chase\"), (\"navy federal credit union\", \"ic-aeropay-bank-navy-federal\"), (\"bank of america\", \"ic-aeropay-bank-of-america\"), (\"capital one\", \"ic-aeropay-bank-capital-one\"), (\"sofi\", \"ic-aeropay-bank-sofi\"), (\"pnc bank\", \"ic-aeropay-bank-pnc\"), (\"usaa\", \"ic-aeropay-bank-usaa\"), (\"us bank\", \"ic-aeropay-bank-us-bank\"), (\"truist\", \"ic-aeropay-bank-truist\"), (\"regions bank\", \"ic-aeropay-bank-regions\"), (\"fifth third bank - online banking\", \"ic-aeropay-bank-fifth-third\"), (\"td bank\", \"ic-aeropay-bank-td\"), (\"huntington bank - personal\", \"ic-aeropay-bank-huntington\"), (\"discover bank account\", \"ic-aeropay-bank-discover\"), (\"citibank\", \"ic-aeropay-bank-citibank\"), (\"bmo - digital banking\", \"ic-aeropay-bank-bmo\"), (\"woodforest national bank\", \"ic-aeropay-bank-woodforest\"), (\"north carolina state employees credit union\", \"ic-aeropay-bank-nc-state-employees-cu\"), (\"first national bank texas - first convenience bank\", \"ic-aeropay-bank-first-national-bank-texas\")]"
     },
@@ -310646,42 +311329,42 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 13463,
+      "offset": 13602,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 13520,
+      "offset": 13659,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 13577,
+      "offset": 13716,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 13642,
+      "offset": 13781,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 13695,
+      "offset": 13834,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 13752,
+      "offset": 13891,
       "length": 2,
       "value": "35"
     },
@@ -310709,21 +311392,28 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/PopupActionButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 223,
+      "offset": 203,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/PopupActionButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 249,
+      "offset": 279,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/PopupActionButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 280,
+      "offset": 305,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/PopupActionButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 336,
       "length": 5,
       "value": "false"
     },
@@ -311346,14 +312036,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/BaseComponents\/BaseCheckoutComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 4613,
+      "offset": 4563,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/BaseComponents\/BaseCheckoutComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 4661,
+      "offset": 4611,
       "length": 5,
       "value": "false"
     },
@@ -311997,7 +312687,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CardSubmitComponent\/CardSubmitComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 1386,
+      "offset": 1442,
       "length": 5,
       "value": "false"
     },
@@ -316071,119 +316761,119 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4660,
+      "offset": 4659,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4761,
+      "offset": 4760,
       "length": 3,
       "value": "220"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4815,
+      "offset": 4814,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4913,
+      "offset": 4912,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5009,
+      "offset": 5008,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5105,
+      "offset": 5104,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5188,
+      "offset": 5187,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5491,
+      "offset": 5490,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5553,
+      "offset": 5552,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "FloatLiteral",
-      "offset": 5825,
+      "offset": 5824,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6622,
+      "offset": 6621,
       "length": 3,
       "value": "220"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6887,
+      "offset": 6886,
       "length": 3,
       "value": "220"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 24113,
+      "offset": 24112,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 24175,
+      "offset": 24174,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 24290,
+      "offset": 24289,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 24351,
+      "offset": 24350,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CountrySelectionComponent\/Views\/DropdownManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 38367,
+      "offset": 38366,
       "length": 3,
       "value": "220"
     },
@@ -316435,7 +317125,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/FieldComponents\/FieldComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 9170,
+      "offset": 9172,
       "length": 5,
       "value": "false"
     },
@@ -317268,7 +317958,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/PayPalButtonComponentConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4760,
+      "offset": 4759,
       "length": 16,
       "value": "\"PayPal Payment\""
     },
@@ -317324,98 +318014,98 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Types\/PayPalButtonStyle.swift",
       "kind": "StringLiteral",
-      "offset": 767,
+      "offset": 766,
       "length": 10,
       "value": "\"Checkout\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Types\/PayPalButtonStyle.swift",
       "kind": "StringLiteral",
-      "offset": 848,
+      "offset": 847,
       "length": 9,
       "value": "\"Buy Now\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Types\/PayPalButtonStyle.swift",
       "kind": "StringLiteral",
-      "offset": 929,
+      "offset": 928,
       "length": 10,
       "value": "\"Pay with\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Types\/PayPalButtonStyle.swift",
       "kind": "StringLiteral",
-      "offset": 1050,
+      "offset": 1049,
       "length": 11,
       "value": "\"Pay Later\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Types\/PayPalButtonStyle.swift",
       "kind": "StringLiteral",
-      "offset": 1237,
+      "offset": 1236,
       "length": 8,
       "value": "\"paypal\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Types\/PayPalButtonStyle.swift",
       "kind": "StringLiteral",
-      "offset": 1298,
+      "offset": 1297,
       "length": 10,
       "value": "\"paylater\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Types\/PayPalButtonStyle.swift",
       "kind": "StringLiteral",
-      "offset": 1514,
+      "offset": 1513,
       "length": 6,
       "value": "\"mini\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Types\/PayPalButtonStyle.swift",
       "kind": "StringLiteral",
-      "offset": 1582,
+      "offset": 1581,
       "length": 11,
       "value": "\"collapsed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Types\/PayPalButtonStyle.swift",
       "kind": "StringLiteral",
-      "offset": 1652,
+      "offset": 1651,
       "length": 10,
       "value": "\"expanded\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Types\/PayPalButtonStyle.swift",
       "kind": "StringLiteral",
-      "offset": 1714,
+      "offset": 1713,
       "length": 6,
       "value": "\"full\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Types\/PayPalButtonStyleConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3110,
+      "offset": 3109,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Types\/PayPalButtonStyleConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3132,
+      "offset": 3131,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Types\/PayPalButtonStyleConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3153,
+      "offset": 3152,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Types\/PayPalButtonStyleConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3176,
+      "offset": 3175,
       "length": 1,
       "value": "0"
     },
@@ -318346,175 +319036,175 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "IntegerLiteral",
-      "offset": 854,
+      "offset": 820,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "IntegerLiteral",
-      "offset": 877,
+      "offset": 843,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "IntegerLiteral",
-      "offset": 895,
+      "offset": 861,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1500,
+      "offset": 1429,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1522,
+      "offset": 1451,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1548,
+      "offset": 1477,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "IntegerLiteral",
-      "offset": 1572,
+      "offset": 1501,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 2349,
+      "offset": 2278,
       "length": 10,
       "value": "\"PURCHASE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 2382,
+      "offset": 2311,
       "length": 14,
       "value": "\"CARD_ON_FILE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 2413,
+      "offset": 2342,
       "length": 6,
       "value": "\"BOTH\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 2529,
+      "offset": 2458,
       "length": 4,
       "value": "\"ID\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 2553,
+      "offset": 2482,
       "length": 9,
       "value": "\"PAYMENT\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "IntegerLiteral",
-      "offset": 2777,
+      "offset": 2706,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "IntegerLiteral",
-      "offset": 2891,
+      "offset": 2820,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 3455,
+      "offset": 3384,
       "length": 12,
       "value": "\"START_FLOW\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 3571,
+      "offset": 3500,
       "length": 5,
       "value": "\"ALL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 3599,
+      "offset": 3528,
       "length": 13,
       "value": "\"ZIP_COUNTRY\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 3629,
+      "offset": 3558,
       "length": 6,
       "value": "\"NONE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 3765,
+      "offset": 3694,
       "length": 10,
       "value": "\"DISCOVER\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 3798,
+      "offset": 3727,
       "length": 12,
       "value": "\"MASTERCARD\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 3827,
+      "offset": 3756,
       "length": 6,
       "value": "\"VISA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 3934,
+      "offset": 3863,
       "length": 18,
       "value": "\"EXPRESS_CHECKOUT\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 3977,
+      "offset": 3906,
       "length": 16,
       "value": "\"REVIEW_AND_PAY\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 4099,
+      "offset": 4028,
       "length": 5,
       "value": "\"ALL\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PazeButtonComponent\/Types\/PazeEnums.swift",
       "kind": "StringLiteral",
-      "offset": 4121,
+      "offset": 4050,
       "length": 6,
       "value": "\"NONE\""
     },
@@ -323330,609 +324020,623 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 19200,
+      "offset": 19202,
+      "length": 16,
+      "value": "\"Ανάληψη\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
+      "kind": "StringLiteral",
+      "offset": 19261,
       "length": 70,
       "value": "\"ΕΠΙΛΕΞΤΕ ΤΡΑΠΕΖΑ ΧΡΗΜΑΤΟΔΟΤΗΣΗΣ AEROPAY\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 19337,
+      "offset": 19398,
       "length": 85,
       "value": "\"Φόρτωση συνδεδεμένων τραπεζικών λογαριασμών\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 19480,
+      "offset": 19541,
       "length": 100,
       "value": "\"Πατήστε δύο φορές για να ανοίξετε τη σύνδεση τράπεζας\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 19633,
+      "offset": 19694,
       "length": 133,
       "value": "\"Πατήστε δύο φορές για πληρωμή με την επιλεγμένη τράπεζα χρηματοδότησης\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 19827,
+      "offset": 19888,
       "length": 145,
       "value": "\"Συνδέστε ή επιλέξτε τράπεζα χρηματοδότησης για να ενεργοποιήσετε την πληρωμή\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 20019,
+      "offset": 20080,
       "length": 127,
       "value": "\"Πατήστε δύο φορές για να επιλέξετε αυτήν την τράπεζα χρηματοδότησης\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 20177,
+      "offset": 20238,
       "length": 18,
       "value": "\"Συνέχεια\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 20243,
+      "offset": 20304,
       "length": 18,
       "value": "\"Κλείσιμο\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 20308,
+      "offset": 20369,
       "length": 111,
       "value": "\"Πατήστε δύο φορές για να κλείσετε την πληρωμή μέσω τράπεζας\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 20471,
+      "offset": 20532,
       "length": 105,
       "value": "\"Πληρωμή μέσω τράπεζας. Ασφαλής τραπεζική πληρωμή με Aeropay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 20627,
+      "offset": 20688,
       "length": 122,
       "value": "\"Πατήστε δύο φορές για να ξεκινήσετε τη ροή πληρωμής μέσω τράπεζας\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 20800,
+      "offset": 20861,
       "length": 60,
       "value": "\"Ψηφίο %d του κωδικού επαλήθευσης\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 20922,
+      "offset": 20983,
       "length": 21,
       "value": "\"%@ φορτώνει\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 20997,
+      "offset": 21058,
       "length": 12,
       "value": "\"%@, %@, %@\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 21065,
+      "offset": 21126,
       "length": 22,
       "value": "\"Επιλεγμένο\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 21146,
+      "offset": 21207,
       "length": 27,
       "value": "\"Μη επιλεγμένο\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 21224,
+      "offset": 21285,
       "length": 46,
       "value": "\"Σύνδεση τράπεζας με Aeropay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 21322,
+      "offset": 21383,
       "length": 77,
       "value": "\"Επανάληψη αποστολής κωδικού επαλήθευσης\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 21783,
+      "offset": 21844,
       "length": 42,
       "value": "\"Πληρωμή μέσω τράπεζας\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 21855,
+      "offset": 21916,
+      "length": 42,
+      "value": "\"Ανάληψη μέσω τράπεζας\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
+      "kind": "StringLiteral",
+      "offset": 21988,
       "length": 50,
       "value": "\"Υποστηρίζεται από την Aeropay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 22469,
+      "offset": 22602,
       "length": 12,
       "value": "\"Όνομα\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 22511,
+      "offset": 22644,
       "length": 33,
       "value": "\"Εισαγάγετε όνομα\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 22572,
+      "offset": 22705,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 22696,
+      "offset": 22829,
       "length": 12,
       "value": "\"Όνομα\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 22805,
+      "offset": 22938,
       "length": 51,
       "value": "\"Παρακαλώ εισαγάγετε όνομα.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 22879,
+      "offset": 23012,
       "length": 64,
       "value": "\"Παρακαλώ εισαγάγετε έγκυρο όνομα.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 22966,
+      "offset": 23099,
       "length": 72,
       "value": "\"Το μέγιστο μήκος του ονόματος είναι 100.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 23138,
+      "offset": 23271,
       "length": 16,
       "value": "\"Επώνυμο\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 23184,
+      "offset": 23317,
       "length": 37,
       "value": "\"Εισαγάγετε επώνυμο\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 23249,
+      "offset": 23382,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 23371,
+      "offset": 23504,
       "length": 16,
       "value": "\"Επώνυμο\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 23482,
+      "offset": 23615,
       "length": 55,
       "value": "\"Παρακαλώ εισαγάγετε επώνυμο.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 23560,
+      "offset": 23693,
       "length": 68,
       "value": "\"Παρακαλώ εισαγάγετε έγκυρο επώνυμο.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 23651,
+      "offset": 23784,
       "length": 72,
       "value": "\"Το μέγιστο μήκος του επωνύμου είναι 100.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 23831,
+      "offset": 23964,
       "length": 26,
       "value": "\"Διεύθυνση email\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 23887,
+      "offset": 24020,
       "length": 47,
       "value": "\"Εισαγάγετε διεύθυνση email\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 23962,
+      "offset": 24095,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 24092,
+      "offset": 24225,
       "length": 26,
       "value": "\"Διεύθυνση email\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 24221,
+      "offset": 24354,
       "length": 65,
       "value": "\"Παρακαλώ εισαγάγετε διεύθυνση email.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 24309,
+      "offset": 24442,
       "length": 78,
       "value": "\"Παρακαλώ εισαγάγετε έγκυρη διεύθυνση email.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 24410,
+      "offset": 24543,
       "length": 82,
       "value": "\"Το μέγιστο μήκος της διεύθυνσης email είναι 128.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 24598,
+      "offset": 24731,
       "length": 35,
       "value": "\"Αριθμός τηλεφώνου\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 24663,
+      "offset": 24796,
       "length": 54,
       "value": "\"Εισαγάγετε αριθμό τηλεφώνου\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 24745,
+      "offset": 24878,
       "length": 64,
       "value": "\"Χρησιμοποιείται για επαλήθευση OTP\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 24935,
+      "offset": 25068,
       "length": 35,
       "value": "\"Αριθμός τηλεφώνου\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 25071,
+      "offset": 25204,
       "length": 72,
       "value": "\"Παρακαλώ εισαγάγετε αριθμό τηλεφώνου.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 25166,
+      "offset": 25299,
       "length": 85,
       "value": "\"Παρακαλώ εισαγάγετε έγκυρο αριθμό τηλεφώνου.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 25355,
+      "offset": 25488,
       "length": 21,
       "value": "\"Ανάληψη με\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 25419,
+      "offset": 25552,
       "length": 28,
       "value": "\"Ανάληψη με PayPal\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 25489,
+      "offset": 25622,
       "length": 64,
       "value": "\"Διπλό πάτημα για υποβολή πληρωμής\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 25603,
+      "offset": 25736,
       "length": 41,
       "value": "\"Επεξεργασία πληρωμής\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 25693,
+      "offset": 25826,
       "length": 98,
       "value": "\"Παρακαλώ περιμένετε όσο η πληρωμή σας επεξεργάζεται\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 25842,
+      "offset": 25975,
       "length": 34,
       "value": "\"απενεργοποιημένο\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 25926,
+      "offset": 26059,
       "length": 88,
       "value": "\"Το κουμπί είναι προς το παρόν απενεργοποιημένο\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26127,
+      "offset": 26260,
       "length": 16,
       "value": "\"Τράπεζα\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26183,
+      "offset": 26316,
       "length": 21,
       "value": "\"1234 5678 9123 5678\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26244,
+      "offset": 26377,
       "length": 7,
       "value": "\"12\/35\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26291,
+      "offset": 26424,
       "length": 40,
       "value": "\"ΟΝΟΜΑ ΚΑΤΟΧΟΥ ΚΑΡΤΑΣ\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26364,
+      "offset": 26497,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26410,
+      "offset": 26543,
       "length": 14,
       "value": "\"Ισχύει\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26464,
+      "offset": 26597,
       "length": 8,
       "value": "\"Έως\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26510,
+      "offset": 26643,
       "length": 5,
       "value": "\"CVC\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26615,
+      "offset": 26748,
       "length": 48,
       "value": "\"Επιλογή Μεθόδου Πληρωμής\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26691,
+      "offset": 26824,
       "length": 12,
       "value": "\"Κάρτα\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26733,
+      "offset": 26866,
       "length": 8,
       "value": "\"PayPal\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26773,
+      "offset": 26906,
       "length": 11,
       "value": "\"Apple Pay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26812,
+      "offset": 26945,
       "length": 6,
       "value": "\"Paze\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26851,
+      "offset": 26984,
       "length": 12,
       "value": "\"Google Pay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26897,
+      "offset": 27030,
       "length": 37,
       "value": "\"ΑΠΟΘΗΚΕΥΜΕΝΗ ΚΑΡΤΑ\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 26965,
+      "offset": 27098,
       "length": 38,
       "value": "\"ΝΕΑ ΕΙΣΑΓΩΓΗ ΚΑΡΤΑΣ\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 27041,
+      "offset": 27174,
       "length": 35,
       "value": "\"ΔΙΕΥΘΥΝΣΗ ΧΡΕΩΣΗΣ\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 27108,
+      "offset": 27241,
       "length": 31,
       "value": "\"Ασφαλίζεται από\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 27173,
+      "offset": 27306,
       "length": 5,
       "value": "\"PXP\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 27208,
+      "offset": 27341,
       "length": 19,
       "value": "\"Φόρτωση...\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 27267,
+      "offset": 27400,
       "length": 140,
       "value": "\"Δεν υπάρχουν διαθέσιμες μέθοδοι πληρωμής. Επικοινωνήστε με την υποστήριξη.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 27468,
+      "offset": 27601,
       "length": 33,
       "value": "\"Επιλογή πληρωμής\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 27557,
+      "offset": 27690,
       "length": 50,
       "value": "\"Γρήγορες μέθοδοι πληρωμής\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 27658,
+      "offset": 27791,
       "length": 33,
       "value": "\"Μέθοδοι πληρωμής\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 27767,
+      "offset": 27900,
       "length": 33,
       "value": "\"Μέθοδος πληρωμής\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 27836,
+      "offset": 27969,
       "length": 24,
       "value": "\"Ανεπτυγμένο\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 27897,
+      "offset": 28030,
       "length": 24,
       "value": "\"Συμπτυγμένο\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 27956,
+      "offset": 28089,
       "length": 82,
       "value": "\"Ανεπτυγμένο. Πατήστε δύο φορές για σύμπτυξη\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 28074,
+      "offset": 28207,
       "length": 82,
       "value": "\"Συμπτυγμένο. Πατήστε δύο φορές για ανάπτυξη\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 28190,
+      "offset": 28323,
       "length": 14,
       "value": "\"Σφάλμα\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 28240,
+      "offset": 28373,
       "length": 48,
       "value": "\"Ολοκλήρωση αγοράς έτοιμη\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 28324,
+      "offset": 28457,
       "length": 34,
       "value": "\"Η πληρωμή απέτυχε\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
       "kind": "StringLiteral",
-      "offset": 28401,
+      "offset": 28534,
       "length": 48,
       "value": "\"Φόρτωση μεθόδου πληρωμής\""
     },
@@ -324961,609 +325665,623 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 14430,
+      "offset": 14432,
+      "length": 10,
+      "value": "\"Withdraw\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
+      "kind": "StringLiteral",
+      "offset": 14485,
       "length": 33,
       "value": "\"SELECT THE AEROPAY FUNDING BANK\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 14530,
+      "offset": 14585,
       "length": 30,
       "value": "\"Loading linked bank accounts\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 14618,
+      "offset": 14673,
       "length": 33,
       "value": "\"Double tap to open bank linking\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 14704,
+      "offset": 14759,
       "length": 50,
       "value": "\"Double tap to pay with the selected funding bank\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 14815,
+      "offset": 14870,
       "length": 49,
       "value": "\"Link or select a funding bank to enable payment\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 14911,
+      "offset": 14966,
       "length": 40,
       "value": "\"Double tap to select this funding bank\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 14982,
+      "offset": 15037,
       "length": 10,
       "value": "\"Continue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 15040,
+      "offset": 15095,
       "length": 7,
       "value": "\"Close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 15094,
+      "offset": 15149,
       "length": 33,
       "value": "\"Double tap to close Pay by Bank\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 15179,
+      "offset": 15234,
       "length": 47,
       "value": "\"Pay by bank. Secure bank payment with Aeropay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 15277,
+      "offset": 15332,
       "length": 42,
       "value": "\"Double tap to start the Pay by Bank flow\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 15370,
+      "offset": 15425,
       "length": 28,
       "value": "\"Verification code digit %d\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 15460,
+      "offset": 15515,
       "length": 12,
       "value": "\"%@ loading\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 15526,
+      "offset": 15581,
       "length": 12,
       "value": "\"%@, %@, %@\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 15594,
+      "offset": 15649,
       "length": 10,
       "value": "\"Selected\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 15663,
+      "offset": 15718,
       "length": 14,
       "value": "\"Not selected\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 15728,
+      "offset": 15783,
       "length": 26,
       "value": "\"Link a bank with Aeropay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 15806,
+      "offset": 15861,
       "length": 26,
       "value": "\"Resend verification code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 16216,
+      "offset": 16271,
       "length": 13,
       "value": "\"Pay by bank\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 16259,
+      "offset": 16314,
+      "length": 18,
+      "value": "\"Withdraw by Bank\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
+      "kind": "StringLiteral",
+      "offset": 16362,
       "length": 20,
       "value": "\"Powered by Aeropay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 16843,
+      "offset": 16946,
       "length": 12,
       "value": "\"First name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 16885,
+      "offset": 16988,
       "length": 18,
       "value": "\"Enter first name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 16931,
+      "offset": 17034,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 17055,
+      "offset": 17158,
       "length": 12,
       "value": "\"First name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 17164,
+      "offset": 17267,
       "length": 26,
       "value": "\"Please enter first name.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 17213,
+      "offset": 17316,
       "length": 60,
       "value": "\"First name must not contain numbers or special characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 17296,
+      "offset": 17399,
       "length": 42,
       "value": "\"The maximum length of first name is 100.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 17438,
+      "offset": 17541,
       "length": 11,
       "value": "\"Last name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 17479,
+      "offset": 17582,
       "length": 17,
       "value": "\"Enter last name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 17524,
+      "offset": 17627,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 17646,
+      "offset": 17749,
       "length": 11,
       "value": "\"Last name\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 17752,
+      "offset": 17855,
       "length": 25,
       "value": "\"Please enter last name.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 17800,
+      "offset": 17903,
       "length": 59,
       "value": "\"Last name must not contain numbers or special characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 17882,
+      "offset": 17985,
       "length": 41,
       "value": "\"The maximum length of last name is 100.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 18031,
+      "offset": 18134,
       "length": 15,
       "value": "\"Email address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 18076,
+      "offset": 18179,
       "length": 21,
       "value": "\"Enter email address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 18125,
+      "offset": 18228,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 18255,
+      "offset": 18358,
       "length": 15,
       "value": "\"Email address\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 18373,
+      "offset": 18476,
       "length": 29,
       "value": "\"Please enter email address.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 18425,
+      "offset": 18528,
       "length": 29,
       "value": "\"Email address is not valid.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 18477,
+      "offset": 18580,
       "length": 37,
       "value": "\"The maximum length of email is 128.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 18620,
+      "offset": 18723,
       "length": 14,
       "value": "\"Phone number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 18664,
+      "offset": 18767,
       "length": 20,
       "value": "\"Enter phone number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 18712,
+      "offset": 18815,
       "length": 27,
       "value": "\"Used for OTP verification\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 18865,
+      "offset": 18968,
       "length": 14,
       "value": "\"Phone number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 18980,
+      "offset": 19083,
       "length": 28,
       "value": "\"Please enter phone number.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 19031,
+      "offset": 19134,
       "length": 67,
       "value": "\"Phone number must be a US phone number, for example +11234567890.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 19202,
+      "offset": 19305,
       "length": 15,
       "value": "\"Withdraw with\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 19260,
+      "offset": 19363,
       "length": 22,
       "value": "\"Withdraw with PayPal\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 19324,
+      "offset": 19427,
       "length": 29,
       "value": "\"Double tap to submit payout\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 19403,
+      "offset": 19506,
       "length": 19,
       "value": "\"Processing payout\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 19471,
+      "offset": 19574,
       "length": 50,
       "value": "\"Please wait while your payout is being processed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 19572,
+      "offset": 19675,
       "length": 10,
       "value": "\"disabled\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 19632,
+      "offset": 19735,
       "length": 30,
       "value": "\"Button is currently disabled\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 19775,
+      "offset": 19878,
       "length": 6,
       "value": "\"Bank\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 19821,
+      "offset": 19924,
       "length": 21,
       "value": "\"1234 5678 9123 5678\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 19882,
+      "offset": 19985,
       "length": 7,
       "value": "\"12\/35\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 19929,
+      "offset": 20032,
       "length": 18,
       "value": "\"CARD HOLDER NAME\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 19980,
+      "offset": 20083,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20026,
+      "offset": 20129,
       "length": 7,
       "value": "\"Valid\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20073,
+      "offset": 20176,
       "length": 6,
       "value": "\"Thru\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20117,
+      "offset": 20220,
       "length": 5,
       "value": "\"CVC\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20222,
+      "offset": 20325,
       "length": 23,
       "value": "\"Select Payment Method\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20273,
+      "offset": 20376,
       "length": 6,
       "value": "\"Card\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20309,
+      "offset": 20412,
       "length": 8,
       "value": "\"PayPal\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20349,
+      "offset": 20452,
       "length": 11,
       "value": "\"Apple Pay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20388,
+      "offset": 20491,
       "length": 6,
       "value": "\"Paze\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20427,
+      "offset": 20530,
       "length": 12,
       "value": "\"Google Pay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20473,
+      "offset": 20576,
       "length": 14,
       "value": "\"CARD ON FILE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20518,
+      "offset": 20621,
       "length": 16,
       "value": "\"NEW CARD ENTRY\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20572,
+      "offset": 20675,
       "length": 17,
       "value": "\"BILLING ADDRESS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20621,
+      "offset": 20724,
       "length": 12,
       "value": "\"Secured by\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20667,
+      "offset": 20770,
       "length": 5,
       "value": "\"PXP\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20702,
+      "offset": 20805,
       "length": 12,
       "value": "\"Loading...\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20754,
+      "offset": 20857,
       "length": 59,
       "value": "\"No payment methods are available. Please contact support.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20874,
+      "offset": 20977,
       "length": 28,
       "value": "\"Checkout payment selection\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 20958,
+      "offset": 21061,
       "length": 23,
       "value": "\"Quick payment methods\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 21032,
+      "offset": 21135,
       "length": 17,
       "value": "\"Payment methods\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 21125,
+      "offset": 21228,
       "length": 16,
       "value": "\"Payment method\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 21177,
+      "offset": 21280,
       "length": 10,
       "value": "\"Expanded\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 21224,
+      "offset": 21327,
       "length": 11,
       "value": "\"Collapsed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 21270,
+      "offset": 21373,
       "length": 34,
       "value": "\"Expanded. Double tap to collapse\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 21340,
+      "offset": 21443,
       "length": 33,
       "value": "\"Collapsed. Double tap to expand\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 21407,
+      "offset": 21510,
       "length": 7,
       "value": "\"Error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 21450,
+      "offset": 21553,
       "length": 16,
       "value": "\"Checkout ready\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 21502,
+      "offset": 21605,
       "length": 16,
       "value": "\"Payment failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EnUSResource.swift",
       "kind": "StringLiteral",
-      "offset": 21561,
+      "offset": 21664,
       "length": 24,
       "value": "\"Loading payment method\""
     },
@@ -326592,609 +327310,623 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 15507,
+      "offset": 15509,
+      "length": 9,
+      "value": "\"Retirar\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
+      "kind": "StringLiteral",
+      "offset": 15561,
       "length": 49,
       "value": "\"SELECCIONE EL BANCO DE FINANCIACIÓN DE AEROPAY\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 15623,
+      "offset": 15677,
       "length": 39,
       "value": "\"Cargando cuentas bancarias vinculadas\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 15720,
+      "offset": 15774,
       "length": 53,
       "value": "\"Toque dos veces para abrir la vinculación bancaria\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 15826,
+      "offset": 15880,
       "length": 71,
       "value": "\"Toque dos veces para pagar con el banco de financiación seleccionado\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 15958,
+      "offset": 16012,
       "length": 71,
       "value": "\"Vincule o seleccione un banco de financiación para habilitar el pago\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 16076,
+      "offset": 16130,
       "length": 62,
       "value": "\"Toque dos veces para seleccionar este banco de financiación\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 16169,
+      "offset": 16223,
       "length": 11,
       "value": "\"Continuar\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 16228,
+      "offset": 16282,
       "length": 8,
       "value": "\"Cerrar\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 16283,
+      "offset": 16337,
       "length": 45,
       "value": "\"Toque dos veces para cerrar Pagar con banco\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 16380,
+      "offset": 16434,
       "length": 51,
       "value": "\"Pagar con banco. Pago bancario seguro con Aeropay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 16482,
+      "offset": 16536,
       "length": 57,
       "value": "\"Toque dos veces para iniciar el flujo de pago con banco\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 16590,
+      "offset": 16644,
       "length": 41,
       "value": "\"Dígito %d del código de verificación\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 16693,
+      "offset": 16747,
       "length": 13,
       "value": "\"%@ cargando\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 16760,
+      "offset": 16814,
       "length": 12,
       "value": "\"%@, %@, %@\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 16828,
+      "offset": 16882,
       "length": 14,
       "value": "\"Seleccionado\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 16901,
+      "offset": 16955,
       "length": 17,
       "value": "\"No seleccionado\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 16969,
+      "offset": 17023,
       "length": 31,
       "value": "\"Vincular un banco con Aeropay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 17052,
+      "offset": 17106,
       "length": 35,
       "value": "\"Reenviar código de verificación\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 17471,
+      "offset": 17525,
       "length": 17,
       "value": "\"Pagar por banco\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 17518,
+      "offset": 17572,
+      "length": 19,
+      "value": "\"Retirar por banco\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
+      "kind": "StringLiteral",
+      "offset": 17621,
       "length": 26,
       "value": "\"Desarrollado por Aeropay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 18108,
+      "offset": 18211,
       "length": 8,
       "value": "\"Nombre\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 18146,
+      "offset": 18249,
       "length": 22,
       "value": "\"Introduzca el nombre\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 18196,
+      "offset": 18299,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 18320,
+      "offset": 18423,
       "length": 8,
       "value": "\"Nombre\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 18425,
+      "offset": 18528,
       "length": 34,
       "value": "\"Por favor, introduzca el nombre.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 18482,
+      "offset": 18585,
       "length": 41,
       "value": "\"Por favor, introduzca un nombre valido.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 18546,
+      "offset": 18649,
       "length": 39,
       "value": "\"El nombre máximo de longitud es 100.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 18685,
+      "offset": 18788,
       "length": 10,
       "value": "\"Apellido\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 18725,
+      "offset": 18828,
       "length": 24,
       "value": "\"Introduzca el apellido\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 18777,
+      "offset": 18880,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 18899,
+      "offset": 19002,
       "length": 10,
       "value": "\"Apellido\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 19004,
+      "offset": 19107,
       "length": 36,
       "value": "\"Por favor, introduzca el apellido.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 19063,
+      "offset": 19166,
       "length": 43,
       "value": "\"Por favor, introduzca un apellido valido.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 19129,
+      "offset": 19232,
       "length": 41,
       "value": "\"El apellido máximo de longitud es 100.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 19278,
+      "offset": 19381,
       "length": 20,
       "value": "\"Correo electronico\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 19328,
+      "offset": 19431,
       "length": 34,
       "value": "\"Introduzca el correo electronico\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 19390,
+      "offset": 19493,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 19520,
+      "offset": 19623,
       "length": 20,
       "value": "\"Correo electronico\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 19643,
+      "offset": 19746,
       "length": 46,
       "value": "\"Por favor, introduzca el correo electronico.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 19712,
+      "offset": 19815,
       "length": 53,
       "value": "\"Por favor, introduzca un correo electronico valido.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 19788,
+      "offset": 19891,
       "length": 52,
       "value": "\"El correo electrónico máximo de longitud es 128.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 19946,
+      "offset": 20049,
       "length": 20,
       "value": "\"Numero de telefono\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 19996,
+      "offset": 20099,
       "length": 34,
       "value": "\"Introduzca el numero de telefono\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 20058,
+      "offset": 20161,
       "length": 33,
       "value": "\"Se usa para la verificacion OTP\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 20217,
+      "offset": 20320,
       "length": 20,
       "value": "\"Numero de telefono\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 20338,
+      "offset": 20441,
       "length": 46,
       "value": "\"Por favor, introduzca el numero de telefono.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 20407,
+      "offset": 20510,
       "length": 53,
       "value": "\"Por favor, introduzca un numero de telefono valido.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 20564,
+      "offset": 20667,
       "length": 13,
       "value": "\"Retirar con\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 20620,
+      "offset": 20723,
       "length": 20,
       "value": "\"Retirar con PayPal\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 20682,
+      "offset": 20785,
       "length": 36,
       "value": "\"Toca dos veces para enviar el pago\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 20768,
+      "offset": 20871,
       "length": 17,
       "value": "\"Procesando pago\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 20834,
+      "offset": 20937,
       "length": 46,
       "value": "\"Por favor espere mientras se procesa su pago\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 20931,
+      "offset": 21034,
       "length": 15,
       "value": "\"deshabilitado\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 20996,
+      "offset": 21099,
       "length": 43,
       "value": "\"El botón está actualmente deshabilitado\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21152,
+      "offset": 21255,
       "length": 7,
       "value": "\"Banco\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21199,
+      "offset": 21302,
       "length": 21,
       "value": "\"1234 5678 9123 5678\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21260,
+      "offset": 21363,
       "length": 7,
       "value": "\"12\/35\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21307,
+      "offset": 21410,
       "length": 20,
       "value": "\"NOMBRE DEL TITULAR\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21360,
+      "offset": 21463,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21406,
+      "offset": 21509,
       "length": 9,
       "value": "\"Válido\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21455,
+      "offset": 21558,
       "length": 7,
       "value": "\"Hasta\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21500,
+      "offset": 21603,
       "length": 5,
       "value": "\"CVC\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21605,
+      "offset": 21708,
       "length": 29,
       "value": "\"Seleccionar Método de Pago\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21662,
+      "offset": 21765,
       "length": 9,
       "value": "\"Tarjeta\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21701,
+      "offset": 21804,
       "length": 8,
       "value": "\"PayPal\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21741,
+      "offset": 21844,
       "length": 11,
       "value": "\"Apple Pay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21780,
+      "offset": 21883,
       "length": 6,
       "value": "\"Paze\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21819,
+      "offset": 21922,
       "length": 12,
       "value": "\"Google Pay\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21865,
+      "offset": 21968,
       "length": 18,
       "value": "\"TARJETA GUARDADA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21914,
+      "offset": 22017,
       "length": 26,
       "value": "\"NUEVA ENTRADA DE TARJETA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 21978,
+      "offset": 22081,
       "length": 28,
       "value": "\"DIRECCIÓN DE FACTURACIÓN\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22038,
+      "offset": 22141,
       "length": 15,
       "value": "\"Asegurado por\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22087,
+      "offset": 22190,
       "length": 5,
       "value": "\"PXP\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22122,
+      "offset": 22225,
       "length": 13,
       "value": "\"Cargando...\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22175,
+      "offset": 22278,
       "length": 70,
       "value": "\"No hay métodos de pago disponibles. Por favor contacte con soporte.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22306,
+      "offset": 22409,
       "length": 20,
       "value": "\"Selección de pago\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22382,
+      "offset": 22485,
       "length": 26,
       "value": "\"Métodos de pago rápido\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22459,
+      "offset": 22562,
       "length": 18,
       "value": "\"Métodos de pago\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22553,
+      "offset": 22656,
       "length": 17,
       "value": "\"Método de pago\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22606,
+      "offset": 22709,
       "length": 11,
       "value": "\"Expandido\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22654,
+      "offset": 22757,
       "length": 12,
       "value": "\"Contraído\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22701,
+      "offset": 22804,
       "length": 41,
       "value": "\"Expandido. Toca dos veces para contraer\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22778,
+      "offset": 22881,
       "length": 42,
       "value": "\"Contraído. Toca dos veces para expandir\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22854,
+      "offset": 22957,
       "length": 7,
       "value": "\"Error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22897,
+      "offset": 23000,
       "length": 12,
       "value": "\"Pago listo\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 22945,
+      "offset": 23048,
       "length": 14,
       "value": "\"Pago fallido\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/EsESResource.swift",
       "kind": "StringLiteral",
-      "offset": 23002,
+      "offset": 23105,
       "length": 26,
       "value": "\"Cargando método de pago\""
     },
