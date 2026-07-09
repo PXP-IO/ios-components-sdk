@@ -264,7 +264,9 @@ public struct DropInApplePayConfig {
   public init(onShippingContactSelected: ((PXPCheckoutSDK.ApplePayContact?) -> PXPCheckoutSDK.ApplePayRequestUpdate?)? = nil, onShippingMethodSelected: ((PXPCheckoutSDK.ApplePayShippingMethod?) -> PXPCheckoutSDK.ApplePayRequestUpdate?)? = nil, onPaymentMethodSelected: ((PXPCheckoutSDK.ApplePayPaymentMethod?) -> PXPCheckoutSDK.ApplePayRequestUpdate?)? = nil, onCouponCodeChanged: ((Swift.String) -> PXPCheckoutSDK.ApplePayRequestUpdate?)? = nil, shippingContactConfiguration: PXPCheckoutSDK.DropInApplePayShippingContactConfiguration? = nil, billingContactConfiguration: PXPCheckoutSDK.DropInApplePayBillingContactConfiguration? = nil)
 }
 public struct DropInCardConfig {
-  public init()
+  public var showCOF: Swift.Bool?
+  public var showNewCard: Swift.Bool?
+  public init(showCOF: Swift.Bool? = nil, showNewCard: Swift.Bool? = nil)
 }
 public struct DropInGlobalConfig {
   public var acceptedCardNetworks: [PXPCheckoutSDK.DropInCardNetworks]?
@@ -430,37 +432,7 @@ final public class PhoneNumberFieldComponentConfig : PXPCheckoutSDK.ConsumerData
 @objc @_hasMissingDesignatedInitializers final public class AeropayAggregatorCredentialsFailedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers final public class AeropayAggregatorCredentialsNetworkErrorException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers final public class AeropayAggregatorCredentialsProviderErrorException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers final public class AeropayAggregatorCredentialsUnexpectedResponseException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
-  @objc deinit
-}
 @objc @_hasMissingDesignatedInitializers final public class AeropayBankAccountsFailedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers final public class AeropayBankAccountsNetworkErrorException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers final public class AeropayBankAccountsProviderErrorException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers final public class AeropayBankAccountsUnexpectedResponseException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers final public class AeropayConfirmUserFailedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers final public class AeropayConfirmUserNetworkErrorException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers final public class AeropayConfirmUserProviderErrorException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers final public class AeropayConfirmUserUnexpectedResponseException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers final public class AeropayConsumerDataInvalidException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
@@ -469,16 +441,10 @@ final public class PhoneNumberFieldComponentConfig : PXPCheckoutSDK.ConsumerData
 @objc @_hasMissingDesignatedInitializers final public class AeropayCreateUserFailedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
   @objc deinit
 }
+@objc @_hasMissingDesignatedInitializers final public class AeropayGetUserFailedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  @objc deinit
+}
 @objc @_hasMissingDesignatedInitializers final public class AeropayLinkAccountFailedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers final public class AeropayLinkAccountNetworkErrorException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers final public class AeropayLinkAccountProviderErrorException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers final public class AeropayLinkAccountUnexpectedResponseException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers final public class AeropayPaymentFailedException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
@@ -581,12 +547,15 @@ open class AeropayButtonComponentResource : PXPCheckoutSDK.BaseComponentResource
   final public let fundingBankSelectedAccessibilityValue: Swift.String
   final public let fundingBankNotSelectedAccessibilityValue: Swift.String
   final public let linkBankButtonAccessibilityLabel: Swift.String
+  final public let continueButtonAccessibilityHint: Swift.String
   final public let otpResendButtonAccessibilityLabel: Swift.String
+  final public let otpResendButtonAccessibilityHint: Swift.String
+  final public let otpVerifyCodeButtonAccessibilityHint: Swift.String
   final public let firstName: PXPCheckoutSDK.AeropayFirstNameValidationResource
   final public let lastName: PXPCheckoutSDK.AeropayLastNameValidationResource
   final public let emailAddress: PXPCheckoutSDK.AeropayEmailAddressValidationResource
   final public let phoneNumber: PXPCheckoutSDK.AeropayPhoneNumberValidationResource
-  public init(label: Swift.String, labelPayout: Swift.String, description: Swift.String, popupTitle: Swift.String, consumerDataTitle: Swift.String, consumerDataDescription: Swift.String, otpTitle: Swift.String, otpDescription: Swift.String, otpResendCountdownText: Swift.String, otpResendText: Swift.String, otpVerifyCodeText: Swift.String, otpInvalidMessage: Swift.String, aerosyncTitle: Swift.String, aerosyncDescription: Swift.String, aerosyncLinkBankText: Swift.String, aerosyncPayButtonText: Swift.String, aerosyncWithdrawButtonText: Swift.String, aerosyncFundingBankTitle: Swift.String, aerosyncBankAccountListLoadingAccessibilityLabel: Swift.String, aerosyncLinkBankButtonAccessibilityHint: Swift.String, aerosyncPayButtonAccessibilityHint: Swift.String, aerosyncPayButtonDisabledAccessibilityHint: Swift.String, fundingBankAccessibilityHint: Swift.String, continueText: Swift.String, accessibilityCloseButtonLabel: Swift.String, accessibilityCloseButtonHint: Swift.String, payByBankButtonAccessibilityLabel: Swift.String, payByBankButtonAccessibilityHint: Swift.String, otpDigitAccessibilityLabelFormat: Swift.String, actionButtonLoadingAccessibilityLabelFormat: Swift.String, fundingBankAccessibilityLabelFormat: Swift.String, fundingBankSelectedAccessibilityValue: Swift.String, fundingBankNotSelectedAccessibilityValue: Swift.String, linkBankButtonAccessibilityLabel: Swift.String, otpResendButtonAccessibilityLabel: Swift.String, firstName: PXPCheckoutSDK.AeropayFirstNameValidationResource, lastName: PXPCheckoutSDK.AeropayLastNameValidationResource, emailAddress: PXPCheckoutSDK.AeropayEmailAddressValidationResource, phoneNumber: PXPCheckoutSDK.AeropayPhoneNumberValidationResource)
+  public init(label: Swift.String, labelPayout: Swift.String, description: Swift.String, popupTitle: Swift.String, consumerDataTitle: Swift.String, consumerDataDescription: Swift.String, otpTitle: Swift.String, otpDescription: Swift.String, otpResendCountdownText: Swift.String, otpResendText: Swift.String, otpVerifyCodeText: Swift.String, otpInvalidMessage: Swift.String, aerosyncTitle: Swift.String, aerosyncDescription: Swift.String, aerosyncLinkBankText: Swift.String, aerosyncPayButtonText: Swift.String, aerosyncWithdrawButtonText: Swift.String, aerosyncFundingBankTitle: Swift.String, aerosyncBankAccountListLoadingAccessibilityLabel: Swift.String, aerosyncLinkBankButtonAccessibilityHint: Swift.String, aerosyncPayButtonAccessibilityHint: Swift.String, aerosyncPayButtonDisabledAccessibilityHint: Swift.String, fundingBankAccessibilityHint: Swift.String, continueText: Swift.String, accessibilityCloseButtonLabel: Swift.String, accessibilityCloseButtonHint: Swift.String, payByBankButtonAccessibilityLabel: Swift.String, payByBankButtonAccessibilityHint: Swift.String, otpDigitAccessibilityLabelFormat: Swift.String, actionButtonLoadingAccessibilityLabelFormat: Swift.String, fundingBankAccessibilityLabelFormat: Swift.String, fundingBankSelectedAccessibilityValue: Swift.String, fundingBankNotSelectedAccessibilityValue: Swift.String, linkBankButtonAccessibilityLabel: Swift.String, continueButtonAccessibilityHint: Swift.String, otpResendButtonAccessibilityLabel: Swift.String, otpResendButtonAccessibilityHint: Swift.String, otpVerifyCodeButtonAccessibilityHint: Swift.String, firstName: PXPCheckoutSDK.AeropayFirstNameValidationResource, lastName: PXPCheckoutSDK.AeropayLastNameValidationResource, emailAddress: PXPCheckoutSDK.AeropayEmailAddressValidationResource, phoneNumber: PXPCheckoutSDK.AeropayPhoneNumberValidationResource)
   @objc deinit
 }
 public class AeropayPopupConfig {
@@ -3827,6 +3796,9 @@ public class PrefillBillingAddressCheckboxComponentConfig : PXPCheckoutSDK.Check
   public var errorMessage: Swift.String {
     get
   }
+  @objc override dynamic public var localizedDescription: Swift.String {
+    @objc get
+  }
   @objc deinit
 }
 extension Swift.String {
@@ -5641,7 +5613,10 @@ public protocol Localisation {
   var aeropayFundingBankSelectedAccessibilityValue: Swift.String? { get }
   var aeropayFundingBankNotSelectedAccessibilityValue: Swift.String? { get }
   var aeropayLinkBankButtonAccessibilityLabel: Swift.String? { get }
+  var aeropayContinueButtonAccessibilityHint: Swift.String? { get }
   var aeropayOtpResendButtonAccessibilityLabel: Swift.String? { get }
+  var aeropayOtpResendButtonAccessibilityHint: Swift.String? { get }
+  var aeropayOtpVerifyCodeButtonAccessibilityHint: Swift.String? { get }
   var pazeButtonMerchantValidationRejectedReason: Swift.String? { get }
   var pazeButtonLoadingAccessibilityLabelFormat: Swift.String? { get }
   var pazeButtonLoadingAccessibilityHint: Swift.String? { get }
@@ -5770,7 +5745,10 @@ public struct DefaultLocalisation : PXPCheckoutSDK.Localisation {
   public let aeropayFundingBankSelectedAccessibilityValue: Swift.String?
   public let aeropayFundingBankNotSelectedAccessibilityValue: Swift.String?
   public let aeropayLinkBankButtonAccessibilityLabel: Swift.String?
+  public let aeropayContinueButtonAccessibilityHint: Swift.String?
   public let aeropayOtpResendButtonAccessibilityLabel: Swift.String?
+  public let aeropayOtpResendButtonAccessibilityHint: Swift.String?
+  public let aeropayOtpVerifyCodeButtonAccessibilityHint: Swift.String?
   public let pazeButtonMerchantValidationRejectedReason: Swift.String?
   public let pazeButtonLoadingAccessibilityLabelFormat: Swift.String?
   public let pazeButtonLoadingAccessibilityHint: Swift.String?
@@ -6181,7 +6159,10 @@ public protocol AeropayButtonResource {
   var fundingBankSelectedAccessibilityValue: Swift.String { get }
   var fundingBankNotSelectedAccessibilityValue: Swift.String { get }
   var linkBankButtonAccessibilityLabel: Swift.String { get }
+  var continueButtonAccessibilityHint: Swift.String { get }
   var otpResendButtonAccessibilityLabel: Swift.String { get }
+  var otpResendButtonAccessibilityHint: Swift.String { get }
+  var otpVerifyCodeButtonAccessibilityHint: Swift.String { get }
 }
 public protocol AeropayResource {
   var payByBankButton: any PXPCheckoutSDK.AeropayPayByBankButtonResource { get }

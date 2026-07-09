@@ -9,22 +9,6 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @available(iOS 14.0, *)
-@_Concurrency.MainActor @preconcurrency public struct AerosyncEmbeddedView : SwiftUI.UIViewRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init(token: Swift.String, env: Swift.String, deeplink: Swift.String, configurationId: Swift.String? = nil, theme: Swift.String = "light", onLoad: @escaping (Any) -> Swift.Void, onBankClick: @escaping (Any) -> Swift.Void, onError: @escaping (Any) -> Swift.Void)
-  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: aerosync_ios_sdk.AerosyncEmbeddedView.Context) -> WebKit.WKWebView
-  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: WebKit.WKWebView, context: aerosync_ios_sdk.AerosyncEmbeddedView.Context)
-  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> aerosync_ios_sdk.AerosyncEmbeddedView.Coordinator
-  @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class Coordinator : ObjectiveC.NSObject, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler, WebKit.WKUIDelegate {
-    @_Concurrency.MainActor @preconcurrency @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
-    @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-    @objc deinit
-  }
-  @available(iOS 14.0, *)
-  public typealias Body = Swift.Never
-  @available(iOS 14.0, *)
-  public typealias UIViewType = WebKit.WKWebView
-}
-@available(iOS 14.0, *)
 @_Concurrency.MainActor @preconcurrency public struct AerosyncSDK : SwiftUI.UIViewRepresentable {
   @_Concurrency.MainActor @preconcurrency public init(shouldDismiss: Swift.Bool = false, token: Swift.String, env: Swift.String, deeplink: Swift.String, aeroPassUserUuid: Swift.String, configurationId: Swift.String? = nil, stateCode: Swift.String? = nil, theme: Swift.String = "light", manualLinkOnly: Swift.Bool = false, handleMFA: Swift.Bool = false, jobId: Swift.String? = "", connectionId: Swift.String? = "", onEvent: @escaping (Any) -> Swift.Void, onSuccess: @escaping (Swift.String) -> Swift.Void, onClose: @escaping (Any) -> Swift.Void, onLoad: @escaping (Any) -> Swift.Void, onError: @escaping (Any) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency public func makeUIView(context: aerosync_ios_sdk.AerosyncSDK.Context) -> WebKit.WKWebView
@@ -46,10 +30,6 @@ import _SwiftConcurrencyShims
   @available(iOS 14.0, *)
   public typealias UIViewType = WebKit.WKWebView
 }
-@available(iOS 14.0, *)
-extension aerosync_ios_sdk.AerosyncEmbeddedView : Swift.Sendable {}
-@available(iOS 14.0, *)
-extension aerosync_ios_sdk.AerosyncEmbeddedView.Coordinator : Swift.Sendable {}
 @available(iOS 14.0, *)
 extension aerosync_ios_sdk.AerosyncSDK : Swift.Sendable {}
 @available(iOS 14.0, *)

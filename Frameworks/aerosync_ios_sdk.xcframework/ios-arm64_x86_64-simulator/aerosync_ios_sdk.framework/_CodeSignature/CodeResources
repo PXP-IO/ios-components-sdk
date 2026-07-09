@@ -10,15 +10,15 @@
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		+LRqpwC91o30woW2wSTcPrwVYXw=
+		XqWqESWSa4Ze9t+pe/cNtiHH5FI=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
-		Q1Y7VQWBAeWjhHeBB/N+6XSkGfs=
+		6fIZvdRh2/QFfwat6QUmLUPZDcc=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Q1Y7VQWBAeWjhHeBB/N+6XSkGfs=
+		6fIZvdRh2/QFfwat6QUmLUPZDcc=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Q1Y7VQWBAeWjhHeBB/N+6XSkGfs=
+		6fIZvdRh2/QFfwat6QUmLUPZDcc=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		+LRqpwC91o30woW2wSTcPrwVYXw=
+		XqWqESWSa4Ze9t+pe/cNtiHH5FI=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
-		CaN57VWkzySSBg8fk9ykvgQcmHA=
+		cHILEtyx0yq8ySgnA/61PmvpeIA=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		CaN57VWkzySSBg8fk9ykvgQcmHA=
+		cHILEtyx0yq8ySgnA/61PmvpeIA=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		CaN57VWkzySSBg8fk9ykvgQcmHA=
+		cHILEtyx0yq8ySgnA/61PmvpeIA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,21 +55,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yTNF7qwS7qzmoPjpAlTr9KobD3fF7PCrsYa5kyipdRs=
+			vg7RfEcrXl0Hvtqw9sF9Lm1yOxcYwo20X8D+yvcHnPc=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kgAA3QxfhziKT+mIN3LSB6uwS97lVEOgTtu+WytCqJc=
+			MTCAHOF/QuQ7/0xDciVa+Md0R+T68CC/RSLMhCTRSjQ=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kgAA3QxfhziKT+mIN3LSB6uwS97lVEOgTtu+WytCqJc=
+			MTCAHOF/QuQ7/0xDciVa+Md0R+T68CC/RSLMhCTRSjQ=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -83,28 +83,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kgAA3QxfhziKT+mIN3LSB6uwS97lVEOgTtu+WytCqJc=
+			MTCAHOF/QuQ7/0xDciVa+Md0R+T68CC/RSLMhCTRSjQ=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yTNF7qwS7qzmoPjpAlTr9KobD3fF7PCrsYa5kyipdRs=
+			vg7RfEcrXl0Hvtqw9sF9Lm1yOxcYwo20X8D+yvcHnPc=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l6DQB3B3QribiFoJM9CN7x0y10RsuSzh/Yh09hldx6Q=
+			9J8ESsAucVofexKEPw5d+ag0Ex/3UqYR4NmPDmT3Bxo=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l6DQB3B3QribiFoJM9CN7x0y10RsuSzh/Yh09hldx6Q=
+			9J8ESsAucVofexKEPw5d+ag0Ex/3UqYR4NmPDmT3Bxo=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l6DQB3B3QribiFoJM9CN7x0y10RsuSzh/Yh09hldx6Q=
+			9J8ESsAucVofexKEPw5d+ag0Ex/3UqYR4NmPDmT3Bxo=
 			</data>
 		</dict>
 	</dict>
