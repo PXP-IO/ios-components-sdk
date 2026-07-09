@@ -21,7 +21,9 @@ PXP Unity iOS SDK for integrating secure payment processing with multiple paymen
    - **Development/QA**: `https://dev.azure.com/pxphq/Unity/_git/Pxp.Unity.Components.iOS.SDK`
 4. Select the version rule (e.g., "Up to Next Major Version")
 5. Click **Add Package**
-6. Select `PXPCheckoutSDK` and add to your target
+6. Select **`PXPCheckoutSDK`** and add to your target
+
+> **Important:** Add only `PXPCheckoutSDK`. Do not add a second product from this package — the xcframework and all vendor binaries (Kount, PayPal, etc.) are bundled inside that single product. Linking multiple products causes duplicate symbols and runtime crashes.
 
 #### Option 2: Add via Package.swift
 
@@ -146,7 +148,7 @@ The Drop-In provides a complete pre-built UI with all payment methods:
 
 ```swift
 import SwiftUI
-import PXPCheckoutSDK
+import PXPCheckoutSDKSDK
 
 struct CheckoutView: View {
     @State private var checkoutDropIn: CheckoutDropIn?

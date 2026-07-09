@@ -2,7 +2,8 @@
 import PackageDescription
 
 let sdkBinaryDependencies: [Target.Dependency] = [
-    "PXPCheckoutSDK",
+    // SPM target name must differ from product name "PXPCheckoutSDK" (module stays PXPCheckoutSDK via xcframework).
+    "PXPCheckoutSDKBinary",
     "KountDataCollector",
     "Alamofire",
     "Swinject",
@@ -21,13 +22,11 @@ let package = Package(
         .iOS(.v14)
     ],
     products: [
-        .library(
-            name: "PXPCheckout",
-            targets: ["PXPCheckout"]
-        ),
+        // Single public product. Target "PXPCheckout" bundles the xcframework + transitive binary deps.
+        // Merchants link and import PXPCheckoutSDK; the bare xcframework target is not exposed separately.
         .library(
             name: "PXPCheckoutSDK",
-            targets: ["PXPCheckoutSDK"]
+            targets: ["PXPCheckout"]
         )
     ],
     dependencies: [],
@@ -38,7 +37,7 @@ let package = Package(
             path: "Sources/PXPCheckout"
         ),
         .binaryTarget(
-            name: "PXPCheckoutSDK",
+            name: "PXPCheckoutSDKBinary",
             path: "Frameworks/PXPCheckoutSDK.xcframework"
         ),
         .binaryTarget(
