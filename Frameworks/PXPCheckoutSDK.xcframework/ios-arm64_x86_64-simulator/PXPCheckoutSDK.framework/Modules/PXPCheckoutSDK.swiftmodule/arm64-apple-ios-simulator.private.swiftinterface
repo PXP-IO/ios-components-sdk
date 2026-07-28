@@ -73,7 +73,8 @@ public struct DropInMethodConfig {
   public var card: PXPCheckoutSDK.DropInCardConfig?
   public var applePay: PXPCheckoutSDK.DropInApplePayConfig?
   public var paze: PXPCheckoutSDK.DropInPazeConfig?
-  public init(global: PXPCheckoutSDK.DropInGlobalConfig? = nil, paypal: PXPCheckoutSDK.DropInPaypalConfig? = nil, card: PXPCheckoutSDK.DropInCardConfig? = nil, applePay: PXPCheckoutSDK.DropInApplePayConfig? = nil, paze: PXPCheckoutSDK.DropInPazeConfig? = nil)
+  public var aeropay: PXPCheckoutSDK.DropInAeropayConfig?
+  public init(global: PXPCheckoutSDK.DropInGlobalConfig? = nil, paypal: PXPCheckoutSDK.DropInPaypalConfig? = nil, card: PXPCheckoutSDK.DropInCardConfig? = nil, applePay: PXPCheckoutSDK.DropInApplePayConfig? = nil, paze: PXPCheckoutSDK.DropInPazeConfig? = nil, aeropay: PXPCheckoutSDK.DropInAeropayConfig? = nil)
 }
 public struct CheckoutDropInConfigResponse : Swift.Codable {
   public var brandingConfiguration: PXPCheckoutSDK.CheckoutDropInConfigResponse.BrandingConfiguration?
@@ -189,6 +190,7 @@ public enum DropInPaymentMethod : Swift.String, Swift.CaseIterable, Swift.Codabl
   case paypal
   case applePay
   case paze
+  case aeropay
   public init?(rawValue: Swift.String)
   public typealias AllCases = [PXPCheckoutSDK.DropInPaymentMethod]
   public typealias RawValue = Swift.String
@@ -253,6 +255,12 @@ public struct DropInCouponInfo {
   public let couponCode: Swift.String
   public let description: Swift.String
   public init(couponCode: Swift.String, description: Swift.String)
+}
+public struct DropInAeropayConfig {
+  public var userId: Swift.String?
+  public var skipConsumerDataCollection: Swift.Bool
+  public var editableConsumerDataFields: [PXPCheckoutSDK.ConsumerDataField]?
+  public init(userId: Swift.String? = nil, skipConsumerDataCollection: Swift.Bool = false, editableConsumerDataFields: [PXPCheckoutSDK.ConsumerDataField]? = nil)
 }
 public struct DropInApplePayConfig {
   public var onShippingContactSelected: ((PXPCheckoutSDK.ApplePayContact?) -> PXPCheckoutSDK.ApplePayRequestUpdate?)?
@@ -466,6 +474,7 @@ final public class PhoneNumberFieldComponentConfig : PXPCheckoutSDK.ConsumerData
   public var onUserVerificationSuccess: ((PXPCheckoutSDK.AeropayUser) -> Swift.Void)?
   public var onError: ((PXPCheckoutSDK.BaseSdkException) -> Swift.Void)?
   public var onCancel: (() -> Swift.Void)?
+  public var onCustomValidation: (() async -> Swift.Bool)?
   public var onPreAuthorisation: (() async -> Swift.Bool)?
   public var onPostAuthorisation: ((PXPCheckoutSDK.MerchantSubmitResult) -> Swift.Void)?
   public var onSubmitError: ((PXPCheckoutSDK.BaseSubmitResult) -> Swift.Void)?
@@ -588,6 +597,18 @@ public struct AeropayViewStyleConfig {
   public var padding: SwiftUICore.EdgeInsets?
   public init(fontFamily: Swift.String? = nil, foregroundColor: SwiftUICore.Color? = nil, backgroundColor: SwiftUICore.Color? = nil, borderColor: SwiftUICore.Color? = nil, borderWidth: CoreFoundation.CGFloat? = nil, cornerRadius: CoreFoundation.CGFloat? = nil, padding: SwiftUICore.EdgeInsets? = nil)
 }
+public enum AerosyncTheme : Swift.String, Swift.Sendable {
+  case light
+  case dark
+  public var widgetValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public struct BankItemTextStyle : Swift.Sendable {
   public var color: SwiftUICore.Color?
   public var fontSize: CoreFoundation.CGFloat?
@@ -623,9 +644,11 @@ public class BankItemStateStyles {
 public class BankSelectionConfig {
   public var payButtonStyles: PXPCheckoutSDK.ButtonStateStyles?
   public var linkBankButtonStyles: PXPCheckoutSDK.ButtonStateStyles?
+  public var bankSelectedIndicatorColor: SwiftUICore.Color?
   public var bankItemStyles: PXPCheckoutSDK.BankItemStateStyles?
   public var allowLinkBankOnPayout: Swift.Bool
-  public init(payButtonStyles: PXPCheckoutSDK.ButtonStateStyles? = nil, linkBankButtonStyles: PXPCheckoutSDK.ButtonStateStyles? = nil, bankItemStyles: PXPCheckoutSDK.BankItemStateStyles? = nil, allowLinkBankOnPayout: Swift.Bool = false)
+  public var aerosyncTheme: PXPCheckoutSDK.AerosyncTheme?
+  public init(payButtonStyles: PXPCheckoutSDK.ButtonStateStyles? = nil, linkBankButtonStyles: PXPCheckoutSDK.ButtonStateStyles? = nil, bankSelectedIndicatorColor: SwiftUICore.Color? = nil, bankItemStyles: PXPCheckoutSDK.BankItemStateStyles? = nil, allowLinkBankOnPayout: Swift.Bool = false, aerosyncTheme: PXPCheckoutSDK.AerosyncTheme? = nil)
   @objc deinit
 }
 public enum ConsumerDataField : Swift.String, Swift.CaseIterable, Swift.Sendable {
@@ -682,10 +705,10 @@ public struct PayByBankFundingBank : Swift.Codable, Swift.Sendable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct PayByBankFundingData : Swift.Codable, Swift.Sendable {
-  public let provider: Swift.String
+  public let apmProvider: Swift.String
   public let user: PXPCheckoutSDK.PayByBankFundingUser
   public let bank: PXPCheckoutSDK.PayByBankFundingBank
-  public init(provider: Swift.String, user: PXPCheckoutSDK.PayByBankFundingUser, bank: PXPCheckoutSDK.PayByBankFundingBank)
+  public init(apmProvider: Swift.String, user: PXPCheckoutSDK.PayByBankFundingUser, bank: PXPCheckoutSDK.PayByBankFundingBank)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -3313,7 +3336,8 @@ public struct PazeCheckoutConfig {
   public var acceptedPaymentCardNetworks: [PXPCheckoutSDK.PazeAcceptedPaymentCardNetwork]?
   public var cobrand: [PXPCheckoutSDK.PazeCobrandConfig]?
   public var enhancedTransactionData: PXPCheckoutSDK.PazeEnhancedTransactionDataConfig?
-  public init(emailAddress: Swift.String? = nil, phoneNumber: Swift.String? = nil, sessionId: Swift.String? = nil, actionCode: PXPCheckoutSDK.PazeActionCode? = nil, intent: PXPCheckoutSDK.PazeCheckoutIntent? = nil, confirmLaunch: Swift.Bool? = nil, transactionValue: PXPCheckoutSDK.PazeTransactionValue, shippingPreference: PXPCheckoutSDK.PazeShippingPreference? = nil, billingPreference: PXPCheckoutSDK.PazeBillingPreference? = nil, acceptedShippingCountries: [Swift.String]? = nil, acceptedPaymentCardNetworks: [PXPCheckoutSDK.PazeAcceptedPaymentCardNetwork]? = nil, cobrand: [PXPCheckoutSDK.PazeCobrandConfig]? = nil, enhancedTransactionData: PXPCheckoutSDK.PazeEnhancedTransactionDataConfig? = nil)
+  public var useCase: PXPCheckoutSDK.PazeUseCase?
+  public init(emailAddress: Swift.String? = nil, phoneNumber: Swift.String? = nil, sessionId: Swift.String? = nil, actionCode: PXPCheckoutSDK.PazeActionCode? = nil, intent: PXPCheckoutSDK.PazeCheckoutIntent? = nil, confirmLaunch: Swift.Bool? = nil, transactionValue: PXPCheckoutSDK.PazeTransactionValue, shippingPreference: PXPCheckoutSDK.PazeShippingPreference? = nil, billingPreference: PXPCheckoutSDK.PazeBillingPreference? = nil, acceptedShippingCountries: [Swift.String]? = nil, acceptedPaymentCardNetworks: [PXPCheckoutSDK.PazeAcceptedPaymentCardNetwork]? = nil, cobrand: [PXPCheckoutSDK.PazeCobrandConfig]? = nil, enhancedTransactionData: PXPCheckoutSDK.PazeEnhancedTransactionDataConfig? = nil, useCase: PXPCheckoutSDK.PazeUseCase? = nil)
 }
 public struct PazeCheckoutConsumer : Swift.Codable, Swift.Sendable {
   public var fullName: Swift.String
@@ -3569,6 +3593,14 @@ public enum PazeCheckoutIntent : Swift.String {
 public enum PazeShippingPreference : Swift.String {
   case all
   case none
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PazeUseCase : Swift.String {
+  case rmg
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -4631,10 +4663,26 @@ public enum DropInPayPalIntentType : Swift.String, Swift.CaseIterable {
     get
   }
 }
+public enum DropInAeropayIntentType : Swift.String, Swift.CaseIterable {
+  case authorisation
+  case purchase
+  case estimatedAuthorisation
+  case payout
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PXPCheckoutSDK.DropInAeropayIntentType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PXPCheckoutSDK.DropInAeropayIntentType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public struct DropInTransactionIntentData {
   public let card: PXPCheckoutSDK.CardIntentType?
   public let paypal: PXPCheckoutSDK.DropInPayPalIntentType?
-  public init(card: PXPCheckoutSDK.CardIntentType? = nil, paypal: PXPCheckoutSDK.DropInPayPalIntentType? = nil)
+  public let aeropay: PXPCheckoutSDK.DropInAeropayIntentType?
+  public init(card: PXPCheckoutSDK.CardIntentType? = nil, paypal: PXPCheckoutSDK.DropInPayPalIntentType? = nil, aeropay: PXPCheckoutSDK.DropInAeropayIntentType? = nil)
 }
 public enum PxpCheckoutResourceBundle {
   public static var bundle: Foundation.Bundle {
@@ -4721,7 +4769,7 @@ public enum ChallengeWindowSizeType : Swift.Int, Swift.Codable {
     get
   }
 }
-public class FailedAuthenticationResult : PXPCheckoutSDK.AuthenticationResult, Swift.Codable {
+@_hasMissingDesignatedInitializers public class FailedAuthenticationResult : PXPCheckoutSDK.AuthenticationResult, Swift.Codable {
   final public let errorCode: Swift.String?
   final public let errorReason: Swift.String?
   final public let correlationId: Swift.String?
@@ -4747,6 +4795,12 @@ public struct InitiateIntegratedAuthenticationData : Swift.Codable {
   public init(merchantCountryNumericCode: Swift.String? = nil, merchantLegalName: Swift.String? = nil, challengeWindowSize: PXPCheckoutSDK.ChallengeWindowSizeType? = nil, requestorChallengeIndicator: PXPCheckoutSDK.RequestorChallengeIndicatorType? = nil, shopper: PXPCheckoutSDK.ThreeDSShopper? = nil, fingerprintNotification: Swift.String? = nil, recurring: PXPCheckoutSDK.ThreeDSRecurring? = nil, billingAddress: PXPCheckoutSDK.Address? = nil, shippingAddress: PXPCheckoutSDK.Address? = nil, timeout: Swift.Int? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class MerchantAuthenticationResult : PXPCheckoutSDK.AuthenticationResult {
+  final public let authenticationId: Swift.String?
+  final public let threeDSecureSupported: Swift.Bool
+  public init(authenticationId: Swift.String?, threeDSecureSupported: Swift.Bool)
+  @objc deinit
 }
 public struct PreInitiateIntegratedAuthenticationData : Swift.Codable {
   public let providerId: Swift.String?
@@ -4787,22 +4841,8 @@ public enum Environment : Swift.String, Swift.CaseIterable {
   public func getDomain(for environment: PXPCheckoutSDK.Environment) -> Swift.String
   @objc deinit
 }
-public class AuthenticationResult {
-  final public let stateData: PXPCheckoutSDK.TransactionStateData
-  public init(stateData: PXPCheckoutSDK.TransactionStateData)
+@_hasMissingDesignatedInitializers public class AuthenticationResult {
   @objc deinit
-}
-public class ExceptionAuthenticationResult : PXPCheckoutSDK.AuthenticationResult {
-  final public let exception: PXPCheckoutSDK.BaseSdkException
-  public init(exception: PXPCheckoutSDK.BaseSdkException)
-  @objc deinit
-}
-public struct TransactionStateData : Swift.Codable {
-  public let code: Swift.String
-  public let message: Swift.String
-  public init(code: Swift.String, message: Swift.String)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct Address : Swift.Codable {
   public let city: Swift.String?
@@ -5670,6 +5710,7 @@ public protocol Localisation {
   var checkoutDropInPaypalLabel: Swift.String? { get }
   var checkoutDropInApplePayLabel: Swift.String? { get }
   var checkoutDropInPazeLabel: Swift.String? { get }
+  var checkoutDropInAeropayLabel: Swift.String? { get }
   var checkoutDropInGooglePayLabel: Swift.String? { get }
   var checkoutDropInCardOnFileTitle: Swift.String? { get }
   var checkoutDropInNewCardTitle: Swift.String? { get }
@@ -5802,6 +5843,7 @@ public struct DefaultLocalisation : PXPCheckoutSDK.Localisation {
   public let checkoutDropInPaypalLabel: Swift.String?
   public let checkoutDropInApplePayLabel: Swift.String?
   public let checkoutDropInPazeLabel: Swift.String?
+  public let checkoutDropInAeropayLabel: Swift.String?
   public let checkoutDropInGooglePayLabel: Swift.String?
   public let checkoutDropInCardOnFileTitle: Swift.String?
   public let checkoutDropInNewCardTitle: Swift.String?
@@ -5826,14 +5868,39 @@ public struct DefaultLocalisation : PXPCheckoutSDK.Localisation {
 }
 public protocol AeropayLocalisation {
   var payByBankButton: (any PXPCheckoutSDK.AeropayPayByBankButtonLocalisation)? { get }
+  var aerosync: (any PXPCheckoutSDK.AeropayAerosyncLocalisation)? { get }
   var cardConsumerDataCollection: (any PXPCheckoutSDK.AeropayCardConsumerDataCollectionLocalisation)? { get }
+  var otpVerification: (any PXPCheckoutSDK.AeropayOtpVerificationLocalisation)? { get }
 }
 public protocol AeropayPayByBankButtonLocalisation {
   var label: Swift.String? { get }
   var labelPayout: Swift.String? { get }
   var description: Swift.String? { get }
+  var closeButtonAriaLabel: Swift.String? { get }
+}
+public protocol AeropayAerosyncLocalisation {
+  var emptyStateTitle: Swift.String? { get }
+  var emptyStateDescription: Swift.String? { get }
+  var linkBankButtonLabel: Swift.String? { get }
+  var payButtonLabel: Swift.String? { get }
+  var withdrawButtonLabel: Swift.String? { get }
+  var widgetIframeTitle: Swift.String? { get }
+  var fundingBankTitle: Swift.String? { get }
+  var bankAccountsLoadingLabel: Swift.String? { get }
+  var linkBankButtonAriaHint: Swift.String? { get }
+  var payButtonAriaHint: Swift.String? { get }
+  var payButtonDisabledAriaHint: Swift.String? { get }
+  var fundingBankSelectedAriaValue: Swift.String? { get }
+  var fundingBankNotSelectedAriaValue: Swift.String? { get }
+  var fundingBankAriaHint: Swift.String? { get }
+}
+public protocol AeropayOtpVerificationLocalisation {
+  var introTitle: Swift.String? { get }
+  var introDescription: Swift.String? { get }
 }
 public protocol AeropayCardConsumerDataCollectionLocalisation {
+  var introTitle: Swift.String? { get }
+  var introDescription: Swift.String? { get }
   var firstName: (any PXPCheckoutSDK.AeropayFirstNameFieldLocalisation)? { get }
   var lastName: (any PXPCheckoutSDK.AeropayLastNameFieldLocalisation)? { get }
   var emailAddress: (any PXPCheckoutSDK.AeropayEmailAddressFieldLocalisation)? { get }
@@ -6166,14 +6233,39 @@ public protocol AeropayButtonResource {
 }
 public protocol AeropayResource {
   var payByBankButton: any PXPCheckoutSDK.AeropayPayByBankButtonResource { get }
+  var aerosync: any PXPCheckoutSDK.AeropayAerosyncResource { get }
   var cardConsumerDataCollection: any PXPCheckoutSDK.AeropayCardConsumerDataCollectionResource { get }
+  var otpVerification: any PXPCheckoutSDK.AeropayOtpVerificationResource { get }
 }
 public protocol AeropayPayByBankButtonResource {
   var label: Swift.String { get }
   var labelPayout: Swift.String { get }
   var description: Swift.String { get }
+  var closeButtonAriaLabel: Swift.String { get }
+}
+public protocol AeropayAerosyncResource {
+  var emptyStateTitle: Swift.String { get }
+  var emptyStateDescription: Swift.String { get }
+  var linkBankButtonLabel: Swift.String { get }
+  var payButtonLabel: Swift.String { get }
+  var withdrawButtonLabel: Swift.String { get }
+  var widgetIframeTitle: Swift.String { get }
+  var fundingBankTitle: Swift.String { get }
+  var bankAccountsLoadingLabel: Swift.String { get }
+  var linkBankButtonAriaHint: Swift.String { get }
+  var payButtonAriaHint: Swift.String { get }
+  var payButtonDisabledAriaHint: Swift.String { get }
+  var fundingBankSelectedAriaValue: Swift.String { get }
+  var fundingBankNotSelectedAriaValue: Swift.String { get }
+  var fundingBankAriaHint: Swift.String { get }
+}
+public protocol AeropayOtpVerificationResource {
+  var introTitle: Swift.String { get }
+  var introDescription: Swift.String { get }
 }
 public protocol AeropayCardConsumerDataCollectionResource {
+  var introTitle: Swift.String { get }
+  var introDescription: Swift.String { get }
   var firstName: any PXPCheckoutSDK.AeropayFirstNameFieldResource { get }
   var lastName: any PXPCheckoutSDK.AeropayLastNameFieldResource { get }
   var emailAddress: any PXPCheckoutSDK.AeropayEmailAddressFieldResource { get }
@@ -6247,6 +6339,7 @@ public protocol CheckoutDropInResource {
   var paypalLabel: Swift.String { get }
   var applePayLabel: Swift.String { get }
   var pazeLabel: Swift.String { get }
+  var aeropayLabel: Swift.String { get }
   var googlePayLabel: Swift.String { get }
   var cardOnFileTitle: Swift.String { get }
   var newCardTitle: Swift.String { get }
@@ -6488,6 +6581,9 @@ extension PXPCheckoutSDK.DropInPaypalFundingSources : Swift.RawRepresentable {}
 extension PXPCheckoutSDK.DropInTotalStatus : Swift.Equatable {}
 extension PXPCheckoutSDK.DropInTotalStatus : Swift.Hashable {}
 extension PXPCheckoutSDK.DropInTotalStatus : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.AerosyncTheme : Swift.Equatable {}
+extension PXPCheckoutSDK.AerosyncTheme : Swift.Hashable {}
+extension PXPCheckoutSDK.AerosyncTheme : Swift.RawRepresentable {}
 extension PXPCheckoutSDK.ConsumerDataField : Swift.Equatable {}
 extension PXPCheckoutSDK.ConsumerDataField : Swift.Hashable {}
 extension PXPCheckoutSDK.ConsumerDataField : Swift.RawRepresentable {}
@@ -6619,6 +6715,9 @@ extension PXPCheckoutSDK.PazeCheckoutIntent : Swift.RawRepresentable {}
 extension PXPCheckoutSDK.PazeShippingPreference : Swift.Equatable {}
 extension PXPCheckoutSDK.PazeShippingPreference : Swift.Hashable {}
 extension PXPCheckoutSDK.PazeShippingPreference : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.PazeUseCase : Swift.Equatable {}
+extension PXPCheckoutSDK.PazeUseCase : Swift.Hashable {}
+extension PXPCheckoutSDK.PazeUseCase : Swift.RawRepresentable {}
 extension PXPCheckoutSDK.PazeMessageStyle : Swift.Hashable {}
 extension PXPCheckoutSDK.PazeMessageStyle : Swift.RawRepresentable {}
 extension PXPCheckoutSDK.PazeCheckoutModifier : Swift.Sendable {}
@@ -6668,6 +6767,9 @@ extension PXPCheckoutSDK.AeropayIntentType : Swift.RawRepresentable {}
 extension PXPCheckoutSDK.DropInPayPalIntentType : Swift.Equatable {}
 extension PXPCheckoutSDK.DropInPayPalIntentType : Swift.Hashable {}
 extension PXPCheckoutSDK.DropInPayPalIntentType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.DropInAeropayIntentType : Swift.Equatable {}
+extension PXPCheckoutSDK.DropInAeropayIntentType : Swift.Hashable {}
+extension PXPCheckoutSDK.DropInAeropayIntentType : Swift.RawRepresentable {}
 extension PXPCheckoutSDK.LogLevel : Swift.Hashable {}
 extension PXPCheckoutSDK.LogLevel : Swift.RawRepresentable {}
 extension PXPCheckoutSDK.ChallengeWindowSizeType : Swift.Equatable {}
