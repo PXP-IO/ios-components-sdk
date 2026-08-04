@@ -49,7 +49,7 @@ extension PXPCheckoutSDK.CheckoutDropIn {
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-public struct AuthorisationPaymentData : Swift.Codable {
+public struct AuthorisationPaymentData : Swift.Codable, Swift.Sendable {
   public let email: Swift.String?
   public let shippingAddress: PXPCheckoutSDK.ApplePayContact?
   public let shippingOption: PXPCheckoutSDK.DropInShippingOption?
@@ -260,7 +260,8 @@ public struct DropInAeropayConfig {
   public var userId: Swift.String?
   public var skipConsumerDataCollection: Swift.Bool
   public var editableConsumerDataFields: [PXPCheckoutSDK.ConsumerDataField]?
-  public init(userId: Swift.String? = nil, skipConsumerDataCollection: Swift.Bool = false, editableConsumerDataFields: [PXPCheckoutSDK.ConsumerDataField]? = nil)
+  public var excludedBankAccountIds: [PXPCheckoutSDK.AeropayBankAccountId]?
+  public init(userId: Swift.String? = nil, skipConsumerDataCollection: Swift.Bool = false, editableConsumerDataFields: [PXPCheckoutSDK.ConsumerDataField]? = nil, excludedBankAccountIds: [PXPCheckoutSDK.AeropayBankAccountId]? = nil)
 }
 public struct DropInApplePayConfig {
   public var onShippingContactSelected: ((PXPCheckoutSDK.ApplePayContact?) -> PXPCheckoutSDK.ApplePayRequestUpdate?)?
@@ -314,7 +315,7 @@ public enum DropInPaypalFundingSources : Swift.String, Swift.CaseIterable {
     get
   }
 }
-public struct DropInShippingOption : Swift.Codable {
+public struct DropInShippingOption : Swift.Codable, Swift.Sendable {
   public let id: Swift.String
   public let label: Swift.String
   public let description: Swift.String
@@ -641,14 +642,35 @@ public class BankItemStateStyles {
   public init(base: PXPCheckoutSDK.BankItemStyle? = nil, selected: PXPCheckoutSDK.BankItemStyle? = nil)
   @objc deinit
 }
+public struct AeropayBankAccountId : Swift.Equatable, Swift.Hashable, Swift.Sendable, Swift.ExpressibleByStringLiteral, Swift.ExpressibleByIntegerLiteral {
+  public var rawValue: Swift.String
+  public var value: Swift.String {
+    get
+    set
+  }
+  public init(_ value: Swift.String)
+  public init(_ value: Swift.Int)
+  public init(stringLiteral value: Swift.String)
+  public init(integerLiteral value: Swift.Int)
+  public static func == (a: PXPCheckoutSDK.AeropayBankAccountId, b: PXPCheckoutSDK.AeropayBankAccountId) -> Swift.Bool
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias IntegerLiteralType = Swift.Int
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public class BankSelectionConfig {
   public var payButtonStyles: PXPCheckoutSDK.ButtonStateStyles?
   public var linkBankButtonStyles: PXPCheckoutSDK.ButtonStateStyles?
   public var bankSelectedIndicatorColor: SwiftUICore.Color?
   public var bankItemStyles: PXPCheckoutSDK.BankItemStateStyles?
+  public var excludedBankAccountIds: [PXPCheckoutSDK.AeropayBankAccountId]?
   public var allowLinkBankOnPayout: Swift.Bool
   public var aerosyncTheme: PXPCheckoutSDK.AerosyncTheme?
-  public init(payButtonStyles: PXPCheckoutSDK.ButtonStateStyles? = nil, linkBankButtonStyles: PXPCheckoutSDK.ButtonStateStyles? = nil, bankSelectedIndicatorColor: SwiftUICore.Color? = nil, bankItemStyles: PXPCheckoutSDK.BankItemStateStyles? = nil, allowLinkBankOnPayout: Swift.Bool = false, aerosyncTheme: PXPCheckoutSDK.AerosyncTheme? = nil)
+  public init(payButtonStyles: PXPCheckoutSDK.ButtonStateStyles? = nil, linkBankButtonStyles: PXPCheckoutSDK.ButtonStateStyles? = nil, bankSelectedIndicatorColor: SwiftUICore.Color? = nil, bankItemStyles: PXPCheckoutSDK.BankItemStateStyles? = nil, excludedBankAccountIds: [PXPCheckoutSDK.AeropayBankAccountId]? = nil, allowLinkBankOnPayout: Swift.Bool = false, aerosyncTheme: PXPCheckoutSDK.AerosyncTheme? = nil)
   @objc deinit
 }
 public enum ConsumerDataField : Swift.String, Swift.CaseIterable, Swift.Sendable {
@@ -890,7 +912,7 @@ public struct ApplePayAutomaticReloadPaymentItem : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public struct ApplePayContact : Swift.Codable {
+public struct ApplePayContact : Swift.Codable, Swift.Sendable {
   public let addressLines: [Swift.String]
   public let phoneNumber: Swift.String
   public let emailAddress: Swift.String
@@ -1744,7 +1766,7 @@ public struct CardNumberValidationResource : PXPCheckoutSDK.CardNumberValidation
   public var tokenLabelBuilder: ((PXPCheckoutSDK.BaseCardToken) -> Swift.String)?
   public var onSelectToken: ((PXPCheckoutSDK.BaseCardToken) -> Swift.Void)?
   public var onValidationError: ((PXPCheckoutSDK.BaseSdkException) -> Swift.Void)?
-  required override public init()
+  required public init()
   @objc deinit
 }
 public struct DeleteModalConfig {
@@ -2443,7 +2465,7 @@ public struct CountrySelectionValidationResource : PXPCheckoutSDK.CountrySelecti
   weak public var cardExpiryDateComponent: PXPCheckoutSDK.CardExpiryDateComponent?
   weak public var cardCvcComponent: PXPCheckoutSDK.CardCvcComponent?
   weak public var cardHolderNameComponent: PXPCheckoutSDK.CardHolderNameComponent?
-  required override public init()
+  required public init()
   public init(cardNumberText: Swift.String? = nil, cardExpiryDateText: Swift.String? = nil, cardHolderNameText: Swift.String? = nil, cvcText: Swift.String? = nil, frontDynamicCardImageBackground: SwiftUICore.Image? = nil, backDynamicCardImageBackground: SwiftUICore.Image? = nil, textStyling: PXPCheckoutSDK.DynamicCardTextStyling? = nil, cvcLabelTextStyling: PXPCheckoutSDK.DynamicCardTextStyling? = nil, cvcValueTextStyling: PXPCheckoutSDK.DynamicCardTextStyling? = nil, bankNameTextStyling: PXPCheckoutSDK.DynamicCardTextStyling? = nil, cardNumberTextStyling: PXPCheckoutSDK.DynamicCardTextStyling? = nil, expiryDateLabelTextStyling: PXPCheckoutSDK.DynamicCardTextStyling? = nil, expiryDateValueTextStyling: PXPCheckoutSDK.DynamicCardTextStyling? = nil, holderNameTextStyling: PXPCheckoutSDK.DynamicCardTextStyling? = nil, highlightFieldStyling: PXPCheckoutSDK.DynamicCardHighlightStyling? = nil, cardNumberComponent: PXPCheckoutSDK.CardNumberComponent? = nil, cardExpiryDateComponent: PXPCheckoutSDK.CardExpiryDateComponent? = nil, cardCvcComponent: PXPCheckoutSDK.CardCvcComponent? = nil, cardHolderNameComponent: PXPCheckoutSDK.CardHolderNameComponent? = nil)
   @objc deinit
 }
@@ -3442,7 +3464,7 @@ public struct PazeCompleteTransactionOptions {
   public var payloadTypeIndicator: Swift.String?
   public init(merchantCategoryCode: Swift.String? = nil, billingPreference: Swift.String? = nil, payloadTypeIndicator: Swift.String? = nil)
 }
-public struct PazeDigitalCardData : Swift.Codable {
+public struct PazeDigitalCardData : Swift.Codable, Swift.Sendable {
   public var artUri: Swift.String
   public var artHeight: Swift.Int
   public var artWidth: Swift.Int
@@ -4127,6 +4149,13 @@ public class MessageShownAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
   override public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
+public class OSDataAnalyticsEvent : PXPCheckoutSDK.BaseAnalyticsEvent {
+  final public let osVersion: Swift.String
+  final public let operatingSystem: Swift.String
+  public init(osVersion: Swift.String, operatingSystem: Swift.String, sessionId: Swift.String)
+  override public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
 final public class PayPalRetryAttemptAnalyticsEvent : PXPCheckoutSDK.ApplePayAnalyticsEvent {
   public init(sessionId: Swift.String, componentId: Swift.String, merchantTransactionId: Swift.String, customerID: Swift.String? = nil, additionalData: Any? = NSNull())
   @objc deinit
@@ -4346,6 +4375,14 @@ public enum ComponentType : Swift.String, Swift.CaseIterable {
   nonisolated public static var allCases: [PXPCheckoutSDK.ComponentType] {
     get
   }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum Currency : Swift.String {
+  case usd
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -4667,7 +4704,6 @@ public enum DropInAeropayIntentType : Swift.String, Swift.CaseIterable {
   case authorisation
   case purchase
   case estimatedAuthorisation
-  case payout
   public init?(rawValue: Swift.String)
   public typealias AllCases = [PXPCheckoutSDK.DropInAeropayIntentType]
   public typealias RawValue = Swift.String
@@ -5000,7 +5036,7 @@ public struct ErrorResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers final public class PazeDecryptTokenResponseSuccess : PXPCheckoutSDK.PazeDecryptTokenResponse {
+@_hasMissingDesignatedInitializers final public class PazeDecryptTokenResponseSuccess : PXPCheckoutSDK.PazeDecryptTokenResponse, @unchecked Swift.Sendable {
   public struct Shopper : Swift.Codable {
     public var firstName: Swift.String?
     public var lastName: Swift.String?
@@ -6738,6 +6774,9 @@ extension PXPCheckoutSDK.LifecycleEventType : Swift.RawRepresentable {}
 extension PXPCheckoutSDK.ComponentType : Swift.Equatable {}
 extension PXPCheckoutSDK.ComponentType : Swift.Hashable {}
 extension PXPCheckoutSDK.ComponentType : Swift.RawRepresentable {}
+extension PXPCheckoutSDK.Currency : Swift.Equatable {}
+extension PXPCheckoutSDK.Currency : Swift.Hashable {}
+extension PXPCheckoutSDK.Currency : Swift.RawRepresentable {}
 extension PXPCheckoutSDK.FundingType : Swift.Equatable {}
 extension PXPCheckoutSDK.FundingType : Swift.Hashable {}
 extension PXPCheckoutSDK.FundingType : Swift.RawRepresentable {}

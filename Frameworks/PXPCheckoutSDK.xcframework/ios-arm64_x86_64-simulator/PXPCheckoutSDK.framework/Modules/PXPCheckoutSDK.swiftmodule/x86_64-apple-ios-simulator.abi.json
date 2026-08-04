@@ -657,13 +657,6 @@
         "moduleName": "PXPCheckoutSDK"
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
-      },
-      {
         "kind": "TypeDecl",
         "name": "AuthorisationPaymentData",
         "printedName": "AuthorisationPaymentData",
@@ -1081,6 +1074,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -11982,9 +11982,144 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "excludedBankAccountIds",
+            "printedName": "excludedBankAccountIds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AeropayBankAccountId",
+                        "printedName": "PXPCheckoutSDK.AeropayBankAccountId",
+                        "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK19DropInAeropayConfigV22excludedBankAccountIdsSayAA0ehI2IdVGSgvp",
+            "mangledName": "$s14PXPCheckoutSDK19DropInAeropayConfigV22excludedBankAccountIdsSayAA0ehI2IdVGSgvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AeropayBankAccountId",
+                            "printedName": "PXPCheckoutSDK.AeropayBankAccountId",
+                            "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK19DropInAeropayConfigV22excludedBankAccountIdsSayAA0ehI2IdVGSgvg",
+                "mangledName": "$s14PXPCheckoutSDK19DropInAeropayConfigV22excludedBankAccountIdsSayAA0ehI2IdVGSgvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AeropayBankAccountId",
+                            "printedName": "PXPCheckoutSDK.AeropayBankAccountId",
+                            "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK19DropInAeropayConfigV22excludedBankAccountIdsSayAA0ehI2IdVGSgvs",
+                "mangledName": "$s14PXPCheckoutSDK19DropInAeropayConfigV22excludedBankAccountIdsSayAA0ehI2IdVGSgvs",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK19DropInAeropayConfigV22excludedBankAccountIdsSayAA0ehI2IdVGSgvM",
+                "mangledName": "$s14PXPCheckoutSDK19DropInAeropayConfigV22excludedBankAccountIdsSayAA0ehI2IdVGSgvM",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(userId:skipConsumerDataCollection:editableConsumerDataFields:)",
+            "printedName": "init(userId:skipConsumerDataCollection:editableConsumerDataFields:excludedBankAccountIds:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12036,11 +12171,34 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AeropayBankAccountId",
+                        "printedName": "PXPCheckoutSDK.AeropayBankAccountId",
+                        "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK19DropInAeropayConfigV6userId26skipConsumerDataCollection08editablejK6FieldsACSSSg_SbSayAA0jK5FieldOGSgtcfc",
-            "mangledName": "$s14PXPCheckoutSDK19DropInAeropayConfigV6userId26skipConsumerDataCollection08editablejK6FieldsACSSSg_SbSayAA0jK5FieldOGSgtcfc",
+            "usr": "s:14PXPCheckoutSDK19DropInAeropayConfigV6userId26skipConsumerDataCollection08editablejK6Fields22excludedBankAccountIdsACSSSg_SbSayAA0jK5FieldOGSgSayAA0epqH0VGSgtcfc",
+            "mangledName": "$s14PXPCheckoutSDK19DropInAeropayConfigV6userId26skipConsumerDataCollection08editablejK6Fields22excludedBankAccountIdsACSSSg_SbSayAA0jK5FieldOGSgSayAA0epqH0VGSgtcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
@@ -16794,6 +16952,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -17914,6 +18079,13 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PXPCheckoutSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "PXPCheckoutSDK"
       },
@@ -35079,6 +35251,515 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "AeropayBankAccountId",
+        "printedName": "AeropayBankAccountId",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV8rawValueSSvp",
+            "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV8rawValueSSvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV8rawValueSSvg",
+                "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV8rawValueSSvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV8rawValueSSvs",
+                "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV8rawValueSSvs",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV8rawValueSSvM",
+                "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV8rawValueSSvM",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV5valueSSvp",
+            "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV5valueSSvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV5valueSSvg",
+                "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV5valueSSvg",
+                "moduleName": "PXPCheckoutSDK",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV5valueSSvs",
+                "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV5valueSSvs",
+                "moduleName": "PXPCheckoutSDK",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV5valueSSvM",
+                "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV5valueSSvM",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AeropayBankAccountId",
+                "printedName": "PXPCheckoutSDK.AeropayBankAccountId",
+                "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdVyACSScfc",
+            "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdVyACSScfc",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AeropayBankAccountId",
+                "printedName": "PXPCheckoutSDK.AeropayBankAccountId",
+                "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdVyACSicfc",
+            "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdVyACSicfc",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(stringLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AeropayBankAccountId",
+                "printedName": "PXPCheckoutSDK.AeropayBankAccountId",
+                "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV13stringLiteralACSS_tcfc",
+            "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV13stringLiteralACSS_tcfc",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(integerLiteral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AeropayBankAccountId",
+                "printedName": "PXPCheckoutSDK.AeropayBankAccountId",
+                "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV14integerLiteralACSi_tcfc",
+            "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV14integerLiteralACSi_tcfc",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AeropayBankAccountId",
+                "printedName": "PXPCheckoutSDK.AeropayBankAccountId",
+                "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AeropayBankAccountId",
+                "printedName": "PXPCheckoutSDK.AeropayBankAccountId",
+                "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV2eeoiySbAC_ACtFZ",
+            "moduleName": "PXPCheckoutSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV9hashValueSivp",
+            "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV9hashValueSivp",
+            "moduleName": "PXPCheckoutSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV9hashValueSivg",
+                "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV9hashValueSivg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV4hash4intoys6HasherVz_tF",
+            "moduleName": "PXPCheckoutSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV",
+        "mangledName": "$s14PXPCheckoutSDK20AeropayBankAccountIdV",
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringLiteral",
+            "printedName": "ExpressibleByStringLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringLiteralType",
+                "printedName": "StringLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s26ExpressibleByStringLiteralP",
+            "mangledName": "$ss26ExpressibleByStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByIntegerLiteral",
+            "printedName": "ExpressibleByIntegerLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "IntegerLiteralType",
+                "printedName": "IntegerLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s27ExpressibleByIntegerLiteralP",
+            "mangledName": "$ss27ExpressibleByIntegerLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "printedName": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ExtendedGraphemeClusterLiteralType",
+                "printedName": "ExtendedGraphemeClusterLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s43ExpressibleByExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss43ExpressibleByExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByUnicodeScalarLiteral",
+            "printedName": "ExpressibleByUnicodeScalarLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarLiteralType",
+                "printedName": "UnicodeScalarLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s33ExpressibleByUnicodeScalarLiteralP",
+            "mangledName": "$ss33ExpressibleByUnicodeScalarLiteralP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "BankSelectionConfig",
         "printedName": "BankSelectionConfig",
         "children": [
@@ -35528,6 +36209,141 @@
           },
           {
             "kind": "Var",
+            "name": "excludedBankAccountIds",
+            "printedName": "excludedBankAccountIds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AeropayBankAccountId",
+                        "printedName": "PXPCheckoutSDK.AeropayBankAccountId",
+                        "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK19BankSelectionConfigC08excludedC10AccountIdsSayAA07AeropaycG2IdVGSgvp",
+            "mangledName": "$s14PXPCheckoutSDK19BankSelectionConfigC08excludedC10AccountIdsSayAA07AeropaycG2IdVGSgvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AeropayBankAccountId",
+                            "printedName": "PXPCheckoutSDK.AeropayBankAccountId",
+                            "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK19BankSelectionConfigC08excludedC10AccountIdsSayAA07AeropaycG2IdVGSgvg",
+                "mangledName": "$s14PXPCheckoutSDK19BankSelectionConfigC08excludedC10AccountIdsSayAA07AeropaycG2IdVGSgvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AeropayBankAccountId",
+                            "printedName": "PXPCheckoutSDK.AeropayBankAccountId",
+                            "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK19BankSelectionConfigC08excludedC10AccountIdsSayAA07AeropaycG2IdVGSgvs",
+                "mangledName": "$s14PXPCheckoutSDK19BankSelectionConfigC08excludedC10AccountIdsSayAA07AeropaycG2IdVGSgvs",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK19BankSelectionConfigC08excludedC10AccountIdsSayAA07AeropaycG2IdVGSgvM",
+                "mangledName": "$s14PXPCheckoutSDK19BankSelectionConfigC08excludedC10AccountIdsSayAA07AeropaycG2IdVGSgvM",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "allowLinkBankOnPayout",
             "printedName": "allowLinkBankOnPayout",
             "children": [
@@ -35726,7 +36542,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(payButtonStyles:linkBankButtonStyles:bankSelectedIndicatorColor:bankItemStyles:allowLinkBankOnPayout:aerosyncTheme:)",
+            "printedName": "init(payButtonStyles:linkBankButtonStyles:bankSelectedIndicatorColor:bankItemStyles:excludedBankAccountIds:allowLinkBankOnPayout:aerosyncTheme:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -35796,6 +36612,29 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PXPCheckoutSDK.AeropayBankAccountId]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AeropayBankAccountId",
+                        "printedName": "PXPCheckoutSDK.AeropayBankAccountId",
+                        "usr": "s:14PXPCheckoutSDK20AeropayBankAccountIdV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
@@ -35818,8 +36657,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK19BankSelectionConfigC15payButtonStyles04linkcgH026bankSelectedIndicatorColor0j4ItemH009allowLinkC8OnPayout13aerosyncThemeAcA0g5StateH0VSg_AL7SwiftUI0M0VSgAA0cnuH0CSgSbAA08AerosyncT0OSgtcfc",
-            "mangledName": "$s14PXPCheckoutSDK19BankSelectionConfigC15payButtonStyles04linkcgH026bankSelectedIndicatorColor0j4ItemH009allowLinkC8OnPayout13aerosyncThemeAcA0g5StateH0VSg_AL7SwiftUI0M0VSgAA0cnuH0CSgSbAA08AerosyncT0OSgtcfc",
+            "usr": "s:14PXPCheckoutSDK19BankSelectionConfigC15payButtonStyles04linkcgH026bankSelectedIndicatorColor0j4ItemH008excludedC10AccountIds09allowLinkC8OnPayout13aerosyncThemeAcA0g5StateH0VSg_AM7SwiftUI0M0VSgAA0cnxH0CSgSayAA07AeropaycP2IdVGSgSbAA08AerosyncW0OSgtcfc",
+            "mangledName": "$s14PXPCheckoutSDK19BankSelectionConfigC15payButtonStyles04linkcgH026bankSelectedIndicatorColor0j4ItemH008excludedC10AccountIds09allowLinkC8OnPayout13aerosyncThemeAcA0g5StateH0VSg_AM7SwiftUI0M0VSgAA0cnxH0CSgSayAA07AeropaycP2IdVGSgSbAA08AerosyncW0OSgtcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
@@ -49147,6 +49986,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -88069,7 +88915,6 @@
             "moduleName": "PXPCheckoutSDK",
             "overriding": true,
             "declAttributes": [
-              "Override",
               "AccessControl",
               "Required"
             ],
@@ -129707,7 +130552,6 @@
             "moduleName": "PXPCheckoutSDK",
             "overriding": true,
             "declAttributes": [
-              "Override",
               "Required",
               "AccessControl",
               "RawDocComment"
@@ -185179,6 +186023,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -209226,6 +210077,260 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "OSDataAnalyticsEvent",
+        "printedName": "OSDataAnalyticsEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "osVersion",
+            "printedName": "osVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK20OSDataAnalyticsEventC9osVersionSSvp",
+            "mangledName": "$s14PXPCheckoutSDK20OSDataAnalyticsEventC9osVersionSSvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK20OSDataAnalyticsEventC9osVersionSSvg",
+                "mangledName": "$s14PXPCheckoutSDK20OSDataAnalyticsEventC9osVersionSSvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "operatingSystem",
+            "printedName": "operatingSystem",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK20OSDataAnalyticsEventC15operatingSystemSSvp",
+            "mangledName": "$s14PXPCheckoutSDK20OSDataAnalyticsEventC15operatingSystemSSvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK20OSDataAnalyticsEventC15operatingSystemSSvg",
+                "mangledName": "$s14PXPCheckoutSDK20OSDataAnalyticsEventC15operatingSystemSSvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(osVersion:operatingSystem:sessionId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OSDataAnalyticsEvent",
+                "printedName": "PXPCheckoutSDK.OSDataAnalyticsEvent",
+                "usr": "s:14PXPCheckoutSDK20OSDataAnalyticsEventC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PXPCheckoutSDK20OSDataAnalyticsEventC9osVersion15operatingSystem9sessionIdACSS_S2Stcfc",
+            "mangledName": "$s14PXPCheckoutSDK20OSDataAnalyticsEventC9osVersion15operatingSystem9sessionIdACSS_S2Stcfc",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PXPCheckoutSDK20OSDataAnalyticsEventC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s14PXPCheckoutSDK20OSDataAnalyticsEventC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PXPCheckoutSDK",
+            "overriding": true,
+            "declAttributes": [
+              "Override",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(eventName:sessionId:timestamp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OSDataAnalyticsEvent",
+                "printedName": "PXPCheckoutSDK.OSDataAnalyticsEvent",
+                "usr": "s:14PXPCheckoutSDK20OSDataAnalyticsEventC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "hasDefaultArg": true,
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PXPCheckoutSDK20OSDataAnalyticsEventC9eventName9sessionId9timestampACSS_SS10Foundation4DateVtcfc",
+            "mangledName": "$s14PXPCheckoutSDK20OSDataAnalyticsEventC9eventName9sessionId9timestampACSS_SS10Foundation4DateVtcfc",
+            "moduleName": "PXPCheckoutSDK",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14PXPCheckoutSDK20OSDataAnalyticsEventC",
+        "mangledName": "$s14PXPCheckoutSDK20OSDataAnalyticsEventC",
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "superclassUsr": "s:14PXPCheckoutSDK18BaseAnalyticsEventC",
+        "superclassNames": [
+          "PXPCheckoutSDK.BaseAnalyticsEvent"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PXPCheckoutSDK"
+      },
+      {
+        "kind": "TypeDecl",
         "name": "PayPalRetryAttemptAnalyticsEvent",
         "printedName": "PayPalRetryAttemptAnalyticsEvent",
         "children": [
@@ -218366,6 +219471,190 @@
             ],
             "usr": "s:s12CaseIterableP",
             "mangledName": "$ss12CaseIterableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PXPCheckoutSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Currency",
+        "printedName": "Currency",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "usd",
+            "printedName": "usd",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PXPCheckoutSDK.Currency.Type) -> PXPCheckoutSDK.Currency",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "PXPCheckoutSDK.Currency",
+                    "usr": "s:14PXPCheckoutSDK8CurrencyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PXPCheckoutSDK.Currency.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Currency",
+                        "printedName": "PXPCheckoutSDK.Currency",
+                        "usr": "s:14PXPCheckoutSDK8CurrencyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PXPCheckoutSDK8CurrencyO3usdyA2CmF",
+            "mangledName": "$s14PXPCheckoutSDK8CurrencyO3usdyA2CmF",
+            "moduleName": "PXPCheckoutSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK8CurrencyO8rawValueSSvp",
+            "mangledName": "$s14PXPCheckoutSDK8CurrencyO8rawValueSSvp",
+            "moduleName": "PXPCheckoutSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK8CurrencyO8rawValueSSvg",
+                "mangledName": "$s14PXPCheckoutSDK8CurrencyO8rawValueSSvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PXPCheckoutSDK.Currency?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Currency",
+                    "printedName": "PXPCheckoutSDK.Currency",
+                    "usr": "s:14PXPCheckoutSDK8CurrencyO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PXPCheckoutSDK8CurrencyO8rawValueACSgSS_tcfc",
+            "mangledName": "$s14PXPCheckoutSDK8CurrencyO8rawValueACSgSS_tcfc",
+            "moduleName": "PXPCheckoutSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14PXPCheckoutSDK8CurrencyO",
+        "mangledName": "$s14PXPCheckoutSDK8CurrencyO",
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           }
         ]
       },
@@ -229507,43 +230796,6 @@
             "declKind": "EnumElement",
             "usr": "s:14PXPCheckoutSDK23DropInAeropayIntentTypeO22estimatedAuthorisationyA2CmF",
             "mangledName": "$s14PXPCheckoutSDK23DropInAeropayIntentTypeO22estimatedAuthorisationyA2CmF",
-            "moduleName": "PXPCheckoutSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "payout",
-            "printedName": "payout",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PXPCheckoutSDK.DropInAeropayIntentType.Type) -> PXPCheckoutSDK.DropInAeropayIntentType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DropInAeropayIntentType",
-                    "printedName": "PXPCheckoutSDK.DropInAeropayIntentType",
-                    "usr": "s:14PXPCheckoutSDK23DropInAeropayIntentTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PXPCheckoutSDK.DropInAeropayIntentType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DropInAeropayIntentType",
-                        "printedName": "PXPCheckoutSDK.DropInAeropayIntentType",
-                        "usr": "s:14PXPCheckoutSDK23DropInAeropayIntentTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:14PXPCheckoutSDK23DropInAeropayIntentTypeO6payoutyA2CmF",
-            "mangledName": "$s14PXPCheckoutSDK23DropInAeropayIntentTypeO6payoutyA2CmF",
             "moduleName": "PXPCheckoutSDK"
           },
           {
@@ -245574,6 +246826,13 @@
           "PXPCheckoutSDK.PazeDecryptTokenResponse"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -312884,6 +314143,27 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/CheckoutDropIn\/CheckoutDropIn.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1271,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/CheckoutDropIn\/CheckoutDropIn.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1406,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/CheckoutDropIn\/CheckoutDropIn.swift",
+      "kind": "Array",
+      "offset": 1495,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/CheckoutDropIn\/CheckoutDropInAccessibilityConstants.swift",
       "kind": "StringLiteral",
       "offset": 245,
@@ -313327,14 +314607,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/CheckoutDropIn\/CheckoutDropInStyleHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 7393,
+      "offset": 8847,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/CheckoutDropIn\/CheckoutDropInStyleHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 12568,
+      "offset": 14022,
       "length": 5,
       "value": "false"
     },
@@ -313677,7 +314957,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/CheckoutDropIn\/Types\/MethodConfigs\/DropInAeropayConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 724,
+      "offset": 853,
       "length": 5,
       "value": "false"
     },
@@ -313768,14 +315048,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/AeropayButtonComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 42160,
+      "offset": 42204,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/AeropayButtonComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 59871,
+      "offset": 59962,
       "length": 5,
       "value": "false"
     },
@@ -314104,7 +315384,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/PayByBankPopup.swift",
       "kind": "BooleanLiteral",
-      "offset": 363,
+      "offset": 353,
       "length": 5,
       "value": "false"
     },
@@ -314167,7 +315447,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/BankSelectionConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1110,
+      "offset": 1865,
       "length": 5,
       "value": "false"
     },
@@ -314216,7 +315496,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 697,
+      "offset": 687,
       "length": 5,
       "value": "false"
     },
@@ -314314,70 +315594,70 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
       "kind": "BooleanLiteral",
-      "offset": 2311,
+      "offset": 2301,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
       "kind": "BooleanLiteral",
-      "offset": 2809,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
-      "kind": "StringLiteral",
-      "offset": 3594,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3615,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4567,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4599,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4628,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4663,
+      "offset": 2799,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
       "kind": "StringLiteral",
-      "offset": 5531,
+      "offset": 3584,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
       "kind": "BooleanLiteral",
-      "offset": 5823,
+      "offset": 3605,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4557,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4589,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4618,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4653,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
+      "kind": "StringLiteral",
+      "offset": 5521,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Types\/PayByBankPopupState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5813,
       "length": 5,
       "value": "false"
     },
@@ -314447,168 +315727,133 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "FloatLiteral",
-      "offset": 8302,
+      "offset": 8369,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "FloatLiteral",
-      "offset": 8357,
+      "offset": 8424,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8396,
+      "offset": 8463,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8437,
+      "offset": 8504,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8478,
+      "offset": 8545,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8520,
+      "offset": 8587,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8569,
+      "offset": 8636,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
+      "kind": "FloatLiteral",
+      "offset": 8683,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8794,
+      "offset": 8856,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8830,
+      "offset": 8892,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8843,
+      "offset": 8905,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8855,
+      "offset": 8917,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8869,
+      "offset": 8931,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9009,
-      "length": 4,
-      "value": "0x75"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
-      "kind": "FloatLiteral",
-      "offset": 9017,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9047,
-      "length": 4,
-      "value": "0x8C"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
-      "kind": "FloatLiteral",
-      "offset": 9055,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9084,
-      "length": 4,
-      "value": "0xFF"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
-      "kind": "FloatLiteral",
-      "offset": 9092,
-      "length": 5,
-      "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9160,
+      "offset": 9070,
       "length": 4,
       "value": "0x38"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "FloatLiteral",
-      "offset": 9168,
+      "offset": 9078,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9198,
+      "offset": 9108,
       "length": 4,
       "value": "0x30"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "FloatLiteral",
-      "offset": 9206,
+      "offset": 9116,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9235,
+      "offset": 9145,
       "length": 4,
       "value": "0xF5"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayButtonView.swift",
       "kind": "FloatLiteral",
-      "offset": 9243,
+      "offset": 9153,
       "length": 5,
       "value": "255.0"
     },
@@ -315203,7 +316448,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayColors.swift",
       "kind": "BooleanLiteral",
-      "offset": 4315,
+      "offset": 3662,
       "length": 5,
       "value": "false"
     },
@@ -315238,7 +316483,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AeropayPopupKeyboardAwareScrollView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2475,
+      "offset": 2589,
       "length": 1,
       "value": "0"
     },
@@ -315315,84 +316560,84 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 35138,
+      "offset": 36809,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 35773,
+      "offset": 37444,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 35823,
+      "offset": 37494,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 35866,
+      "offset": 37537,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 35923,
+      "offset": 37594,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 35982,
+      "offset": 37653,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 36027,
+      "offset": 37698,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 36073,
+      "offset": 37744,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 36128,
+      "offset": 37799,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 36169,
+      "offset": 37840,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 36208,
+      "offset": 37879,
       "length": 2,
       "value": "96"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/AerosyncScreen.swift",
       "kind": "Dictionary",
-      "offset": 36462,
+      "offset": 38133,
       "length": 1087,
       "value": "[(\"wells fargo bank\", \"ic-aeropay-bank-wells-fargo\"), (\"chase\", \"ic-aeropay-bank-chase\"), (\"navy federal credit union\", \"ic-aeropay-bank-navy-federal\"), (\"bank of america\", \"ic-aeropay-bank-of-america\"), (\"capital one\", \"ic-aeropay-bank-capital-one\"), (\"sofi\", \"ic-aeropay-bank-sofi\"), (\"pnc bank\", \"ic-aeropay-bank-pnc\"), (\"usaa\", \"ic-aeropay-bank-usaa\"), (\"us bank\", \"ic-aeropay-bank-us-bank\"), (\"truist\", \"ic-aeropay-bank-truist\"), (\"regions bank\", \"ic-aeropay-bank-regions\"), (\"fifth third bank - online banking\", \"ic-aeropay-bank-fifth-third\"), (\"td bank\", \"ic-aeropay-bank-td\"), (\"huntington bank - personal\", \"ic-aeropay-bank-huntington\"), (\"discover bank account\", \"ic-aeropay-bank-discover\"), (\"citibank\", \"ic-aeropay-bank-citibank\"), (\"bmo - digital banking\", \"ic-aeropay-bank-bmo\"), (\"woodforest national bank\", \"ic-aeropay-bank-woodforest\"), (\"north carolina state employees credit union\", \"ic-aeropay-bank-nc-state-employees-cu\"), (\"first national bank texas - first convenience bank\", \"ic-aeropay-bank-first-national-bank-texas\")]"
     },
@@ -315581,107 +316826,128 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 19857,
+      "offset": 19858,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 20302,
+      "offset": 19905,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20010,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20398,
       "length": 2,
       "value": "35"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 25029,
+      "offset": 26250,
       "length": 2,
       "value": "35"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "FloatLiteral",
-      "offset": 25084,
+      "offset": 26305,
       "length": 4,
       "value": "0.28"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 32638,
+      "offset": 34499,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 32682,
+      "offset": 34543,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 34584,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "StringLiteral",
-      "offset": 36821,
+      "offset": 38723,
       "length": 25,
       "value": "\"pxp-otp-code-input-area\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 37051,
-      "length": 2,
-      "value": "48"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
-      "kind": "IntegerLiteral",
-      "offset": 37093,
+      "offset": 39019,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "Array",
-      "offset": 37172,
+      "offset": 39098,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 37417,
+      "offset": 39343,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 47370,
+      "offset": 49416,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 47565,
+      "offset": 49611,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 48789,
+      "offset": 50835,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 53621,
+      "offset": 55667,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/OTPVerificationScreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 56978,
+      "length": 1,
+      "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/PayByBankPopupView.swift",
@@ -315700,21 +316966,21 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/PayByBankPopupView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9562,
+      "offset": 9640,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/PayByBankPopupView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9600,
+      "offset": 9678,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/AeropayButtonComponent\/Views\/PayByBankPopupView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9769,
+      "offset": 9847,
       "length": 1,
       "value": "2"
     },
@@ -315756,21 +317022,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/ApplePayButtonComponentConfig.swift",
       "kind": "StringLiteral",
-      "offset": 434,
-      "length": 5,
-      "value": "\"USD\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/ApplePayButtonComponentConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 2247,
+      "offset": 2263,
       "length": 10,
       "value": "\"Purchase\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/ApplePayButtonComponentConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3456,
+      "offset": 3472,
       "length": 3,
       "value": "4.0"
     },
@@ -315791,98 +317050,98 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/Types\/ApplePayContact.swift",
       "kind": "Array",
-      "offset": 745,
+      "offset": 755,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/Types\/ApplePayContact.swift",
       "kind": "StringLiteral",
-      "offset": 779,
+      "offset": 789,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/Types\/ApplePayContact.swift",
       "kind": "StringLiteral",
-      "offset": 814,
+      "offset": 824,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/Types\/ApplePayContact.swift",
       "kind": "StringLiteral",
-      "offset": 846,
+      "offset": 856,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/Types\/ApplePayContact.swift",
       "kind": "StringLiteral",
-      "offset": 879,
+      "offset": 889,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/Types\/ApplePayContact.swift",
       "kind": "StringLiteral",
-      "offset": 919,
+      "offset": 929,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/Types\/ApplePayContact.swift",
       "kind": "StringLiteral",
-      "offset": 960,
+      "offset": 970,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/Types\/ApplePayContact.swift",
       "kind": "StringLiteral",
-      "offset": 994,
+      "offset": 1004,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/Types\/ApplePayContact.swift",
       "kind": "StringLiteral",
-      "offset": 1025,
+      "offset": 1035,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/Types\/ApplePayContact.swift",
       "kind": "StringLiteral",
-      "offset": 1058,
+      "offset": 1068,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/Types\/ApplePayContact.swift",
       "kind": "StringLiteral",
-      "offset": 1102,
+      "offset": 1112,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/Types\/ApplePayContact.swift",
       "kind": "StringLiteral",
-      "offset": 1143,
+      "offset": 1153,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/Types\/ApplePayContact.swift",
       "kind": "StringLiteral",
-      "offset": 1177,
+      "offset": 1187,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ApplePayButtonComponent\/Types\/ApplePayContact.swift",
       "kind": "StringLiteral",
-      "offset": 1207,
+      "offset": 1217,
       "length": 2,
       "value": "\"\""
     },
@@ -317534,42 +318793,42 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/Views\/ClickOnceStandaloneView.swift",
       "kind": "StringLiteral",
-      "offset": 19348,
+      "offset": 19291,
       "length": 9,
       "value": "\"#F7F8F8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/Views\/ClickOnceStandaloneView.swift",
       "kind": "StringLiteral",
-      "offset": 19408,
+      "offset": 19351,
       "length": 9,
       "value": "\"#5E656B\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/Views\/ClickOnceStandaloneView.swift",
       "kind": "StringLiteral",
-      "offset": 19466,
+      "offset": 19409,
       "length": 9,
       "value": "\"#09090C\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/Views\/ClickOnceStandaloneView.swift",
       "kind": "StringLiteral",
-      "offset": 19526,
+      "offset": 19469,
       "length": 9,
       "value": "\"#D9DCDE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/Views\/ClickOnceStandaloneView.swift",
       "kind": "StringLiteral",
-      "offset": 19584,
+      "offset": 19527,
       "length": 9,
       "value": "\"#292CF5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/Views\/ClickOnceStandaloneView.swift",
       "kind": "StringLiteral",
-      "offset": 19646,
+      "offset": 19589,
       "length": 9,
       "value": "\"#B9BDC0\""
     },
@@ -321468,28 +322727,35 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/FieldComponents\/FieldComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 1082,
+      "offset": 1719,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/FieldComponents\/FieldComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 1694,
+      "offset": 1866,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/FieldComponents\/FieldComponent.swift",
       "kind": "FloatLiteral",
-      "offset": 2368,
+      "offset": 2540,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/FieldComponents\/FieldComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 9808,
+      "offset": 5224,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/FieldComponents\/FieldComponent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10211,
       "length": 5,
       "value": "false"
     },
@@ -322252,21 +323518,21 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/FieldComponents\/Views\/FieldComponentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 34519,
+      "offset": 34466,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/FieldComponents\/Views\/FieldLayoutModifiers.swift",
       "kind": "IntegerLiteral",
-      "offset": 8318,
+      "offset": 8302,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/FieldComponents\/Views\/FieldLayoutModifiers.swift",
       "kind": "IntegerLiteral",
-      "offset": 8357,
+      "offset": 8341,
       "length": 1,
       "value": "0"
     },
@@ -322343,21 +323609,21 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Handlers\/PayPalPaymentHandler.swift",
       "kind": "StringLiteral",
-      "offset": 19297,
+      "offset": 19272,
       "length": 8,
       "value": "\"paypal\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Handlers\/PayPalPaymentHandler.swift",
       "kind": "StringLiteral",
-      "offset": 19326,
+      "offset": 19301,
       "length": 10,
       "value": "\"paylater\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Handlers\/PayPalPaymentHandler.swift",
       "kind": "StringLiteral",
-      "offset": 19355,
+      "offset": 19330,
       "length": 8,
       "value": "\"credit\""
     },
@@ -325584,910 +326850,896 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21659,
-      "length": 9,
-      "value": "\"SDK1127\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
-      "kind": "StringLiteral",
-      "offset": 21679,
-      "length": 76,
-      "value": "\"Invalid Aeropay entry type '{entryType}'. Aeropay entry type must be Ecom.\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
-      "kind": "StringLiteral",
-      "offset": 21843,
+      "offset": 21661,
       "length": 9,
       "value": "\"SDK1200\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21863,
+      "offset": 21681,
       "length": 26,
       "value": "\"Failed to load Paze SDK.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21951,
+      "offset": 21769,
       "length": 9,
       "value": "\"SDK1201\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21971,
+      "offset": 21789,
       "length": 25,
       "value": "\"Unknown Paze SDK error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22077,
+      "offset": 21895,
       "length": 9,
       "value": "\"SDK1202\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22097,
+      "offset": 21915,
       "length": 60,
       "value": "\"Missing session.allowedFundingTypes.wallets.paze.clientId.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22251,
+      "offset": 22069,
       "length": 10,
       "value": "\"SDK1202A\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22272,
+      "offset": 22090,
       "length": 72,
       "value": "\"Missing session.allowedFundingTypes.wallets.paze.merchantCategoryCode.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22427,
+      "offset": 22245,
       "length": 9,
       "value": "\"SDK1203\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22447,
+      "offset": 22265,
       "length": 45,
       "value": "\"client.name must be 50 characters or fewer.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22574,
+      "offset": 22392,
       "length": 9,
       "value": "\"SDK1204\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22594,
+      "offset": 22412,
       "length": 50,
       "value": "\"client.brandName must be 50 characters or fewer.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22736,
+      "offset": 22554,
       "length": 9,
       "value": "\"SDK1205\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22756,
+      "offset": 22574,
       "length": 60,
       "value": "\"client.statementDescriptor must be 25 characters or fewer.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22886,
+      "offset": 22704,
       "length": 9,
       "value": "\"SDK1206\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22906,
+      "offset": 22724,
       "length": 32,
       "value": "\"Failed to initialize Paze SDK.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23021,
+      "offset": 22839,
       "length": 9,
       "value": "\"SDK1207\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23041,
+      "offset": 22859,
       "length": 56,
       "value": "\"Paze canCheckout did not return an eligibility result.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23171,
+      "offset": 22989,
       "length": 9,
       "value": "\"SDK1208\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23191,
+      "offset": 23009,
       "length": 85,
       "value": "\"Paze dynamic presentment requires both emailAddress and phoneNumber to be provided.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23348,
+      "offset": 23166,
       "length": 9,
       "value": "\"SDK1209\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23368,
+      "offset": 23186,
       "length": 47,
       "value": "\"emailAddress must be 128 characters or fewer.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23486,
+      "offset": 23304,
       "length": 9,
       "value": "\"SDK1210\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23506,
+      "offset": 23324,
       "length": 54,
       "value": "\"emailAddress must be a valid RFC 5322 email address.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23632,
+      "offset": 23450,
       "length": 9,
       "value": "\"SDK1211\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23652,
+      "offset": 23470,
       "length": 45,
       "value": "\"phoneNumber must be 15 characters or fewer.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23768,
+      "offset": 23586,
       "length": 9,
       "value": "\"SDK1212\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23788,
+      "offset": 23606,
       "length": 77,
       "value": "\"phoneNumber must be a US E.164 number without '+', for example 15551234567.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23936,
+      "offset": 23754,
       "length": 9,
       "value": "\"SDK1213\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23956,
+      "offset": 23774,
       "length": 58,
       "value": "\"Paze only supports USD currency. Received: '{currency}'.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24085,
+      "offset": 23903,
       "length": 9,
       "value": "\"SDK1214\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24105,
+      "offset": 23923,
       "length": 23,
       "value": "\"Paze checkout failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24210,
+      "offset": 24028,
       "length": 9,
       "value": "\"SDK1215\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24230,
+      "offset": 24048,
       "length": 70,
       "value": "\"Paze checkout did not return checkoutResponse for a COMPLETE result.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24382,
+      "offset": 24200,
       "length": 9,
       "value": "\"SDK1216\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24402,
+      "offset": 24220,
       "length": 48,
       "value": "\"Paze complete did not return completeResponse.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24530,
+      "offset": 24348,
       "length": 9,
       "value": "\"SDK1217\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24550,
+      "offset": 24368,
       "length": 41,
       "value": "\"Unable to decode Paze checkoutResponse.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24671,
+      "offset": 24489,
       "length": 9,
       "value": "\"SDK1218\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24691,
+      "offset": 24509,
       "length": 41,
       "value": "\"Unable to decode Paze completeResponse.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24813,
+      "offset": 24631,
       "length": 9,
       "value": "\"SDK1219\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24833,
+      "offset": 24651,
       "length": 55,
       "value": "\"Paze completeResponse did not contain securedPayload.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24965,
+      "offset": 24783,
       "length": 9,
       "value": "\"SDK1220\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24985,
+      "offset": 24803,
       "length": 51,
       "value": "\"Paze wallet account exists but is not accessible.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25112,
+      "offset": 24930,
       "length": 9,
       "value": "\"SDK1221\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25132,
+      "offset": 24950,
       "length": 69,
       "value": "\"Paze complete() was called before checkout() finished successfully.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25278,
+      "offset": 25096,
       "length": 9,
       "value": "\"SDK1222\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25298,
+      "offset": 25116,
       "length": 44,
       "value": "\"sessionId must be 255 characters or fewer.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25424,
+      "offset": 25242,
       "length": 9,
       "value": "\"SDK1223\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25444,
+      "offset": 25262,
       "length": 55,
       "value": "\"transactionType must be PURCHASE for Paze complete().\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25585,
+      "offset": 25403,
       "length": 9,
       "value": "\"SDK1224\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25605,
+      "offset": 25423,
       "length": 66,
       "value": "\"transactionOptions is required when transactionType is PURCHASE.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25755,
+      "offset": 25573,
       "length": 9,
       "value": "\"SDK1225\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25775,
+      "offset": 25593,
       "length": 64,
       "value": "\"transactionValue is required when transactionType is PURCHASE.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25923,
+      "offset": 25741,
       "length": 9,
       "value": "\"SDK1226\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25943,
+      "offset": 25761,
       "length": 62,
       "value": "\"billingPreference must be one of: {validBillingPreferences}.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26101,
+      "offset": 25919,
       "length": 9,
       "value": "\"SDK1227\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26121,
+      "offset": 25939,
       "length": 81,
       "value": "\"transactionOptions.billingPreference must be one of: {validBillingPreferences}.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26280,
+      "offset": 26098,
       "length": 9,
       "value": "\"SDK1228\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26300,
+      "offset": 26118,
       "length": 58,
       "value": "\"transactionOptions.payloadTypeIndicator must be PAYMENT.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26442,
+      "offset": 26260,
       "length": 9,
       "value": "\"SDK1229\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26462,
+      "offset": 26280,
       "length": 60,
       "value": "\"transactionValue.transactionAmount must be greater than 0.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26608,
+      "offset": 26426,
       "length": 9,
       "value": "\"SDK1230\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26628,
+      "offset": 26446,
       "length": 80,
       "value": "\"transactionValue.transactionCurrencyCode must be a 3-letter ISO currency code.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26792,
+      "offset": 26610,
       "length": 9,
       "value": "\"SDK1231\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26812,
+      "offset": 26630,
       "length": 82,
       "value": "\"acceptedShippingCountries contains invalid country codes: {invalidCountryCodes}.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26964,
+      "offset": 26782,
       "length": 9,
       "value": "\"SDK1232\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26984,
+      "offset": 26802,
       "length": 57,
       "value": "\"cobrand.cobrandName is required for each cobrand entry.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27104,
+      "offset": 26922,
       "length": 9,
       "value": "\"SDK1233\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27124,
+      "offset": 26942,
       "length": 9,
       "value": "\"{error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27197,
+      "offset": 27015,
       "length": 9,
       "value": "\"SDK1234\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27217,
+      "offset": 27035,
       "length": 9,
       "value": "\"{error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27289,
+      "offset": 27107,
       "length": 9,
       "value": "\"SDK1235\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27309,
+      "offset": 27127,
       "length": 42,
       "value": "\"Paze payment transaction failed. {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27451,
+      "offset": 27269,
       "length": 9,
       "value": "\"SDK1300\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27471,
+      "offset": 27289,
       "length": 35,
       "value": "\"Aeropay consumer data is invalid.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27576,
+      "offset": 27394,
       "length": 9,
       "value": "\"SDK1301\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27596,
+      "offset": 27414,
       "length": 29,
       "value": "\"Aeropay create user failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27695,
+      "offset": 27513,
       "length": 9,
       "value": "\"SDK1302\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27715,
+      "offset": 27533,
       "length": 29,
       "value": "\"Aeropay verify user failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27820,
+      "offset": 27638,
       "length": 9,
       "value": "\"SDK1303\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27840,
+      "offset": 27658,
       "length": 44,
       "value": "\"Failed to parse Aerosync response payload.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27951,
+      "offset": 27769,
       "length": 9,
       "value": "\"SDK1304\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27971,
+      "offset": 27789,
       "length": 25,
       "value": "\"Aeropay Aerosync failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28067,
+      "offset": 27885,
       "length": 9,
       "value": "\"SDK1305\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28087,
+      "offset": 27905,
       "length": 26,
       "value": "\"Link bank account failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28185,
+      "offset": 28003,
       "length": 9,
       "value": "\"SDK1306\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28205,
+      "offset": 28023,
       "length": 26,
       "value": "\"Get bank accounts failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28307,
+      "offset": 28125,
       "length": 9,
       "value": "\"SDK1307\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28335,
+      "offset": 28153,
       "length": 83,
       "value": "\"AeroPay user is not active. Bank list cannot be retrieved for payment submission.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28490,
+      "offset": 28308,
       "length": 9,
       "value": "\"SDK1308\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28510,
+      "offset": 28328,
       "length": 26,
       "value": "\"Aeropay get user failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28602,
+      "offset": 28420,
       "length": 9,
       "value": "\"SDK1309\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28622,
+      "offset": 28440,
       "length": 25,
       "value": "\"Aeropay user not found.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28715,
+      "offset": 28533,
       "length": 9,
       "value": "\"SDK1310\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28735,
+      "offset": 28553,
       "length": 9,
       "value": "\"{error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28819,
+      "offset": 28637,
       "length": 9,
       "value": "\"SDK1311\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28839,
+      "offset": 28657,
       "length": 51,
       "value": "\"Aeropay Aerosync token and deeplink are required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28974,
+      "offset": 28792,
       "length": 9,
       "value": "\"SDK1312\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28994,
+      "offset": 28812,
       "length": 40,
       "value": "\"Unexpected response from link account.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29113,
+      "offset": 28931,
       "length": 9,
       "value": "\"SDK1313\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29133,
+      "offset": 28951,
       "length": 43,
       "value": "\"Link bank account provider error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29254,
+      "offset": 29072,
       "length": 9,
       "value": "\"SDK1314\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29274,
+      "offset": 29092,
       "length": 42,
       "value": "\"Link bank account network error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29387,
+      "offset": 29205,
       "length": 9,
       "value": "\"SDK1315\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29407,
+      "offset": 29225,
       "length": 30,
       "value": "\"Confirm user failed: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29516,
+      "offset": 29334,
       "length": 9,
       "value": "\"SDK1316\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29536,
+      "offset": 29354,
       "length": 38,
       "value": "\"Confirm user provider error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29658,
+      "offset": 29476,
       "length": 9,
       "value": "\"SDK1317\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29678,
+      "offset": 29496,
       "length": 40,
       "value": "\"Unexpected response from confirm user.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29796,
+      "offset": 29614,
       "length": 9,
       "value": "\"SDK1318\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29816,
+      "offset": 29634,
       "length": 37,
       "value": "\"Confirm user network error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29934,
+      "offset": 29752,
       "length": 9,
       "value": "\"SDK1319\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29954,
+      "offset": 29772,
       "length": 47,
       "value": "\"Aeropay aggregator credentials lookup failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30090,
+      "offset": 29908,
       "length": 9,
       "value": "\"SDK1320\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30110,
+      "offset": 29928,
       "length": 52,
       "value": "\"Get aggregator credentials provider error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30256,
+      "offset": 30074,
       "length": 9,
       "value": "\"SDK1321\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30276,
+      "offset": 30094,
       "length": 54,
       "value": "\"Unexpected response from get aggregator credentials.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30418,
+      "offset": 30236,
       "length": 9,
       "value": "\"SDK1322\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30438,
+      "offset": 30256,
       "length": 51,
       "value": "\"Get aggregator credentials network error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30574,
+      "offset": 30392,
       "length": 9,
       "value": "\"SDK1323\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30594,
+      "offset": 30412,
       "length": 45,
       "value": "\"Unexpected response from get bank accounts.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30719,
+      "offset": 30537,
       "length": 9,
       "value": "\"SDK1324\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30739,
+      "offset": 30557,
       "length": 43,
       "value": "\"Get bank accounts provider error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30861,
+      "offset": 30679,
       "length": 9,
       "value": "\"SDK1325\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30881,
+      "offset": 30699,
       "length": 42,
       "value": "\"Get bank accounts network error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30989,
+      "offset": 30807,
       "length": 9,
       "value": "\"SDK1326\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 31009,
+      "offset": 30827,
       "length": 29,
       "value": "\"Aeropay transaction failed.\""
     },
@@ -326529,56 +327781,56 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Fonts\/FontManager.swift",
       "kind": "Array",
-      "offset": 1066,
+      "offset": 1606,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Fonts\/FontManager.swift",
       "kind": "FloatLiteral",
-      "offset": 1155,
+      "offset": 1695,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Fonts\/FontManager.swift",
       "kind": "FloatLiteral",
-      "offset": 1392,
+      "offset": 1932,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Fonts\/FontManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13697,
+      "offset": 23834,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Fonts\/FontManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13891,
+      "offset": 24028,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Fonts\/FontManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14030,
+      "offset": 24167,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Fonts\/FontManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14170,
+      "offset": 24307,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Fonts\/FontManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14308,
+      "offset": 24445,
       "length": 2,
       "value": "16"
     },
@@ -326606,7 +327858,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Fonts\/RemoteFontLoader.swift",
       "kind": "StringLiteral",
-      "offset": 13401,
+      "offset": 13330,
       "length": 5,
       "value": "\"Aa0\""
     },
@@ -327199,6 +328451,13 @@
       "value": "\"paze-button\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/PxpCheckouts\/Types\/Currency.swift",
+      "kind": "StringLiteral",
+      "offset": 110,
+      "length": 5,
+      "value": "\"USD\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/PxpCheckouts\/Types\/FundingType.swift",
       "kind": "StringLiteral",
       "offset": 135,
@@ -327327,56 +328586,56 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/PxpCheckouts\/Types\/TransactionData.swift",
       "kind": "StringLiteral",
-      "offset": 4042,
+      "offset": 4053,
       "length": 6,
       "value": "\"Ecom\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/PxpCheckouts\/Types\/TransactionData.swift",
       "kind": "StringLiteral",
-      "offset": 4065,
+      "offset": 4076,
       "length": 6,
       "value": "\"Moto\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/PxpCheckouts\/Types\/TransactionData.swift",
       "kind": "StringLiteral",
-      "offset": 4445,
+      "offset": 4456,
       "length": 15,
       "value": "\"Authorisation\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/PxpCheckouts\/Types\/TransactionData.swift",
       "kind": "StringLiteral",
-      "offset": 4550,
+      "offset": 4561,
       "length": 10,
       "value": "\"Purchase\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/PxpCheckouts\/Types\/TransactionData.swift",
       "kind": "StringLiteral",
-      "offset": 4648,
+      "offset": 4659,
       "length": 14,
       "value": "\"Verification\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/PxpCheckouts\/Types\/TransactionData.swift",
       "kind": "StringLiteral",
-      "offset": 4788,
+      "offset": 4799,
       "length": 24,
       "value": "\"EstimatedAuthorisation\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/PxpCheckouts\/Types\/TransactionData.swift",
       "kind": "StringLiteral",
-      "offset": 4894,
+      "offset": 4905,
       "length": 8,
       "value": "\"Payout\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/PxpCheckouts\/Types\/TransactionData.swift",
       "kind": "StringLiteral",
-      "offset": 4978,
+      "offset": 4989,
       "length": 8,
       "value": "\"Create\""
     },
@@ -327481,30 +328740,23 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/PxpCheckouts\/Types\/TransactionIntentData.swift",
       "kind": "StringLiteral",
-      "offset": 3306,
+      "offset": 3365,
       "length": 15,
       "value": "\"Authorisation\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/PxpCheckouts\/Types\/TransactionIntentData.swift",
       "kind": "StringLiteral",
-      "offset": 3342,
+      "offset": 3401,
       "length": 10,
       "value": "\"Purchase\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/PxpCheckouts\/Types\/TransactionIntentData.swift",
       "kind": "StringLiteral",
-      "offset": 3387,
+      "offset": 3446,
       "length": 24,
       "value": "\"EstimatedAuthorisation\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/PxpCheckouts\/Types\/TransactionIntentData.swift",
-      "kind": "StringLiteral",
-      "offset": 3430,
-      "length": 8,
-      "value": "\"Payout\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Resources\/ElGRResource.swift",
@@ -333165,35 +334417,35 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "IntegerLiteral",
-      "offset": 5083,
+      "offset": 5070,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "IntegerLiteral",
-      "offset": 6697,
+      "offset": 6684,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "IntegerLiteral",
-      "offset": 10080,
+      "offset": 10067,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "StringLiteral",
-      "offset": 26267,
+      "offset": 26217,
       "length": 30,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "StringLiteral",
-      "offset": 26350,
+      "offset": 26300,
       "length": 5,
       "value": "\"UTC\""
     },
