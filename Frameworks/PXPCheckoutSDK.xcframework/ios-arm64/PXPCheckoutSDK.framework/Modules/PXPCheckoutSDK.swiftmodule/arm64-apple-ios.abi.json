@@ -118781,6 +118781,117 @@
           },
           {
             "kind": "Var",
+            "name": "gatewayTokenId",
+            "printedName": "gatewayTokenId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK34ClickOnceStandaloneComponentConfigC14gatewayTokenIdSSSgvp",
+            "mangledName": "$s14PXPCheckoutSDK34ClickOnceStandaloneComponentConfigC14gatewayTokenIdSSSgvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK34ClickOnceStandaloneComponentConfigC14gatewayTokenIdSSSgvg",
+                "mangledName": "$s14PXPCheckoutSDK34ClickOnceStandaloneComponentConfigC14gatewayTokenIdSSSgvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK34ClickOnceStandaloneComponentConfigC14gatewayTokenIdSSSgvs",
+                "mangledName": "$s14PXPCheckoutSDK34ClickOnceStandaloneComponentConfigC14gatewayTokenIdSSSgvs",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK34ClickOnceStandaloneComponentConfigC14gatewayTokenIdSSSgvM",
+                "mangledName": "$s14PXPCheckoutSDK34ClickOnceStandaloneComponentConfigC14gatewayTokenIdSSSgvM",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "externalTokenId",
             "printedName": "externalTokenId",
             "children": [
@@ -318519,8 +318630,22 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/BuildTokenImage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 717,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/BuildTokenImage.swift",
+      "kind": "Array",
+      "offset": 4169,
+      "length": 88,
+      "value": "[\"Visa\", \"Mastercard\", \"AmericanExpress\", \"UnionPay\", \"Diners\", \"JCB\", \"Discover\"]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/BuildTokenImage.swift",
       "kind": "StringLiteral",
-      "offset": 5417,
+      "offset": 6240,
       "length": 7,
       "value": "\"MM\/YY\""
     },
@@ -318688,7 +318813,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/ClickOnceStandaloneComponent.swift",
       "kind": "StringLiteral",
-      "offset": 35920,
+      "offset": 36262,
       "length": 9,
       "value": "\"#757D82\""
     },
@@ -318793,42 +318918,42 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/Views\/ClickOnceStandaloneView.swift",
       "kind": "StringLiteral",
-      "offset": 19291,
+      "offset": 20054,
       "length": 9,
       "value": "\"#F7F8F8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/Views\/ClickOnceStandaloneView.swift",
       "kind": "StringLiteral",
-      "offset": 19351,
+      "offset": 20114,
       "length": 9,
       "value": "\"#5E656B\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/Views\/ClickOnceStandaloneView.swift",
       "kind": "StringLiteral",
-      "offset": 19409,
+      "offset": 20172,
       "length": 9,
       "value": "\"#09090C\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/Views\/ClickOnceStandaloneView.swift",
       "kind": "StringLiteral",
-      "offset": 19469,
+      "offset": 20232,
       "length": 9,
       "value": "\"#D9DCDE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/Views\/ClickOnceStandaloneView.swift",
       "kind": "StringLiteral",
-      "offset": 19527,
+      "offset": 20290,
       "length": 9,
       "value": "\"#292CF5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/Views\/ClickOnceStandaloneView.swift",
       "kind": "StringLiteral",
-      "offset": 19589,
+      "offset": 20352,
       "length": 9,
       "value": "\"#B9BDC0\""
     },
