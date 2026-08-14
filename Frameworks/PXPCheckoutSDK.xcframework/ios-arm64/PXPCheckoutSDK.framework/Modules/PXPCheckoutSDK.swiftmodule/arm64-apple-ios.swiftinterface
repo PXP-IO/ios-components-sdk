@@ -2275,6 +2275,7 @@ public class ClickOnceComponentResource : PXPCheckoutSDK.BaseComponentResource {
   public var cardNumberAccessibilityLabel: Swift.String?
   public var cardExpiryDateAccessibilityLabel: Swift.String?
   public var transactionInitiatorType: PXPCheckoutSDK.TransactionInitiatorType?
+  public var gatewayTokenId: Swift.String?
   public var externalTokenId: Swift.String?
   public var onOnceCardClick: (() -> Swift.Void)?
   public var buttonBuilder: ((PXPCheckoutSDK.ClickOnceButtonBuilderElements) -> SwiftUICore.AnyView)?
