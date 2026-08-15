@@ -318232,42 +318232,49 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CardOnFileComponent\/CardOnFileComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 969,
+      "offset": 914,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CardOnFileComponent\/CardOnFileComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 1087,
+      "offset": 1138,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CardOnFileComponent\/CardOnFileComponent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1256,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CardOnFileComponent\/CardOnFileComponent.swift",
       "kind": "Array",
-      "offset": 1175,
+      "offset": 1344,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CardOnFileComponent\/CardOnFileComponent.swift",
       "kind": "Array",
-      "offset": 1234,
+      "offset": 1403,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CardOnFileComponent\/CardOnFileComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 1324,
+      "offset": 1493,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CardOnFileComponent\/CardOnFileComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 1438,
+      "offset": 1607,
       "length": 5,
       "value": "false"
     },
