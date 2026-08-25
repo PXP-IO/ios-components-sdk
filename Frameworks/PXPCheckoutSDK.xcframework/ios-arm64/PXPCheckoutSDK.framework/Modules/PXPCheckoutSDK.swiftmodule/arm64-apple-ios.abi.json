@@ -16783,14 +16783,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Decimal",
+                "printedName": "Foundation.Decimal",
+                "usr": "c:@SA@NSDecimal"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PXPCheckoutSDK20DropInShippingOptionV6amountSSvp",
-            "mangledName": "$s14PXPCheckoutSDK20DropInShippingOptionV6amountSSvp",
+            "usr": "s:14PXPCheckoutSDK20DropInShippingOptionV6amountSo9NSDecimalavp",
+            "mangledName": "$s14PXPCheckoutSDK20DropInShippingOptionV6amountSo9NSDecimalavp",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "HasStorage",
@@ -16806,14 +16806,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Decimal",
+                    "printedName": "Foundation.Decimal",
+                    "usr": "c:@SA@NSDecimal"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PXPCheckoutSDK20DropInShippingOptionV6amountSSvg",
-                "mangledName": "$s14PXPCheckoutSDK20DropInShippingOptionV6amountSSvg",
+                "usr": "s:14PXPCheckoutSDK20DropInShippingOptionV6amountSo9NSDecimalavg",
+                "mangledName": "$s14PXPCheckoutSDK20DropInShippingOptionV6amountSo9NSDecimalavg",
                 "moduleName": "PXPCheckoutSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -16851,14 +16851,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Decimal",
+                "printedName": "Foundation.Decimal",
+                "usr": "c:@SA@NSDecimal"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK20DropInShippingOptionV2id5label11description6amountACSS_S3Stcfc",
-            "mangledName": "$s14PXPCheckoutSDK20DropInShippingOptionV2id5label11description6amountACSS_S3Stcfc",
+            "usr": "s:14PXPCheckoutSDK20DropInShippingOptionV2id5label11description6amountACSS_S2SSo9NSDecimalatcfc",
+            "mangledName": "$s14PXPCheckoutSDK20DropInShippingOptionV2id5label11description6amountACSS_S2SSo9NSDecimalatcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
@@ -16887,7 +16887,9 @@
             "usr": "s:14PXPCheckoutSDK20DropInShippingOptionV4fromACs7Decoder_p_tKcfc",
             "mangledName": "$s14PXPCheckoutSDK20DropInShippingOptionV4fromACs7Decoder_p_tKcfc",
             "moduleName": "PXPCheckoutSDK",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
             "init_kind": "Designated"
           },
@@ -16912,7 +16914,9 @@
             "usr": "s:14PXPCheckoutSDK20DropInShippingOptionV6encode2toys7Encoder_p_tKF",
             "mangledName": "$s14PXPCheckoutSDK20DropInShippingOptionV6encode2toys7Encoder_p_tKF",
             "moduleName": "PXPCheckoutSDK",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
           }
@@ -17966,14 +17970,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Decimal",
+                "printedName": "Foundation.Decimal",
+                "usr": "c:@SA@NSDecimal"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PXPCheckoutSDK25DropInTransactionLineItemV6amountSSvp",
-            "mangledName": "$s14PXPCheckoutSDK25DropInTransactionLineItemV6amountSSvp",
+            "usr": "s:14PXPCheckoutSDK25DropInTransactionLineItemV6amountSo9NSDecimalavp",
+            "mangledName": "$s14PXPCheckoutSDK25DropInTransactionLineItemV6amountSo9NSDecimalavp",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "HasStorage",
@@ -17989,14 +17993,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Decimal",
+                    "printedName": "Foundation.Decimal",
+                    "usr": "c:@SA@NSDecimal"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PXPCheckoutSDK25DropInTransactionLineItemV6amountSSvg",
-                "mangledName": "$s14PXPCheckoutSDK25DropInTransactionLineItemV6amountSSvg",
+                "usr": "s:14PXPCheckoutSDK25DropInTransactionLineItemV6amountSo9NSDecimalavg",
+                "mangledName": "$s14PXPCheckoutSDK25DropInTransactionLineItemV6amountSo9NSDecimalavg",
                 "moduleName": "PXPCheckoutSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -18022,14 +18026,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Decimal",
+                "printedName": "Foundation.Decimal",
+                "usr": "c:@SA@NSDecimal"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK25DropInTransactionLineItemV5label6amountACSS_SStcfc",
-            "mangledName": "$s14PXPCheckoutSDK25DropInTransactionLineItemV5label6amountACSS_SStcfc",
+            "usr": "s:14PXPCheckoutSDK25DropInTransactionLineItemV5label6amountACSS_So9NSDecimalatcfc",
+            "mangledName": "$s14PXPCheckoutSDK25DropInTransactionLineItemV5label6amountACSS_So9NSDecimalatcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
@@ -158664,14 +158668,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Decimal",
+                "printedName": "Foundation.Decimal",
+                "usr": "c:@SA@NSDecimal"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PXPCheckoutSDK21PayPalShippingAmountsV8shippingSSvp",
-            "mangledName": "$s14PXPCheckoutSDK21PayPalShippingAmountsV8shippingSSvp",
+            "usr": "s:14PXPCheckoutSDK21PayPalShippingAmountsV8shippingSo9NSDecimalavp",
+            "mangledName": "$s14PXPCheckoutSDK21PayPalShippingAmountsV8shippingSo9NSDecimalavp",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "HasStorage",
@@ -158688,14 +158692,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Decimal",
+                    "printedName": "Foundation.Decimal",
+                    "usr": "c:@SA@NSDecimal"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PXPCheckoutSDK21PayPalShippingAmountsV8shippingSSvg",
-                "mangledName": "$s14PXPCheckoutSDK21PayPalShippingAmountsV8shippingSSvg",
+                "usr": "s:14PXPCheckoutSDK21PayPalShippingAmountsV8shippingSo9NSDecimalavg",
+                "mangledName": "$s14PXPCheckoutSDK21PayPalShippingAmountsV8shippingSo9NSDecimalavg",
                 "moduleName": "PXPCheckoutSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -158721,14 +158725,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Decimal",
+                "printedName": "Foundation.Decimal",
+                "usr": "c:@SA@NSDecimal"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK21PayPalShippingAmountsV12currencyCode8shippingACSS_SStcfc",
-            "mangledName": "$s14PXPCheckoutSDK21PayPalShippingAmountsV12currencyCode8shippingACSS_SStcfc",
+            "usr": "s:14PXPCheckoutSDK21PayPalShippingAmountsV12currencyCode8shippingACSS_So9NSDecimalatcfc",
+            "mangledName": "$s14PXPCheckoutSDK21PayPalShippingAmountsV12currencyCode8shippingACSS_So9NSDecimalatcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
@@ -238210,14 +238214,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PXPCheckoutSDK11BrowserDataV9ipAddressSSvp",
-            "mangledName": "$s14PXPCheckoutSDK11BrowserDataV9ipAddressSSvp",
+            "usr": "s:14PXPCheckoutSDK11BrowserDataV9ipAddressSSSgvp",
+            "mangledName": "$s14PXPCheckoutSDK11BrowserDataV9ipAddressSSSgvp",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "HasStorage",
@@ -238233,14 +238245,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PXPCheckoutSDK11BrowserDataV9ipAddressSSvg",
-                "mangledName": "$s14PXPCheckoutSDK11BrowserDataV9ipAddressSSvg",
+                "usr": "s:14PXPCheckoutSDK11BrowserDataV9ipAddressSSSgvg",
+                "mangledName": "$s14PXPCheckoutSDK11BrowserDataV9ipAddressSSSgvg",
                 "moduleName": "PXPCheckoutSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -238580,9 +238600,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -238628,38 +238657,12 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK11BrowserDataV12acceptHeader10colorDepth9ipAddress11javaEnabled0k6ScriptL08language12screenHeight0O5Width23timeZoneOffsetInMinutes9userAgentACSS_SiSSS2bSSS3iSStcfc",
-            "mangledName": "$s14PXPCheckoutSDK11BrowserDataV12acceptHeader10colorDepth9ipAddress11javaEnabled0k6ScriptL08language12screenHeight0O5Width23timeZoneOffsetInMinutes9userAgentACSS_SiSSS2bSSS3iSStcfc",
+            "usr": "s:14PXPCheckoutSDK11BrowserDataV12acceptHeader10colorDepth9ipAddress11javaEnabled0k6ScriptL08language12screenHeight0O5Width23timeZoneOffsetInMinutes9userAgentACSS_SiSSSgS2bSSS3iSStcfc",
+            "mangledName": "$s14PXPCheckoutSDK11BrowserDataV12acceptHeader10colorDepth9ipAddress11javaEnabled0k6ScriptL08language12screenHeight0O5Width23timeZoneOffsetInMinutes9userAgentACSS_SiSSSgS2bSSS3iSStcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
             ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BrowserData",
-                "printedName": "PXPCheckoutSDK.BrowserData",
-                "usr": "s:14PXPCheckoutSDK11BrowserDataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK11BrowserDataV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s14PXPCheckoutSDK11BrowserDataV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "PXPCheckoutSDK",
-            "implicit": true,
-            "throwing": true,
             "init_kind": "Designated"
           },
           {
@@ -238683,9 +238686,39 @@
             "usr": "s:14PXPCheckoutSDK11BrowserDataV6encode2toys7Encoder_p_tKF",
             "mangledName": "$s14PXPCheckoutSDK11BrowserDataV6encode2toys7Encoder_p_tKF",
             "moduleName": "PXPCheckoutSDK",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrowserData",
+                "printedName": "PXPCheckoutSDK.BrowserData",
+                "usr": "s:14PXPCheckoutSDK11BrowserDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PXPCheckoutSDK11BrowserDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14PXPCheckoutSDK11BrowserDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Struct",
@@ -323741,21 +323774,21 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Handlers\/PayPalPaymentHandler.swift",
       "kind": "StringLiteral",
-      "offset": 19272,
+      "offset": 19303,
       "length": 8,
       "value": "\"paypal\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Handlers\/PayPalPaymentHandler.swift",
       "kind": "StringLiteral",
-      "offset": 19301,
+      "offset": 19332,
       "length": 10,
       "value": "\"paylater\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Handlers\/PayPalPaymentHandler.swift",
       "kind": "StringLiteral",
-      "offset": 19330,
+      "offset": 19361,
       "length": 8,
       "value": "\"credit\""
     },
@@ -327892,14 +327925,28 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Extensions\/Decimal+Validation.swift",
       "kind": "IntegerLiteral",
-      "offset": 1847,
+      "offset": 1859,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Extensions\/Decimal+Validation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1899,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Extensions\/Decimal+Validation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2357,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Extensions\/Decimal+Validation.swift",
       "kind": "StringLiteral",
-      "offset": 1930,
+      "offset": 2440,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
@@ -334409,14 +334456,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/ThreeDSServices\/ThreeDSService.swift",
       "kind": "IntegerLiteral",
-      "offset": 6663,
+      "offset": 6593,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/ThreeDSServices\/ThreeDSService.swift",
       "kind": "IntegerLiteral",
-      "offset": 6689,
+      "offset": 6619,
       "length": 4,
       "value": "2000"
     },
