@@ -10,11 +10,11 @@
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		uQt1dfNgOCqIvoTFCglZsI+QYdY=
+		O2EaWl40pNzfNUtgyq0Aihn0zW4=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		oFs9OwCBV/K/Eu7DqW4/hyTsSLs=
+		Ghqsasaw9bbSTyoFuInSLct5XU8=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Assets.car</key>
 		<data>
-		5jtSfQJKRDCPsSUB8zNkV8Y905Q=
+		hbdf20dvsqxDc+DDNRlm6MxMMvM=
 		</data>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Config/sdk-config-template.json</key>
 		<data>
@@ -107,14 +107,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PmG+6nbuISGnOlYDeovGuwKSIhfD98PltQNU7A1qSys=
+			amZ7OlTChbHFdHtKZNvidqMKwlsMebQvfqHnQWheffY=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dnfkg+16+fWjw6LRewyFG5HSICRf9bt4zS0qNG9vRvY=
+			l6RtugJys1zrl8PZwLyloYWC0LYSPUTtMDRa8fyVtu4=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -205,7 +205,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X5ILOq8Sa9gG7siwnocc8UPR3wNwbRk1CaJOtr5wV+c=
+			Q7n5JKLA0Gf0zO/q2yBzLbKJj3Br5c8P7AuFehiGsek=
 			</data>
 		</dict>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Config/sdk-config-template.json</key>
