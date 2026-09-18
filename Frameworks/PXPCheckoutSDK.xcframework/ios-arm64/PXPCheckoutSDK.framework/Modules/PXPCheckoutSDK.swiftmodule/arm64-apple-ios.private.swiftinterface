@@ -319,10 +319,10 @@ public struct DropInShippingOption : Swift.Codable, Swift.Sendable {
   public let id: Swift.String
   public let label: Swift.String
   public let description: Swift.String
-  public let amount: Swift.String
-  public init(id: Swift.String, label: Swift.String, description: Swift.String, amount: Swift.String)
-  public func encode(to encoder: any Swift.Encoder) throws
+  public let amount: Foundation.Decimal
+  public init(id: Swift.String, label: Swift.String, description: Swift.String, amount: Foundation.Decimal)
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct DropInTransactionInfo {
   public var countryCode: Swift.String?
@@ -343,8 +343,8 @@ public enum DropInTotalStatus : Swift.String {
 }
 public struct DropInTransactionLineItem {
   public let label: Swift.String
-  public let amount: Swift.String
-  public init(label: Swift.String, amount: Swift.String)
+  public let amount: Foundation.Decimal
+  public init(label: Swift.String, amount: Foundation.Decimal)
 }
 @_hasMissingDesignatedInitializers public class AddressComponent : PXPCheckoutSDK.FieldComponent<PXPCheckoutSDK.AddressComponentConfig, PXPCheckoutSDK.FieldComponentResource<PXPCheckoutSDK.AddressValidationResource>, PXPCheckoutSDK.AddressValidationResource> {
   override public func onBeforeChange(_ value: Swift.String) -> Swift.String
@@ -2969,8 +2969,8 @@ public enum PayPalFundingSource : Swift.String, Swift.CaseIterable {
 }
 public struct PayPalShippingAmounts {
   public let currencyCode: Swift.String
-  public let shipping: Swift.String
-  public init(currencyCode: Swift.String, shipping: Swift.String)
+  public let shipping: Foundation.Decimal
+  public init(currencyCode: Swift.String, shipping: Foundation.Decimal)
 }
 public struct PayPalShippingOption {
   public let id: Swift.String
@@ -4896,7 +4896,7 @@ public struct Address : Swift.Codable {
 public struct BrowserData : Swift.Codable {
   public let acceptHeader: Swift.String
   public let colorDepth: Swift.Int
-  public let ipAddress: Swift.String
+  public let ipAddress: Swift.String?
   public let javaEnabled: Swift.Bool
   public let javaScriptEnabled: Swift.Bool
   public let language: Swift.String
@@ -4904,7 +4904,7 @@ public struct BrowserData : Swift.Codable {
   public let screenWidth: Swift.Int
   public let timeZoneOffsetInMinutes: Swift.Int
   public let userAgent: Swift.String
-  public init(acceptHeader: Swift.String, colorDepth: Swift.Int, ipAddress: Swift.String, javaEnabled: Swift.Bool, javaScriptEnabled: Swift.Bool, language: Swift.String, screenHeight: Swift.Int, screenWidth: Swift.Int, timeZoneOffsetInMinutes: Swift.Int, userAgent: Swift.String)
+  public init(acceptHeader: Swift.String, colorDepth: Swift.Int, ipAddress: Swift.String? = nil, javaEnabled: Swift.Bool, javaScriptEnabled: Swift.Bool, language: Swift.String, screenHeight: Swift.Int, screenWidth: Swift.Int, timeZoneOffsetInMinutes: Swift.Int, userAgent: Swift.String)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
