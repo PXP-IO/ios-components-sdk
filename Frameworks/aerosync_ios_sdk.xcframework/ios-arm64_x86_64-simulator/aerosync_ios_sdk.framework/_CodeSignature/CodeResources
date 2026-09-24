@@ -10,43 +10,43 @@
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		XqWqESWSa4Ze9t+pe/cNtiHH5FI=
+		BnTqfCjuFT2f+oYvTx9wEWXF4bE=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
-		6fIZvdRh2/QFfwat6QUmLUPZDcc=
+		nlC8oix72u7pVOQ866j6PMQ0gqs=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		6fIZvdRh2/QFfwat6QUmLUPZDcc=
+		nlC8oix72u7pVOQ866j6PMQ0gqs=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		iFhMqm0z7ptUD5yoaB7+jdiOgds=
+		qFHeDzk4olQz9//g4P4CZ7GlYkY=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		6fIZvdRh2/QFfwat6QUmLUPZDcc=
+		nlC8oix72u7pVOQ866j6PMQ0gqs=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		XqWqESWSa4Ze9t+pe/cNtiHH5FI=
+		BnTqfCjuFT2f+oYvTx9wEWXF4bE=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<data>
-		cHILEtyx0yq8ySgnA/61PmvpeIA=
+		JFe0lUxkmWeXSR0tQDpCh2fieDY=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		cHILEtyx0yq8ySgnA/61PmvpeIA=
+		JFe0lUxkmWeXSR0tQDpCh2fieDY=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		8jWX3ftRBdx0PzLxe0VHyCg4mP0=
+		VQowkyCJTHaONRVBkDcz/lIMxOw=
 		</data>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cHILEtyx0yq8ySgnA/61PmvpeIA=
+		JFe0lUxkmWeXSR0tQDpCh2fieDY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vg7RfEcrXl0Hvtqw9sF9Lm1yOxcYwo20X8D+yvcHnPc=
+			Ii+BY9m/MZhS0Qj2gxnjpfLgY8LGCBWYINIFWN0SLmo=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MTCAHOF/QuQ7/0xDciVa+Md0R+T68CC/RSLMhCTRSjQ=
+			Zei0QdGNva4hwxLLDzdLlM+lfbLPurLkeDOcNvYZB5E=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MTCAHOF/QuQ7/0xDciVa+Md0R+T68CC/RSLMhCTRSjQ=
+			Zei0QdGNva4hwxLLDzdLlM+lfbLPurLkeDOcNvYZB5E=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s29gkOzyWmzLt0ewL2/A8SXClU3ibaaiRMzwl0QxPBg=
+			XuFCQ5vzQMRQwZRVNJpnQpc07KRneVhGnr3WrLk1LCE=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MTCAHOF/QuQ7/0xDciVa+Md0R+T68CC/RSLMhCTRSjQ=
+			Zei0QdGNva4hwxLLDzdLlM+lfbLPurLkeDOcNvYZB5E=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vg7RfEcrXl0Hvtqw9sF9Lm1yOxcYwo20X8D+yvcHnPc=
+			Ii+BY9m/MZhS0Qj2gxnjpfLgY8LGCBWYINIFWN0SLmo=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9J8ESsAucVofexKEPw5d+ag0Ex/3UqYR4NmPDmT3Bxo=
+			9anWTj8xrXHGu+2M2l9BlhKE5wXkajEM2Qous2n7ASw=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9J8ESsAucVofexKEPw5d+ag0Ex/3UqYR4NmPDmT3Bxo=
+			9anWTj8xrXHGu+2M2l9BlhKE5wXkajEM2Qous2n7ASw=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eb99GfETjwyNnDH0gLcJJVEqidio6Eupq2Os6hIDIY8=
+			yHs8nJ4D2joQEvwD66jCclCimIQQ5DP5nfrITQ9wWhs=
 			</data>
 		</dict>
 		<key>Modules/aerosync_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9J8ESsAucVofexKEPw5d+ag0Ex/3UqYR4NmPDmT3Bxo=
+			9anWTj8xrXHGu+2M2l9BlhKE5wXkajEM2Qous2n7ASw=
 			</data>
 		</dict>
 	</dict>

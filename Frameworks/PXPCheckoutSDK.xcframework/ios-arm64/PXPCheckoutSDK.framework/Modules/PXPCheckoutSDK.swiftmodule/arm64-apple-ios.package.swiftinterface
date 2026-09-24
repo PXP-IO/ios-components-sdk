@@ -5086,9 +5086,10 @@ public struct ErrorResponse : Swift.Codable {
   required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers final public class CardTokenizationResultSuccess : PXPCheckoutSDK.CardTokenizationResult {
-  final public let gatewayTokenId: Swift.String
+  final public let gatewayTokenId: Swift.String?
+  final public let tokenizedCardNumber: Swift.String?
   final public let tokenProvider: Swift.String?
-  public init(gatewayTokenId: Swift.String, tokenProvider: Swift.String? = nil)
+  public init(gatewayTokenId: Swift.String? = nil, tokenizedCardNumber: Swift.String? = nil, tokenProvider: Swift.String? = nil)
   override final public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
@@ -5261,8 +5262,9 @@ public struct ApplePayFundingData : Swift.Codable {
 public struct CardFundingData : Swift.Codable {
   public let gatewayTokenId: Swift.String?
   public let schemeTokenId: Swift.String?
+  public let tokenizedCardNumber: Swift.String?
   public let cardVerificationCode: Swift.String?
-  public init(gatewayTokenId: Swift.String? = nil, schemeTokenId: Swift.String? = nil, cardVerificationCode: Swift.String? = nil)
+  public init(gatewayTokenId: Swift.String? = nil, schemeTokenId: Swift.String? = nil, tokenizedCardNumber: Swift.String? = nil, cardVerificationCode: Swift.String? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -5353,7 +5355,8 @@ public struct FundingDataResponse : Swift.Codable {
   public let gatewayTokenId: Swift.String?
   public let processorTransactionId: Swift.String?
   public let providerResponse: PXPCheckoutSDK.ProviderResponse
-  public init(cardScheme: Swift.String? = nil, expiryMonth: Swift.String? = nil, expiryYear: Swift.String? = nil, gatewayTokenId: Swift.String? = nil, processorTransactionId: Swift.String? = nil, providerResponse: PXPCheckoutSDK.ProviderResponse)
+  public let tokenizedCardNumber: Swift.String?
+  public init(cardScheme: Swift.String? = nil, expiryMonth: Swift.String? = nil, expiryYear: Swift.String? = nil, gatewayTokenId: Swift.String? = nil, processorTransactionId: Swift.String? = nil, providerResponse: PXPCheckoutSDK.ProviderResponse, tokenizedCardNumber: Swift.String? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -5408,10 +5411,11 @@ public class MerchantTransactionResponse : PXPCheckoutSDK.BaseTransactionRespons
   final public let fundingData: PXPCheckoutSDK.FundingDataResponse?
   final public let approvalCode: Swift.String?
   final public let riskScreeningData: PXPCheckoutSDK.RiskScreeningDataResponse?
+  final public let tokenId: Swift.String?
   public var transactionState: PXPCheckoutSDK.MerchantTransactionState {
     get
   }
-  public init(merchantTransactionId: Swift.String, systemTransactionId: Swift.String, providerResponseCode: Swift.String = "", providerTransactionId: Swift.String = "", stateData: PXPCheckoutSDK.StateData? = nil, state: Swift.String, merchantTransactionDate: Swift.String = "", fundingData: PXPCheckoutSDK.FundingDataResponse? = nil, approvalCode: Swift.String? = nil, riskScreeningData: PXPCheckoutSDK.RiskScreeningDataResponse? = nil)
+  public init(merchantTransactionId: Swift.String, systemTransactionId: Swift.String, providerResponseCode: Swift.String = "", providerTransactionId: Swift.String = "", stateData: PXPCheckoutSDK.StateData? = nil, state: Swift.String, merchantTransactionDate: Swift.String = "", fundingData: PXPCheckoutSDK.FundingDataResponse? = nil, approvalCode: Swift.String? = nil, riskScreeningData: PXPCheckoutSDK.RiskScreeningDataResponse? = nil, tokenId: Swift.String? = nil)
   required public init(from decoder: any Swift.Decoder) throws
   override public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
@@ -5537,7 +5541,7 @@ public struct TransactionShopper : Swift.Codable {
   public let id: Swift.String?
   public let firstName: Swift.String?
   public let lastName: Swift.String?
-  public let dateOfBirth: Swift.String?
+  public let dateOfBirth: Foundation.Date?
   public let email: Swift.String?
   public let phoneNumber: Swift.String?
   public let houseNumberOrName: Swift.String?
@@ -5548,9 +5552,9 @@ public struct TransactionShopper : Swift.Codable {
   public let state: Swift.String?
   public let products: [Swift.String : Swift.String]?
   public let orderDescription: Swift.String?
-  public init(id: Swift.String? = nil, firstName: Swift.String? = nil, lastName: Swift.String? = nil, dateOfBirth: Swift.String? = nil, email: Swift.String? = nil, phoneNumber: Swift.String? = nil, houseNumberOrName: Swift.String? = nil, street: Swift.String? = nil, city: Swift.String? = nil, postalCode: Swift.String? = nil, countryCode: Swift.String? = nil, state: Swift.String? = nil, products: [Swift.String : Swift.String]? = nil, orderDescription: Swift.String? = nil)
-  public func encode(to encoder: any Swift.Encoder) throws
+  public init(id: Swift.String? = nil, firstName: Swift.String? = nil, lastName: Swift.String? = nil, dateOfBirth: Foundation.Date? = nil, email: Swift.String? = nil, phoneNumber: Swift.String? = nil, houseNumberOrName: Swift.String? = nil, street: Swift.String? = nil, city: Swift.String? = nil, postalCode: Swift.String? = nil, countryCode: Swift.String? = nil, state: Swift.String? = nil, products: [Swift.String : Swift.String]? = nil, orderDescription: Swift.String? = nil)
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public enum StateType : Swift.String {
   case pendingClientData
@@ -6550,7 +6554,9 @@ public class FailedSubmitResult : PXPCheckoutSDK.BaseSubmitResult {
 public class MerchantSubmitResult : PXPCheckoutSDK.BaseSubmitResult {
   final public let merchantTransactionId: Swift.String
   final public let systemTransactionId: Swift.String
-  public init(merchantTransactionId: Swift.String, systemTransactionId: Swift.String)
+  final public let tokenizedCardNumber: Swift.String?
+  final public let externalTransactionId: Swift.String?
+  public init(merchantTransactionId: Swift.String, systemTransactionId: Swift.String, tokenizedCardNumber: Swift.String? = nil, externalTransactionId: Swift.String? = nil)
   required public init(from decoder: any Swift.Decoder) throws
   override public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit

@@ -2,12 +2,42 @@
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name aerosync_ios_sdk -package-name aerosync_ios_sdk
 // swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+import Foundation
 import Swift
 import SwiftUI
 import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct AerosyncLinkedAccount : Swift.Decodable {
+  public let connectionId: Swift.String
+  public let accountType: Swift.String
+  public let accountNumberDisplay: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AerosyncSingleAccountSuccessPayload : Swift.Decodable {
+  public let connectionId: Swift.String
+  public let clientName: Swift.String
+  public let aeroPassUserUuid: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AerosyncMultiAccountSuccessPayload : Swift.Decodable {
+  public let accounts: [aerosync_ios_sdk.AerosyncLinkedAccount]
+  public let clientName: Swift.String
+  public let aeroPassUserUuid: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum AerosyncSuccessPayload {
+  case singleAccount(aerosync_ios_sdk.AerosyncSingleAccountSuccessPayload)
+  case multiAccount(aerosync_ios_sdk.AerosyncMultiAccountSuccessPayload)
+  public var clientName: Swift.String {
+    get
+  }
+  public var aeroPassUserUuid: Swift.String {
+    get
+  }
+  public static func parse(from jsonString: Swift.String) -> aerosync_ios_sdk.AerosyncSuccessPayload?
+}
 @available(iOS 14.0, *)
 @_Concurrency.MainActor @preconcurrency public struct AerosyncSDK : SwiftUI.UIViewRepresentable {
   @_Concurrency.MainActor @preconcurrency public init(shouldDismiss: Swift.Bool = false, token: Swift.String, env: Swift.String, deeplink: Swift.String, aeroPassUserUuid: Swift.String, configurationId: Swift.String? = nil, stateCode: Swift.String? = nil, theme: Swift.String = "light", manualLinkOnly: Swift.Bool = false, handleMFA: Swift.Bool = false, jobId: Swift.String? = "", connectionId: Swift.String? = "", onEvent: @escaping (Any) -> Swift.Void, onSuccess: @escaping (Swift.String) -> Swift.Void, onClose: @escaping (Any) -> Swift.Void, onLoad: @escaping (Any) -> Swift.Void, onError: @escaping (Any) -> Swift.Void)

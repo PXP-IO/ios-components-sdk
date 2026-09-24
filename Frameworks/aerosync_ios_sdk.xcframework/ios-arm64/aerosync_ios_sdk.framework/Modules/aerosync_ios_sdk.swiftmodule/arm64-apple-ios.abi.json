@@ -6,6 +6,865 @@
     "children": [
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "aerosync_ios_sdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AerosyncLinkedAccount",
+        "printedName": "AerosyncLinkedAccount",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "connectionId",
+            "printedName": "connectionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16aerosync_ios_sdk21AerosyncLinkedAccountV12connectionIdSSvp",
+            "mangledName": "$s16aerosync_ios_sdk21AerosyncLinkedAccountV12connectionIdSSvp",
+            "moduleName": "aerosync_ios_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16aerosync_ios_sdk21AerosyncLinkedAccountV12connectionIdSSvg",
+                "mangledName": "$s16aerosync_ios_sdk21AerosyncLinkedAccountV12connectionIdSSvg",
+                "moduleName": "aerosync_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accountType",
+            "printedName": "accountType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16aerosync_ios_sdk21AerosyncLinkedAccountV11accountTypeSSvp",
+            "mangledName": "$s16aerosync_ios_sdk21AerosyncLinkedAccountV11accountTypeSSvp",
+            "moduleName": "aerosync_ios_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16aerosync_ios_sdk21AerosyncLinkedAccountV11accountTypeSSvg",
+                "mangledName": "$s16aerosync_ios_sdk21AerosyncLinkedAccountV11accountTypeSSvg",
+                "moduleName": "aerosync_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accountNumberDisplay",
+            "printedName": "accountNumberDisplay",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16aerosync_ios_sdk21AerosyncLinkedAccountV20accountNumberDisplaySSvp",
+            "mangledName": "$s16aerosync_ios_sdk21AerosyncLinkedAccountV20accountNumberDisplaySSvp",
+            "moduleName": "aerosync_ios_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16aerosync_ios_sdk21AerosyncLinkedAccountV20accountNumberDisplaySSvg",
+                "mangledName": "$s16aerosync_ios_sdk21AerosyncLinkedAccountV20accountNumberDisplaySSvg",
+                "moduleName": "aerosync_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AerosyncLinkedAccount",
+                "printedName": "aerosync_ios_sdk.AerosyncLinkedAccount",
+                "usr": "s:16aerosync_ios_sdk21AerosyncLinkedAccountV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16aerosync_ios_sdk21AerosyncLinkedAccountV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16aerosync_ios_sdk21AerosyncLinkedAccountV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "aerosync_ios_sdk",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16aerosync_ios_sdk21AerosyncLinkedAccountV",
+        "mangledName": "$s16aerosync_ios_sdk21AerosyncLinkedAccountV",
+        "moduleName": "aerosync_ios_sdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AerosyncSingleAccountSuccessPayload",
+        "printedName": "AerosyncSingleAccountSuccessPayload",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "connectionId",
+            "printedName": "connectionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV12connectionIdSSvp",
+            "mangledName": "$s16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV12connectionIdSSvp",
+            "moduleName": "aerosync_ios_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV12connectionIdSSvg",
+                "mangledName": "$s16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV12connectionIdSSvg",
+                "moduleName": "aerosync_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clientName",
+            "printedName": "clientName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV10clientNameSSvp",
+            "mangledName": "$s16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV10clientNameSSvp",
+            "moduleName": "aerosync_ios_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV10clientNameSSvg",
+                "mangledName": "$s16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV10clientNameSSvg",
+                "moduleName": "aerosync_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "aeroPassUserUuid",
+            "printedName": "aeroPassUserUuid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV16aeroPassUserUuidSSvp",
+            "mangledName": "$s16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV16aeroPassUserUuidSSvp",
+            "moduleName": "aerosync_ios_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV16aeroPassUserUuidSSvg",
+                "mangledName": "$s16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV16aeroPassUserUuidSSvg",
+                "moduleName": "aerosync_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AerosyncSingleAccountSuccessPayload",
+                "printedName": "aerosync_ios_sdk.AerosyncSingleAccountSuccessPayload",
+                "usr": "s:16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "aerosync_ios_sdk",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV",
+        "mangledName": "$s16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV",
+        "moduleName": "aerosync_ios_sdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AerosyncMultiAccountSuccessPayload",
+        "printedName": "AerosyncMultiAccountSuccessPayload",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "accounts",
+            "printedName": "accounts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[aerosync_ios_sdk.AerosyncLinkedAccount]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AerosyncLinkedAccount",
+                    "printedName": "aerosync_ios_sdk.AerosyncLinkedAccount",
+                    "usr": "s:16aerosync_ios_sdk21AerosyncLinkedAccountV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV8accountsSayAA0d6LinkedF0VGvp",
+            "mangledName": "$s16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV8accountsSayAA0d6LinkedF0VGvp",
+            "moduleName": "aerosync_ios_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[aerosync_ios_sdk.AerosyncLinkedAccount]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AerosyncLinkedAccount",
+                        "printedName": "aerosync_ios_sdk.AerosyncLinkedAccount",
+                        "usr": "s:16aerosync_ios_sdk21AerosyncLinkedAccountV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV8accountsSayAA0d6LinkedF0VGvg",
+                "mangledName": "$s16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV8accountsSayAA0d6LinkedF0VGvg",
+                "moduleName": "aerosync_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clientName",
+            "printedName": "clientName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV10clientNameSSvp",
+            "mangledName": "$s16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV10clientNameSSvp",
+            "moduleName": "aerosync_ios_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV10clientNameSSvg",
+                "mangledName": "$s16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV10clientNameSSvg",
+                "moduleName": "aerosync_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "aeroPassUserUuid",
+            "printedName": "aeroPassUserUuid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV16aeroPassUserUuidSSvp",
+            "mangledName": "$s16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV16aeroPassUserUuidSSvp",
+            "moduleName": "aerosync_ios_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV16aeroPassUserUuidSSvg",
+                "mangledName": "$s16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV16aeroPassUserUuidSSvg",
+                "moduleName": "aerosync_ios_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AerosyncMultiAccountSuccessPayload",
+                "printedName": "aerosync_ios_sdk.AerosyncMultiAccountSuccessPayload",
+                "usr": "s:16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "aerosync_ios_sdk",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV",
+        "mangledName": "$s16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV",
+        "moduleName": "aerosync_ios_sdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AerosyncSuccessPayload",
+        "printedName": "AerosyncSuccessPayload",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "singleAccount",
+            "printedName": "singleAccount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(aerosync_ios_sdk.AerosyncSuccessPayload.Type) -> (aerosync_ios_sdk.AerosyncSingleAccountSuccessPayload) -> aerosync_ios_sdk.AerosyncSuccessPayload",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(aerosync_ios_sdk.AerosyncSingleAccountSuccessPayload) -> aerosync_ios_sdk.AerosyncSuccessPayload",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AerosyncSuccessPayload",
+                        "printedName": "aerosync_ios_sdk.AerosyncSuccessPayload",
+                        "usr": "s:16aerosync_ios_sdk22AerosyncSuccessPayloadO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AerosyncSingleAccountSuccessPayload",
+                        "printedName": "aerosync_ios_sdk.AerosyncSingleAccountSuccessPayload",
+                        "usr": "s:16aerosync_ios_sdk35AerosyncSingleAccountSuccessPayloadV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "aerosync_ios_sdk.AerosyncSuccessPayload.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AerosyncSuccessPayload",
+                        "printedName": "aerosync_ios_sdk.AerosyncSuccessPayload",
+                        "usr": "s:16aerosync_ios_sdk22AerosyncSuccessPayloadO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16aerosync_ios_sdk22AerosyncSuccessPayloadO13singleAccountyAcA0d6SingleheF0VcACmF",
+            "mangledName": "$s16aerosync_ios_sdk22AerosyncSuccessPayloadO13singleAccountyAcA0d6SingleheF0VcACmF",
+            "moduleName": "aerosync_ios_sdk"
+          },
+          {
+            "kind": "Var",
+            "name": "multiAccount",
+            "printedName": "multiAccount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(aerosync_ios_sdk.AerosyncSuccessPayload.Type) -> (aerosync_ios_sdk.AerosyncMultiAccountSuccessPayload) -> aerosync_ios_sdk.AerosyncSuccessPayload",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(aerosync_ios_sdk.AerosyncMultiAccountSuccessPayload) -> aerosync_ios_sdk.AerosyncSuccessPayload",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AerosyncSuccessPayload",
+                        "printedName": "aerosync_ios_sdk.AerosyncSuccessPayload",
+                        "usr": "s:16aerosync_ios_sdk22AerosyncSuccessPayloadO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AerosyncMultiAccountSuccessPayload",
+                        "printedName": "aerosync_ios_sdk.AerosyncMultiAccountSuccessPayload",
+                        "usr": "s:16aerosync_ios_sdk34AerosyncMultiAccountSuccessPayloadV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "aerosync_ios_sdk.AerosyncSuccessPayload.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AerosyncSuccessPayload",
+                        "printedName": "aerosync_ios_sdk.AerosyncSuccessPayload",
+                        "usr": "s:16aerosync_ios_sdk22AerosyncSuccessPayloadO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16aerosync_ios_sdk22AerosyncSuccessPayloadO12multiAccountyAcA0d5MultiheF0VcACmF",
+            "mangledName": "$s16aerosync_ios_sdk22AerosyncSuccessPayloadO12multiAccountyAcA0d5MultiheF0VcACmF",
+            "moduleName": "aerosync_ios_sdk"
+          },
+          {
+            "kind": "Var",
+            "name": "clientName",
+            "printedName": "clientName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16aerosync_ios_sdk22AerosyncSuccessPayloadO10clientNameSSvp",
+            "mangledName": "$s16aerosync_ios_sdk22AerosyncSuccessPayloadO10clientNameSSvp",
+            "moduleName": "aerosync_ios_sdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16aerosync_ios_sdk22AerosyncSuccessPayloadO10clientNameSSvg",
+                "mangledName": "$s16aerosync_ios_sdk22AerosyncSuccessPayloadO10clientNameSSvg",
+                "moduleName": "aerosync_ios_sdk",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "aeroPassUserUuid",
+            "printedName": "aeroPassUserUuid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16aerosync_ios_sdk22AerosyncSuccessPayloadO16aeroPassUserUuidSSvp",
+            "mangledName": "$s16aerosync_ios_sdk22AerosyncSuccessPayloadO16aeroPassUserUuidSSvp",
+            "moduleName": "aerosync_ios_sdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16aerosync_ios_sdk22AerosyncSuccessPayloadO16aeroPassUserUuidSSvg",
+                "mangledName": "$s16aerosync_ios_sdk22AerosyncSuccessPayloadO16aeroPassUserUuidSSvg",
+                "moduleName": "aerosync_ios_sdk",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "parse",
+            "printedName": "parse(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "aerosync_ios_sdk.AerosyncSuccessPayload?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AerosyncSuccessPayload",
+                    "printedName": "aerosync_ios_sdk.AerosyncSuccessPayload",
+                    "usr": "s:16aerosync_ios_sdk22AerosyncSuccessPayloadO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16aerosync_ios_sdk22AerosyncSuccessPayloadO5parse4fromACSgSS_tFZ",
+            "mangledName": "$s16aerosync_ios_sdk22AerosyncSuccessPayloadO5parse4fromACSgSS_tFZ",
+            "moduleName": "aerosync_ios_sdk",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16aerosync_ios_sdk22AerosyncSuccessPayloadO",
+        "mangledName": "$s16aerosync_ios_sdk22AerosyncSuccessPayloadO",
+        "moduleName": "aerosync_ios_sdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -874,55 +1733,55 @@
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "Dictionary",
       "offset": 49,
-      "length": 102,
-      "value": "[(\"sandbox\", \"https:\/\/sandbox.aerosync.com\"), (\"production\", \"https:\/\/sync.aero.inc\")]"
+      "length": 103,
+      "value": "[(\"sandbox\", \"https:\/\/sandbox-sync.aero.inc\"), (\"production\", \"https:\/\/sync.aero.inc\")]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 280,
+      "offset": 281,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 777,
+      "offset": 774,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "StringLiteral",
-      "offset": 930,
+      "offset": 927,
       "length": 7,
       "value": "\"light\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 962,
+      "offset": 959,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 987,
+      "offset": 984,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "StringLiteral",
-      "offset": 1011,
+      "offset": 1008,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/Build\/Temp\/aerosync-ios-sdk\/Sources\/aerosync-ios-sdk\/aerosync_ios_sdk.swift",
       "kind": "StringLiteral",
-      "offset": 1039,
+      "offset": 1036,
       "length": 2,
       "value": "\"\""
     }
