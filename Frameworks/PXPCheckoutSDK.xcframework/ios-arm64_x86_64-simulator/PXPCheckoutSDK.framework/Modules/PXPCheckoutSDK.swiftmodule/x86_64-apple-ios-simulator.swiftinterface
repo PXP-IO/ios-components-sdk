@@ -2141,6 +2141,9 @@ public class CardSubmitComponentResource : PXPCheckoutSDK.BaseComponentResource 
   final public let errorReason: Swift.String?
   @objc deinit
 }
+@objc @_hasMissingDesignatedInitializers final public class UpdateCardVerificationCodeException : PXPCheckoutSDK.BaseSdkException, @unchecked Swift.Sendable {
+  @objc deinit
+}
 public struct CardTokenData {
   public let gatewayTokenId: Swift.String?
   public let schemeTokenId: Swift.String?
