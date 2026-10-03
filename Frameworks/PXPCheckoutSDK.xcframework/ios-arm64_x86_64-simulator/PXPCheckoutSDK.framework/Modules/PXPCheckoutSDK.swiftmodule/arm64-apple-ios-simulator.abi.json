@@ -111773,6 +111773,114 @@
         "moduleName": "PXPCheckoutSDK"
       },
       {
+        "kind": "TypeDecl",
+        "name": "UpdateCardVerificationCodeException",
+        "printedName": "UpdateCardVerificationCodeException",
+        "declKind": "Class",
+        "usr": "c:@M@PXPCheckoutSDK@objc(cs)UpdateCardVerificationCodeException",
+        "mangledName": "$s14PXPCheckoutSDK35UpdateCardVerificationCodeExceptionC",
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@PXPCheckoutSDK@objc(cs)BaseSdkException",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "PXPCheckoutSDK.BaseSdkException",
+          "Foundation.NSError",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PXPCheckoutSDK"
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -326372,2198 +326480,2212 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 7120,
+      "offset": 7023,
+      "length": 9,
+      "value": "\"SDK0306\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
+      "kind": "StringLiteral",
+      "offset": 7043,
+      "length": 42,
+      "value": "\"Failed to update card verification code.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
+      "kind": "StringLiteral",
+      "offset": 7262,
       "length": 9,
       "value": "\"SDK0400\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 7140,
+      "offset": 7282,
       "length": 37,
       "value": "\"Currency code must be 3 characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 7290,
+      "offset": 7432,
       "length": 9,
       "value": "\"SDK0401\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 7310,
+      "offset": 7452,
       "length": 39,
       "value": "\"Fingerprint callback URL is required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 7459,
+      "offset": 7601,
       "length": 9,
       "value": "\"SDK0402\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 7479,
+      "offset": 7621,
       "length": 49,
       "value": "\"Acquirer profile ID must be 0 or 36 characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 7630,
+      "offset": 7772,
       "length": 9,
       "value": "\"SDK0403\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 7650,
+      "offset": 7792,
       "length": 41,
       "value": "\"Provider ID must be 0 or 36 characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 7798,
+      "offset": 7940,
       "length": 9,
       "value": "\"SDK0404\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 7818,
+      "offset": 7960,
       "length": 41,
       "value": "\"Gateway token ID must be 36 characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 7965,
+      "offset": 8107,
       "length": 9,
       "value": "\"SDK0405\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 7985,
+      "offset": 8127,
       "length": 40,
       "value": "\"Scheme token ID must be 36 characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 8130,
+      "offset": 8272,
       "length": 9,
       "value": "\"SDK0406\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 8150,
+      "offset": 8292,
       "length": 28,
       "value": "\"Card token ID is required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 8286,
+      "offset": 8428,
       "length": 9,
       "value": "\"SDK0407\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 8306,
+      "offset": 8448,
       "length": 59,
       "value": "\"Currency '{currencyCode}' does not accept decimal places.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 8478,
+      "offset": 8620,
       "length": 9,
       "value": "\"SDK0408\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 8498,
+      "offset": 8640,
       "length": 116,
       "value": "\"Invalid decimal places for '{currencyCode}'. Expected '{expectedExponent}' decimal places, got '{actualExponent}'.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 8790,
+      "offset": 8932,
       "length": 9,
       "value": "\"SDK0409\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 8810,
+      "offset": 8952,
       "length": 34,
       "value": "\"Country numeric code is invalid.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 8950,
+      "offset": 9092,
       "length": 9,
       "value": "\"SDK0410\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 8970,
+      "offset": 9112,
       "length": 33,
       "value": "\"Merchant legal name is invalid.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 9111,
+      "offset": 9253,
       "length": 9,
       "value": "\"SDK0411\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 9131,
+      "offset": 9273,
       "length": 35,
       "value": "\"Challenge window size is invalid.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 9273,
+      "offset": 9415,
       "length": 9,
       "value": "\"SDK0412\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 9293,
+      "offset": 9435,
       "length": 37,
       "value": "\"Challenge callback URL is required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 9428,
+      "offset": 9570,
       "length": 9,
       "value": "\"SDK0413\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 9448,
+      "offset": 9590,
       "length": 28,
       "value": "\"Accept header is required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 9571,
+      "offset": 9713,
       "length": 9,
       "value": "\"SDK0414\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 9591,
+      "offset": 9733,
       "length": 68,
       "value": "\"Invalid language format. Must be a valid IETF BCP 47 language tag.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 9759,
+      "offset": 9901,
       "length": 9,
       "value": "\"SDK0415\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 9779,
+      "offset": 9921,
       "length": 27,
       "value": "\"Screen height is invalid.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 9905,
+      "offset": 10047,
       "length": 9,
       "value": "\"SDK0416\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 9925,
+      "offset": 10067,
       "length": 26,
       "value": "\"Screen width is invalid.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 10043,
+      "offset": 10185,
       "length": 9,
       "value": "\"SDK0417\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 10063,
+      "offset": 10205,
       "length": 19,
       "value": "\"Email is invalid.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 10194,
+      "offset": 10336,
       "length": 9,
       "value": "\"SDK0418\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 10214,
+      "offset": 10356,
       "length": 39,
       "value": "\"Recurring expiration date is invalid.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 10367,
+      "offset": 10509,
       "length": 9,
       "value": "\"SDK0419\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 10387,
+      "offset": 10529,
       "length": 41,
       "value": "\"Recurring frequency in days is invalid.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 10525,
+      "offset": 10667,
       "length": 9,
       "value": "\"SDK0420\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 10545,
+      "offset": 10687,
       "length": 24,
       "value": "\"IP address is invalid.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 10685,
+      "offset": 10827,
       "length": 9,
       "value": "\"SDK0421\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 10705,
+      "offset": 10847,
       "length": 43,
       "value": "\"Requestor challenge indicator is invalid.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 10836,
+      "offset": 10978,
       "length": 9,
       "value": "\"SDK0500\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 10856,
+      "offset": 10998,
       "length": 16,
       "value": "\"Network error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 10932,
+      "offset": 11074,
       "length": 9,
       "value": "\"SDK0501\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 10952,
+      "offset": 11094,
       "length": 19,
       "value": "\"Validation error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 11061,
+      "offset": 11203,
       "length": 9,
       "value": "\"SDK0502\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 11081,
+      "offset": 11223,
       "length": 37,
       "value": "\"Pre-Initiate Authentication failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 11197,
+      "offset": 11339,
       "length": 9,
       "value": "\"SDK0503\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 11217,
+      "offset": 11359,
       "length": 80,
       "value": "\"Authentication rejected. Please try again or contact your bank for assistance.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 11389,
+      "offset": 11531,
       "length": 9,
       "value": "\"SDK0504\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 11409,
+      "offset": 11551,
       "length": 50,
       "value": "\"Authentication failed. ScaException is required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 11536,
+      "offset": 11678,
       "length": 9,
       "value": "\"SDK0505\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 11556,
+      "offset": 11698,
       "length": 78,
       "value": "\"Authentication failed. Please try again or contact your bank for assistance.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 11726,
+      "offset": 11868,
       "length": 9,
       "value": "\"SDK0506\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 11746,
+      "offset": 11888,
       "length": 164,
       "value": "\"Authentication failed. ScaException must be one of the following: 'AnonymousCard', 'LowValue', 'SecureCorporate', 'TransactionRiskAnalysis', 'TrustedBeneficiary'.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 11990,
+      "offset": 12132,
       "length": 9,
       "value": "\"SDK0507\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 12010,
+      "offset": 12152,
       "length": 47,
       "value": "\"Authentication configuration invalid: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 12146,
+      "offset": 12288,
       "length": 9,
       "value": "\"SDK0508\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 12166,
+      "offset": 12308,
       "length": 36,
       "value": "\"Failed to retrieve merchant setup.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 12285,
+      "offset": 12427,
       "length": 9,
       "value": "\"SDK0508\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 12305,
+      "offset": 12447,
       "length": 45,
       "value": "\"Failed to retrieve authentication strategy.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 12422,
+      "offset": 12564,
       "length": 9,
       "value": "\"SDK0509\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 12442,
+      "offset": 12584,
       "length": 53,
       "value": "\"3D Secure service is not enabled for this merchant.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 12576,
+      "offset": 12718,
       "length": 9,
       "value": "\"SDK0510\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 12596,
+      "offset": 12738,
       "length": 43,
       "value": "\"Failed to retrieve authentication result.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 12709,
+      "offset": 12851,
       "length": 9,
       "value": "\"SDK0511\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 12729,
+      "offset": 12871,
       "length": 31,
       "value": "\"Challenge page failed to load\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 12834,
+      "offset": 12976,
       "length": 9,
       "value": "\"SDK0512\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 12854,
+      "offset": 12996,
       "length": 34,
       "value": "\"Card payment transaction failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 13003,
+      "offset": 13145,
       "length": 9,
       "value": "\"SDK0602\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 13023,
+      "offset": 13165,
       "length": 59,
       "value": "\"Apple Pay is not supported on this device or iOS version.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 13153,
+      "offset": 13295,
       "length": 9,
       "value": "\"SDK0615\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 13173,
+      "offset": 13315,
       "length": 46,
       "value": "\"Apple Pay session was cancelled by the user.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 13299,
+      "offset": 13441,
       "length": 9,
       "value": "\"SDK0616\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 13319,
+      "offset": 13461,
       "length": 39,
       "value": "\"Apple Pay merchant validation failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 13440,
+      "offset": 13582,
       "length": 9,
       "value": "\"SDK0617\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 13460,
+      "offset": 13602,
       "length": 56,
       "value": "\"Custom API processing failed during Apple Pay payment.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 13628,
+      "offset": 13770,
       "length": 9,
       "value": "\"SDK0803\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 13648,
+      "offset": 13790,
       "length": 37,
       "value": "\"PayPal payout receiver is required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 13764,
+      "offset": 13906,
       "length": 9,
       "value": "\"SDK0804\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 13784,
+      "offset": 13926,
       "length": 103,
       "value": "\"Invalid receiver type '{receiverType}'. Valid values are: 'Email', 'Phone', 'PaypalId', 'UserHandle'.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 13969,
+      "offset": 14111,
       "length": 9,
       "value": "\"SDK0805\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 13989,
+      "offset": 14131,
       "length": 60,
       "value": "\"Receiver type must be 'Email'. Received: '{receiverType}'.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 14121,
+      "offset": 14263,
       "length": 9,
       "value": "\"SDK0806\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 14141,
+      "offset": 14283,
       "length": 52,
       "value": "\"Invalid wallet value '{wallet}'. Must be 'Paypal'.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 14272,
+      "offset": 14414,
       "length": 9,
       "value": "\"SDK0807\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 14292,
+      "offset": 14434,
       "length": 84,
       "value": "\"Receiver type must be 'Email' when wallet is 'Paypal'. Received: '{receiverType}'.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 14447,
+      "offset": 14589,
       "length": 9,
       "value": "\"SDK0808\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 14467,
+      "offset": 14609,
       "length": 49,
       "value": "\"Invalid email format for receiver '{receiver}'.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 14591,
+      "offset": 14733,
       "length": 9,
       "value": "\"SDK0809\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 14611,
+      "offset": 14753,
       "length": 30,
       "value": "\"PayPal Payer ID is required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 14713,
+      "offset": 14855,
       "length": 9,
       "value": "\"SDK0810\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 14733,
+      "offset": 14875,
       "length": 32,
       "value": "\"Amount must be a valid number.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 14842,
+      "offset": 14984,
       "length": 9,
       "value": "\"SDK0811\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 14862,
+      "offset": 15004,
       "length": 50,
       "value": "\"Amount must be a positive number greater than 0.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 14985,
+      "offset": 15127,
       "length": 9,
       "value": "\"SDK0812\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 15005,
+      "offset": 15147,
       "length": 21,
       "value": "\"Amount is required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 15101,
+      "offset": 15243,
       "length": 9,
       "value": "\"SDK0813\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 15121,
+      "offset": 15263,
       "length": 43,
       "value": "\"Currency code must be a non-empty string.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 15245,
+      "offset": 15387,
       "length": 9,
       "value": "\"SDK0814\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 15265,
+      "offset": 15407,
       "length": 86,
       "value": "\"Currency code must be a 3-letter ISO 4217 currency code (e.g., 'USD', 'EUR', 'GBP').\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 15430,
+      "offset": 15572,
       "length": 9,
       "value": "\"SDK0815\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 15450,
+      "offset": 15592,
       "length": 84,
       "value": "\"Invalid currency code '{currencyCode}'. Please use a valid ISO 4217 currency code.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 15608,
+      "offset": 15750,
       "length": 9,
       "value": "\"SDK0816\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 15628,
+      "offset": 15770,
       "length": 62,
       "value": "\"Email '{receiver}' exceeds maximum length of 127 characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 15767,
+      "offset": 15909,
       "length": 9,
       "value": "\"SDK0817\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 15787,
+      "offset": 15929,
       "length": 70,
       "value": "\"PayPal Payer ID '{payerId}' exceeds maximum length of 13 characters.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 15931,
+      "offset": 16073,
       "length": 9,
       "value": "\"SDK0818\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 15951,
+      "offset": 16093,
       "length": 116,
       "value": "\"PayPal Payer ID '{payerId}' contains invalid characters. Only alphanumeric characters (A-Z, a-z, 0-9) are allowed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 16131,
+      "offset": 16273,
       "length": 9,
       "value": "\"SDK0819\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 16151,
+      "offset": 16293,
       "length": 63,
       "value": "\"PayPal payout transaction failed: [{errorCode}] {errorReason}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 16321,
+      "offset": 16463,
       "length": 9,
       "value": "\"SDK0901\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 16341,
+      "offset": 16483,
       "length": 56,
       "value": "\"PayPal Client ID is required for OAuth authentication.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 16466,
+      "offset": 16608,
       "length": 9,
       "value": "\"SDK0902\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 16486,
+      "offset": 16628,
       "length": 36,
       "value": "\"PayPal OAuth authentication failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 16600,
+      "offset": 16742,
       "length": 9,
       "value": "\"SDK0903\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 16620,
+      "offset": 16762,
       "length": 52,
       "value": "\"Redirect URI is required for OAuth authentication.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 16738,
+      "offset": 16880,
       "length": 9,
       "value": "\"SDK0904\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 16758,
+      "offset": 16900,
       "length": 41,
       "value": "\"PayPal login was cancelled by the user.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 16893,
+      "offset": 17035,
       "length": 9,
       "value": "\"SDK0905\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 16913,
+      "offset": 17055,
       "length": 48,
       "value": "\"PayPal payout user info not found in response.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 17051,
+      "offset": 17193,
       "length": 9,
       "value": "\"SDK0906\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 17071,
+      "offset": 17213,
       "length": 77,
       "value": "\"PayPal payout OAuth submission exchange failed: [{errorCode}] {errorReason}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 17211,
+      "offset": 17353,
       "length": 9,
       "value": "\"SDK0999\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 17231,
+      "offset": 17373,
       "length": 30,
       "value": "\"PayPal login failed: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 17355,
+      "offset": 17497,
       "length": 9,
       "value": "\"SDK1001\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 17375,
+      "offset": 17517,
       "length": 60,
       "value": "\"Invalid expiry month: '{month}'. Must be between 1 and 12.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 17498,
+      "offset": 17640,
       "length": 9,
       "value": "\"SDK1002\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 17518,
+      "offset": 17660,
       "length": 64,
       "value": "\"Invalid expiry year: '{year}'. Must be a non-negative integer.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 17694,
+      "offset": 17836,
       "length": 9,
       "value": "\"SDK1100\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 17714,
+      "offset": 17856,
       "length": 52,
       "value": "\"Failed to retrieve checkout drop-in configuration.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 17847,
+      "offset": 17989,
       "length": 9,
       "value": "\"SDK1101\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 17867,
+      "offset": 18009,
       "length": 34,
       "value": "\"Failed to render card component.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 17984,
+      "offset": 18126,
       "length": 9,
       "value": "\"SDK1102\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 18004,
+      "offset": 18146,
       "length": 36,
       "value": "\"Failed to render PayPal component.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 18127,
+      "offset": 18269,
       "length": 9,
       "value": "\"SDK1103\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 18147,
+      "offset": 18289,
       "length": 40,
       "value": "\"Failed to render Google Pay component.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 18273,
+      "offset": 18415,
       "length": 9,
       "value": "\"SDK1104\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 18293,
+      "offset": 18435,
       "length": 39,
       "value": "\"Failed to render Apple Pay component.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 18421,
+      "offset": 18563,
       "length": 9,
       "value": "\"SDK1105\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 18441,
+      "offset": 18583,
       "length": 42,
       "value": "\"Failed to render card on file component.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 18575,
+      "offset": 18717,
       "length": 9,
       "value": "\"SDK1106\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 18595,
+      "offset": 18737,
       "length": 45,
       "value": "\"Failed to render billing address component.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 18736,
+      "offset": 18878,
       "length": 9,
       "value": "\"SDK1107\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 18756,
+      "offset": 18898,
       "length": 49,
       "value": "\"Failed to render card brand selector component.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 18893,
+      "offset": 19035,
       "length": 9,
       "value": "\"SDK1108\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 18913,
+      "offset": 19055,
       "length": 41,
       "value": "\"Failed to render card submit component.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 19046,
+      "offset": 19188,
       "length": 9,
       "value": "\"SDK1109\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 19066,
+      "offset": 19208,
       "length": 49,
       "value": "\"Failed to render card on file submit component.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 19204,
+      "offset": 19346,
       "length": 9,
       "value": "\"SDK1110\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 19224,
+      "offset": 19366,
       "length": 42,
       "value": "\"Failed to render card consent component.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 19357,
+      "offset": 19499,
       "length": 9,
       "value": "\"SDK1111\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 19377,
+      "offset": 19519,
       "length": 44,
       "value": "\"Failed to render PayPal consent component.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 19513,
+      "offset": 19655,
       "length": 9,
       "value": "\"SDK1112\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 19533,
+      "offset": 19675,
       "length": 35,
       "value": "\"Failed to update billing address.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 19662,
+      "offset": 19804,
       "length": 9,
       "value": "\"SDK1113\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 19682,
+      "offset": 19824,
       "length": 37,
       "value": "\"Failed to update allow transaction.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 19800,
+      "offset": 19942,
       "length": 9,
       "value": "\"SDK1114\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 19820,
+      "offset": 19962,
       "length": 24,
       "value": "\"Authentication failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 19924,
+      "offset": 20066,
       "length": 9,
       "value": "\"SDK1115\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 19944,
+      "offset": 20086,
       "length": 23,
       "value": "\"Authorisation failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 20046,
+      "offset": 20188,
       "length": 9,
       "value": "\"SDK1116\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 20066,
+      "offset": 20208,
       "length": 22,
       "value": "\"Card payment failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 20169,
+      "offset": 20311,
       "length": 9,
       "value": "\"SDK1117\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 20189,
+      "offset": 20331,
       "length": 24,
       "value": "\"PayPal payment failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 20298,
+      "offset": 20440,
       "length": 9,
       "value": "\"SDK1118\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 20318,
+      "offset": 20460,
       "length": 28,
       "value": "\"Google Pay payment failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 20430,
+      "offset": 20572,
       "length": 9,
       "value": "\"SDK1119\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 20450,
+      "offset": 20592,
       "length": 27,
       "value": "\"Apple Pay payment failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 20562,
+      "offset": 20704,
       "length": 9,
       "value": "\"SDK1120\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 20582,
+      "offset": 20724,
       "length": 74,
       "value": "\"Invalid PayPal entry type '{entryType}'. PayPal entry type must be Ecom.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 20739,
+      "offset": 20881,
       "length": 9,
       "value": "\"SDK1121\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 20759,
+      "offset": 20901,
       "length": 117,
       "value": "\"Component type mismatch: created component type '{componentType}' cannot be cast to expected type '{expectedType}'.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 20957,
+      "offset": 21099,
       "length": 9,
       "value": "\"SDK1122\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 20977,
+      "offset": 21119,
       "length": 34,
       "value": "\"Failed to render Paze component.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21090,
+      "offset": 21232,
       "length": 9,
       "value": "\"SDK1123\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21110,
+      "offset": 21252,
       "length": 22,
       "value": "\"Paze payment failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21215,
+      "offset": 21357,
       "length": 9,
       "value": "\"SDK1124\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21235,
+      "offset": 21377,
       "length": 70,
       "value": "\"Invalid Paze entry type '{entryType}'. Paze entry type must be Ecom.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21389,
+      "offset": 21531,
       "length": 9,
       "value": "\"SDK1125\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21409,
+      "offset": 21551,
       "length": 37,
       "value": "\"Failed to render Aeropay component.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21528,
+      "offset": 21670,
       "length": 9,
       "value": "\"SDK1126\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21548,
+      "offset": 21690,
       "length": 25,
       "value": "\"Aeropay payment failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21661,
+      "offset": 21803,
       "length": 9,
       "value": "\"SDK1200\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21681,
+      "offset": 21823,
       "length": 26,
       "value": "\"Failed to load Paze SDK.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21769,
+      "offset": 21911,
       "length": 9,
       "value": "\"SDK1201\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21789,
+      "offset": 21931,
       "length": 25,
       "value": "\"Unknown Paze SDK error.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21895,
+      "offset": 22037,
       "length": 9,
       "value": "\"SDK1202\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 21915,
+      "offset": 22057,
       "length": 60,
       "value": "\"Missing session.allowedFundingTypes.wallets.paze.clientId.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22069,
+      "offset": 22211,
       "length": 10,
       "value": "\"SDK1202A\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22090,
+      "offset": 22232,
       "length": 72,
       "value": "\"Missing session.allowedFundingTypes.wallets.paze.merchantCategoryCode.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22245,
+      "offset": 22387,
       "length": 9,
       "value": "\"SDK1203\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22265,
+      "offset": 22407,
       "length": 45,
       "value": "\"client.name must be 50 characters or fewer.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22392,
+      "offset": 22534,
       "length": 9,
       "value": "\"SDK1204\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22412,
+      "offset": 22554,
       "length": 50,
       "value": "\"client.brandName must be 50 characters or fewer.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22554,
+      "offset": 22696,
       "length": 9,
       "value": "\"SDK1205\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22574,
+      "offset": 22716,
       "length": 60,
       "value": "\"client.statementDescriptor must be 25 characters or fewer.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22704,
+      "offset": 22846,
       "length": 9,
       "value": "\"SDK1206\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22724,
+      "offset": 22866,
       "length": 32,
       "value": "\"Failed to initialize Paze SDK.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22839,
+      "offset": 22981,
       "length": 9,
       "value": "\"SDK1207\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22859,
+      "offset": 23001,
       "length": 56,
       "value": "\"Paze canCheckout did not return an eligibility result.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 22989,
+      "offset": 23131,
       "length": 9,
       "value": "\"SDK1208\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23009,
+      "offset": 23151,
       "length": 85,
       "value": "\"Paze dynamic presentment requires both emailAddress and phoneNumber to be provided.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23166,
+      "offset": 23308,
       "length": 9,
       "value": "\"SDK1209\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23186,
+      "offset": 23328,
       "length": 47,
       "value": "\"emailAddress must be 128 characters or fewer.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23304,
+      "offset": 23446,
       "length": 9,
       "value": "\"SDK1210\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23324,
+      "offset": 23466,
       "length": 54,
       "value": "\"emailAddress must be a valid RFC 5322 email address.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23450,
+      "offset": 23592,
       "length": 9,
       "value": "\"SDK1211\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23470,
+      "offset": 23612,
       "length": 45,
       "value": "\"phoneNumber must be 15 characters or fewer.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23586,
+      "offset": 23728,
       "length": 9,
       "value": "\"SDK1212\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23606,
+      "offset": 23748,
       "length": 77,
       "value": "\"phoneNumber must be a US E.164 number without '+', for example 15551234567.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23754,
+      "offset": 23896,
       "length": 9,
       "value": "\"SDK1213\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23774,
+      "offset": 23916,
       "length": 58,
       "value": "\"Paze only supports USD currency. Received: '{currency}'.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23903,
+      "offset": 24045,
       "length": 9,
       "value": "\"SDK1214\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 23923,
+      "offset": 24065,
       "length": 23,
       "value": "\"Paze checkout failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24028,
+      "offset": 24170,
       "length": 9,
       "value": "\"SDK1215\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24048,
+      "offset": 24190,
       "length": 70,
       "value": "\"Paze checkout did not return checkoutResponse for a COMPLETE result.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24200,
+      "offset": 24342,
       "length": 9,
       "value": "\"SDK1216\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24220,
+      "offset": 24362,
       "length": 48,
       "value": "\"Paze complete did not return completeResponse.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24348,
+      "offset": 24490,
       "length": 9,
       "value": "\"SDK1217\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24368,
+      "offset": 24510,
       "length": 41,
       "value": "\"Unable to decode Paze checkoutResponse.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24489,
+      "offset": 24631,
       "length": 9,
       "value": "\"SDK1218\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24509,
+      "offset": 24651,
       "length": 41,
       "value": "\"Unable to decode Paze completeResponse.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24631,
+      "offset": 24773,
       "length": 9,
       "value": "\"SDK1219\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24651,
+      "offset": 24793,
       "length": 55,
       "value": "\"Paze completeResponse did not contain securedPayload.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24783,
+      "offset": 24925,
       "length": 9,
       "value": "\"SDK1220\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24803,
+      "offset": 24945,
       "length": 51,
       "value": "\"Paze wallet account exists but is not accessible.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24930,
+      "offset": 25072,
       "length": 9,
       "value": "\"SDK1221\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 24950,
+      "offset": 25092,
       "length": 69,
       "value": "\"Paze complete() was called before checkout() finished successfully.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25096,
+      "offset": 25238,
       "length": 9,
       "value": "\"SDK1222\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25116,
+      "offset": 25258,
       "length": 44,
       "value": "\"sessionId must be 255 characters or fewer.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25242,
+      "offset": 25384,
       "length": 9,
       "value": "\"SDK1223\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25262,
+      "offset": 25404,
       "length": 55,
       "value": "\"transactionType must be PURCHASE for Paze complete().\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25403,
+      "offset": 25545,
       "length": 9,
       "value": "\"SDK1224\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25423,
+      "offset": 25565,
       "length": 66,
       "value": "\"transactionOptions is required when transactionType is PURCHASE.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25573,
+      "offset": 25715,
       "length": 9,
       "value": "\"SDK1225\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25593,
+      "offset": 25735,
       "length": 64,
       "value": "\"transactionValue is required when transactionType is PURCHASE.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25741,
+      "offset": 25883,
       "length": 9,
       "value": "\"SDK1226\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25761,
+      "offset": 25903,
       "length": 62,
       "value": "\"billingPreference must be one of: {validBillingPreferences}.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25919,
+      "offset": 26061,
       "length": 9,
       "value": "\"SDK1227\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 25939,
+      "offset": 26081,
       "length": 81,
       "value": "\"transactionOptions.billingPreference must be one of: {validBillingPreferences}.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26098,
+      "offset": 26240,
       "length": 9,
       "value": "\"SDK1228\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26118,
+      "offset": 26260,
       "length": 58,
       "value": "\"transactionOptions.payloadTypeIndicator must be PAYMENT.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26260,
+      "offset": 26402,
       "length": 9,
       "value": "\"SDK1229\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26280,
+      "offset": 26422,
       "length": 60,
       "value": "\"transactionValue.transactionAmount must be greater than 0.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26426,
+      "offset": 26568,
       "length": 9,
       "value": "\"SDK1230\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26446,
+      "offset": 26588,
       "length": 80,
       "value": "\"transactionValue.transactionCurrencyCode must be a 3-letter ISO currency code.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26610,
+      "offset": 26752,
       "length": 9,
       "value": "\"SDK1231\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26630,
+      "offset": 26772,
       "length": 82,
       "value": "\"acceptedShippingCountries contains invalid country codes: {invalidCountryCodes}.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26782,
+      "offset": 26924,
       "length": 9,
       "value": "\"SDK1232\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26802,
+      "offset": 26944,
       "length": 57,
       "value": "\"cobrand.cobrandName is required for each cobrand entry.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26922,
+      "offset": 27064,
       "length": 9,
       "value": "\"SDK1233\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 26942,
+      "offset": 27084,
       "length": 9,
       "value": "\"{error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27015,
+      "offset": 27157,
       "length": 9,
       "value": "\"SDK1234\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27035,
+      "offset": 27177,
       "length": 9,
       "value": "\"{error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27107,
+      "offset": 27249,
       "length": 9,
       "value": "\"SDK1235\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27127,
+      "offset": 27269,
       "length": 42,
       "value": "\"Paze payment transaction failed. {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27269,
+      "offset": 27411,
       "length": 9,
       "value": "\"SDK1300\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27289,
+      "offset": 27431,
       "length": 35,
       "value": "\"Aeropay consumer data is invalid.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27394,
+      "offset": 27536,
       "length": 9,
       "value": "\"SDK1301\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27414,
+      "offset": 27556,
       "length": 29,
       "value": "\"Aeropay create user failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27513,
+      "offset": 27655,
       "length": 9,
       "value": "\"SDK1302\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27533,
+      "offset": 27675,
       "length": 29,
       "value": "\"Aeropay verify user failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27638,
+      "offset": 27780,
       "length": 9,
       "value": "\"SDK1303\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27658,
+      "offset": 27800,
       "length": 44,
       "value": "\"Failed to parse Aerosync response payload.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27769,
+      "offset": 27911,
       "length": 9,
       "value": "\"SDK1304\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27789,
+      "offset": 27931,
       "length": 25,
       "value": "\"Aeropay Aerosync failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27885,
+      "offset": 28027,
       "length": 9,
       "value": "\"SDK1305\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 27905,
+      "offset": 28047,
       "length": 26,
       "value": "\"Link bank account failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28003,
+      "offset": 28145,
       "length": 9,
       "value": "\"SDK1306\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28023,
+      "offset": 28165,
       "length": 26,
       "value": "\"Get bank accounts failed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28125,
+      "offset": 28267,
       "length": 9,
       "value": "\"SDK1307\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28153,
+      "offset": 28295,
       "length": 83,
       "value": "\"AeroPay user is not active. Bank list cannot be retrieved for payment submission.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28308,
+      "offset": 28450,
       "length": 9,
       "value": "\"SDK1308\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28328,
+      "offset": 28470,
       "length": 26,
       "value": "\"Aeropay get user failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28420,
+      "offset": 28562,
       "length": 9,
       "value": "\"SDK1309\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28440,
+      "offset": 28582,
       "length": 25,
       "value": "\"Aeropay user not found.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28533,
+      "offset": 28675,
       "length": 9,
       "value": "\"SDK1310\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28553,
+      "offset": 28695,
       "length": 9,
       "value": "\"{error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28637,
+      "offset": 28779,
       "length": 9,
       "value": "\"SDK1311\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28657,
+      "offset": 28799,
       "length": 51,
       "value": "\"Aeropay Aerosync token and deeplink are required.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28792,
+      "offset": 28934,
       "length": 9,
       "value": "\"SDK1312\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28812,
+      "offset": 28954,
       "length": 40,
       "value": "\"Unexpected response from link account.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28931,
+      "offset": 29073,
       "length": 9,
       "value": "\"SDK1313\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 28951,
+      "offset": 29093,
       "length": 43,
       "value": "\"Link bank account provider error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29072,
+      "offset": 29214,
       "length": 9,
       "value": "\"SDK1314\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29092,
+      "offset": 29234,
       "length": 42,
       "value": "\"Link bank account network error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29205,
+      "offset": 29347,
       "length": 9,
       "value": "\"SDK1315\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29225,
+      "offset": 29367,
       "length": 30,
       "value": "\"Confirm user failed: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29334,
+      "offset": 29476,
       "length": 9,
       "value": "\"SDK1316\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29354,
+      "offset": 29496,
       "length": 38,
       "value": "\"Confirm user provider error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29476,
+      "offset": 29618,
       "length": 9,
       "value": "\"SDK1317\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29496,
+      "offset": 29638,
       "length": 40,
       "value": "\"Unexpected response from confirm user.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29614,
+      "offset": 29756,
       "length": 9,
       "value": "\"SDK1318\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29634,
+      "offset": 29776,
       "length": 37,
       "value": "\"Confirm user network error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29752,
+      "offset": 29894,
       "length": 9,
       "value": "\"SDK1319\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29772,
+      "offset": 29914,
       "length": 47,
       "value": "\"Aeropay aggregator credentials lookup failed.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29908,
+      "offset": 30050,
       "length": 9,
       "value": "\"SDK1320\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 29928,
+      "offset": 30070,
       "length": 52,
       "value": "\"Get aggregator credentials provider error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30074,
+      "offset": 30216,
       "length": 9,
       "value": "\"SDK1321\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30094,
+      "offset": 30236,
       "length": 54,
       "value": "\"Unexpected response from get aggregator credentials.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30236,
+      "offset": 30378,
       "length": 9,
       "value": "\"SDK1322\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30256,
+      "offset": 30398,
       "length": 51,
       "value": "\"Get aggregator credentials network error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30392,
+      "offset": 30534,
       "length": 9,
       "value": "\"SDK1323\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30412,
+      "offset": 30554,
       "length": 45,
       "value": "\"Unexpected response from get bank accounts.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30537,
+      "offset": 30679,
       "length": 9,
       "value": "\"SDK1324\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30557,
+      "offset": 30699,
       "length": 43,
       "value": "\"Get bank accounts provider error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30679,
+      "offset": 30821,
       "length": 9,
       "value": "\"SDK1325\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30699,
+      "offset": 30841,
       "length": 42,
       "value": "\"Get bank accounts network error: {error}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30807,
+      "offset": 30949,
       "length": 9,
       "value": "\"SDK1326\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Exceptions\/BaseSdkException.swift",
       "kind": "StringLiteral",
-      "offset": 30827,
+      "offset": 30969,
       "length": 29,
       "value": "\"Aeropay transaction failed.\""
     },

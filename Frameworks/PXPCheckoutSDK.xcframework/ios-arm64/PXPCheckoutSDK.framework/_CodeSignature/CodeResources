@@ -10,35 +10,35 @@
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		Co47tR7xao3DiblSqGVlel5oM94=
+		3PETapVdBpY7re6LrioQyvbvsg0=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		j7b8AchFP/qK7pqzg7f9veYxoRM=
+		ZZA8ebRx+ySw8SXyyXLfJpjeoEc=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<data>
-		3sS2KSxscSym3nY+16LLQvmC7PA=
+		Efo+9H/oqumELM74ar0P2Enh8eU=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		3sS2KSxscSym3nY+16LLQvmC7PA=
+		Efo+9H/oqumELM74ar0P2Enh8eU=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		w/eMTkDaY7hcqpFxnwl2CdQ5aRg=
+		LtiH7R4eUI50R2uTqTwkFROP9Uk=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		3sS2KSxscSym3nY+16LLQvmC7PA=
+		Efo+9H/oqumELM74ar0P2Enh8eU=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		b7h9qPpW3YhlhtrFwKRBqhVwlRw=
+		NpuRPbRwWKbSTQr4rBr7afOAsW4=
 		</data>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Assets.car</key>
 		<data>
-		WpWDm+Xouk2o1OLaRzVjThrtxpU=
+		UMACXIQ8v8wTzVVwQDAHCpTmwJk=
 		</data>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Config/sdk-config-template.json</key>
 		<data>
@@ -79,56 +79,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YXPbjp1UBqjL4VL4MFBfvLgQPFgSecrbC0oj3A5inM4=
+			WhbqpdyHVR2AV7ENMG8V0+hG3rZ7GJOTG45tyA6GRbg=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xm9dSi6TxYRnEJV3nfjf8z9DyZLfL/amsxAEsx7PDeo=
+			ehrmgde+59mnhVkd3fGis8znKRLcqy7+DP/hoedEHoM=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q0kk4T/07X2Y1WiGo0LHSRCtI3G2R9aa5Xwr9BnW++o=
+			4PiE6Rj0y2XOVhEVPOsDIXOIdTAlgeOhKNkU7kce5Gs=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q0kk4T/07X2Y1WiGo0LHSRCtI3G2R9aa5Xwr9BnW++o=
+			4PiE6Rj0y2XOVhEVPOsDIXOIdTAlgeOhKNkU7kce5Gs=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CV/jDs0is85aJISZIUdas/OVryx8ie9Bhnq/LeJfca0=
+			a2KmEEM+9iGBt4yVrUSyUMyxmRfFnM21pSW73MvXgts=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q0kk4T/07X2Y1WiGo0LHSRCtI3G2R9aa5Xwr9BnW++o=
+			4PiE6Rj0y2XOVhEVPOsDIXOIdTAlgeOhKNkU7kce5Gs=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JLEU6k5JH2FdsjEJAuwRUgj58GKfBh3iGvnWN7GA+OY=
+			GNxBrv2FkyP62wQSqE8w+RlJfgNTrPKA0CbE9X2bmBU=
 			</data>
 		</dict>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nz9DDMn8iohYSbG+dkG42KGwbU/mW1ivwf6EeYSzHhA=
+			2zWpCyUQP4S73g8XiJq3Fep1s+Gv1NOyDKwXjxYIink=
 			</data>
 		</dict>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Config/sdk-config-template.json</key>
