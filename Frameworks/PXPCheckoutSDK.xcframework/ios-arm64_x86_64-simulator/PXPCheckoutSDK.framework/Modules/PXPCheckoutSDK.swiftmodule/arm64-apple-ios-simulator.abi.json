@@ -24981,7 +24981,10 @@
         "name": "aerosync_ios_sdk",
         "printedName": "aerosync_ios_sdk",
         "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -24995,7 +24998,10 @@
         "name": "aerosync_ios_sdk",
         "printedName": "aerosync_ios_sdk",
         "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -66888,7 +66894,10 @@
         "name": "Swinject",
         "printedName": "Swinject",
         "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -78041,6 +78050,13 @@
             "mangledName": "$s14PXPCheckoutSDK21ExpiryDateValidationsP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PXPCheckoutSDK"
       },
       {
         "kind": "Import",
@@ -92234,9 +92250,120 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "walletType",
+            "printedName": "walletType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK13BaseCardTokenC10walletTypeSSSgvp",
+            "mangledName": "$s14PXPCheckoutSDK13BaseCardTokenC10walletTypeSSSgvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK13BaseCardTokenC10walletTypeSSSgvg",
+                "mangledName": "$s14PXPCheckoutSDK13BaseCardTokenC10walletTypeSSSgvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK13BaseCardTokenC10walletTypeSSSgvs",
+                "mangledName": "$s14PXPCheckoutSDK13BaseCardTokenC10walletTypeSSSgvs",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK13BaseCardTokenC10walletTypeSSSgvM",
+                "mangledName": "$s14PXPCheckoutSDK13BaseCardTokenC10walletTypeSSSgvM",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:cardScheme:)",
+            "printedName": "init(cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:cardScheme:walletType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -92303,11 +92430,26 @@
                 "name": "TokenScheme",
                 "printedName": "PXPCheckoutSDK.TokenScheme",
                 "usr": "s:14PXPCheckoutSDK11TokenSchemeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK13BaseCardTokenC15cardExpiryMonth0fG4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0R11CountryCode26lastSuccessfulPurchaseDate0vw6PayoutY00F6SchemeACSS_S8SAA0E6SchemeOtcfc",
-            "mangledName": "$s14PXPCheckoutSDK13BaseCardTokenC15cardExpiryMonth0fG4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0R11CountryCode26lastSuccessfulPurchaseDate0vw6PayoutY00F6SchemeACSS_S8SAA0E6SchemeOtcfc",
+            "usr": "s:14PXPCheckoutSDK13BaseCardTokenC15cardExpiryMonth0fG4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0R11CountryCode26lastSuccessfulPurchaseDate0vw6PayoutY00F6Scheme06walletM0ACSS_S8SAA0E6SchemeOSSSgtcfc",
+            "mangledName": "$s14PXPCheckoutSDK13BaseCardTokenC15cardExpiryMonth0fG4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0R11CountryCode26lastSuccessfulPurchaseDate0vw6PayoutY00F6Scheme06walletM0ACSS_S8SAA0E6SchemeOSSSgtcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
@@ -93920,9 +94062,70 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "walletType",
+            "printedName": "walletType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK23CardOnFileComponentDataV10walletTypeSSSgvp",
+            "mangledName": "$s14PXPCheckoutSDK23CardOnFileComponentDataV10walletTypeSSSgvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK23CardOnFileComponentDataV10walletTypeSSSgvg",
+                "mangledName": "$s14PXPCheckoutSDK23CardOnFileComponentDataV10walletTypeSSSgvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(cardVerificationCode:gatewayTokenId:schemeTokenId:cardBrand:cardType:maskedPrimaryAccountNumber:cardExpiryMonth:cardExpiryYear:scheme:fundingSource:ownerType:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:)",
+            "printedName": "init(cardVerificationCode:gatewayTokenId:schemeTokenId:cardBrand:cardType:maskedPrimaryAccountNumber:cardExpiryMonth:cardExpiryYear:scheme:fundingSource:ownerType:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:walletType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -94139,11 +94342,26 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK23CardOnFileComponentDataV20cardVerificationCode14gatewayTokenId06schemelM00H5Brand0H4Type26maskedPrimaryAccountNumber0H11ExpiryMonth0hU4Year0N013fundingSource05ownerP010issuerName013issuerCountryJ026lastSuccessfulPurchaseDate24lastSuccessfulPayoutDateACSSSg_A14Stcfc",
-            "mangledName": "$s14PXPCheckoutSDK23CardOnFileComponentDataV20cardVerificationCode14gatewayTokenId06schemelM00H5Brand0H4Type26maskedPrimaryAccountNumber0H11ExpiryMonth0hU4Year0N013fundingSource05ownerP010issuerName013issuerCountryJ026lastSuccessfulPurchaseDate24lastSuccessfulPayoutDateACSSSg_A14Stcfc",
+            "usr": "s:14PXPCheckoutSDK23CardOnFileComponentDataV20cardVerificationCode14gatewayTokenId06schemelM00H5Brand0H4Type26maskedPrimaryAccountNumber0H11ExpiryMonth0hU4Year0N013fundingSource05ownerP010issuerName013issuerCountryJ026lastSuccessfulPurchaseDate24lastSuccessfulPayoutDate06walletP0ACSSSg_A15Ttcfc",
+            "mangledName": "$s14PXPCheckoutSDK23CardOnFileComponentDataV20cardVerificationCode14gatewayTokenId06schemelM00H5Brand0H4Type26maskedPrimaryAccountNumber0H11ExpiryMonth0hU4Year0N013fundingSource05ownerP010issuerName013issuerCountryJ026lastSuccessfulPurchaseDate24lastSuccessfulPayoutDate06walletP0ACSSSg_A15Ttcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
@@ -95335,7 +95553,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(gatewayTokenId:cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:cardScheme:)",
+            "printedName": "init(gatewayTokenId:cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:cardScheme:walletType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -95408,11 +95626,26 @@
                 "name": "TokenScheme",
                 "printedName": "PXPCheckoutSDK.TokenScheme",
                 "usr": "s:14PXPCheckoutSDK11TokenSchemeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK12GatewayTokenC07gatewayD2Id15cardExpiryMonth0gH4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0S11CountryCode26lastSuccessfulPurchaseDate0wx6PayoutZ00G6SchemeACSS_S9SAA0D6SchemeOtcfc",
-            "mangledName": "$s14PXPCheckoutSDK12GatewayTokenC07gatewayD2Id15cardExpiryMonth0gH4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0S11CountryCode26lastSuccessfulPurchaseDate0wx6PayoutZ00G6SchemeACSS_S9SAA0D6SchemeOtcfc",
+            "usr": "s:14PXPCheckoutSDK12GatewayTokenC07gatewayD2Id15cardExpiryMonth0gH4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0S11CountryCode26lastSuccessfulPurchaseDate0wx6PayoutZ00G6Scheme06walletN0ACSS_S9SAA0D6SchemeOSSSgtcfc",
+            "mangledName": "$s14PXPCheckoutSDK12GatewayTokenC07gatewayD2Id15cardExpiryMonth0gH4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0S11CountryCode26lastSuccessfulPurchaseDate0wx6PayoutZ00G6Scheme06walletN0ACSS_S9SAA0D6SchemeOSSSgtcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
@@ -95451,7 +95684,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:cardScheme:)",
+            "printedName": "init(cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:cardScheme:walletType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -95518,11 +95751,26 @@
                 "name": "TokenScheme",
                 "printedName": "PXPCheckoutSDK.TokenScheme",
                 "usr": "s:14PXPCheckoutSDK11TokenSchemeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK12GatewayTokenC15cardExpiryMonth0eF4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0Q11CountryCode26lastSuccessfulPurchaseDate0uv6PayoutX00E6SchemeACSS_S8SAA0dZ0Otcfc",
-            "mangledName": "$s14PXPCheckoutSDK12GatewayTokenC15cardExpiryMonth0eF4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0Q11CountryCode26lastSuccessfulPurchaseDate0uv6PayoutX00E6SchemeACSS_S8SAA0dZ0Otcfc",
+            "usr": "s:14PXPCheckoutSDK12GatewayTokenC15cardExpiryMonth0eF4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0Q11CountryCode26lastSuccessfulPurchaseDate0uv6PayoutX00E6Scheme06walletL0ACSS_S8SAA0dZ0OSSSgtcfc",
+            "mangledName": "$s14PXPCheckoutSDK12GatewayTokenC15cardExpiryMonth0eF4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0Q11CountryCode26lastSuccessfulPurchaseDate0uv6PayoutX00E6Scheme06walletL0ACSS_S8SAA0dZ0OSSSgtcfc",
             "moduleName": "PXPCheckoutSDK",
             "overriding": true,
             "implicit": true,
@@ -97240,7 +97488,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(schemeTokenId:status:cardArtUri:schemeTokenProvider:cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:cardScheme:)",
+            "printedName": "init(schemeTokenId:status:cardArtUri:schemeTokenProvider:cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:cardScheme:walletType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -97331,11 +97579,26 @@
                 "name": "TokenScheme",
                 "printedName": "PXPCheckoutSDK.TokenScheme",
                 "usr": "s:14PXPCheckoutSDK11TokenSchemeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK11SchemeTokenC06schemeD2Id6status10cardArtUri0eD8Provider0H11ExpiryMonth0hL4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0W11CountryCode26lastSuccessfulPurchaseDate24lastSuccessfulPayoutDate0hC0ACSS_S2SAA0dC0OS9SAStcfc",
-            "mangledName": "$s14PXPCheckoutSDK11SchemeTokenC06schemeD2Id6status10cardArtUri0eD8Provider0H11ExpiryMonth0hL4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0W11CountryCode26lastSuccessfulPurchaseDate24lastSuccessfulPayoutDate0hC0ACSS_S2SAA0dC0OS9SAStcfc",
+            "usr": "s:14PXPCheckoutSDK11SchemeTokenC06schemeD2Id6status10cardArtUri0eD8Provider0H11ExpiryMonth0hL4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0W11CountryCode26lastSuccessfulPurchaseDate24lastSuccessfulPayoutDate0hC006walletR0ACSS_S2SAA0dC0OS9SATSSSgtcfc",
+            "mangledName": "$s14PXPCheckoutSDK11SchemeTokenC06schemeD2Id6status10cardArtUri0eD8Provider0H11ExpiryMonth0hL4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0W11CountryCode26lastSuccessfulPurchaseDate24lastSuccessfulPayoutDate0hC006walletR0ACSS_S2SAA0dC0OS9SATSSSgtcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
@@ -97374,7 +97637,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:cardScheme:)",
+            "printedName": "init(cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:cardScheme:walletType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -97441,11 +97704,26 @@
                 "name": "TokenScheme",
                 "printedName": "PXPCheckoutSDK.TokenScheme",
                 "usr": "s:14PXPCheckoutSDK11TokenSchemeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK11SchemeTokenC15cardExpiryMonth0eF4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0Q11CountryCode26lastSuccessfulPurchaseDate0uv6PayoutX00eC0ACSS_S8SAA0dC0Otcfc",
-            "mangledName": "$s14PXPCheckoutSDK11SchemeTokenC15cardExpiryMonth0eF4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0Q11CountryCode26lastSuccessfulPurchaseDate0uv6PayoutX00eC0ACSS_S8SAA0dC0Otcfc",
+            "usr": "s:14PXPCheckoutSDK11SchemeTokenC15cardExpiryMonth0eF4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0Q11CountryCode26lastSuccessfulPurchaseDate0uv6PayoutX00eC006walletL0ACSS_S8SAA0dC0OSSSgtcfc",
+            "mangledName": "$s14PXPCheckoutSDK11SchemeTokenC15cardExpiryMonth0eF4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0Q11CountryCode26lastSuccessfulPurchaseDate0uv6PayoutX00eC006walletL0ACSS_S8SAA0dC0OSSSgtcfc",
             "moduleName": "PXPCheckoutSDK",
             "overriding": true,
             "implicit": true,
@@ -152909,12 +153187,59 @@
         "name": "CorePayments",
         "printedName": "CorePayments",
         "declKind": "Import",
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayPalWebPayments",
+        "printedName": "PayPalWebPayments",
+        "declKind": "Import",
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CorePayments",
+        "printedName": "CorePayments",
+        "declKind": "Import",
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "PXPCheckoutSDK"
       },
       {
         "kind": "Import",
         "name": "PayPalWebPayments",
         "printedName": "PayPalWebPayments",
+        "declKind": "Import",
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PXPCheckoutSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "PXPCheckoutSDK"
       },
@@ -152923,42 +153248,10 @@
         "name": "CorePayments",
         "printedName": "CorePayments",
         "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "PayPalWebPayments",
-        "printedName": "PayPalWebPayments",
-        "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CorePayments",
-        "printedName": "CorePayments",
-        "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -152972,14 +153265,20 @@
         "name": "PaymentButtons",
         "printedName": "PaymentButtons",
         "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "PayPalWebPayments",
         "printedName": "PayPalWebPayments",
         "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -160644,7 +160943,10 @@
         "name": "PaymentButtons",
         "printedName": "PaymentButtons",
         "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -160658,7 +160960,10 @@
         "name": "PaymentButtons",
         "printedName": "PaymentButtons",
         "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -162113,7 +162418,10 @@
         "name": "Swinject",
         "printedName": "Swinject",
         "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -199487,21 +199795,30 @@
         "name": "Swinject",
         "printedName": "Swinject",
         "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "CorePayments",
         "printedName": "CorePayments",
         "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "PayPalWebPayments",
         "printedName": "PayPalWebPayments",
         "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -231685,7 +232002,10 @@
         "name": "KountDataCollector",
         "printedName": "KountDataCollector",
         "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
+        "moduleName": "PXPCheckoutSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -236708,22 +237028,8 @@
       },
       {
         "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PXPCheckoutSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
         "declKind": "Import",
         "moduleName": "PXPCheckoutSDK"
       },
@@ -237424,6 +237730,13 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PXPCheckoutSDK"
       },
       {
         "kind": "Import",
@@ -250499,9 +250812,73 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "walletType",
+            "printedName": "walletType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK21BaseCardTokenResponseC10walletTypeSSSgvp",
+            "mangledName": "$s14PXPCheckoutSDK21BaseCardTokenResponseC10walletTypeSSSgvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK21BaseCardTokenResponseC10walletTypeSSSgvg",
+                "mangledName": "$s14PXPCheckoutSDK21BaseCardTokenResponseC10walletTypeSSSgvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:scheme:)",
+            "printedName": "init(cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:scheme:walletType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -250604,11 +250981,26 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK21BaseCardTokenResponseC15cardExpiryMonth0gH4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0S11CountryCode26lastSuccessfulPurchaseDate0wx6PayoutZ06schemeACSS_S5SSgA3NSStcfc",
-            "mangledName": "$s14PXPCheckoutSDK21BaseCardTokenResponseC15cardExpiryMonth0gH4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0S11CountryCode26lastSuccessfulPurchaseDate0wx6PayoutZ06schemeACSS_S5SSgA3NSStcfc",
+            "usr": "s:14PXPCheckoutSDK21BaseCardTokenResponseC15cardExpiryMonth0gH4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0S11CountryCode26lastSuccessfulPurchaseDate0wx6PayoutZ06scheme06walletN0ACSS_S5SSgA3OSSAOtcfc",
+            "mangledName": "$s14PXPCheckoutSDK21BaseCardTokenResponseC15cardExpiryMonth0gH4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0S11CountryCode26lastSuccessfulPurchaseDate0wx6PayoutZ06scheme06walletN0ACSS_S5SSgA3OSSAOtcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
@@ -250754,7 +251146,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:scheme:)",
+            "printedName": "init(cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:scheme:walletType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -250857,11 +251249,26 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK20GatewayTokenResponseC15cardExpiryMonth0fG4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0R11CountryCode26lastSuccessfulPurchaseDate0vw6PayoutY06schemeACSS_S5SSgA3NSStcfc",
-            "mangledName": "$s14PXPCheckoutSDK20GatewayTokenResponseC15cardExpiryMonth0fG4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0R11CountryCode26lastSuccessfulPurchaseDate0vw6PayoutY06schemeACSS_S5SSgA3NSStcfc",
+            "usr": "s:14PXPCheckoutSDK20GatewayTokenResponseC15cardExpiryMonth0fG4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0R11CountryCode26lastSuccessfulPurchaseDate0vw6PayoutY06scheme06walletM0ACSS_S5SSgA3OSSAOtcfc",
+            "mangledName": "$s14PXPCheckoutSDK20GatewayTokenResponseC15cardExpiryMonth0fG4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0R11CountryCode26lastSuccessfulPurchaseDate0vw6PayoutY06scheme06walletM0ACSS_S5SSgA3OSSAOtcfc",
             "moduleName": "PXPCheckoutSDK",
             "overriding": true,
             "implicit": true,
@@ -251172,7 +251579,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:scheme:)",
+            "printedName": "init(cardExpiryMonth:cardExpiryYear:fundingSource:ownerType:maskedPrimaryAccountNumber:issuerName:issuerCountryCode:lastSuccessfulPurchaseDate:lastSuccessfulPayoutDate:scheme:walletType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -251275,11 +251682,26 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK19SchemeTokenResponseC15cardExpiryMonth0fG4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0R11CountryCode26lastSuccessfulPurchaseDate0vw6PayoutY06schemeACSS_S5SSgA3NSStcfc",
-            "mangledName": "$s14PXPCheckoutSDK19SchemeTokenResponseC15cardExpiryMonth0fG4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0R11CountryCode26lastSuccessfulPurchaseDate0vw6PayoutY06schemeACSS_S5SSgA3NSStcfc",
+            "usr": "s:14PXPCheckoutSDK19SchemeTokenResponseC15cardExpiryMonth0fG4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0R11CountryCode26lastSuccessfulPurchaseDate0vw6PayoutY06scheme06walletM0ACSS_S5SSgA3OSSAOtcfc",
+            "mangledName": "$s14PXPCheckoutSDK19SchemeTokenResponseC15cardExpiryMonth0fG4Year13fundingSource9ownerType26maskedPrimaryAccountNumber10issuerName0R11CountryCode26lastSuccessfulPurchaseDate0vw6PayoutY06scheme06walletM0ACSS_S5SSgA3OSSAOtcfc",
             "moduleName": "PXPCheckoutSDK",
             "overriding": true,
             "implicit": true,
@@ -254126,9 +254548,69 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "walletType",
+            "printedName": "walletType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PXPCheckoutSDK15CardFundingDataV10walletTypeSSSgvp",
+            "mangledName": "$s14PXPCheckoutSDK15CardFundingDataV10walletTypeSSSgvp",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PXPCheckoutSDK15CardFundingDataV10walletTypeSSSgvg",
+                "mangledName": "$s14PXPCheckoutSDK15CardFundingDataV10walletTypeSSSgvg",
+                "moduleName": "PXPCheckoutSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(gatewayTokenId:schemeTokenId:tokenizedCardNumber:cardVerificationCode:)",
+            "printedName": "init(gatewayTokenId:schemeTokenId:tokenizedCardNumber:cardVerificationCode:walletType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -254195,15 +254677,58 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK15CardFundingDataV14gatewayTokenId06schemegH009tokenizedC6Number20cardVerificationCodeACSSSg_A3Htcfc",
-            "mangledName": "$s14PXPCheckoutSDK15CardFundingDataV14gatewayTokenId06schemegH009tokenizedC6Number20cardVerificationCodeACSSSg_A3Htcfc",
+            "usr": "s:14PXPCheckoutSDK15CardFundingDataV14gatewayTokenId06schemegH009tokenizedC6Number20cardVerificationCode10walletTypeACSSSg_A4Itcfc",
+            "mangledName": "$s14PXPCheckoutSDK15CardFundingDataV14gatewayTokenId06schemegH009tokenizedC6Number20cardVerificationCode10walletTypeACSSSg_A4Itcfc",
             "moduleName": "PXPCheckoutSDK",
             "declAttributes": [
               "AccessControl"
             ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardFundingData",
+                "printedName": "PXPCheckoutSDK.CardFundingData",
+                "usr": "s:14PXPCheckoutSDK15CardFundingDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PXPCheckoutSDK15CardFundingDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14PXPCheckoutSDK15CardFundingDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PXPCheckoutSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
             "init_kind": "Designated"
           },
           {
@@ -254233,32 +254758,6 @@
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CardFundingData",
-                "printedName": "PXPCheckoutSDK.CardFundingData",
-                "usr": "s:14PXPCheckoutSDK15CardFundingDataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:14PXPCheckoutSDK15CardFundingDataV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s14PXPCheckoutSDK15CardFundingDataV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "PXPCheckoutSDK",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Struct",
@@ -313794,13 +314293,6 @@
             ],
             "usr": "s:16CoreTransferable0B0P",
             "mangledName": "$s16CoreTransferable0B0P"
-          },
-          {
-            "kind": "Conformance",
-            "name": "URLConvertible",
-            "printedName": "URLConvertible",
-            "usr": "s:9Alamofire14URLConvertibleP",
-            "mangledName": "$s9Alamofire14URLConvertibleP"
           }
         ]
       },
@@ -318451,14 +318943,14 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/BaseComponents\/BaseCheckoutComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 4606,
+      "offset": 4615,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/BaseComponents\/BaseCheckoutComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 4654,
+      "offset": 4663,
       "length": 5,
       "value": "false"
     },
@@ -319144,35 +319636,35 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CardSubmitComponent\/Services\/CardSubmitTransactionService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2256,
+      "offset": 2374,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CardSubmitComponent\/Services\/CardSubmitTransactionService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2459,
+      "offset": 2577,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CardSubmitComponent\/Services\/CardSubmitTransactionService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2490,
+      "offset": 2608,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CardSubmitComponent\/Services\/CardSubmitTransactionService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2527,
+      "offset": 2645,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/CardSubmitComponent\/Services\/CardSubmitTransactionService.swift",
       "kind": "BooleanLiteral",
-      "offset": 2562,
+      "offset": 2680,
       "length": 5,
       "value": "false"
     },
@@ -319543,7 +320035,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/ClickOnceStandaloneComponent\/ClickOnceStandaloneComponent.swift",
       "kind": "StringLiteral",
-      "offset": 36262,
+      "offset": 36367,
       "length": 9,
       "value": "\"#757D82\""
     },
@@ -324450,7 +324942,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/FieldComponents\/Views\/FieldComponentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 35706,
+      "offset": 36062,
       "length": 5,
       "value": "false"
     },
@@ -324513,63 +325005,63 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Handlers\/PayPalPaymentHandler.swift",
       "kind": "StringLiteral",
-      "offset": 318,
+      "offset": 336,
       "length": 15,
       "value": "\"PayPalService\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Handlers\/PayPalPaymentHandler.swift",
       "kind": "StringLiteral",
-      "offset": 372,
+      "offset": 390,
       "length": 25,
       "value": "\"PayPalValidationHandler\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Handlers\/PayPalPaymentHandler.swift",
       "kind": "StringLiteral",
-      "offset": 440,
+      "offset": 458,
       "length": 8,
       "value": "\"paypal\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Handlers\/PayPalPaymentHandler.swift",
       "kind": "StringLiteral",
-      "offset": 490,
+      "offset": 508,
       "length": 18,
       "value": "\"validationErrors\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Handlers\/PayPalPaymentHandler.swift",
       "kind": "StringLiteral",
-      "offset": 19303,
+      "offset": 19321,
       "length": 8,
       "value": "\"paypal\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Handlers\/PayPalPaymentHandler.swift",
       "kind": "StringLiteral",
-      "offset": 19332,
+      "offset": 19350,
       "length": 10,
       "value": "\"paylater\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/Handlers\/PayPalPaymentHandler.swift",
       "kind": "StringLiteral",
-      "offset": 19361,
+      "offset": 19379,
       "length": 8,
       "value": "\"credit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/PayPalButtonComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 384,
+      "offset": 411,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Components\/PayPalButtonComponent\/PayPalButtonComponent.swift",
       "kind": "BooleanLiteral",
-      "offset": 470,
+      "offset": 497,
       "length": 5,
       "value": "false"
     },
@@ -335139,7 +335631,7 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/KountServices\/KountService.swift",
       "kind": "StringLiteral",
-      "offset": 1709,
+      "offset": 1730,
       "length": 17,
       "value": "\"421551445588411\""
     },
@@ -335328,84 +335820,84 @@
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "IntegerLiteral",
-      "offset": 418,
+      "offset": 426,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "Array",
-      "offset": 470,
+      "offset": 478,
       "length": 30,
       "value": "[504, 503, 429, 500, 502, 408]"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "StringLiteral",
-      "offset": 539,
+      "offset": 547,
       "length": 42,
       "value": "\"threedsecure\/integrated\/authentications\/\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "IntegerLiteral",
-      "offset": 611,
+      "offset": 619,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "BooleanLiteral",
-      "offset": 848,
+      "offset": 856,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "FloatLiteral",
-      "offset": 939,
+      "offset": 947,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "StringLiteral",
-      "offset": 3410,
+      "offset": 2238,
       "length": 13,
       "value": "\"HttpService\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "IntegerLiteral",
-      "offset": 5070,
+      "offset": 3898,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "IntegerLiteral",
-      "offset": 6684,
+      "offset": 5512,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "IntegerLiteral",
-      "offset": 10067,
+      "offset": 8895,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "StringLiteral",
-      "offset": 26217,
+      "offset": 23381,
       "length": 30,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'\""
     },
     {
       "filePath": "\/Users\/runner\/work\/1\/s\/appsource\/PXPCheckoutSDK\/Sources\/PXPCheckoutSDK\/Services\/UnityServices\/HttpService.swift",
       "kind": "StringLiteral",
-      "offset": 26300,
+      "offset": 23464,
       "length": 5,
       "value": "\"UTC\""
     },
