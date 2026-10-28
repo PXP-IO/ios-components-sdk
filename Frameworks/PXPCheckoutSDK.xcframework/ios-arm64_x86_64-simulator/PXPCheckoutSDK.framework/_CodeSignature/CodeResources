@@ -4,17 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		DbdbT1eBbJiGqwV1IA+eUccnx+k=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		/hA24+CWHQda7hlaN7Zr1Sci3Uw=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		oM+lVA0GOtVnbqmFQDCnLRdrX5w=
+		UHquAnIgcc91ur0LvzFUbrT7LHs=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		/9XigDfL928af8Do+/VO3ndCaSU=
+		gtXdWEqC3sDCbV1hMrSNZq1uPrc=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -66,7 +70,7 @@
 		</data>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Assets.car</key>
 		<data>
-		uEkodlYPI7BeKnYFiUUEN5433F4=
+		2MAs/85xk0BAi/pHJan/0kUKzqs=
 		</data>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Config/sdk-config-template.json</key>
 		<data>
@@ -100,21 +104,32 @@
 		<data>
 		BmkeED1NPOHxEI2bfSElS3FKQfg=
 		</data>
+		<key>PayPalOpen-Regular.otf</key>
+		<data>
+		dcV6GAIoKTaKakAshiG3N2mamHY=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Zd/NUd7zQdJ7XfRE1GotO9bxnR++p3s2EIGQhY7Wy40=
+			</data>
+		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9g4+ld7CxWmO9PaVbWmx2YyE+nWrO+YLSKufMUeWKuA=
+			7zsak3pyNOx14am9+RDd0QXVUx2aIiIwFQmpiCh8kS4=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u9aruS9K+Ic2d04/xDytcRPTh67DsU7txptXiIaal6M=
+			tmHL38ZNDZ3UdWdODMiuqpPJH2yu+OZFVxx85WZy5x0=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -205,7 +220,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xMbVfGzSr9vu10q7J0XsDCsuN5yaeXU5ESCSOF5uIAE=
+			LB32agfhOOgArAw7/1IEMDMStFADA8bx+eIyjnM7kc4=
 			</data>
 		</dict>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Config/sdk-config-template.json</key>
@@ -262,6 +277,13 @@
 			<key>hash2</key>
 			<data>
 			VqRSM9KfEbTfuG0kjpIZOdEVd4+HMl566MwQg4PWZk0=
+			</data>
+		</dict>
+		<key>PayPalOpen-Regular.otf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DX7bcXUOS83JEEK3om+HX2t5atHHhn8oZqaiNW6G4cw=
 			</data>
 		</dict>
 	</dict>

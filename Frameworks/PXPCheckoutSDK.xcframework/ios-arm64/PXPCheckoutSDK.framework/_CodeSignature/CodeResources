@@ -4,13 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		DbdbT1eBbJiGqwV1IA+eUccnx+k=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		ZMx4Nt0Hj+bP1LIl0v2IpA7jdh8=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		aiEgpJ70e2H0MPgsPovlGfZjPPA=
+		X90RAxO5KoGZPVz/H0QtZ47Pc1g=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -38,7 +42,7 @@
 		</data>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Assets.car</key>
 		<data>
-		JArKTySM46Oh2u8IaJlumFYwqKc=
+		yNUSy92ErXoxsdmB8neLGRKrKX8=
 		</data>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Config/sdk-config-template.json</key>
 		<data>
@@ -72,14 +76,25 @@
 		<data>
 		BmkeED1NPOHxEI2bfSElS3FKQfg=
 		</data>
+		<key>PayPalOpen-Regular.otf</key>
+		<data>
+		dcV6GAIoKTaKakAshiG3N2mamHY=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Zd/NUd7zQdJ7XfRE1GotO9bxnR++p3s2EIGQhY7Wy40=
+			</data>
+		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J2pAcmzsT2BZSeCnl3YTvO8dFhC8cWsNhZKiSlM8Q3A=
+			/EOfu6GUBKfkKcdExy8xb0iXdMooBFs1xkwHDAGW4j4=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -128,7 +143,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bOK6Ndzjdy/4ftp/7uZQbZS2cDfjlRldHdeQwmwFZs0=
+			Mo5tJKicQ8mKz9utuGzy72ZnFn0qDSLyg+0TKyjPt2I=
 			</data>
 		</dict>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Config/sdk-config-template.json</key>
@@ -185,6 +200,13 @@
 			<key>hash2</key>
 			<data>
 			VqRSM9KfEbTfuG0kjpIZOdEVd4+HMl566MwQg4PWZk0=
+			</data>
+		</dict>
+		<key>PayPalOpen-Regular.otf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DX7bcXUOS83JEEK3om+HX2t5atHHhn8oZqaiNW6G4cw=
 			</data>
 		</dict>
 	</dict>
