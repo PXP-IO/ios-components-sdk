@@ -1,84 +1,23 @@
 // swift-tools-version: 5.9
 import PackageDescription
 
-let sdkBinaryDependencies: [Target.Dependency] = [
-    // SPM target name must differ from product name "PXPCheckoutSDK" (module stays PXPCheckoutSDK via xcframework).
-    "PXPCheckoutSDKBinary",
-    "KountDataCollector",
-    "Alamofire",
-    "Swinject",
-    "CorePayments",
-    "PaymentButtons",
-    "PayPalWebPayments",
-    "CardPayments",
-    "FraudProtection",
-    "PPRiskMagnes",
-    "aerosync_ios_sdk"
-]
-
 let package = Package(
     name: "PXPCheckout",
     platforms: [
         .iOS(.v14)
     ],
     products: [
-        // Single public product. Target "PXPCheckout" bundles the xcframework + transitive binary deps.
-        // Merchants link and import PXPCheckoutSDK; the bare xcframework target is not exposed separately.
+        // Single public SPM product — one xcframework; vendors statically linked at build time.
         .library(
             name: "PXPCheckoutSDK",
-            targets: ["PXPCheckout"]
+            targets: ["PXPCheckoutSDKBinary"]
         )
     ],
     dependencies: [],
     targets: [
-        .target(
-            name: "PXPCheckout",
-            dependencies: sdkBinaryDependencies,
-            path: "Sources/PXPCheckout"
-        ),
         .binaryTarget(
             name: "PXPCheckoutSDKBinary",
             path: "Frameworks/PXPCheckoutSDK.xcframework"
-        ),
-        .binaryTarget(
-            name: "Alamofire",
-            path: "Frameworks/Alamofire.xcframework"
-        ),
-        .binaryTarget(
-            name: "Swinject",
-            path: "Frameworks/Swinject.xcframework"
-        ),
-        .binaryTarget(
-            name: "CorePayments",
-            path: "Frameworks/CorePayments.xcframework"
-        ),
-        .binaryTarget(
-            name: "PaymentButtons",
-            path: "Frameworks/PaymentButtons.xcframework"
-        ),
-        .binaryTarget(
-            name: "PayPalWebPayments",
-            path: "Frameworks/PayPalWebPayments.xcframework"
-        ),
-        .binaryTarget(
-            name: "CardPayments",
-            path: "Frameworks/CardPayments.xcframework"
-        ),
-        .binaryTarget(
-            name: "FraudProtection",
-            path: "Frameworks/FraudProtection.xcframework"
-        ),
-        .binaryTarget(
-            name: "PPRiskMagnes",
-            path: "Frameworks/PPRiskMagnes.xcframework"
-        ),
-        .binaryTarget(
-            name: "KountDataCollector",
-            path: "Frameworks/KountDataCollector.xcframework"
-        ),
-        .binaryTarget(
-            name: "aerosync_ios_sdk",
-            path: "Frameworks/aerosync_ios_sdk.xcframework"
         )
     ]
 )

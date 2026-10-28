@@ -2,12 +2,10 @@
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name PXPCheckoutSDK -package-name pxpcheckoutsdk
 // swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
-import Alamofire
 import AuthenticationServices
 import Combine
 import Contacts
 import CoreGraphics
-import CorePayments
 import CoreText
 import CryptoKit
 import DeveloperToolsSupport
@@ -15,15 +13,11 @@ import Foundation
 import Foundation/*.Bundle*/
 import Foundation/*.ProcessInfo*/
 import Foundation/*.URL*/
-import KountDataCollector
 import ObjectiveC
 import PassKit
-import PayPalWebPayments
-import PaymentButtons
 import SafariServices
 import Swift
 import SwiftUI
-import Swinject
 import UIKit
 import WebKit
 import _AuthenticationServices_SwiftUI
@@ -31,7 +25,6 @@ import _Concurrency
 import _PassKit_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
-import aerosync_ios_sdk
 extension PXPCheckoutSDK.CheckoutDropIn {
   public func buildContent() -> SwiftUICore.AnyView
 }
@@ -1827,7 +1820,8 @@ public class BaseCardToken : Swift.Codable {
   public var lastSuccessfulPurchaseDate: Swift.String
   public var lastSuccessfulPayoutDate: Swift.String
   public var cardScheme: PXPCheckoutSDK.TokenScheme
-  public init(cardExpiryMonth: Swift.String, cardExpiryYear: Swift.String, fundingSource: Swift.String, ownerType: Swift.String, maskedPrimaryAccountNumber: Swift.String, issuerName: Swift.String, issuerCountryCode: Swift.String, lastSuccessfulPurchaseDate: Swift.String, lastSuccessfulPayoutDate: Swift.String, cardScheme: PXPCheckoutSDK.TokenScheme)
+  public var walletType: Swift.String?
+  public init(cardExpiryMonth: Swift.String, cardExpiryYear: Swift.String, fundingSource: Swift.String, ownerType: Swift.String, maskedPrimaryAccountNumber: Swift.String, issuerName: Swift.String, issuerCountryCode: Swift.String, lastSuccessfulPurchaseDate: Swift.String, lastSuccessfulPayoutDate: Swift.String, cardScheme: PXPCheckoutSDK.TokenScheme, walletType: Swift.String? = nil)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -1858,7 +1852,8 @@ public struct CardOnFileComponentData {
   public let issuerCountryCode: Swift.String?
   public let lastSuccessfulPurchaseDate: Swift.String?
   public let lastSuccessfulPayoutDate: Swift.String?
-  public init(cardVerificationCode: Swift.String?, gatewayTokenId: Swift.String?, schemeTokenId: Swift.String?, cardBrand: Swift.String?, cardType: Swift.String?, maskedPrimaryAccountNumber: Swift.String?, cardExpiryMonth: Swift.String?, cardExpiryYear: Swift.String?, scheme: Swift.String?, fundingSource: Swift.String?, ownerType: Swift.String?, issuerName: Swift.String?, issuerCountryCode: Swift.String?, lastSuccessfulPurchaseDate: Swift.String?, lastSuccessfulPayoutDate: Swift.String?)
+  public let walletType: Swift.String?
+  public init(cardVerificationCode: Swift.String?, gatewayTokenId: Swift.String?, schemeTokenId: Swift.String?, cardBrand: Swift.String?, cardType: Swift.String?, maskedPrimaryAccountNumber: Swift.String?, cardExpiryMonth: Swift.String?, cardExpiryYear: Swift.String?, scheme: Swift.String?, fundingSource: Swift.String?, ownerType: Swift.String?, issuerName: Swift.String?, issuerCountryCode: Swift.String?, lastSuccessfulPurchaseDate: Swift.String?, lastSuccessfulPayoutDate: Swift.String?, walletType: Swift.String? = nil)
 }
 public struct CardTokenBuilderElements {
   public let tokenImageView: SwiftUICore.AnyView
@@ -1885,7 +1880,7 @@ public struct FilterByConfig {
 }
 @_hasMissingDesignatedInitializers public class GatewayToken : PXPCheckoutSDK.BaseCardToken {
   public var gatewayTokenId: Swift.String
-  public init(gatewayTokenId: Swift.String, cardExpiryMonth: Swift.String, cardExpiryYear: Swift.String, fundingSource: Swift.String, ownerType: Swift.String, maskedPrimaryAccountNumber: Swift.String, issuerName: Swift.String, issuerCountryCode: Swift.String, lastSuccessfulPurchaseDate: Swift.String, lastSuccessfulPayoutDate: Swift.String, cardScheme: PXPCheckoutSDK.TokenScheme)
+  public init(gatewayTokenId: Swift.String, cardExpiryMonth: Swift.String, cardExpiryYear: Swift.String, fundingSource: Swift.String, ownerType: Swift.String, maskedPrimaryAccountNumber: Swift.String, issuerName: Swift.String, issuerCountryCode: Swift.String, lastSuccessfulPurchaseDate: Swift.String, lastSuccessfulPayoutDate: Swift.String, cardScheme: PXPCheckoutSDK.TokenScheme, walletType: Swift.String? = nil)
   override public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
@@ -1919,7 +1914,7 @@ public struct OrderByConfig {
   public var status: Swift.String
   public var cardArtUri: Swift.String
   public var schemeTokenProvider: PXPCheckoutSDK.TokenScheme
-  public init(schemeTokenId: Swift.String, status: Swift.String, cardArtUri: Swift.String, schemeTokenProvider: PXPCheckoutSDK.TokenScheme, cardExpiryMonth: Swift.String, cardExpiryYear: Swift.String, fundingSource: Swift.String, ownerType: Swift.String, maskedPrimaryAccountNumber: Swift.String, issuerName: Swift.String, issuerCountryCode: Swift.String, lastSuccessfulPurchaseDate: Swift.String, lastSuccessfulPayoutDate: Swift.String, cardScheme: PXPCheckoutSDK.TokenScheme)
+  public init(schemeTokenId: Swift.String, status: Swift.String, cardArtUri: Swift.String, schemeTokenProvider: PXPCheckoutSDK.TokenScheme, cardExpiryMonth: Swift.String, cardExpiryYear: Swift.String, fundingSource: Swift.String, ownerType: Swift.String, maskedPrimaryAccountNumber: Swift.String, issuerName: Swift.String, issuerCountryCode: Swift.String, lastSuccessfulPurchaseDate: Swift.String, lastSuccessfulPayoutDate: Swift.String, cardScheme: PXPCheckoutSDK.TokenScheme, walletType: Swift.String? = nil)
   override public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
@@ -5170,7 +5165,8 @@ public class BaseCardTokenResponse {
   final public let lastSuccessfulPurchaseDate: Swift.String?
   final public let lastSuccessfulPayoutDate: Swift.String?
   final public let scheme: Swift.String
-  public init(cardExpiryMonth: Swift.String, cardExpiryYear: Swift.String, fundingSource: Swift.String, ownerType: Swift.String, maskedPrimaryAccountNumber: Swift.String, issuerName: Swift.String? = nil, issuerCountryCode: Swift.String? = nil, lastSuccessfulPurchaseDate: Swift.String? = nil, lastSuccessfulPayoutDate: Swift.String? = nil, scheme: Swift.String)
+  final public let walletType: Swift.String?
+  public init(cardExpiryMonth: Swift.String, cardExpiryYear: Swift.String, fundingSource: Swift.String, ownerType: Swift.String, maskedPrimaryAccountNumber: Swift.String, issuerName: Swift.String? = nil, issuerCountryCode: Swift.String? = nil, lastSuccessfulPurchaseDate: Swift.String? = nil, lastSuccessfulPayoutDate: Swift.String? = nil, scheme: Swift.String, walletType: Swift.String? = nil)
   @objc deinit
 }
 final public class GatewayTokenResponse : PXPCheckoutSDK.BaseCardTokenResponse, Swift.Codable {
@@ -5267,9 +5263,10 @@ public struct CardFundingData : Swift.Codable {
   public let schemeTokenId: Swift.String?
   public let tokenizedCardNumber: Swift.String?
   public let cardVerificationCode: Swift.String?
-  public init(gatewayTokenId: Swift.String? = nil, schemeTokenId: Swift.String? = nil, tokenizedCardNumber: Swift.String? = nil, cardVerificationCode: Swift.String? = nil)
-  public func encode(to encoder: any Swift.Encoder) throws
+  public let walletType: Swift.String?
+  public init(gatewayTokenId: Swift.String? = nil, schemeTokenId: Swift.String? = nil, tokenizedCardNumber: Swift.String? = nil, cardVerificationCode: Swift.String? = nil, walletType: Swift.String? = nil)
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct PayPalFundingData : Swift.Codable {
   public let payeeEmailAddress: Swift.String?

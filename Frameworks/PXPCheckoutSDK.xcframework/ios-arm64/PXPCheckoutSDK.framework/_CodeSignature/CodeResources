@@ -4,41 +4,45 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		DbdbT1eBbJiGqwV1IA+eUccnx+k=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		ZMx4Nt0Hj+bP1LIl0v2IpA7jdh8=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		3PETapVdBpY7re6LrioQyvbvsg0=
+		X90RAxO5KoGZPVz/H0QtZ47Pc1g=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		ZZA8ebRx+ySw8SXyyXLfJpjeoEc=
+		MYi+A3GsgdylOn+yxvIUY2dk24k=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<data>
-		Efo+9H/oqumELM74ar0P2Enh8eU=
+		Zvr/69h6tmFYg8wZ7t2WiNA/N8A=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Efo+9H/oqumELM74ar0P2Enh8eU=
+		Zvr/69h6tmFYg8wZ7t2WiNA/N8A=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		LtiH7R4eUI50R2uTqTwkFROP9Uk=
+		FIDZgX43SSXVnbytqQNYrEGIvaY=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Efo+9H/oqumELM74ar0P2Enh8eU=
+		Zvr/69h6tmFYg8wZ7t2WiNA/N8A=
 		</data>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		NpuRPbRwWKbSTQr4rBr7afOAsW4=
+		+cdb0G9kFPOCopJBorPYsNnimf0=
 		</data>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Assets.car</key>
 		<data>
-		UMACXIQ8v8wTzVVwQDAHCpTmwJk=
+		yNUSy92ErXoxsdmB8neLGRKrKX8=
 		</data>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Config/sdk-config-template.json</key>
 		<data>
@@ -72,63 +76,74 @@
 		<data>
 		BmkeED1NPOHxEI2bfSElS3FKQfg=
 		</data>
+		<key>PayPalOpen-Regular.otf</key>
+		<data>
+		dcV6GAIoKTaKakAshiG3N2mamHY=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Zd/NUd7zQdJ7XfRE1GotO9bxnR++p3s2EIGQhY7Wy40=
+			</data>
+		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WhbqpdyHVR2AV7ENMG8V0+hG3rZ7GJOTG45tyA6GRbg=
+			/EOfu6GUBKfkKcdExy8xb0iXdMooBFs1xkwHDAGW4j4=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ehrmgde+59mnhVkd3fGis8znKRLcqy7+DP/hoedEHoM=
+			qLU56OR6t8b74RzyEashkMEzbk603Xr7+1rLUjdJ3tw=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.package.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4PiE6Rj0y2XOVhEVPOsDIXOIdTAlgeOhKNkU7kce5Gs=
+			8aH/P/XxuC3mlzmsSTcdvSg8e9Q4+SJfLrC/P2KlRPA=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4PiE6Rj0y2XOVhEVPOsDIXOIdTAlgeOhKNkU7kce5Gs=
+			8aH/P/XxuC3mlzmsSTcdvSg8e9Q4+SJfLrC/P2KlRPA=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a2KmEEM+9iGBt4yVrUSyUMyxmRfFnM21pSW73MvXgts=
+			vQKoehx1ADWO6i3Cp8IRtwry/bM76J5dimMBhHbSUfc=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4PiE6Rj0y2XOVhEVPOsDIXOIdTAlgeOhKNkU7kce5Gs=
+			8aH/P/XxuC3mlzmsSTcdvSg8e9Q4+SJfLrC/P2KlRPA=
 			</data>
 		</dict>
 		<key>Modules/PXPCheckoutSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GNxBrv2FkyP62wQSqE8w+RlJfgNTrPKA0CbE9X2bmBU=
+			QG4E+QKHoq2hlDL6LKHx8mEmWm7mwxyqrXf07S5+73g=
 			</data>
 		</dict>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2zWpCyUQP4S73g8XiJq3Fep1s+Gv1NOyDKwXjxYIink=
+			Mo5tJKicQ8mKz9utuGzy72ZnFn0qDSLyg+0TKyjPt2I=
 			</data>
 		</dict>
 		<key>PXPCheckoutSDK_PXPCheckoutSDK.bundle/Config/sdk-config-template.json</key>
@@ -185,6 +200,13 @@
 			<key>hash2</key>
 			<data>
 			VqRSM9KfEbTfuG0kjpIZOdEVd4+HMl566MwQg4PWZk0=
+			</data>
+		</dict>
+		<key>PayPalOpen-Regular.otf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DX7bcXUOS83JEEK3om+HX2t5atHHhn8oZqaiNW6G4cw=
 			</data>
 		</dict>
 	</dict>
